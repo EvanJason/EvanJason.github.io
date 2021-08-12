@@ -8,7 +8,6 @@ export default {
   plugins: ["blog"],
   title: "深海如梦的作战实践基地",
   description: "前端技术讨论交流，知识杂谈，生活分享。",
-  github: 'https://github.com/EvanJason/react-blog',
   blog: {
     root: "/posts/",
     social: {
