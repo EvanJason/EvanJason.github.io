@@ -1,15 +1,15 @@
-// import { React } from 'https://deno.land/x/pagic@v1.4.0/mod.ts';
+import { React } from 'https://deno.land/x/pagic@v1.4.0/mod.ts';
 
 export default {
-
-  srcDir: "docs",
-  outDir: "public",
+  srcDir: 'blog',
   theme: "blog",
   plugins: ["blog"],
   title: "深海如梦的作战实践基地",
   description: "前端技术讨论交流，知识杂谈，生活分享。",
+  head: <link rel="shortcut icon" href="https://willern.gitee.io/img/favicon.ico" />,
   blog: {
     root: "/posts/",
+    author: 'yourhug',
     social: {
       github: "yourhug",
       email: "linkenmum@163.com",
