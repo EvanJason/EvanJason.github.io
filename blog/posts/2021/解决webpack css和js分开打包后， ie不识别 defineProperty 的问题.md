@@ -8,7 +8,7 @@ tags:
   - ie
   - defineProperty
 author: 深海如梦
-date: 2020/05/27
+date: 2021/05/27
 excerpt: 解决webpack css和js分开打包后， ie不识别 defineProperty 的问题
 ---
 
