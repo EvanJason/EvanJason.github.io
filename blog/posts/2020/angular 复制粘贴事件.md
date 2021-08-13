@@ -8,12 +8,12 @@ tags:
   - 复制粘贴  
 date: 2020/10/20
 author: 深海如梦
-excerpt: angular 复制粘贴事件
+excerpt: Angular 复制粘贴事件
 ---
 
 
 
-# angular 复制粘贴事件
+# Angular 复制粘贴事件
 
 ```html
 <a ngxClipboard [cbContent]="复制的内容" (cbOnSuccess)="successFun($event)" (click)="copy($event)">复制粘贴事件</a>

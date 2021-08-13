@@ -5,11 +5,12 @@ tags:
   - 水印
   - 页面水印  
   - Angular
-date: 2020/09/06
+date: 2020/01/27
 author: 深海如梦
+excerpt: Angular 页面水印功能实现
 ---
 
-# angular项目 页面加水印
+# Angular 页面水印功能实现
 
 #### html 使用
 
@@ -154,7 +155,7 @@ author: 深海如梦
 //初始化
     setTimeout(() => {
       setInterval(()=>{
-        let text1 = { watermark_txt: '测试的字体', watermark_fontsize: '16px'};
+        let text1 = { watermark_txt: '测试测试', watermark_fontsize: '16px'};
         this.watermarkList = this.watermark(text1);
         for(let item of this.watermarkList){
           let style = JSON.parse(item.style);
@@ -167,3 +168,6 @@ author: 深海如梦
 
 
 
+## 效果图
+
+[![img](https://willern.gitee.io/2021/01/27/20210127/water-mark.png)](https://willern.gitee.io/2021/01/27/20210127/water-mark.png)
