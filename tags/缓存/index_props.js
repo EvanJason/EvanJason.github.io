@@ -93,6 +93,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "webpack",
+                "count": 1
+            },
+            {
                 "name": "前端",
                 "count": 1
             },
@@ -143,15 +147,7 @@ export default {
                 "count": 1
             },
             {
-                "name": "defineProperty",
-                "count": 1
-            },
-            {
                 "name": "Echarts",
-                "count": 1
-            },
-            {
-                "name": "ie",
                 "count": 1
             },
             {

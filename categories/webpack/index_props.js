@@ -1,15 +1,15 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "tags/ie/",
+    'pagePath': "categories/webpack/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "tags/ie/index.html",
+    'outputPath': "categories/webpack/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "ie",
+    'title': "webpack",
     'content': null,
     'blog': {
         "isPost": false,
@@ -24,10 +24,11 @@ export default {
                 "contributors": [
                     "EvanJason"
                 ],
+                "categories": [
+                    "webpack"
+                ],
                 "tags": [
-                    "webpack",
-                    "ie",
-                    "defineProperty"
+                    "webpack"
                 ],
                 "excerpt": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题"
             }
@@ -67,6 +68,10 @@ export default {
             },
             {
                 "name": "wangEditor",
+                "count": 1
+            },
+            {
+                "name": "webpack",
                 "count": 1
             },
             {
@@ -120,15 +125,7 @@ export default {
                 "count": 1
             },
             {
-                "name": "defineProperty",
-                "count": 1
-            },
-            {
                 "name": "Echarts",
-                "count": 1
-            },
-            {
-                "name": "ie",
                 "count": 1
             },
             {

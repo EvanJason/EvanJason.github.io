@@ -89,10 +89,11 @@ export default {
                 "contributors": [
                     "EvanJason"
                 ],
+                "categories": [
+                    "webpack"
+                ],
                 "tags": [
-                    "webpack",
-                    "ie",
-                    "defineProperty"
+                    "webpack"
                 ],
                 "excerpt": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题"
             },
@@ -461,6 +462,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "webpack",
+                "count": 1
+            },
+            {
                 "name": "前端",
                 "count": 1
             },
@@ -511,15 +516,7 @@ export default {
                 "count": 1
             },
             {
-                "name": "defineProperty",
-                "count": 1
-            },
-            {
                 "name": "Echarts",
-                "count": 1
-            },
-            {
-                "name": "ie",
                 "count": 1
             },
             {

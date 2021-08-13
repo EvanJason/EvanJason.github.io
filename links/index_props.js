@@ -22,7 +22,7 @@ export default {
     'contributors': [
         "EvanJason"
     ],
-    'date': "2021-08-13T13:14:26.000Z",
+    'date': "2021-08-13T13:20:34.000Z",
     'updated': null,
     'excerpt': "深海如梦 — 世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它",
     'cover': undefined,
@@ -73,10 +73,11 @@ export default {
                 "contributors": [
                     "EvanJason"
                 ],
+                "categories": [
+                    "webpack"
+                ],
                 "tags": [
-                    "webpack",
-                    "ie",
-                    "defineProperty"
+                    "webpack"
                 ],
                 "excerpt": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题"
             },
@@ -445,6 +446,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "webpack",
+                "count": 1
+            },
+            {
                 "name": "前端",
                 "count": 1
             },
@@ -495,15 +500,7 @@ export default {
                 "count": 1
             },
             {
-                "name": "defineProperty",
-                "count": 1
-            },
-            {
                 "name": "Echarts",
-                "count": 1
-            },
-            {
-                "name": "ie",
                 "count": 1
             },
             {
