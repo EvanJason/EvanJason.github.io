@@ -15,10 +15,10 @@ export default {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/2020/解决网站网页html css兼容性问题.md",
+                "pagePath": "posts/2021/解决网站网页html css兼容性问题.md",
                 "title": "解决网站网页html css兼容性问题",
-                "link": "posts/2020/解决网站网页html css兼容性问题.html",
-                "date": "2020/01/21",
+                "link": "posts/2021/解决网站网页html css兼容性问题.html",
+                "date": "2021/01/21",
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
@@ -59,6 +59,10 @@ export default {
             },
             {
                 "name": "ngx-clipboard",
+                "count": 1
+            },
+            {
+                "name": "React",
                 "count": 1
             },
             {
@@ -108,6 +112,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "缓存",
+                "count": 2
+            },
+            {
                 "name": "Angular RouteReuseStrategy",
                 "count": 1
             },
@@ -129,6 +137,10 @@ export default {
             },
             {
                 "name": "Jquery",
+                "count": 1
+            },
+            {
+                "name": "React",
                 "count": 1
             },
             {
@@ -205,10 +217,6 @@ export default {
             },
             {
                 "name": "穿梭框",
-                "count": 1
-            },
-            {
-                "name": "缓存",
                 "count": 1
             },
             {

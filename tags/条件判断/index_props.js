@@ -81,6 +81,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "React",
+                "count": 1
+            },
+            {
                 "name": "vscode",
                 "count": 1
             },
@@ -127,6 +131,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "缓存",
+                "count": 2
+            },
+            {
                 "name": "Angular RouteReuseStrategy",
                 "count": 1
             },
@@ -148,6 +156,10 @@ export default {
             },
             {
                 "name": "Jquery",
+                "count": 1
+            },
+            {
+                "name": "React",
                 "count": 1
             },
             {
@@ -224,10 +236,6 @@ export default {
             },
             {
                 "name": "穿梭框",
-                "count": 1
-            },
-            {
-                "name": "缓存",
                 "count": 1
             },
             {

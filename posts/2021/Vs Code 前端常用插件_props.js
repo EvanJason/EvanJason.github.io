@@ -37,6 +37,78 @@ export default {
         "isPost": true,
         "posts": [
             {
+                "pagePath": "posts/2021/使用react-router-cache-route实现页面状态的缓存.md",
+                "title": "使用react-router-cache-route实现页面状态的缓存",
+                "link": "posts/2021/使用react-router-cache-route实现页面状态的缓存.html",
+                "date": "2021/07/15",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "React"
+                ],
+                "tags": [
+                    "React",
+                    "缓存"
+                ],
+                "excerpt": "使用react-router-cache-route实现页面状态的缓存"
+            },
+            {
+                "pagePath": "posts/2021/数组的深浅拷贝.md",
+                "title": "数组的深浅拷贝",
+                "link": "posts/2021/数组的深浅拷贝.html",
+                "date": "2021/06/20",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "tags": [
+                    "深浅拷贝"
+                ],
+                "excerpt": "数组的深浅拷贝"
+            },
+            {
+                "pagePath": "posts/2021/解决webpack css和js分开打包后， ie不识别 defineProperty 的问题.md",
+                "title": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题",
+                "link": "posts/2021/解决webpack css和js分开打包后， ie不识别 defineProperty 的问题.html",
+                "date": "2021/05/27",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "tags": [
+                    "webpack",
+                    "ie",
+                    "defineProperty"
+                ],
+                "excerpt": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题"
+            },
+            {
+                "pagePath": "posts/2021/antd表格穿梭框功能.md",
+                "title": "antd表格穿梭框功能",
+                "link": "posts/2021/antd表格穿梭框功能.html",
+                "date": "2021/05/15",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "antd",
+                    "Angular"
+                ],
+                "tags": [
+                    "antd",
+                    "穿梭框",
+                    "表格"
+                ],
+                "excerpt": "angular-antd穿梭框功能实现"
+            },
+            {
                 "pagePath": "posts/2021/Vs Code 前端常用插件.md",
                 "title": "前端常用插件",
                 "link": "posts/2021/Vs Code 前端常用插件.html",
@@ -76,6 +148,48 @@ export default {
                 ],
                 "excerpt": "2020年总结 + 新的一年目标和规划",
                 "cover": "https://willern.gitee.io/2021/02/16/20210216/night.jpg"
+            },
+            {
+                "pagePath": "posts/2021/Angular 页面水印功能实现.md",
+                "title": "Angular 页面水印功能实现",
+                "link": "posts/2021/Angular 页面水印功能实现.html",
+                "date": "2021/01/27",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "Angular"
+                ],
+                "tags": [
+                    "水印",
+                    "页面水印",
+                    "Angular"
+                ],
+                "excerpt": "Angular 页面水印功能实现",
+                "cover": "https://willern.gitee.io/2021/01/27/20210127/water-mark.png"
+            },
+            {
+                "pagePath": "posts/2021/解决网站网页html css兼容性问题.md",
+                "title": "解决网站网页html css兼容性问题",
+                "link": "posts/2021/解决网站网页html css兼容性问题.html",
+                "date": "2021/01/21",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "前端"
+                ],
+                "tags": [
+                    "前端",
+                    "兼容性",
+                    "css"
+                ],
+                "excerpt": "总结了在项目设计中遇到的兼容性问题，在此整理出来，以备不时之需。",
+                "cover": "https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWFnZXMyMDE1LmNuYmxvZ3MuY29tL2Jsb2cvNzU3ODI0LzIwMTcwMy83NTc4MjQtMjAxNzAzMjExMDI1NTgyNjgtMjA1NDc4MDUyMS5wbmc?x-oss-process=image/format,png"
             },
             {
                 "pagePath": "posts/2020/树形控件功能实现.md",
@@ -262,59 +376,6 @@ export default {
                 "excerpt": "Vue 动态绑定多个class 带上三元运算或其他条件"
             },
             {
-                "pagePath": "posts/2021/数组的深浅拷贝.md",
-                "title": "数组的深浅拷贝",
-                "link": "posts/2021/数组的深浅拷贝.html",
-                "date": "2020/06/20",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "tags": [
-                    "深浅拷贝"
-                ],
-                "excerpt": "数组的深浅拷贝"
-            },
-            {
-                "pagePath": "posts/2021/解决webpack css和js分开打包后， ie不识别 defineProperty 的问题.md",
-                "title": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题",
-                "link": "posts/2021/解决webpack css和js分开打包后， ie不识别 defineProperty 的问题.html",
-                "date": "2020/05/27",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "tags": [
-                    "webpack",
-                    "ie",
-                    "defineProperty"
-                ],
-                "excerpt": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题"
-            },
-            {
-                "pagePath": "posts/2021/antd表格穿梭框功能.md",
-                "title": "antd表格穿梭框功能",
-                "link": "posts/2021/antd表格穿梭框功能.html",
-                "date": "2020/05/15",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "antd",
-                    "Angular"
-                ],
-                "tags": [
-                    "antd",
-                    "穿梭框",
-                    "表格"
-                ],
-                "excerpt": "angular-antd穿梭框功能实现"
-            },
-            {
                 "pagePath": "posts/2020/Vue-router（路由）的知识点.md",
                 "title": "Vue-router（路由）的知识点",
                 "link": "posts/2020/Vue-router（路由）的知识点.html",
@@ -332,48 +393,6 @@ export default {
                     "vue-router"
                 ],
                 "excerpt": "Vue-router（路由）的知识点"
-            },
-            {
-                "pagePath": "posts/2020/Angular 页面水印功能实现.md",
-                "title": "Angular 页面水印功能实现",
-                "link": "posts/2020/Angular 页面水印功能实现.html",
-                "date": "2020/01/27",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "Angular"
-                ],
-                "tags": [
-                    "水印",
-                    "页面水印",
-                    "Angular"
-                ],
-                "excerpt": "Angular 页面水印功能实现",
-                "cover": "https://willern.gitee.io/2021/01/27/20210127/water-mark.png"
-            },
-            {
-                "pagePath": "posts/2020/解决网站网页html css兼容性问题.md",
-                "title": "解决网站网页html css兼容性问题",
-                "link": "posts/2020/解决网站网页html css兼容性问题.html",
-                "date": "2020/01/21",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "前端"
-                ],
-                "tags": [
-                    "前端",
-                    "兼容性",
-                    "css"
-                ],
-                "excerpt": "总结了在项目设计中遇到的兼容性问题，在此整理出来，以备不时之需。",
-                "cover": "https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWFnZXMyMDE1LmNuYmxvZ3MuY29tL2Jsb2cvNzU3ODI0LzIwMTcwMy83NTc4MjQtMjAxNzAzMjExMDI1NTgyNjgtMjA1NDc4MDUyMS5wbmc?x-oss-process=image/format,png"
             },
             {
                 "pagePath": "posts/2019/多列表的jq展开收起效果.md",
@@ -418,6 +437,10 @@ export default {
             },
             {
                 "name": "ngx-clipboard",
+                "count": 1
+            },
+            {
+                "name": "React",
                 "count": 1
             },
             {
@@ -467,6 +490,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "缓存",
+                "count": 2
+            },
+            {
                 "name": "Angular RouteReuseStrategy",
                 "count": 1
             },
@@ -488,6 +515,10 @@ export default {
             },
             {
                 "name": "Jquery",
+                "count": 1
+            },
+            {
+                "name": "React",
                 "count": 1
             },
             {
@@ -564,10 +595,6 @@ export default {
             },
             {
                 "name": "穿梭框",
-                "count": 1
-            },
-            {
-                "name": "缓存",
                 "count": 1
             },
             {

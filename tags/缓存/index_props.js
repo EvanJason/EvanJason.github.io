@@ -15,6 +15,25 @@ export default {
         "isPost": false,
         "posts": [
             {
+                "pagePath": "posts/2021/使用react-router-cache-route实现页面状态的缓存.md",
+                "title": "使用react-router-cache-route实现页面状态的缓存",
+                "link": "posts/2021/使用react-router-cache-route实现页面状态的缓存.html",
+                "date": "2021/07/15",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "React"
+                ],
+                "tags": [
+                    "React",
+                    "缓存"
+                ],
+                "excerpt": "使用react-router-cache-route实现页面状态的缓存"
+            },
+            {
                 "pagePath": "posts/2020/使用 Angular RouteReuseStrategy 缓存组件.md",
                 "title": "使用 Angular RouteReuseStrategy 缓存组件",
                 "link": "posts/2020/使用 Angular RouteReuseStrategy 缓存组件.html",
@@ -59,6 +78,10 @@ export default {
             },
             {
                 "name": "ngx-clipboard",
+                "count": 1
+            },
+            {
+                "name": "React",
                 "count": 1
             },
             {
@@ -108,6 +131,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "缓存",
+                "count": 2
+            },
+            {
                 "name": "Angular RouteReuseStrategy",
                 "count": 1
             },
@@ -129,6 +156,10 @@ export default {
             },
             {
                 "name": "Jquery",
+                "count": 1
+            },
+            {
+                "name": "React",
                 "count": 1
             },
             {
@@ -205,10 +236,6 @@ export default {
             },
             {
                 "name": "穿梭框",
-                "count": 1
-            },
-            {
-                "name": "缓存",
                 "count": 1
             },
             {

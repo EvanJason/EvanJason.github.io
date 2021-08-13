@@ -1,9 +1,9 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "posts/2020/解决网站网页html css兼容性问题.md",
+    'pagePath': "posts/2021/解决网站网页html css兼容性问题.md",
     'layoutPath': "posts/_layout.tsx",
-    'outputPath': "posts/2020/解决网站网页html css兼容性问题.html",
+    'outputPath': "posts/2021/解决网站网页html css兼容性问题.html",
     'title': "解决网站网页html css兼容性问题",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
             __html: '<h1>解决网站网页html css兼容性问题</h1>\n<p>总结了在项目设计中遇到的兼容性问题，在此整理出来，以备不时之需。</p>\n<h3 id="%E8%A7%A3%E5%86%B3ie8-css-nth-child4n-%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98%E4%B8%BB%E8%A6%81%E6%98%AF%E5%88%A9%E7%94%A8%E7%A1%AC%E6%96%B9%E6%B3%95">解决ie8 css :nth-child(4n) 不兼容问题主要是利用硬方法<a class="anchor" href="#%E8%A7%A3%E5%86%B3ie8-css-nth-child4n-%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98%E4%B8%BB%E8%A6%81%E6%98%AF%E5%88%A9%E7%94%A8%E7%A1%AC%E6%96%B9%E6%B3%95">§</a></h3>\n<pre class="language-css"><code class="language-css"><span class="token selector">第一种：利用first-child<span class="token punctuation">,</span>该方法在ie可以使用\n<span class="token class">.huo_game_</span> ul li<span class="token pseudo-class">:first-child</span><span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token punctuation">,</span>\n<span class="token class">.huo_game_</span> ul li<span class="token pseudo-class">:first-child</span><span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token punctuation">,</span>\n<span class="token class">.huo_game_</span> ul li<span class="token pseudo-class">:first-child</span><span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li</span> <span class="token punctuation">{</span>\n  <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>\n<span class="token punctuation">}</span>\n//还有一种方法就是利用jq的nth-child\n$<span class="token punctuation">(</span><span class="token string">".huo_game_ ul li:nth-child(4n)"</span><span class="token punctuation">)</span>.<span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"margin-right"</span><span class="token punctuation">,</span><span class="token string">"0"</span><span class="token punctuation">)</span>\n</code></pre>\n<h3 id="%E8%A7%A3%E5%86%B3ie7%E7%9A%84%E9%AB%98%E5%BA%A6%E4%B8%A2%E5%A4%B1">解决ie7的高度丢失<a class="anchor" href="#%E8%A7%A3%E5%86%B3ie7%E7%9A%84%E9%AB%98%E5%BA%A6%E4%B8%A2%E5%A4%B1">§</a></h3>\n<p>*padding 或者 _paddding\n*height _height\n*margin _margin\n*width _width</p>\n<h3 id="css--webkit-box-orient-vertical-%E5%B1%9E%E6%80%A7%E7%BC%96%E8%AF%91%E5%90%8E%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98">CSS -webkit-box-orient: vertical 属性编译后丢失问题<a class="anchor" href="#css--webkit-box-orient-vertical-%E5%B1%9E%E6%80%A7%E7%BC%96%E8%AF%91%E5%90%8E%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98">§</a></h3>\n<p>解决方法</p>\n<pre class="language-css"><code class="language-css"><span class="token comment">/* autoprefixer: ignore next */</span>\n<span class="token property">-webkit-box-orient</span><span class="token punctuation">:</span> vertical<span class="token punctuation">;</span>\n</code></pre>\n<h3 id="%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A">高斯模糊<a class="anchor" href="#%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A">§</a></h3>\n<pre class="language-css"><code class="language-css"><span class="token property">filter</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>blur.svg#blur<span class="token punctuation">)</span></span><span class="token punctuation">;</span> <span class="token comment">/* FireFox, Chrome, Opera */</span>\n<span class="token property">-webkit-filter</span><span class="token punctuation">:</span> <span class="token function">blur</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token unit">px</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* Chrome, Opera */</span>\n<span class="token property">-moz-filter</span><span class="token punctuation">:</span> <span class="token function">blur</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token unit">px</span><span class="token punctuation">)</span><span class="token punctuation">;</span>\n<span class="token property">-ms-filter</span><span class="token punctuation">:</span> <span class="token function">blur</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token unit">px</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  \n<span class="token property">filter</span><span class="token punctuation">:</span> <span class="token function">blur</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token unit">px</span><span class="token punctuation">)</span><span class="token punctuation">;</span>\n<span class="token comment">/* IE6~IE9 */</span>\n<span class="token property">filter</span><span class="token punctuation">:</span> <span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.<span class="token function">Blur</span><span class="token punctuation">(</span>PixelRadius=<span class="token number">1</span><span class="token punctuation">,</span> MakeShadow=false<span class="token punctuation">)</span><span class="token punctuation">;</span>\n\n<span class="token comment">/*知识点*/</span>\n<span class="token property">filter</span><span class="token punctuation">:</span><span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.<span class="token function">Blur</span><span class="token punctuation">(</span>PixelRadius=<span class="token string">\'x\'</span><span class="token punctuation">,</span> MakeShadow=<span class="token string">\'x\'</span><span class="token punctuation">,</span> ShadowOpacity=<span class="token string">\'x\'</span><span class="token punctuation">)</span>\n</code></pre>\n<ul>\n<li>PixelRadius，设置对象的模糊半径，1~100数值。</li>\n<li>MakeShadow，设置对象是否投影，布尔值，true和false</li>\n<li>ShadowOpacity，设置对象投影不透明度，0.0~1.0，假如MakeShadow为false那么该值无效。</li>\n</ul>\n<h3 id="rgba%E5%85%BC%E5%AE%B9">rgba兼容<a class="anchor" href="#rgba%E5%85%BC%E5%AE%B9">§</a></h3>\n<p><strong>ie8及以下版本</strong></p>\n<pre class="language-css"><code class="language-css"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token color"><span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">.4</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span>\n<span class="token property">filter</span><span class="token punctuation">:</span> <span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.<span class="token function">gradient</span><span class="token punctuation">(</span>startcolorstr=<span class="token hexcode color">#66000000</span><span class="token punctuation">,</span> endcolorstr=<span class="token hexcode color">#66000000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>\n</code></pre>\n<p>这个颜色“#66000000”是由两部分组成的。\n第一部是#号后面的66。是rgba透明度0.4的IEfilter值。从0.1到0.9每个数字对应一个IEfilter值。对应关系如下：</p>\n<p><a href="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWFnZXMyMDE1LmNuYmxvZ3MuY29tL2Jsb2cvNzU3ODI0LzIwMTcwMy83NTc4MjQtMjAxNzAzMjExMDI1NTgyNjgtMjA1NDc4MDUyMS5wbmc?x-oss-process=image/format,png"><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWFnZXMyMDE1LmNuYmxvZ3MuY29tL2Jsb2cvNzU3ODI0LzIwMTcwMy83NTc4MjQtMjAxNzAzMjExMDI1NTgyNjgtMjA1NDc4MDUyMS5wbmc?x-oss-process=image/format,png" alt="img"></a></p>\n<p>img</p>\n<p>即：alpha*255得到的值再转换为16进制即可。</p>\n<p>第二部分是7f后面的六位 是六进制的颜色值，跟rgb函数中的取值相同，比如rgb(255,255,255)对应#ffffff。</p>\n<h3 id="box-shadow-%E5%85%BC%E5%AE%B9">box-shadow 兼容<a class="anchor" href="#box-shadow-%E5%85%BC%E5%AE%B9">§</a></h3>\n<p><strong>ie8及以下版本</strong></p>\n<pre class="language-css"><code class="language-css"><span class="token property">-moz-box-shadow</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token hexcode color">#000</span><span class="token punctuation">;</span>\n<span class="token property">-webkit-box-shadow</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token hexcode color">#000</span><span class="token punctuation">;</span>\n<span class="token property">box-shadow</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token hexcode color">#000</span><span class="token punctuation">;</span>\n\n<span class="token property">filter</span><span class="token punctuation">:</span> <span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.<span class="token function">Shadow</span><span class="token punctuation">(</span>color=<span class="token color">gray</span><span class="token punctuation">,</span> Direction=<span class="token number">125</span><span class="token punctuation">,</span> Strength=<span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">;</span>\n</code></pre>\n<p>strength是阴影大小，direction是阴影方位，单位为度，可以为负数，color是阴影颜色 （尽量使用数字）\n使用IE滤镜实现盒子阴影的盒子必须是行元素或以行元素显示（block或inline-block;）</p>\n<h3 id="filter%E7%95%8C%E9%9D%A2%E6%BB%A4%E9%95%9C">filter界面滤镜<a class="anchor" href="#filter%E7%95%8C%E9%9D%A2%E6%BB%A4%E9%95%9C">§</a></h3>\n<p>在ie中 <code>filter</code> 分为静态滤镜(Visual Filters)和过渡转场(Transitions Reference)，前者是的效果可以设置元素的不透明度、渐变、模糊、对比度、明度等这些，后者注重的ie的动画效果。</p>\n<pre class="language-css"><code class="language-css"><span class="token selector"><span class="token class">.test</span></span><span class="token punctuation">{</span>\n    <span class="token property">filter</span><span class="token punctuation">:</span><span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.    <span class="token comment">/*.后面都是紧跟着各种滤镜和转场函数*/</span>\n<span class="token punctuation">}</span>\n\n<span class="token comment">/*如：模糊滤镜*/</span>\n<span class="token selector"><span class="token class">.blur</span></span><span class="token punctuation">{</span>\n    <span class="token property">filter</span><span class="token punctuation">:</span><span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.<span class="token function">Blur</span><span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment">/*.函数的开头第一个字母必须大写，括号()里面的滤镜的各种值*/</span>\n<span class="token punctuation">}</span>\n</code></pre>\n<p>一般常用Blur,Shadow,Gradient,对应，filter:blur(),box-shadow,rgba();</p>\n<h3 id="%E5%9C%86%E8%A7%92border-radius%E5%85%BC%E5%AE%B9">圆角border-radius兼容<a class="anchor" href="#%E5%9C%86%E8%A7%92border-radius%E5%85%BC%E5%AE%B9">§</a></h3>\n<p>需要下载PIE.htc\n然后css中</p>\n<pre class="language-css"><code class="language-css"><span class="token comment">/*关键属性设置 需要把路径设置好*/</span>\n<span class="token property">behavior</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>PIE.htc<span class="token punctuation">)</span></span><span class="token punctuation">;</span>\n</code></pre>'
@@ -39,7 +39,7 @@ export default {
     'contributors': [
         "EvanJason"
     ],
-    'date': "2020/01/21",
+    'date': "2021/01/21",
     'updated': null,
     'excerpt': "总结了在项目设计中遇到的兼容性问题，在此整理出来，以备不时之需。",
     'cover': "https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWFnZXMyMDE1LmNuYmxvZ3MuY29tL2Jsb2cvNzU3ODI0LzIwMTcwMy83NTc4MjQtMjAxNzAzMjExMDI1NTgyNjgtMjA1NDc4MDUyMS5wbmc?x-oss-process=image/format,png",
@@ -54,6 +54,78 @@ export default {
     'blog': {
         "isPost": true,
         "posts": [
+            {
+                "pagePath": "posts/2021/使用react-router-cache-route实现页面状态的缓存.md",
+                "title": "使用react-router-cache-route实现页面状态的缓存",
+                "link": "posts/2021/使用react-router-cache-route实现页面状态的缓存.html",
+                "date": "2021/07/15",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "React"
+                ],
+                "tags": [
+                    "React",
+                    "缓存"
+                ],
+                "excerpt": "使用react-router-cache-route实现页面状态的缓存"
+            },
+            {
+                "pagePath": "posts/2021/数组的深浅拷贝.md",
+                "title": "数组的深浅拷贝",
+                "link": "posts/2021/数组的深浅拷贝.html",
+                "date": "2021/06/20",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "tags": [
+                    "深浅拷贝"
+                ],
+                "excerpt": "数组的深浅拷贝"
+            },
+            {
+                "pagePath": "posts/2021/解决webpack css和js分开打包后， ie不识别 defineProperty 的问题.md",
+                "title": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题",
+                "link": "posts/2021/解决webpack css和js分开打包后， ie不识别 defineProperty 的问题.html",
+                "date": "2021/05/27",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "tags": [
+                    "webpack",
+                    "ie",
+                    "defineProperty"
+                ],
+                "excerpt": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题"
+            },
+            {
+                "pagePath": "posts/2021/antd表格穿梭框功能.md",
+                "title": "antd表格穿梭框功能",
+                "link": "posts/2021/antd表格穿梭框功能.html",
+                "date": "2021/05/15",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "antd",
+                    "Angular"
+                ],
+                "tags": [
+                    "antd",
+                    "穿梭框",
+                    "表格"
+                ],
+                "excerpt": "angular-antd穿梭框功能实现"
+            },
             {
                 "pagePath": "posts/2021/Vs Code 前端常用插件.md",
                 "title": "前端常用插件",
@@ -94,6 +166,48 @@ export default {
                 ],
                 "excerpt": "2020年总结 + 新的一年目标和规划",
                 "cover": "https://willern.gitee.io/2021/02/16/20210216/night.jpg"
+            },
+            {
+                "pagePath": "posts/2021/Angular 页面水印功能实现.md",
+                "title": "Angular 页面水印功能实现",
+                "link": "posts/2021/Angular 页面水印功能实现.html",
+                "date": "2021/01/27",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "Angular"
+                ],
+                "tags": [
+                    "水印",
+                    "页面水印",
+                    "Angular"
+                ],
+                "excerpt": "Angular 页面水印功能实现",
+                "cover": "https://willern.gitee.io/2021/01/27/20210127/water-mark.png"
+            },
+            {
+                "pagePath": "posts/2021/解决网站网页html css兼容性问题.md",
+                "title": "解决网站网页html css兼容性问题",
+                "link": "posts/2021/解决网站网页html css兼容性问题.html",
+                "date": "2021/01/21",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "前端"
+                ],
+                "tags": [
+                    "前端",
+                    "兼容性",
+                    "css"
+                ],
+                "excerpt": "总结了在项目设计中遇到的兼容性问题，在此整理出来，以备不时之需。",
+                "cover": "https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWFnZXMyMDE1LmNuYmxvZ3MuY29tL2Jsb2cvNzU3ODI0LzIwMTcwMy83NTc4MjQtMjAxNzAzMjExMDI1NTgyNjgtMjA1NDc4MDUyMS5wbmc?x-oss-process=image/format,png"
             },
             {
                 "pagePath": "posts/2020/树形控件功能实现.md",
@@ -280,59 +394,6 @@ export default {
                 "excerpt": "Vue 动态绑定多个class 带上三元运算或其他条件"
             },
             {
-                "pagePath": "posts/2021/数组的深浅拷贝.md",
-                "title": "数组的深浅拷贝",
-                "link": "posts/2021/数组的深浅拷贝.html",
-                "date": "2020/06/20",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "tags": [
-                    "深浅拷贝"
-                ],
-                "excerpt": "数组的深浅拷贝"
-            },
-            {
-                "pagePath": "posts/2021/解决webpack css和js分开打包后， ie不识别 defineProperty 的问题.md",
-                "title": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题",
-                "link": "posts/2021/解决webpack css和js分开打包后， ie不识别 defineProperty 的问题.html",
-                "date": "2020/05/27",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "tags": [
-                    "webpack",
-                    "ie",
-                    "defineProperty"
-                ],
-                "excerpt": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题"
-            },
-            {
-                "pagePath": "posts/2021/antd表格穿梭框功能.md",
-                "title": "antd表格穿梭框功能",
-                "link": "posts/2021/antd表格穿梭框功能.html",
-                "date": "2020/05/15",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "antd",
-                    "Angular"
-                ],
-                "tags": [
-                    "antd",
-                    "穿梭框",
-                    "表格"
-                ],
-                "excerpt": "angular-antd穿梭框功能实现"
-            },
-            {
                 "pagePath": "posts/2020/Vue-router（路由）的知识点.md",
                 "title": "Vue-router（路由）的知识点",
                 "link": "posts/2020/Vue-router（路由）的知识点.html",
@@ -350,48 +411,6 @@ export default {
                     "vue-router"
                 ],
                 "excerpt": "Vue-router（路由）的知识点"
-            },
-            {
-                "pagePath": "posts/2020/Angular 页面水印功能实现.md",
-                "title": "Angular 页面水印功能实现",
-                "link": "posts/2020/Angular 页面水印功能实现.html",
-                "date": "2020/01/27",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "Angular"
-                ],
-                "tags": [
-                    "水印",
-                    "页面水印",
-                    "Angular"
-                ],
-                "excerpt": "Angular 页面水印功能实现",
-                "cover": "https://willern.gitee.io/2021/01/27/20210127/water-mark.png"
-            },
-            {
-                "pagePath": "posts/2020/解决网站网页html css兼容性问题.md",
-                "title": "解决网站网页html css兼容性问题",
-                "link": "posts/2020/解决网站网页html css兼容性问题.html",
-                "date": "2020/01/21",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "前端"
-                ],
-                "tags": [
-                    "前端",
-                    "兼容性",
-                    "css"
-                ],
-                "excerpt": "总结了在项目设计中遇到的兼容性问题，在此整理出来，以备不时之需。",
-                "cover": "https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWFnZXMyMDE1LmNuYmxvZ3MuY29tL2Jsb2cvNzU3ODI0LzIwMTcwMy83NTc4MjQtMjAxNzAzMjExMDI1NTgyNjgtMjA1NDc4MDUyMS5wbmc?x-oss-process=image/format,png"
             },
             {
                 "pagePath": "posts/2019/多列表的jq展开收起效果.md",
@@ -436,6 +455,10 @@ export default {
             },
             {
                 "name": "ngx-clipboard",
+                "count": 1
+            },
+            {
+                "name": "React",
                 "count": 1
             },
             {
@@ -485,6 +508,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "缓存",
+                "count": 2
+            },
+            {
                 "name": "Angular RouteReuseStrategy",
                 "count": 1
             },
@@ -506,6 +533,10 @@ export default {
             },
             {
                 "name": "Jquery",
+                "count": 1
+            },
+            {
+                "name": "React",
                 "count": 1
             },
             {
@@ -582,10 +613,6 @@ export default {
             },
             {
                 "name": "穿梭框",
-                "count": 1
-            },
-            {
-                "name": "缓存",
                 "count": 1
             },
             {

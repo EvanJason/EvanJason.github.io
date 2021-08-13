@@ -1,0 +1,60 @@
+<!doctype html><html class="" data-reactroot=""><head><link rel="shortcut icon" href="https://willern.gitee.io/img/favicon.ico"/>
+<meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"/><meta data-react-helmet="true" name="description" content="前端技术讨论交流，知识杂谈，生活分享。"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/>
+<title data-react-helmet="true">使用react-router-cache-route实现页面状态的缓存 · 深海如梦的作战实践基地</title>
+<link data-react-helmet="true" rel="stylesheet" href="/assets/index.css"/><link data-react-helmet="true" id="prismTheme" rel="stylesheet" href="/assets/prism.css"/>
+<script data-react-helmet="true" >
+    const shouldSetIsDark = document.cookie.includes('is_dark=1') ? true : document.cookie.includes('is_dark=0') ? false : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (shouldSetIsDark) {
+      document.documentElement.classList.add('is_dark');
+      document.getElementById('prismTheme').href = "/assets/prism_tomorrow.css";
+    }
+  </script>
+</head><body><a class="czs-menu-l show_on_mobile aside_button_open" href="#" style="background-image:url(&quot;/assets/czs-menu-l.svg&quot;)"></a><a class="show_on_mobile aside_button_text" href="/">深海如梦的作战实践基地</a><aside class="hide_on_mobile"><div class="aside_card"><a class="czs-menu-l show_on_mobile aside_button_close" href="#" style="background-image:url(&quot;/assets/czs-close-l.svg&quot;)"></a><h1><a href="/">深海如梦的作战实践基地</a></h1><p class="description">前端技术讨论交流，知识杂谈，生活分享。</p><ul class="social list_style_none"><li class="flex_center"><a class="czs-github-logo" href="https://github.com/yourhug" target="_blank" style="background-image:url(&quot;/assets/czs-github-logo.svg&quot;)"></a></li><li class="flex_center"><a class="czs-message-l" href="mailto:linkenmum@163.com" target="_blank" style="background-image:url(&quot;/assets/czs-message-l.svg&quot;)"></a></li><li style="flex-grow:1"></li><li class="toggle_dark flex_center"><span class="czs-sun" style="background-image:url(&quot;/assets/czs-sun.svg&quot;)"></span><span class="czs-sun-l" style="background-image:url(&quot;/assets/czs-sun-l.svg&quot;)"></span><span class="czs-moon" style="background-image:url(&quot;/assets/czs-moon.svg&quot;)"></span><span class="czs-moon-l" style="background-image:url(&quot;/assets/czs-moon-l.svg&quot;)"></span></li></ul><nav><ul class="menu list_style_none"><li><a class="flex_center" href="/"><span class="czs-home-l" style="background-image:url(&quot;/assets/czs-home-l.svg&quot;)"></span>首页</a></li><li><a class="flex_center" href="/categories/"><span class="czs-category-l" style="background-image:url(&quot;/assets/czs-category-l.svg&quot;)"></span>分类</a></li><li><a class="flex_center" href="/tags/"><span class="czs-tag-l" style="background-image:url(&quot;/assets/czs-tag-l.svg&quot;)"></span>标签</a></li><li><a class="flex_center" href="/about/"><span class="czs-about-l" style="background-image:url(&quot;/assets/czs-about-l.svg&quot;)"></span>关于</a></li><li><a class="flex_center" href="/archives/"><span class="czs-box-l" style="background-image:url(&quot;/assets/czs-box-l.svg&quot;)"></span>归档</a></li><li><a class="flex_center" href="/links/"><span class="czs-link-l" style="background-image:url(&quot;/assets/czs-link-l.svg&quot;)"></span>友情链接</a></li></ul></nav></div><nav class="toc"><ol><li><a href="#%E5%85%B7%E4%BD%93">具体</a></li></ol></nav></aside><section class="main"><h1>使用react-router-cache-route实现页面状态的缓存</h1><div class="main_post_meta"><time dateTime="2021/07/15">2021-07-15</time> · <!-- -->深海如梦</div><article><p>记录一下，以防不时之需</p>
+<h2 id="%E5%85%B7%E4%BD%93">具体<a class="anchor" href="#%E5%85%B7%E4%BD%93">§</a></h2>
+<p>开发中有从详情页返回列表页的需求，这样一来页面返回后使用react-router会直接刷新页面，导致页面中的分页和搜索条件全部丢失，用户体验不佳，所以就必须将列表页的状态进行缓存。
+网上搜索大概有几种方法：
+1、使用localStorage/sessionStorage进行页面的状态的保存，跳转页面后再进行获取，这种方法虽然可行，但是从根本来说还是从新向后台再一次请求了数据，不算最佳方案。
+2、react-activation,尝试未果
+3、react-kepper,需要将项目的react-router替换掉，风险较大，慎用
+4、react-router-cache-route,简单易用，最佳方案</p>
+<p>基本使用方法：
+就是把Switch替换成CacheSwitch,因为因为Switch组件只保留第一个匹配状态的路由，卸载掉其他路由
+把Route替换成CacheRoute</p>
+<p>注意：详情页面回退列表页时使用this.props.history.push(‘’路径')可以实现页面的缓存
+但当使用this.props.history.go(-1)则缓存失败</p>
+<p>具体代码如下：</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> React<span class="token punctuation">,</span><span class="token punctuation">{</span>Component<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Route<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-router-dom'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>CacheRoute<span class="token punctuation">,</span>CacheSwitch<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react-router-cache-route'</span>
+
+
+<span class="token keyword">import</span> PublishExpend <span class="token keyword">from</span> <span class="token string">'./publish/publishExpend.js'</span>
+<span class="token keyword">import</span> PublishExpendDetail <span class="token keyword">from</span> <span class="token string">'./publish/publishExpendDetail.js'</span>
+<span class="token keyword">import</span> EditorExpend2018 <span class="token keyword">from</span> <span class="token string">'./editor/editorExpend2018.js'</span>
+<span class="token keyword">import</span> EditorExpend2019 <span class="token keyword">from</span> <span class="token string">'./editor/editorExpend2019.js'</span>
+<span class="token keyword">import</span> EditorExpend2020 <span class="token keyword">from</span> <span class="token string">'./editor/editorExpend2020.js'</span>
+<span class="token keyword">import</span> ExpenseSearch <span class="token keyword">from</span> <span class="token string">'./search/expenseSearch.js'</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">Expense</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span><span class="token punctuation">{</span>
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//:productId?,后面加上?的意思是可有可无，有的话匹配到有id的路由，没有id的话就匹配之前的路由</span>
+        <span class="token keyword">return</span><span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">'Expense'</span><span class="token operator">></span>
+                    <span class="token operator">&lt;</span>CacheSwitch<span class="token operator">></span>                   
+                        <span class="token operator">&lt;</span>CacheRoute exact path<span class="token operator">=</span><span class="token string">'/platform/expense/publishExpend'</span> component<span class="token operator">=</span><span class="token punctuation">{</span>PublishExpend<span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">></span>                    
+                        <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">'/platform/expense/publishExpend/detail/:expendId?'</span> component<span class="token operator">=</span><span class="token punctuation">{</span>PublishExpendDetail<span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">></span>
+                        <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">'/platform/expense/editorExpend2018'</span> component<span class="token operator">=</span><span class="token punctuation">{</span>EditorExpend2018<span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">></span>
+                        <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">'/platform/expense/editorExpend2019'</span> component<span class="token operator">=</span><span class="token punctuation">{</span>EditorExpend2019<span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">></span>
+                        <span class="token operator">&lt;</span>Route path<span class="token operator">=</span><span class="token string">'/platform/expense/editorExpend2020'</span> component<span class="token operator">=</span><span class="token punctuation">{</span>EditorExpend2020<span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">></span>
+                        <span class="token operator">&lt;</span>Route exact path<span class="token operator">=</span><span class="token string">'/platform/expense/expenseSearch'</span> component<span class="token operator">=</span><span class="token punctuation">{</span>ExpenseSearch<span class="token punctuation">}</span><span class="token operator">/</span><span class="token operator">></span>
+                    <span class="token operator">&lt;</span><span class="token operator">/</span>CacheSwitch<span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> Expense<span class="token punctuation">;</span>
+</code></pre>
+<p>其他方法了解可以前往：<a href="https://github.com/CJY0208/react-router-cache-route/blob/HEAD/README_CN.md">https://github.com/CJY0208/react-router-cache-route/blob/HEAD/README_CN.md</a></p>
+<blockquote>
+<p>本文章转载自：<a href="https://blog.csdn.net/qq_44688392/article/details/108713037">使用react-router-cache-route实现页面状态的缓存_清醒且孤独的博客-CSDN博客</a></p>
+</blockquote></article></section><footer>Powered by <a href="https://github.com/xcatliu/pagic" target="_blank">Pagic</a></footer><script src="https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js"></script><script src="https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script type="module" src="/index.js"></script></body></html>

@@ -15,6 +15,48 @@ export default {
         "isPost": false,
         "posts": [
             {
+                "pagePath": "posts/2021/antd表格穿梭框功能.md",
+                "title": "antd表格穿梭框功能",
+                "link": "posts/2021/antd表格穿梭框功能.html",
+                "date": "2021/05/15",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "antd",
+                    "Angular"
+                ],
+                "tags": [
+                    "antd",
+                    "穿梭框",
+                    "表格"
+                ],
+                "excerpt": "angular-antd穿梭框功能实现"
+            },
+            {
+                "pagePath": "posts/2021/Angular 页面水印功能实现.md",
+                "title": "Angular 页面水印功能实现",
+                "link": "posts/2021/Angular 页面水印功能实现.html",
+                "date": "2021/01/27",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "Angular"
+                ],
+                "tags": [
+                    "水印",
+                    "页面水印",
+                    "Angular"
+                ],
+                "excerpt": "Angular 页面水印功能实现",
+                "cover": "https://willern.gitee.io/2021/01/27/20210127/water-mark.png"
+            },
+            {
                 "pagePath": "posts/2020/树形控件功能实现.md",
                 "title": "树形控件功能",
                 "link": "posts/2020/树形控件功能实现.html",
@@ -137,48 +179,6 @@ export default {
                     "Echarts"
                 ],
                 "excerpt": "Echarts 配置和知识点"
-            },
-            {
-                "pagePath": "posts/2021/antd表格穿梭框功能.md",
-                "title": "antd表格穿梭框功能",
-                "link": "posts/2021/antd表格穿梭框功能.html",
-                "date": "2020/05/15",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "antd",
-                    "Angular"
-                ],
-                "tags": [
-                    "antd",
-                    "穿梭框",
-                    "表格"
-                ],
-                "excerpt": "angular-antd穿梭框功能实现"
-            },
-            {
-                "pagePath": "posts/2020/Angular 页面水印功能实现.md",
-                "title": "Angular 页面水印功能实现",
-                "link": "posts/2020/Angular 页面水印功能实现.html",
-                "date": "2020/01/27",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "Angular"
-                ],
-                "tags": [
-                    "水印",
-                    "页面水印",
-                    "Angular"
-                ],
-                "excerpt": "Angular 页面水印功能实现",
-                "cover": "https://willern.gitee.io/2021/01/27/20210127/water-mark.png"
             }
         ],
         "categories": [
@@ -204,6 +204,10 @@ export default {
             },
             {
                 "name": "ngx-clipboard",
+                "count": 1
+            },
+            {
+                "name": "React",
                 "count": 1
             },
             {
@@ -253,6 +257,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "缓存",
+                "count": 2
+            },
+            {
                 "name": "Angular RouteReuseStrategy",
                 "count": 1
             },
@@ -274,6 +282,10 @@ export default {
             },
             {
                 "name": "Jquery",
+                "count": 1
+            },
+            {
+                "name": "React",
                 "count": 1
             },
             {
@@ -350,10 +362,6 @@ export default {
             },
             {
                 "name": "穿梭框",
-                "count": 1
-            },
-            {
-                "name": "缓存",
                 "count": 1
             },
             {

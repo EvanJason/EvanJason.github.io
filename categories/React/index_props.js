@@ -1,37 +1,37 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "tags/vue-router/",
+    'pagePath': "categories/React/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "tags/vue-router/index.html",
+    'outputPath': "categories/React/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "vue-router",
+    'title': "React",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/2020/Vue-router（路由）的知识点.md",
-                "title": "Vue-router（路由）的知识点",
-                "link": "posts/2020/Vue-router（路由）的知识点.html",
-                "date": "2020/05/01",
+                "pagePath": "posts/2021/使用react-router-cache-route实现页面状态的缓存.md",
+                "title": "使用react-router-cache-route实现页面状态的缓存",
+                "link": "posts/2021/使用react-router-cache-route实现页面状态的缓存.html",
+                "date": "2021/07/15",
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
                     "EvanJason"
                 ],
                 "categories": [
-                    "Vue"
+                    "React"
                 ],
                 "tags": [
-                    "Vue",
-                    "vue-router"
+                    "React",
+                    "缓存"
                 ],
-                "excerpt": "Vue-router（路由）的知识点"
+                "excerpt": "使用react-router-cache-route实现页面状态的缓存"
             }
         ],
         "categories": [
