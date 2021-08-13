@@ -18,11 +18,11 @@ export default {
             __html: ''
         } }),
     'toc': null,
-    'author': "EvanJason",
+    'author': "Evan Jason",
     'contributors': [
-        "EvanJason"
+        "Evan Jason"
     ],
-    'date': "2021-08-13T13:20:34.000Z",
+    'date': "2021-08-13T14:04:42.000Z",
     'updated': null,
     'excerpt': "",
     'cover': undefined,
@@ -37,7 +37,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "React"
@@ -56,7 +56,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "tags": [
                     "深浅拷贝"
@@ -71,7 +71,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "webpack"
@@ -89,7 +89,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "antd",
@@ -110,7 +110,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "vscode"
@@ -130,7 +130,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "日常生活",
@@ -151,7 +151,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "Angular"
@@ -172,7 +172,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "前端"
@@ -193,7 +193,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "antd",
@@ -214,7 +214,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "Angular"
@@ -235,7 +235,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "wangEditor",
@@ -256,7 +256,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "Angular"
@@ -276,7 +276,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "Angular",
@@ -296,7 +296,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "Angular",
@@ -317,7 +317,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "Vue"
@@ -337,7 +337,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "Vue"
@@ -357,7 +357,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "Vue"
@@ -377,7 +377,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "Vue"
@@ -396,7 +396,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "Jquery"

@@ -22,7 +22,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "Angular"
@@ -42,7 +42,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "EvanJason"
+                    "Evan Jason"
                 ],
                 "categories": [
                     "Vue"
