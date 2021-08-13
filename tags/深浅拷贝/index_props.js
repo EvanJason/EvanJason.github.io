@@ -33,7 +33,11 @@ export default {
         "categories": [
             {
                 "name": "Angular",
-                "count": 7
+                "count": 8
+            },
+            {
+                "name": "Vue",
+                "count": 4
             },
             {
                 "name": "antd",
@@ -41,6 +45,10 @@ export default {
             },
             {
                 "name": "Echarts",
+                "count": 1
+            },
+            {
+                "name": "Jquery",
                 "count": 1
             },
             {
@@ -56,17 +64,49 @@ export default {
                 "count": 1
             },
             {
+                "name": "前端",
+                "count": 1
+            },
+            {
                 "name": "富文本",
+                "count": 1
+            },
+            {
+                "name": "年终总结",
+                "count": 1
+            },
+            {
+                "name": "日常生活",
                 "count": 1
             }
         ],
         "tags": [
+            {
+                "name": "Vue",
+                "count": 4
+            },
             {
                 "name": "antd",
                 "count": 3
             },
             {
                 "name": "Angular",
+                "count": 2
+            },
+            {
+                "name": "多类名",
+                "count": 2
+            },
+            {
+                "name": "条件判断",
+                "count": 2
+            },
+            {
+                "name": "Angular RouteReuseStrategy",
+                "count": 1
+            },
+            {
+                "name": "css",
                 "count": 1
             },
             {
@@ -82,7 +122,15 @@ export default {
                 "count": 1
             },
             {
+                "name": "Jquery",
+                "count": 1
+            },
+            {
                 "name": "vscode",
+                "count": 1
+            },
+            {
+                "name": "vue-router",
                 "count": 1
             },
             {
@@ -94,6 +142,18 @@ export default {
                 "count": 1
             },
             {
+                "name": "兼容性",
+                "count": 1
+            },
+            {
+                "name": "分页",
+                "count": 1
+            },
+            {
+                "name": "前端",
+                "count": 1
+            },
+            {
                 "name": "功能",
                 "count": 1
             },
@@ -102,11 +162,11 @@ export default {
                 "count": 1
             },
             {
-                "name": "多类名",
+                "name": "富文本",
                 "count": 1
             },
             {
-                "name": "富文本",
+                "name": "年终总结",
                 "count": 1
             },
             {
@@ -114,7 +174,7 @@ export default {
                 "count": 1
             },
             {
-                "name": "条件判断",
+                "name": "日常生活",
                 "count": 1
             },
             {
@@ -130,6 +190,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "父子路由",
+                "count": 1
+            },
+            {
                 "name": "知识点",
                 "count": 1
             },
@@ -138,7 +202,15 @@ export default {
                 "count": 1
             },
             {
+                "name": "缓存",
+                "count": 1
+            },
+            {
                 "name": "表格",
+                "count": 1
+            },
+            {
+                "name": "路由高亮",
                 "count": 1
             },
             {
