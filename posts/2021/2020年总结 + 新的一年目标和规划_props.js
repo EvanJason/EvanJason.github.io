@@ -31,7 +31,7 @@ export default {
                 React.createElement("a", { href: "#2021%E7%9B%AE%E6%A0%87" }, "2021\u76EE\u6807")))),
     'author': "深海如梦",
     'contributors': [
-        "Evan Jason"
+        "EvanJason"
     ],
     'date': "2021/02/16",
     'updated': null,
@@ -49,6 +49,24 @@ export default {
         "isPost": true,
         "posts": [
             {
+                "pagePath": "posts/2021/语言代码表.md",
+                "title": "语言代码表",
+                "link": "posts/2021/语言代码表.html",
+                "date": "2021/07/27",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "工具"
+                ],
+                "tags": [
+                    "语言代码表"
+                ],
+                "excerpt": "语言代码表"
+            },
+            {
                 "pagePath": "posts/2021/使用react-router-cache-route实现页面状态的缓存.md",
                 "title": "使用react-router-cache-route实现页面状态的缓存",
                 "link": "posts/2021/使用react-router-cache-route实现页面状态的缓存.html",
@@ -56,7 +74,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "React"
@@ -75,7 +93,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "tags": [
                     "深浅拷贝"
@@ -90,7 +108,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "webpack"
@@ -101,6 +119,25 @@ export default {
                 "excerpt": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题"
             },
             {
+                "pagePath": "posts/2021/vscode快捷键.md",
+                "title": "vscode 快捷键",
+                "link": "posts/2021/vscode快捷键.html",
+                "date": "2021/05/25",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "工具"
+                ],
+                "tags": [
+                    "vscode",
+                    "快捷键"
+                ],
+                "excerpt": "vscode快捷键"
+            },
+            {
                 "pagePath": "posts/2021/antd表格穿梭框功能.md",
                 "title": "antd表格穿梭框功能",
                 "link": "posts/2021/antd表格穿梭框功能.html",
@@ -108,7 +145,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "antd",
@@ -129,7 +166,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "vscode"
@@ -149,7 +186,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "日常生活",
@@ -170,7 +207,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Angular"
@@ -191,7 +228,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "前端"
@@ -212,7 +249,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "antd",
@@ -233,7 +270,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Angular"
@@ -254,7 +291,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "wangEditor",
@@ -275,7 +312,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Angular"
@@ -295,7 +332,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Angular",
@@ -315,7 +352,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Angular",
@@ -336,7 +373,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Vue"
@@ -356,7 +393,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Vue"
@@ -376,7 +413,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Vue"
@@ -396,7 +433,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Vue"
@@ -415,7 +452,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Jquery"
@@ -438,6 +475,10 @@ export default {
             },
             {
                 "name": "antd",
+                "count": 2
+            },
+            {
+                "name": "工具",
                 "count": 2
             },
             {
@@ -499,6 +540,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "vscode",
+                "count": 2
+            },
+            {
                 "name": "多类名",
                 "count": 2
             },
@@ -528,10 +573,6 @@ export default {
             },
             {
                 "name": "React",
-                "count": 1
-            },
-            {
-                "name": "vscode",
                 "count": 1
             },
             {
@@ -575,6 +616,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "快捷键",
+                "count": 1
+            },
+            {
                 "name": "插件",
                 "count": 1
             },
@@ -608,6 +653,10 @@ export default {
             },
             {
                 "name": "表格",
+                "count": 1
+            },
+            {
+                "name": "语言代码表",
                 "count": 1
             },
             {

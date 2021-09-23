@@ -22,7 +22,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "React"
@@ -41,7 +41,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Angular"
@@ -66,6 +66,10 @@ export default {
             },
             {
                 "name": "antd",
+                "count": 2
+            },
+            {
+                "name": "工具",
                 "count": 2
             },
             {
@@ -127,6 +131,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "vscode",
+                "count": 2
+            },
+            {
                 "name": "多类名",
                 "count": 2
             },
@@ -156,10 +164,6 @@ export default {
             },
             {
                 "name": "React",
-                "count": 1
-            },
-            {
-                "name": "vscode",
                 "count": 1
             },
             {
@@ -203,6 +207,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "快捷键",
+                "count": 1
+            },
+            {
                 "name": "插件",
                 "count": 1
             },
@@ -236,6 +244,10 @@ export default {
             },
             {
                 "name": "表格",
+                "count": 1
+            },
+            {
+                "name": "语言代码表",
                 "count": 1
             },
             {

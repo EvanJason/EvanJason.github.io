@@ -6,7 +6,7 @@ export default {
     'outputPath': "posts/2021/数组的深浅拷贝.html",
     'title': "数组的深浅拷贝",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>数组的深浅拷贝</h1>\n<pre class="language-typescript"><code class="language-typescript"> <span class="token keyword">const</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">\'1\'</span><span class="token punctuation">,</span><span class="token string">\'2\'</span><span class="token punctuation">,</span><span class="token string">\'3\'</span><span class="token punctuation">]</span>\n <span class="token comment">// JSON.parse(JSON.stringify(obj)) 这个厉害，把setter与getter方法去除 , 这样就不会影响原先的对象</span>\n <span class="token keyword">const</span> arr2 <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>arr1<span class="token punctuation">)</span><span class="token punctuation">)</span>\n arr2<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">4</span>\n <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr1<span class="token punctuation">,</span>arr2<span class="token punctuation">)</span>   <span class="token comment">//arr1:  123   arr2:  423  </span>\n</code></pre>'
+            __html: '<h1>数组的深浅拷贝</h1>\n<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">const</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">\'1\'</span><span class="token punctuation">,</span> <span class="token string">\'2\'</span><span class="token punctuation">,</span> <span class="token string">\'3\'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>\n<span class="token comment">// JSON.parse(JSON.stringify(obj)) 这个厉害，把setter与getter方法去除 , 这样就不会影响原先的对象</span>\n<span class="token keyword">const</span> arr2 <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>arr1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>\narr2<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>\n<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr1<span class="token punctuation">,</span> arr2<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//arr1:  123   arr2:  423</span>\n</code></pre>'
         } }),
     'head': React.createElement("link", { href: "https://willern.gitee.io/img/favicon.ico", rel: "shortcut icon" }),
     'script': React.createElement(React.Fragment, null,
@@ -15,12 +15,12 @@ export default {
         React.createElement("script", { src: "/index.js", type: "module" })),
     'contentTitle': React.createElement("h1", { key: "0" }, "\u6570\u7EC4\u7684\u6DF1\u6D45\u62F7\u8D1D"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<pre class="language-typescript"><code class="language-typescript"> <span class="token keyword">const</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">\'1\'</span><span class="token punctuation">,</span><span class="token string">\'2\'</span><span class="token punctuation">,</span><span class="token string">\'3\'</span><span class="token punctuation">]</span>\n <span class="token comment">// JSON.parse(JSON.stringify(obj)) 这个厉害，把setter与getter方法去除 , 这样就不会影响原先的对象</span>\n <span class="token keyword">const</span> arr2 <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>arr1<span class="token punctuation">)</span><span class="token punctuation">)</span>\n arr2<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">4</span>\n <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr1<span class="token punctuation">,</span>arr2<span class="token punctuation">)</span>   <span class="token comment">//arr1:  123   arr2:  423  </span>\n</code></pre>'
+            __html: '<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">const</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">\'1\'</span><span class="token punctuation">,</span> <span class="token string">\'2\'</span><span class="token punctuation">,</span> <span class="token string">\'3\'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>\n<span class="token comment">// JSON.parse(JSON.stringify(obj)) 这个厉害，把setter与getter方法去除 , 这样就不会影响原先的对象</span>\n<span class="token keyword">const</span> arr2 <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>arr1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>\narr2<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>\n<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr1<span class="token punctuation">,</span> arr2<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//arr1:  123   arr2:  423</span>\n</code></pre>'
         } }),
     'toc': null,
     'author': "深海如梦",
     'contributors': [
-        "Evan Jason"
+        "EvanJason"
     ],
     'date': "2021/06/20",
     'updated': null,
@@ -36,6 +36,24 @@ export default {
         "isPost": true,
         "posts": [
             {
+                "pagePath": "posts/2021/语言代码表.md",
+                "title": "语言代码表",
+                "link": "posts/2021/语言代码表.html",
+                "date": "2021/07/27",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "工具"
+                ],
+                "tags": [
+                    "语言代码表"
+                ],
+                "excerpt": "语言代码表"
+            },
+            {
                 "pagePath": "posts/2021/使用react-router-cache-route实现页面状态的缓存.md",
                 "title": "使用react-router-cache-route实现页面状态的缓存",
                 "link": "posts/2021/使用react-router-cache-route实现页面状态的缓存.html",
@@ -43,7 +61,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "React"
@@ -62,7 +80,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "tags": [
                     "深浅拷贝"
@@ -77,7 +95,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "webpack"
@@ -88,6 +106,25 @@ export default {
                 "excerpt": "解决webpack css和js分开打包后， ie不识别 defineProperty 的问题"
             },
             {
+                "pagePath": "posts/2021/vscode快捷键.md",
+                "title": "vscode 快捷键",
+                "link": "posts/2021/vscode快捷键.html",
+                "date": "2021/05/25",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "工具"
+                ],
+                "tags": [
+                    "vscode",
+                    "快捷键"
+                ],
+                "excerpt": "vscode快捷键"
+            },
+            {
                 "pagePath": "posts/2021/antd表格穿梭框功能.md",
                 "title": "antd表格穿梭框功能",
                 "link": "posts/2021/antd表格穿梭框功能.html",
@@ -95,7 +132,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "antd",
@@ -116,7 +153,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "vscode"
@@ -136,7 +173,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "日常生活",
@@ -157,7 +194,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Angular"
@@ -178,7 +215,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "前端"
@@ -199,7 +236,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "antd",
@@ -220,7 +257,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Angular"
@@ -241,7 +278,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "wangEditor",
@@ -262,7 +299,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Angular"
@@ -282,7 +319,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Angular",
@@ -302,7 +339,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Angular",
@@ -323,7 +360,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Vue"
@@ -343,7 +380,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Vue"
@@ -363,7 +400,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Vue"
@@ -383,7 +420,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Vue"
@@ -402,7 +439,7 @@ export default {
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
-                    "Evan Jason"
+                    "EvanJason"
                 ],
                 "categories": [
                     "Jquery"
@@ -425,6 +462,10 @@ export default {
             },
             {
                 "name": "antd",
+                "count": 2
+            },
+            {
+                "name": "工具",
                 "count": 2
             },
             {
@@ -486,6 +527,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "vscode",
+                "count": 2
+            },
+            {
                 "name": "多类名",
                 "count": 2
             },
@@ -515,10 +560,6 @@ export default {
             },
             {
                 "name": "React",
-                "count": 1
-            },
-            {
-                "name": "vscode",
                 "count": 1
             },
             {
@@ -562,6 +603,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "快捷键",
+                "count": 1
+            },
+            {
                 "name": "插件",
                 "count": 1
             },
@@ -595,6 +640,10 @@ export default {
             },
             {
                 "name": "表格",
+                "count": 1
+            },
+            {
+                "name": "语言代码表",
                 "count": 1
             },
             {
