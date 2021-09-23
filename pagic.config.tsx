@@ -1,3 +1,4 @@
+import { React } from 'https://deno.land/x/pagic@v1.2.1/mod.ts';
 export default {
   srcDir: 'blog',
   theme: "blog",
