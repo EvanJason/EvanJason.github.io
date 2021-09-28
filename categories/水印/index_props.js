@@ -1,37 +1,37 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "categories/Jquery/",
+    'pagePath': "categories/水印/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "categories/Jquery/index.html",
+    'outputPath': "categories/水印/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "Jquery",
+    'title': "水印",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/2019/多列表的jq展开收起效果.md",
-                "title": "多列表的jq展开收起效果",
-                "link": "posts/2019/多列表的jq展开收起效果.html",
-                "date": "2019/12/06",
+                "pagePath": "posts/2021/通用水印功能实现.md",
+                "title": "通用水印功能实现",
+                "link": "posts/2021/通用水印功能实现.html",
+                "date": "2021/09/27",
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
                     "EvanJason"
                 ],
                 "categories": [
-                    "Jquery"
+                    "水印"
                 ],
                 "tags": [
-                    "Jquery"
+                    "水印",
+                    "页面水印"
                 ],
-                "excerpt": "在做项目的时候碰到的一个需求要做多列表的展开和收起的效果，一开始很快就写好了，可是出现了错误，最后找到了原因是因为动画animate()的效果，最后去掉（没有过度动画蛋疼），终于解决。",
-                "cover": "https://img-blog.csdnimg.cn/2019120610061415.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dxc3NoMjE=,size_16,color_FFFFFF,t_70"
+                "excerpt": "新的水印功能实现"
             }
         ],
         "categories": [

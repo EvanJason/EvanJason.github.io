@@ -25,13 +25,32 @@ export default {
     'contributors': [
         "EvanJason"
     ],
-    'date': "2021-09-23T13:57:22.000Z",
+    'date': "2021-09-28T14:10:09.000Z",
     'updated': null,
     'excerpt': "自我介绍 - 前端小白 - 喜欢各种有趣科技型的事物，追各种番剧 - 爱好广泛的养生佛系家里蹲青年 - 记录技术，展示文字，生活杂谈 - 努力努力再努力！",
     'cover': undefined,
     'blog': {
         "isPost": false,
         "posts": [
+            {
+                "pagePath": "posts/2021/通用水印功能实现.md",
+                "title": "通用水印功能实现",
+                "link": "posts/2021/通用水印功能实现.html",
+                "date": "2021/09/27",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "水印"
+                ],
+                "tags": [
+                    "水印",
+                    "页面水印"
+                ],
+                "excerpt": "新的水印功能实现"
+            },
             {
                 "pagePath": "posts/2021/语言代码表.md",
                 "title": "语言代码表",
@@ -508,6 +527,10 @@ export default {
             {
                 "name": "日常生活",
                 "count": 1
+            },
+            {
+                "name": "水印",
+                "count": 1
             }
         ],
         "tags": [
@@ -536,7 +559,15 @@ export default {
                 "count": 2
             },
             {
+                "name": "水印",
+                "count": 2
+            },
+            {
                 "name": "缓存",
+                "count": 2
+            },
+            {
+                "name": "页面水印",
                 "count": 2
             },
             {
@@ -616,10 +647,6 @@ export default {
                 "count": 1
             },
             {
-                "name": "水印",
-                "count": 1
-            },
-            {
                 "name": "深浅拷贝",
                 "count": 1
             },
@@ -649,10 +676,6 @@ export default {
             },
             {
                 "name": "配置",
-                "count": 1
-            },
-            {
-                "name": "页面水印",
                 "count": 1
             }
         ]

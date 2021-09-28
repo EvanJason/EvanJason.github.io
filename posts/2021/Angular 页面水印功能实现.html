@@ -19,40 +19,36 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 </code></pre>
 <h4 id="ts">ts<a class="anchor" href="#ts">§</a></h4>
-<pre class="language-typescript"><code class="language-typescript">  <span class="token comment">// 页面水印</span>
-  watermarkList <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-  <span class="token function">watermark</span><span class="token punctuation">(</span>settings<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class="language-typescript"><code class="language-typescript"><span class="token function">watermark</span><span class="token punctuation">(</span>obj<span class="token operator">:</span> <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span> size<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment">//默认设置</span>
-
-    <span class="token comment">// watermark_x_space: 150,//水印x轴间隔</span>
-    <span class="token comment">// watermark_y_space: 100,//水印y轴间隔</span>
-    <span class="token comment">// watermark_width: 300,//水印宽度</span>
-    <span class="token comment">// watermark_height: 100,//水印长度</span>
     <span class="token keyword">let</span> defaultSettings <span class="token operator">=</span> <span class="token punctuation">{</span>
-      watermark_txt<span class="token operator">:</span> <span class="token string">"text"</span><span class="token punctuation">,</span>
-      watermark_x<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span><span class="token comment">//水印起始位置x轴坐标</span>
-      watermark_y<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span><span class="token comment">//水印起始位置Y轴坐标</span>
-      watermark_rows<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span><span class="token comment">//水印行数</span>
-      watermark_cols<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span><span class="token comment">//水印列数</span>
-      watermark_color<span class="token operator">:</span> <span class="token string">'#000000'</span><span class="token punctuation">,</span><span class="token comment">//水印字体颜色</span>
-      watermark_alpha<span class="token operator">:</span> <span class="token number">0.08</span><span class="token punctuation">,</span><span class="token comment">//水印透明度</span>
-      watermark_fontsize<span class="token operator">:</span> <span class="token string">'18px'</span><span class="token punctuation">,</span><span class="token comment">//水印字体大小</span>
-      watermark_font<span class="token operator">:</span> <span class="token string">'微软雅黑'</span><span class="token punctuation">,</span><span class="token comment">//水印字体</span>
-      watermark_angle<span class="token operator">:</span> <span class="token number">45</span><span class="token punctuation">,</span><span class="token comment">//水印倾斜度数</span>
-      watermark_x_space<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span><span class="token comment">//水印x轴间隔</span>
-      watermark_y_space<span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span><span class="token comment">//水印y轴间隔</span>
-      watermark_width<span class="token operator">:</span> <span class="token number">130</span><span class="token punctuation">,</span><span class="token comment">//水印宽度</span>
-      watermark_height<span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span><span class="token comment">//水印长度</span>
+        watermark_txt<span class="token operator">:</span> obj<span class="token punctuation">.</span>text<span class="token punctuation">,</span>
+        watermark_x<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token comment">//水印起始位置x轴坐标</span>
+        watermark_y<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token comment">//水印起始位置Y轴坐标</span>
+        watermark_rows<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">//水印行数</span>
+        watermark_cols<span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">//水印列数</span>
+        watermark_color<span class="token operator">:</span> <span class="token string">"#000000"</span><span class="token punctuation">,</span> <span class="token comment">//水印字体颜色</span>
+        watermark_alpha<span class="token operator">:</span> <span class="token number">0.08</span><span class="token punctuation">,</span> <span class="token comment">//水印透明度</span>
+        watermark_fontsize<span class="token operator">:</span> obj<span class="token punctuation">.</span>size<span class="token punctuation">,</span> <span class="token comment">//水印字体大小</span>
+        watermark_font<span class="token operator">:</span> <span class="token string">"微软雅黑"</span><span class="token punctuation">,</span> <span class="token comment">//水印字体</span>
+        watermark_angle<span class="token operator">:</span> <span class="token number">45</span><span class="token punctuation">,</span> <span class="token comment">//水印倾斜度数</span>
+        watermark_x_space<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token comment">//水印x轴间隔</span>
+        watermark_y_space<span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span> <span class="token comment">//水印y轴间隔</span>
+        watermark_width<span class="token operator">:</span> <span class="token number">130</span><span class="token punctuation">,</span> <span class="token comment">//水印宽度</span>
+        watermark_height<span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span> <span class="token comment">//水印长度</span>
     <span class="token punctuation">}</span><span class="token punctuation">;</span>
     <span class="token comment">//采用配置项替换默认值，作用类似jquery.extend</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span>arguments<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">1</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> arguments<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token string">"object"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">let</span> src <span class="token operator">=</span> arguments<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> key <span class="token keyword">in</span> src<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>src<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> defaultSettings<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> src<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">===</span> defaultSettings<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span>
-          <span class="token keyword">continue</span><span class="token punctuation">;</span>
-        <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>src<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span>
-          defaultSettings<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> src<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
+        <span class="token keyword">let</span> src <span class="token operator">=</span> arguments<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> key <span class="token keyword">in</span> src<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>
+                src<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span>
+                defaultSettings<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span>
+                src<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">===</span> defaultSettings<span class="token punctuation">[</span>key<span class="token punctuation">]</span>
+            <span class="token punctuation">)</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>src<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span> defaultSettings<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> src<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
 
     <span class="token keyword">let</span> resList <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
@@ -65,56 +61,95 @@
     <span class="token comment">// console.log(page_width,page_height)</span>
 
     <span class="token comment">//如果将水印列数设置为0，或水印列数设置过大，超过页面最大宽度，则重新计算水印列数和水印x轴间隔</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_cols <span class="token operator">===</span> <span class="token number">0</span> <span class="token operator">||</span>  <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_x <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_width <span class="token operator">*</span> defaultSettings<span class="token punctuation">.</span>watermark_cols <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_x_space <span class="token operator">*</span> <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_cols <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">></span> page_width<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      defaultSettings<span class="token punctuation">.</span>watermark_cols <span class="token operator">=</span> <span class="token punctuation">(</span>page_width <span class="token operator">-</span> defaultSettings<span class="token punctuation">.</span>watermark_x  <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_x_space<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_width <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_x_space<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      defaultSettings<span class="token punctuation">.</span>watermark_x_space <span class="token operator">=</span> <span class="token punctuation">(</span>page_width  <span class="token operator">-</span> defaultSettings<span class="token punctuation">.</span>watermark_x  <span class="token operator">-</span> defaultSettings<span class="token punctuation">.</span>watermark_width  <span class="token operator">*</span> defaultSettings<span class="token punctuation">.</span>watermark_cols<span class="token punctuation">)</span>  <span class="token operator">/</span> <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_cols <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>
+        defaultSettings<span class="token punctuation">.</span>watermark_cols <span class="token operator">===</span> <span class="token number">0</span> <span class="token operator">||</span>
+        defaultSettings<span class="token punctuation">.</span>watermark_x <span class="token operator">+</span>
+        defaultSettings<span class="token punctuation">.</span>watermark_width <span class="token operator">*</span> defaultSettings<span class="token punctuation">.</span>watermark_cols <span class="token operator">+</span>
+        defaultSettings<span class="token punctuation">.</span>watermark_x_space <span class="token operator">*</span>
+        <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_cols <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">></span>
+        page_width
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        defaultSettings<span class="token punctuation">.</span>watermark_cols <span class="token operator">=</span>
+            <span class="token punctuation">(</span>page_width <span class="token operator">-</span>
+             defaultSettings<span class="token punctuation">.</span>watermark_x <span class="token operator">+</span>
+             defaultSettings<span class="token punctuation">.</span>watermark_x_space<span class="token punctuation">)</span> <span class="token operator">/</span>
+            <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_width <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_x_space<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        defaultSettings<span class="token punctuation">.</span>watermark_x_space <span class="token operator">=</span>
+            <span class="token punctuation">(</span>page_width <span class="token operator">-</span>
+             defaultSettings<span class="token punctuation">.</span>watermark_x <span class="token operator">-</span>
+             defaultSettings<span class="token punctuation">.</span>watermark_width <span class="token operator">*</span> defaultSettings<span class="token punctuation">.</span>watermark_cols<span class="token punctuation">)</span> <span class="token operator">/</span>
+            <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_cols <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
     <span class="token comment">//如果将水印行数设置为0，或水印行数设置过大，超过页面最大长度，则重新计算水印行数和水印y轴间隔</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_rows <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span>
-      <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_y  <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_height <span class="token operator">*</span> defaultSettings<span class="token punctuation">.</span>watermark_rows  <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_y_space <span class="token operator">*</span> <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_rows <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token operator">></span> page_height<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      defaultSettings<span class="token punctuation">.</span>watermark_rows <span class="token operator">=</span>  <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_y_space  <span class="token operator">+</span> page_height <span class="token operator">-</span> defaultSettings<span class="token punctuation">.</span>watermark_y<span class="token punctuation">)</span>  <span class="token operator">/</span> <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_height <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_y_space<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      defaultSettings<span class="token punctuation">.</span>watermark_y_space <span class="token operator">=</span>  <span class="token punctuation">(</span>page_height  <span class="token operator">-</span> defaultSettings<span class="token punctuation">.</span>watermark_y  <span class="token operator">-</span> defaultSettings<span class="token punctuation">.</span>watermark_height  <span class="token operator">*</span> defaultSettings<span class="token punctuation">.</span>watermark_rows<span class="token punctuation">)</span>  <span class="token operator">/</span> <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_rows <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>
+        defaultSettings<span class="token punctuation">.</span>watermark_rows <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span>
+        defaultSettings<span class="token punctuation">.</span>watermark_y <span class="token operator">+</span>
+        defaultSettings<span class="token punctuation">.</span>watermark_height <span class="token operator">*</span> defaultSettings<span class="token punctuation">.</span>watermark_rows <span class="token operator">+</span>
+        defaultSettings<span class="token punctuation">.</span>watermark_y_space <span class="token operator">*</span>
+        <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_rows <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">></span>
+        page_height
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        defaultSettings<span class="token punctuation">.</span>watermark_rows <span class="token operator">=</span>
+            <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_y_space <span class="token operator">+</span>
+             page_height <span class="token operator">-</span>
+             defaultSettings<span class="token punctuation">.</span>watermark_y<span class="token punctuation">)</span> <span class="token operator">/</span>
+            <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_height <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_y_space<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        defaultSettings<span class="token punctuation">.</span>watermark_y_space <span class="token operator">=</span>
+            <span class="token punctuation">(</span>page_height <span class="token operator">-</span>
+             defaultSettings<span class="token punctuation">.</span>watermark_y <span class="token operator">-</span>
+             defaultSettings<span class="token punctuation">.</span>watermark_height <span class="token operator">*</span> defaultSettings<span class="token punctuation">.</span>watermark_rows<span class="token punctuation">)</span> <span class="token operator">/</span>
+            <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_rows <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
     <span class="token keyword">let</span> x<span class="token punctuation">;</span>
     <span class="token keyword">let</span> y<span class="token punctuation">;</span>
     <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> defaultSettings<span class="token punctuation">.</span>watermark_rows<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      y <span class="token operator">=</span> defaultSettings<span class="token punctuation">.</span>watermark_y <span class="token operator">+</span> <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_y_space <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_height<span class="token punctuation">)</span> <span class="token operator">*</span> i<span class="token punctuation">;</span>
-      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> defaultSettings<span class="token punctuation">.</span>watermark_cols<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        x <span class="token operator">=</span> defaultSettings<span class="token punctuation">.</span>watermark_x <span class="token operator">+</span> <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_width <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_x_space<span class="token punctuation">)</span> <span class="token operator">*</span> j<span class="token punctuation">;</span>
-        <span class="token comment">// 水印对象和样式</span>
-        <span class="token keyword">let</span> mask_div <span class="token operator">=</span> <span class="token punctuation">{</span>
-          style<span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
-          txt<span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">;</span>
-        mask_div<span class="token punctuation">.</span>txt <span class="token operator">=</span> defaultSettings<span class="token punctuation">.</span>watermark_txt<span class="token punctuation">;</span>
-        <span class="token comment">// console.log(j);</span>
-        <span class="token comment">//设置水印div倾斜显示</span>
-        mask_div<span class="token punctuation">.</span>style <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-          <span class="token string">'pointer-events'</span><span class="token operator">:</span> <span class="token string">'none'</span><span class="token punctuation">,</span>
-          <span class="token string">'-webkit-transform'</span><span class="token operator">:</span> <span class="token string">'rotate(-'</span> <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_angle <span class="token operator">+</span> <span class="token string">'deg)'</span><span class="token punctuation">,</span>
-          <span class="token string">'-moz-transform'</span><span class="token operator">:</span> <span class="token string">'rotate(-'</span> <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_angle <span class="token operator">+</span> <span class="token string">'deg)'</span><span class="token punctuation">,</span>
-          <span class="token string">'-ms-transform'</span><span class="token operator">:</span> <span class="token string">'rotate(-'</span> <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_angle <span class="token operator">+</span> <span class="token string">'deg)'</span><span class="token punctuation">,</span>
-          <span class="token string">'-o-transform'</span><span class="token operator">:</span> <span class="token string">'rotate(-'</span> <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_angle <span class="token operator">+</span> <span class="token string">'deg)'</span><span class="token punctuation">,</span>
-          <span class="token string">'transform'</span><span class="token operator">:</span> <span class="token string">'rotate(-'</span> <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_angle <span class="token operator">+</span> <span class="token string">'deg)'</span><span class="token punctuation">,</span>
-          <span class="token string">'position'</span><span class="token operator">:</span> <span class="token string">'absolute'</span><span class="token punctuation">,</span>
-          <span class="token string">'left'</span><span class="token operator">:</span> x <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">,</span>
-          <span class="token string">'top'</span><span class="token operator">:</span> y <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">,</span>
-          <span class="token string">'overflow'</span><span class="token operator">:</span> <span class="token string">'hidden'</span><span class="token punctuation">,</span>
-          <span class="token string">'z-index'</span><span class="token operator">:</span> <span class="token string">'9'</span><span class="token punctuation">,</span>
-          <span class="token string">'opacity'</span><span class="token operator">:</span> defaultSettings<span class="token punctuation">.</span>watermark_alpha<span class="token punctuation">,</span>
-          <span class="token string">'font-size'</span><span class="token operator">:</span> defaultSettings<span class="token punctuation">.</span>watermark_fontsize<span class="token punctuation">,</span>
-          <span class="token string">'font-family'</span><span class="token operator">:</span> defaultSettings<span class="token punctuation">.</span>watermark_font<span class="token punctuation">,</span>
-          <span class="token string">'color'</span><span class="token operator">:</span> defaultSettings<span class="token punctuation">.</span>watermark_color<span class="token punctuation">,</span>
-          <span class="token string">'text-align'</span><span class="token operator">:</span> <span class="token string">'left'</span><span class="token punctuation">,</span>
-          <span class="token string">'width'</span><span class="token operator">:</span> defaultSettings<span class="token punctuation">.</span>watermark_width <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">,</span>
-          <span class="token string">'height'</span><span class="token operator">:</span> defaultSettings<span class="token punctuation">.</span>watermark_height <span class="token operator">+</span> <span class="token string">'px'</span><span class="token punctuation">,</span>
-          <span class="token string">'display'</span><span class="token operator">:</span> <span class="token string">'block'</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        resList <span class="token operator">=</span> resList<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>mask_div<span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
+        y <span class="token operator">=</span>
+            defaultSettings<span class="token punctuation">.</span>watermark_y <span class="token operator">+</span>
+            <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_y_space <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_height<span class="token punctuation">)</span> <span class="token operator">*</span>
+            i<span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> defaultSettings<span class="token punctuation">.</span>watermark_cols<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            x <span class="token operator">=</span>
+                defaultSettings<span class="token punctuation">.</span>watermark_x <span class="token operator">+</span>
+                <span class="token punctuation">(</span>defaultSettings<span class="token punctuation">.</span>watermark_width <span class="token operator">+</span>
+                 defaultSettings<span class="token punctuation">.</span>watermark_x_space<span class="token punctuation">)</span> <span class="token operator">*</span>
+                j<span class="token punctuation">;</span>
+            <span class="token comment">// 水印对象和样式</span>
+            <span class="token keyword">let</span> mask_div <span class="token operator">=</span> <span class="token punctuation">{</span>
+                style<span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+                txt<span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+            mask_div<span class="token punctuation">.</span>txt <span class="token operator">=</span> defaultSettings<span class="token punctuation">.</span>watermark_txt<span class="token punctuation">;</span>
+            <span class="token comment">// console.log(j);</span>
+            <span class="token comment">//设置水印div倾斜显示</span>
+            mask_div<span class="token punctuation">.</span>style <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                <span class="token string">"pointer-events"</span><span class="token operator">:</span> <span class="token string">"none"</span><span class="token punctuation">,</span>
+                <span class="token string">"-webkit-transform"</span><span class="token operator">:</span>
+                <span class="token string">"rotate(-"</span> <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_angle <span class="token operator">+</span> <span class="token string">"deg)"</span><span class="token punctuation">,</span>
+                <span class="token string">"-moz-transform"</span><span class="token operator">:</span>
+                <span class="token string">"rotate(-"</span> <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_angle <span class="token operator">+</span> <span class="token string">"deg)"</span><span class="token punctuation">,</span>
+                <span class="token string">"-ms-transform"</span><span class="token operator">:</span>
+                <span class="token string">"rotate(-"</span> <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_angle <span class="token operator">+</span> <span class="token string">"deg)"</span><span class="token punctuation">,</span>
+                <span class="token string">"-o-transform"</span><span class="token operator">:</span> <span class="token string">"rotate(-"</span> <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_angle <span class="token operator">+</span> <span class="token string">"deg)"</span><span class="token punctuation">,</span>
+                transform<span class="token operator">:</span> <span class="token string">"rotate(-"</span> <span class="token operator">+</span> defaultSettings<span class="token punctuation">.</span>watermark_angle <span class="token operator">+</span> <span class="token string">"deg)"</span><span class="token punctuation">,</span>
+                position<span class="token operator">:</span> <span class="token string">"absolute"</span><span class="token punctuation">,</span>
+                left<span class="token operator">:</span> x <span class="token operator">+</span> <span class="token string">"px"</span><span class="token punctuation">,</span>
+                top<span class="token operator">:</span> y <span class="token operator">+</span> <span class="token string">"px"</span><span class="token punctuation">,</span>
+                overflow<span class="token operator">:</span> <span class="token string">"hidden"</span><span class="token punctuation">,</span>
+                <span class="token string">"z-index"</span><span class="token operator">:</span> <span class="token string">"9"</span><span class="token punctuation">,</span>
+                opacity<span class="token operator">:</span> defaultSettings<span class="token punctuation">.</span>watermark_alpha<span class="token punctuation">,</span>
+                <span class="token string">"font-size"</span><span class="token operator">:</span> defaultSettings<span class="token punctuation">.</span>watermark_fontsize<span class="token punctuation">,</span>
+                <span class="token string">"font-family"</span><span class="token operator">:</span> defaultSettings<span class="token punctuation">.</span>watermark_font<span class="token punctuation">,</span>
+                color<span class="token operator">:</span> defaultSettings<span class="token punctuation">.</span>watermark_color<span class="token punctuation">,</span>
+                <span class="token string">"text-align"</span><span class="token operator">:</span> <span class="token string">"left"</span><span class="token punctuation">,</span>
+                width<span class="token operator">:</span> defaultSettings<span class="token punctuation">.</span>watermark_width <span class="token operator">+</span> <span class="token string">"px"</span><span class="token punctuation">,</span>
+                height<span class="token operator">:</span> defaultSettings<span class="token punctuation">.</span>watermark_height <span class="token operator">+</span> <span class="token string">"px"</span><span class="token punctuation">,</span>
+                display<span class="token operator">:</span> <span class="token string">"block"</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            resList <span class="token operator">=</span> resList<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>mask_div<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
     <span class="token keyword">return</span> resList<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <h4 id="css">css<a class="anchor" href="#css">§</a></h4>
 <pre class="language-css"><code class="language-css"><span class="token selector"><span class="token class">.watermark</span></span><span class="token punctuation">{</span>
@@ -134,18 +169,22 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <h4 id="ngoninit">ngOnInit()<a class="anchor" href="#ngoninit">§</a></h4>
-<pre class="language-typescript"><code class="language-typescript"><span class="token comment">//初始化</span>
+<pre class="language-typescript"><code class="language-typescript"><span class="token comment">// 加水印</span>
+watermarkList <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token function">ngOnInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-      <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">{</span>
-        <span class="token keyword">let</span> text1 <span class="token operator">=</span> <span class="token punctuation">{</span> watermark_txt<span class="token operator">:</span> <span class="token string">'测试测试'</span><span class="token punctuation">,</span> watermark_fontsize<span class="token operator">:</span> <span class="token string">'16px'</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>watermarkList <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">watermark</span><span class="token punctuation">(</span>text1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> item <span class="token keyword">of</span> <span class="token keyword">this</span><span class="token punctuation">.</span>watermarkList<span class="token punctuation">)</span><span class="token punctuation">{</span>
-          <span class="token keyword">let</span> style <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>style<span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token comment">// json字符串转换为json对象，因为ngStyle只支持对象</span>
-          item<span class="token punctuation">.</span>objStyle <span class="token operator">=</span> style<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">1000</span><span class="token punctuation">)</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> text<span class="token operator">:</span><span class="token string">'测试测试'</span><span class="token punctuation">,</span> size<span class="token operator">:</span> <span class="token string">"18px"</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>watermarkList <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>commonService<span class="token punctuation">.</span><span class="token function">watermark</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> item <span class="token keyword">of</span> <span class="token keyword">this</span><span class="token punctuation">.</span>watermarkList<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">let</span> style <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>style<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">// json字符串转换为json对象，因为ngStyle只支持对象</span>
+                item<span class="token punctuation">.</span>objStyle <span class="token operator">=</span> style<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
 </code></pre>
 <h2 id="%E6%95%88%E6%9E%9C%E5%9B%BE">效果图<a class="anchor" href="#%E6%95%88%E6%9E%9C%E5%9B%BE">§</a></h2>
 <p><a href="https://willern.gitee.io/2021/01/27/20210127/water-mark.png"><img src="https://willern.gitee.io/2021/01/27/20210127/water-mark.png" alt="img"></a></p></article></section><footer>Powered by <a href="https://github.com/xcatliu/pagic" target="_blank">Pagic</a></footer><script src="https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js"></script><script src="https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script type="module" src="/index.js"></script></body></html>

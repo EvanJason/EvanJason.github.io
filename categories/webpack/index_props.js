@@ -93,6 +93,10 @@ export default {
             {
                 "name": "日常生活",
                 "count": 1
+            },
+            {
+                "name": "水印",
+                "count": 1
             }
         ],
         "tags": [
@@ -121,7 +125,15 @@ export default {
                 "count": 2
             },
             {
+                "name": "水印",
+                "count": 2
+            },
+            {
                 "name": "缓存",
+                "count": 2
+            },
+            {
+                "name": "页面水印",
                 "count": 2
             },
             {
@@ -201,10 +213,6 @@ export default {
                 "count": 1
             },
             {
-                "name": "水印",
-                "count": 1
-            },
-            {
                 "name": "深浅拷贝",
                 "count": 1
             },
@@ -234,10 +242,6 @@ export default {
             },
             {
                 "name": "配置",
-                "count": 1
-            },
-            {
-                "name": "页面水印",
                 "count": 1
             }
         ]
