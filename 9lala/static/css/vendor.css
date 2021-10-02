@@ -1,0 +1,125 @@
+.follow_btns {
+	text-align: right;
+	float: right;
+	margin-top: 47px
+}
+
+.follow_btns .follow {
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	padding: 6px 20px;
+	border-radius: 6px;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid #ff9935;
+	color: #ff9935;
+	cursor: pointer;
+	transition: .4s all
+}
+
+.follow_btns .follow:hover {
+	color: #fff;
+	background: #ff9935
+}
+
+.follow_btns .follow.on {
+	color: #fff;
+	background: #ff9935
+}
+
+.vendor_info {
+	background-color: #fff;
+	overflow: hidden;
+	padding: 15px;
+	margin-bottom: 20px;
+	display: block
+}
+
+.vendor_info .detail {
+	line-height: 24px;
+	color: #666
+}
+
+.Recom_topics_ul.vendor_rem li {
+	width: 374px;
+	border-radius: 0;
+	overflow: hidden;
+	box-shadow: none;
+	border: none
+}
+
+.Recom_topics_ul.vendor_rem li .img {
+	display: block;
+	height: 180px;
+	border-radius: 15px;
+	overflow: hidden;
+	-webkit-box-shadow: 0 2px 5px #e6e6e6;
+	box-shadow: 0 2px 5px #e6e6e6;
+	border: 1px solid rgba(221,221,221,.7)
+}
+
+.vendor_rem li .info {
+	color: #666;
+	margin-top: 12px;
+	overflow: hidden;
+	line-height: 24px
+}
+
+.vendor_rem li .info a:hover {
+	color: #ff9935
+}
+
+.vendor_rem li .grade_span span {
+	float: left;
+	color: #999
+}
+
+.vendor_rem li .grade_span .compound {
+	height: 17px;
+	width: 18px;
+	background-position: -581px 0;
+	margin-top: 2px;
+	margin-left: 5px
+}
+
+.independent .tab_list.vendor .ranking_list.duli.Following li:nth-child(3n) {
+	margin-right: 0
+}
+
+.independent .vendor .ranking_list.Following li div.tit {
+	width: 204px
+}
+
+.mt15 {
+	margin-top: 15px
+}
+
+.bbs_news.vendor li.image .text-wrapper .time {
+	margin: 47px 10px 0 0;
+	color: #999
+}
+
+.bbs_news.vendor li {
+	border-bottom: 1px dashed #bababa
+}
+
+.bbs_news.vendor li:last-child {
+	border-bottom: none
+}
+
+@media (max-width:959px) {
+	.follow_btns {
+		float: none;
+		text-align: center;
+		margin: .5rem
+	}
+
+	.Recom_topics_ul.vendor_rem li {
+		width: auto
+	}
+
+	.bbs_news li.image .text-wrapper .time {
+		display: none
+	}
+}

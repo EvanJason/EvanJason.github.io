@@ -1,0 +1,1467 @@
+/*
+
+    评价样式
+
+*/
+
+.Game_score_box {
+
+    background: #fff;
+
+    border-radius: 10px;
+
+    margin-top: 15px;
+
+}
+
+
+
+.score .title {
+
+    color: #444;
+
+    font-size: 24px;
+
+}
+
+
+
+.score {
+
+    overflow: hidden;
+
+    padding: 20px 30px;
+
+    position: relative;
+
+}
+
+
+
+.score .deta_p span {
+
+    color: rgb(196, 147, 147);
+
+    font-size: 16px;
+
+    margin: 15px 25px 15px 0;
+
+    display: inline-block;
+
+    max-width: 114px;
+
+    overflow: hidden;
+
+}
+
+
+
+.score_left {
+
+    border-right: 1px solid #eee;
+
+    padding-right: 40px;
+
+    padding-left: 25px;
+
+}
+
+
+
+.score_right {
+
+    padding-left: 40px;
+
+}
+
+
+
+.Bar_charts {
+
+    width: 95%;
+
+    float: left;
+
+    border-top: #eee 1px solid;
+
+    margin-top: 15px;
+
+    padding-top: 15px;
+
+    padding-left: 25px;
+
+}
+
+
+
+.Bar_charts li {
+
+    line-height: 20px;
+
+    height: 20px;
+
+    margin: 10px 0;
+
+}
+
+
+
+.Bar_charts li span {
+
+    font-size: 22px;
+
+    float: left;
+
+    color: #999;
+
+}
+
+
+
+.Bar_charts li i.compound {
+
+    height: 17px;
+
+    width: 18px;
+
+    background-position: -581px -0px;
+
+    float: left;
+
+    margin: 0 20px;
+
+}
+
+
+
+.Bar_charts li .Bar_charts_d1 {
+
+    height: 10px;
+
+    margin: auto;
+
+    width: 80%;
+
+    float: left;
+
+    margin-top: .8%;
+
+    background-color: #fff;
+
+    position: relative;
+
+}
+
+
+
+
+
+.Bar_charts li .Bar_charts_d1 div {
+
+    width: 100%;
+
+    height: 100%;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+}
+
+
+
+.Bar_charts li .Bar_charts_d1 div.Bar_charts_dd_5 {
+
+    background-color: #FF9900;
+
+}
+
+
+
+.Bar_charts li .Bar_charts_d1 div.Bar_charts_dd_4 {
+
+    background-color: #FF9933;
+
+}
+
+
+
+.Bar_charts li .Bar_charts_d1 div.Bar_charts_dd_3 {
+
+    background-color: #FF9966;
+
+}
+
+
+
+.Bar_charts li .Bar_charts_d1 div.Bar_charts_dd_2 {
+
+    background-color: #FF9999;
+
+}
+
+
+
+.Bar_charts li .Bar_charts_d1 div.Bar_charts_dd_1 {
+
+    background-color: #FF99CC;
+
+}
+
+.Bar_charts li .Bar_charts_d1 div.Bar_charts_dd_0 {
+
+    background-color: #ddd;
+
+}
+
+
+
+.A_evaluation {
+
+    padding: 20px;
+
+    background: #fff;
+
+    border-radius: 10px;
+
+    margin-top: 15px;
+
+    border: 1px solid #eee;
+
+}
+
+
+
+.A_evaluation .evaluation_Not_logged {
+
+    text-align: center;
+
+    padding: 40px 25px;
+
+    background: #fafafa;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+.A_evaluation .evaluation_Not_logged p,
+
+.A_evaluation .evaluation_Not_logged p a {
+
+    font-family: Helvetica, Arial, "PingFang SC", "Noto Sans", Roboto, "Microsoft Yahei", sans-serif;
+
+    font-weight: 400;
+
+    color: #333;
+
+    line-height: 22px;
+
+    font-size: 18px;
+
+    margin-top: 20px;
+
+}
+
+
+
+.A_evaluation .evaluation_Not_logged p a {
+
+    color: #ff9935;
+
+}
+
+
+
+.A_evaluation .evaluation_Not_logged img {
+
+    border: 3px solid #fff;
+
+    border-radius: 50%;
+
+    -webkit-box-shadow: 0 0 10px #ff9935;
+
+    box-shadow: 0 0 10px #ff9935;
+
+}
+
+
+
+
+
+.Is_loggedIn_release {
+
+    border: thin solid #eeeeee;
+
+    border-radius: 5px;
+
+}
+
+
+
+.Is_loggedIn_release .Please_indicate {
+
+    border-bottom: thin solid #eeeeee;
+
+    padding: 15px;
+
+    overflow: hidden;
+
+    line-height: 30px;
+
+}
+
+
+
+.Is_loggedIn_release .Please_indicate .tit {
+
+    font-size: 18px;
+
+}
+
+
+
+.Is_loggedIn_release .form-group {
+
+    padding: 10px;
+
+    background: #fafafa;
+
+}
+
+
+
+.Is_loggedIn_release .form-group .form-control {
+
+    width: 100%;
+
+    border: none;
+
+    background: #fafafa;
+
+    line-height: 21.33px;
+
+    border-radius: 0;
+
+    -webkit-box-shadow: none;
+
+    height: 150px;
+
+    box-shadow: none;
+
+    display: block;
+
+    box-sizing: border-box;
+
+    font-size: 16px;
+
+    color: #555;
+
+}
+
+
+
+.form-control:focus {
+
+    outline: 0;
+
+}
+
+
+
+.Please_indicate_ico_1 {
+
+    margin: 0 20px;
+
+    width: 210px;
+
+    height: 30px;
+
+    position: relative;
+
+    background: url(/style/img/star2.png) no-repeat;
+
+}
+
+
+
+.Please_indicate_ico_2 {
+
+    width: 0;
+
+    height: 100%;
+
+    background: url(/style/img/star1.png) no-repeat;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    z-index: 5;
+
+}
+
+
+
+.Please_indicate .click_stars {
+
+    overflow: hidden;
+
+    width: 100%;
+
+    height: 100%;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    z-index: 6;
+
+}
+
+
+
+.Please_indicate .click_stars li {
+
+    float: left;
+
+    width: 20%;
+
+    height: 100%;
+
+    cursor: pointer;
+
+}
+
+
+
+.Please_indicate .stars_prompt {
+
+    color: #9999;
+
+    float: left;
+
+    font-size: 14px;
+
+}
+
+
+
+.Is_logged_in {
+
+    overflow: hidden;
+
+}
+
+
+
+.Is_logged_in button {
+
+    height: 40px;
+
+    border-radius: 20px;
+
+    min-width: 150px;
+
+    background: #ff9935;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    font-family: 'Microsoft YaHei';
+
+    margin-top: 15px;
+
+    border: none;
+
+    float: right;
+
+}
+
+
+
+.Is_logged_in button:hover {
+
+    background: #ed7c31;
+
+}
+
+
+
+
+
+/* 评价 */
+
+.eva-menu {
+
+    padding: 30px 0;
+
+    font-size: 20px;
+
+    border-top: solid dashed #eee;
+
+    border-bottom: 1px dashed #eee;
+
+}
+
+
+
+.eva-menu .order {
+
+    float: right;
+
+    font-size: 14px;
+
+    color: #999999;
+
+}
+
+
+
+.eva-menu p {
+
+    font-size: 16px;
+
+}
+
+
+
+.eva-menu .order a.active {
+
+    color: #ff9935;
+
+}
+
+
+
+.eva-menu .order a {
+
+    margin: 0 10px 0 5px;
+
+    color: #999999;
+
+}
+
+
+
+.eva-menu label {
+
+    font-size: 14px;
+
+    color: #999999;
+
+}
+
+
+
+.eva-menu label {
+
+    font-size: 14px;
+
+    color: #999999;
+
+}
+
+
+
+.comment_ {
+
+    padding: 0;
+
+    width: 100%;
+
+    color: #333333;
+
+    font-size: 16px;
+
+    background: white;
+
+}
+
+
+
+.comment_ .evaluate_item {
+
+    position: relative;
+
+    padding: 20px 0;
+
+    border-bottom: solid 1px #eeeeee;
+
+}
+
+
+
+.comment_ .evaluate_item .login_info {
+
+    display: inline-block;
+
+    *display: inline;
+
+    *zoom: 1;
+
+    width: 58px;
+
+    vertical-align: top;
+
+    text-align: center;
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 5px;
+
+}
+
+
+
+.comment_ .evaluate_item .login_info img {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+}
+
+
+
+.comment_ .evaluate_item .item_content {
+
+    display: block;
+
+    *display: inline;
+
+    *zoom: 1;
+
+    padding-left: 70px;
+
+    word-wrap: break-word;
+
+}
+
+
+
+.item_content .item_text_header {
+
+    overflow: hidden;
+
+    line-height: 20px;
+
+}
+
+
+
+.item_content .item_text_header a {
+
+    color: #666666;
+
+    font-size: 16px;
+
+}
+
+
+
+.item_content .item_text_header span {
+
+    color: #999999;
+
+    font-size: 12px;
+
+}
+
+
+
+.comment_ .item_text_score {
+
+    overflow: hidden;
+
+    margin: 5px 0;
+
+}
+
+
+
+.comment_ .item_text_score .Please_indicate_ico_11 {
+
+    margin: 5px 0;
+
+    width: 90px;
+
+    height: 13px;
+
+    position: relative;
+
+    background: url(/style/img/star11.png) no-repeat;
+
+}
+
+
+
+.comment_ .item_text_score .Please_indicate_ico_22 {
+
+    width: 0;
+
+    height: 100%;
+
+    background: url(/style/img/star22.png) no-repeat;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    z-index: 5;
+
+}
+
+
+
+.item_content .item_text_body{
+
+    margin: 10px 0 5px ;
+
+}
+
+.item_content .item_text_body>p {
+
+    margin-bottom: 10px;
+
+    line-height: 22px;
+
+    min-height: 14px;
+
+    margin-top: 10px;
+
+}
+
+
+
+.action-bar {
+
+    color: #999999;
+
+    font-size: 12px;
+
+    overflow: hidden;
+
+    margin: 15px 0;
+
+}
+
+.reply-area li .action-bar{
+
+    margin: 0;
+
+    margin-top: 5px;
+
+}
+
+.action-bar .com a {
+
+    margin-left: 39px;
+
+    color: #999999;
+
+    font-size: 12px;
+
+}
+
+.Reply_to_box{
+
+    display: none;
+
+}
+
+.Reply_to_box.on{
+
+    display: block;
+
+}
+
+
+
+
+
+.action-bar .com {
+
+    float: right;
+
+}
+
+.action-bar .con{
+
+    float: left;
+
+}
+
+.action-bar .con span{
+
+    font-size: 12px;
+
+}
+
+.action-bar em {
+
+    margin-right: 10px;
+
+    vertical-align: middle;
+
+    display: inline-block;
+
+    *display: inline;
+
+    *zoom: 1;
+
+}
+
+
+
+.detail_all {
+
+    background: url(/style/img/detail_al1l.png) no-repeat;
+
+}
+
+
+
+.favour_b {
+
+    height: 16px;
+
+    width: 16px;
+
+    background-position: -32px 0;
+
+    margin-top: -2px;
+
+
+
+}
+
+
+
+.favour_d {
+
+    height: 16px;
+
+    width: 16px;
+
+    background-position: -32px -34px;
+
+}
+
+
+
+.action-bar .com_1 {
+
+    height: 16px;
+
+    width: 16px;
+
+    margin-top: -2px;
+
+    background-position: -16px 0;
+
+}
+
+
+
+.action-bar .com a:hover .favour_b, .favour_b.on{
+
+    background-position: 0 0;
+
+}
+
+
+
+.action-bar .com a:hover .favour_d,.favour_d.on {
+
+    background-position:  0 -34px;
+
+}
+
+
+
+.action-bar .com a:hover .com_1,.action-bar .com_1.on {
+
+    background-position: -16px -34px;
+
+}
+
+.reply-area {
+
+    font-size: 14px;
+
+    background: #f8f8f8;
+
+    padding: 0 20px;
+
+    margin-top:15px;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+.reply-area li {
+
+    border-bottom: 1px solid #eee;
+
+    padding: 10px 0;
+
+}
+
+
+
+.reply-area .hd {
+
+    height: 30px;
+
+    line-height: 30px;
+
+    overflow: hidden;
+
+}
+
+
+
+.reply-area .txt {
+
+    margin: 5px 0;
+
+    font-size: 12px;
+
+    line-height: 22px;
+
+    color: #333;
+
+}
+
+.reply-area .action-bar .com a{
+
+    margin-left: 25px;
+
+}
+
+.reply-area .info {
+
+    height: 22px;
+
+    line-height: 22px;
+
+    overflow: hidden;
+
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    color: #999;
+
+}
+
+
+
+.reply-area .hd a {
+
+    color: #ff9935;
+
+    font-weight: 700;
+
+}
+
+ .reply-list-more {
+
+    text-align: center;
+
+    font-size: 14px;
+
+    padding: 10px;
+
+    margin: 10px auto 0;
+
+}
+
+
+
+.taptap-icon {
+
+    display: inline-block;
+
+    vertical-align: middle;
+
+    background: url(/style/img/main_icons.png) no-repeat;
+
+    background-size: 52px;
+
+    width: 20px;
+
+    height: 20px;
+
+    background-position: -27px -2px;
+
+}
+
+ .reply-list-more a {
+
+    color: #333;
+
+    height: 30px;
+
+    line-height: 30px;
+
+    display: inline-block;
+
+    border-bottom: 1px solid transparent;
+
+}
+
+.reply-list-more a:hover{
+
+    color: #ff9935;
+
+    border-bottom-color: #ff9935;
+
+}
+
+.reply-list .action-bar{
+
+    min-height: 20px;
+
+}
+
+.reply-list .action-bar .com{
+
+    display: none;
+
+}
+
+.reply-list .action-bar.on .com{
+
+    display: block;
+
+}
+
+.reply-list li .content:hover .com{
+
+    display: block;
+
+}
+
+
+
+
+
+/* 分页 */
+
+
+
+
+
+.fl {
+
+	float: left;
+
+}
+
+
+
+.fr {
+
+	float: right;
+
+}
+
+
+
+.pager {
+
+	max-width: 800px;
+
+	text-align: center;
+
+	margin-bottom: 30px;
+
+	display: inline-block;
+
+}
+
+
+
+.pager a {
+
+	cursor: pointer;
+
+}
+
+
+
+.pager a,
+
+.pager span {
+
+	/* 按钮内数字 */
+
+	width: 45px;
+
+	height: 40px;
+
+	border: 1px solid #EBEBEB;
+
+	margin-left: -1px;
+
+	color: #8a8a8a;
+
+	display: inline-block;
+
+	line-height: 40px;
+
+	float: left;
+
+	font-size: 15px;
+
+	text-decoration: none;
+
+	margin: 0 2px;
+
+	border-radius: 6px;
+
+}
+
+.pager a:hover,
+
+.pager span:hover {
+
+	border-color: #3897cd;
+
+	color: #3897cd;
+
+	position: relative;
+
+	z-index: 1;
+
+}
+
+
+
+.pager span.current {
+
+	background-color: #222A35;
+
+	color: #fff;
+
+	border-color: #EBEBEB;
+
+	position: relative;
+
+	z-index: 1;
+
+}
+
+
+
+.pager .pg-first,
+
+.pager .pg-prev,
+
+.pager .pg-next,
+
+.pager .pg-last {
+
+	background: white url(/style/img/page_bg.jpg)  8px 7px no-repeat;
+
+}
+
+
+
+.pager .pg-first:hover,
+
+.pager .pg-prev:hover,
+
+.pager .pg-next:hover,
+
+.pager .pg-last:hover {
+
+	background: white url(/style/img/page_bg_hover.jpg)  8px 7px no-repeat;
+
+}
+
+
+
+.pager .pg-prev,
+
+.pager .pg-prev:hover {
+
+	background-position: 7px -21px;
+
+}
+
+
+
+.pager .pg-next,
+
+.pager .pg-next:hover {
+
+	background-position: -21px -21px;
+
+}
+
+
+
+.pager .pg-last,
+
+.pager .pg-last:hover {
+
+	background-position: -21px 7px;
+
+}
+
+
+
+.pager .pg-prev[disabled='true'],
+
+.pager .pg-prev[disabled='true']:hover {
+
+	cursor: default;
+
+	background-image: url(/style/img/page_bg.jpg);
+
+}
+
+
+
+.pager .pg-next[disabled='true'],
+
+.pager .pg-next[disabled='true']:hover {
+
+	cursor: default;
+
+	background-image: url(/style/img/page_bg.jpg);
+
+}
+
+
+
+.pager .pg-prev[disabled='true'],
+
+.pager .pg-next[disabled='true'] {
+
+	border-color: #eeeeee;
+
+}
+
+
+
+.pager span.els {
+
+	border-color: transparent;
+
+}
+
+
+
+.pagerHtmlWrap {
+
+	width: 800px;
+
+	margin: 30px auto;
+
+}
+
+
+
+.pagerHtmlWrap .cc_cells {
+
+	width: 100%;
+
+	height: 35px;
+
+	padding: 5px 0;
+
+	border-bottom: 1px #cccccc solid;
+
+}
+
+
+
+.pagerHtmlWrap .cc_cells a {
+
+	color: #454545;
+
+	font-size: 14px;
+
+	line-height: 35px;
+
+	text-decoration: none;
+
+}
+
+
+
+.pagerHtmlWrap .cc_cells a span {
+
+	display: inline-block;
+
+	width: 25%;
+
+	text-align: left;
+
+	margin: 0;
+
+}
+
+/* 结束 */
+
+
+
+
+
+.reply-pager .pager a, .reply-pager .pager span{
+
+    width: auto;
+
+    padding: 0 2px;
+
+    margin: 0 5px;
+
+    border-color: transparent;
+
+    background-color:  transparent;
+
+}
+
+.reply-pager .pager{
+
+    margin-bottom: 0;
+
+}
+
+.reply-pager .pager span.current {
+
+	background-color:  transparent;
+
+	color: #ff9935;
+
+	border-color: transparent;
+
+}
+
+.reply-pager .pg-prev ,
+
+.reply-pager .pg-next,
+
+.reply-pager .pager .pg-last{
+
+    display: none;
+
+}
+
+
+
+.action-bar .Reply_to_box{
+
+    padding-top: 10px;
+
+    float: left;
+
+    width: 100%;
+
+}
+
+.action-bar .Reply_to_box .Is_logged_in{
+
+    width: 100%;
+
+}
+
+
+
+
+
+.comment_ .Is_logged_in button {
+
+    height: 30px;
+
+    min-width: 110px;
+
+    font-size: 14px;
+
+    margin-top: 10px;
+
+}
+
+.reply-list .Is_loggedIn_release .form-group .form-control,
+
+.reply-list .Is_loggedIn_release .form-group{
+
+    background-color: #fff;
+
+}
+
+
+
+
+
+.ecomment{
+
+    background: #f8f8f8;
+
+    padding: 0 7px 5px;
+
+    margin: 10px 0;
+
+    overflow: hidden;
+
+    position: relative;
+
+    -webkit-box-shadow: 0 2px 5px #E6E6E6;
+
+    box-shadow: 0 2px 5px #E6E6E6;
+
+    border: 1px solid rgba(221, 221, 221, .7);
+
+}
+
+.ecomment .ecommentauthor{
+
+    height: 30px;
+
+    line-height: 30px;
+
+    overflow: hidden;
+
+    color: #ff9935;
+
+    font-weight: 700;
+
+}
+
+.ecomment .ecommentauthor a{
+
+    color: #ff9935;
+
+}
+
+.ecomment .ecommenttext{
+
+    line-height: 22px;
+
+    color: #333;
+
+    margin: 5px 0;
+
+}

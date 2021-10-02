@@ -22,7 +22,7 @@ export default {
     'contributors': [
         "EvanJason"
     ],
-    'date': "2021-09-28T14:10:09.000Z",
+    'date': "2021-10-02T16:36:45.000Z",
     'updated': null,
     'excerpt': "深海如梦 — 世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它",
     'cover': undefined,
@@ -33,7 +33,7 @@ export default {
                 "pagePath": "posts/2021/通用水印功能实现.md",
                 "title": "通用水印功能实现",
                 "link": "posts/2021/通用水印功能实现.html",
-                "date": "2021/09/27",
+                "date": "2021/08/16",
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [

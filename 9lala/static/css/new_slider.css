@@ -1,0 +1,160 @@
+#zSlider {
+	position: relative;
+	width: 1200px;
+	height: 450px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+
+#picshow_img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#picshow_img li {
+	width: 100%;
+	overflow: hidden;
+	display: none
+}
+
+#picshow_img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#picshow_tx {
+	left: 0;
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+	height: 80px;
+	overflow: hidden
+}
+
+#picshow_tx li {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: url(../img/des_bg.png) center no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+	display: none
+}
+
+
+#picshow_tx li .info{
+	padding: 0 20px;
+	color: #f9f9f9;
+}
+
+#picshow_tx li .info .score_box{
+	margin: 13px 0;
+	overflow: hidden
+}
+#picshow_tx li .info .score_box .star{
+	float: left;
+	margin: 0;
+	height: 20px;
+}
+#picshow_tx li .info .score_box .score{
+	padding-left: 10px;
+	font-size: 18px;
+}
+
+
+#picshow_tx li p {
+	width: 60%;
+	line-height: 16px;
+	height: 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#select_btn {
+	background: url(../img/hdslide-nav.png) repeat-y left top;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 85px;
+	height: 100%;
+	color: #111;
+	display: inline-block;
+	transition: all .4s;
+}
+#select_btn:hover{
+	width: 230px;
+}
+
+#select_btn ul {
+	padding: 30px 0 0;
+}
+
+#select_btn li {
+	padding: 15px;
+	transition: all .4s ease 0s
+}
+
+#select_btn li a:hover {
+	color: #fff;
+}
+
+#select_btn li.current a {
+	color: #fff
+}
+
+#select_btn li.current,
+#select_btn li.current:hover,
+#select_btn li:hover {
+	border-right: 5px solid #ff9935;
+	background: url(../img/hdslide-nav-cur.png) no-repeat;
+	opacity: 1
+}
+
+#select_btn a {
+	color: #fff
+}
+#select_btn li{
+	overflow: hidden;
+}
+#select_btn li img {
+	width: 48px;
+	height: 48px;
+	margin-right: 10px;
+	float: left;
+	border-radius: 10px
+}
+
+#select_btn li em {
+	overflow: hidden;
+	margin-top: 3px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#select_btn li .tag {
+	color: #f1f1f1;
+	overflow: hidden;
+	margin-top: 5px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#select_btn li .tag span{
+	margin-right: 5px;
+}
+
+.hdslide_nav .arrow {
+    background: url(../img/hdslide-arrow.png) no-repeat center;
+    display: block;
+	height: 15px;
+	margin-top: 6px;
+	transition: all .4s;
+}
+#select_btn:hover .arrow{
+	opacity: 0;
+}

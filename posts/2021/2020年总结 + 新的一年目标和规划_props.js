@@ -52,7 +52,7 @@ export default {
                 "pagePath": "posts/2021/通用水印功能实现.md",
                 "title": "通用水印功能实现",
                 "link": "posts/2021/通用水印功能实现.html",
-                "date": "2021/09/27",
+                "date": "2021/08/16",
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
