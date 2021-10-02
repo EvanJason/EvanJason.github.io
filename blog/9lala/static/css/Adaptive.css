@@ -1,0 +1,8721 @@
+@media screen and (min-width: 960px) {
+  .navbar .w_1200 {
+    background: #ff9935;
+  }
+
+  .header .logo_seek,
+  .position_Box .w_1200 {
+    background: #fff;
+  }
+
+  .footer .w_1200 {
+    background: #333;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .login_choose_box .login_choose_list{
+    border-radius: 0;
+  }
+  .slide-ul p {
+    display: none;
+  }
+  .bbstopic .info .total span {
+    font-size: 12px;
+  }
+  .bbstopic .li-si .newtopic.gf {
+    display: inline-block !important;
+    margin: 0.2rem 0 !important;
+  }
+  .ranking_list .ranking_cs li .gameInfo {
+    width: auto;
+  }
+  .ranking_list .ranking_cs .star_p .game {
+    display: block;
+    margin: 0.05rem 0;
+  }
+  .model_content .model_body p.wx {
+    margin-top: 15px;
+  }
+  .model_content .model_body .panel_footer ul.share {
+    margin-bottom: 10px;
+  }
+  .select_title {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+  }
+  .select_title li {
+    margin: 0;
+  }
+  .select_title li a {
+    font-size: 0.25rem;
+  }
+  .banner-des {
+    height: 70px;
+  }
+  /* 最新帖子 start */
+  .news_box_m {
+    display: block;
+    margin-top: -10px;
+  }
+  .news_box_m ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+  }
+  .news_box_m ul li a.img {
+    float: right;
+    width: 40%;
+    display: block;
+  }
+  .news_box_m ul li a.img img {
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    max-height: 80px;
+    object-fit: cover;
+  }
+  .news_box_m ul li .info_box {
+    float: left;
+    width: 55%;
+    margin-right: 10px;
+  }
+  .news_box_m ul li .info_box .tag {
+    display: block;
+    margin-bottom: 0.2rem;
+    margin-left: -10px;
+    color: #a6a8b0;
+    padding-left: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    border-left: 4px solid #ff9935;
+  }
+  .news_box_m ul li .info_box h2 {
+    font-size: 14px;
+    line-height: 22px;
+    max-height: 44px;
+    font-weight: 600;
+    color: #000;
+    height: auto;
+    margin-bottom: 0.15rem;
+    overflow: hidden;
+  }
+  .news_box_m ul li p {
+    float: left;
+    width: 100%;
+    margin: 0.1rem 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+  }
+  .news_box_m ul li .bottom {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 0.1rem;
+    border-top: 1px solid #ddd;
+  }
+  .news_box_m ul li .bottom span {
+    color: #999;
+  }
+  .news_box_m ul li.big a.img {
+    float: none;
+    width: 100%;
+    max-height: 4rem;
+  }
+  .news_box_m ul li.big a.img img {
+    max-height: 4rem;
+  }
+  .news_box_m ul li.big .info_box {
+    float: none;
+    width: 100%;
+    position: relative;
+  }
+  .news_box_m ul li.big .info_box .tag {
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: -30px;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    line-height: 20px;
+    border: none;
+    color: #fff;
+    background: url(../img/mask.png) center no-repeat;
+    background-size: 100%;
+    text-align: center;
+  }
+  .news_box_m ul li.big .info_box h2 {
+    margin: 10px 0 0;
+    overflow: hidden;
+  }
+  /* 新闻帖子 end */
+  .grade_box em,
+  .section-title h3,
+  .new_reviews_box .review_block p {
+    font-size: 0.3rem;
+  }
+  .section-title h3 {
+    line-height: normal;
+  }
+  .btn-default span {
+    padding: 0;
+    font-size: 0.3rem;
+  }
+  .News_box.m {
+    display: block;
+    margin-top: -0.2rem;
+    margin-bottom: 0.1rem;
+  }
+  .News_box ul li {
+    line-height: normal;
+    height: 25px;
+  }
+  .News_box ul li a {
+    font-size: 0.3rem;
+  }
+  .forum_seek {
+    display: none;
+  }
+  .div_seek {
+    display: block;
+    margin-top: -0.2rem;
+  }
+  .Inform_list.guzn .gzbutt {
+    top: -10px;
+  }
+  .game_xiazai .btn_log,
+  .game_xiazai a {
+    margin: 0.1rem 0.2rem 0;
+  }
+  .game_Deta .game_Desc .gam_The_installation .description {
+    line-height: normal;
+  }
+  .new_reviews_box.anli .ranking_list li div p.grade .compound {
+    margin-top: 0.1rem;
+  }
+  .new_reviews_box.anli .new_reviews_box .review_block p {
+    font-size: 0.3rem;
+  }
+  #new_game {
+    margin-top: -0.25rem;
+  }
+  .new_reviews_box.anli {
+    margin: 0;
+  }
+  .new_reviews_box.anli .follow_me_tit p {
+    padding-bottom: 0;
+  }
+  .new_reviews_box.anli,
+  .Independent_box.home {
+    display: block;
+  }
+  .Independent_box.home .Independent_ul {
+    white-space: nowrap;
+    overflow-x: auto;
+    font-size: 0;
+    padding: 5vw 0 1vw;
+    overflow-y: hidden;
+  }
+  .Independent_box.home .Independent_ul li:nth-child(odd),
+  .Independent_box.home .Independent_ul li:nth-child(even) {
+    margin: auto;
+  }
+  .Independent_box.home .Independent_ul li {
+    float: none;
+    width: 33vw;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 4.8vw !important;
+  }
+  .Independent_box.home .Independent_bot a {
+    font-size: 14px;
+    display: block;
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .new_reviews_box {
+    margin-bottom: 0.4rem;
+  }
+  .game_reviews {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .new_reviews_box .follow_me {
+    display: inline-block;
+    width: 78.6666666667vw;
+    margin-right: 4vw;
+  }
+  .new_reviews_box .review_block p {
+    max-height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+  }
+
+  .w_1200.index {
+    padding: 0.15rem 0.25rem 0;
+  }
+  .w_1200 {
+    padding: 0 0.15rem;
+    max-width: 100%;
+  }
+  .The_main.main {
+    padding-top: 0.25rem;
+  }
+
+  .forums_nav ul.forums_ul,
+  .ranking_min_nav,
+  .ranking_nav ul {
+    -webkit-box-shadow: 0 2px 5px #e6e6e6;
+    box-shadow: 0 2px 5px #e6e6e6;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.7);
+  }
+
+  .Quick_login_box ul li,
+  .bbstopic .info .total,
+  .bbstopic .info .total span,
+  .footer .fl_le,
+  .footer .fl_ri,
+  .footer .fl_ri ul li,
+  .game_Deta .game_Desc .tag a,
+  .game_Deta .game_Portrait,
+  .game_messag_ri,
+  .game_message_le,
+  .header_left_img,
+  .header_left_text,
+  .independent .wgzdyh ul li,
+  .login_choose_box .login_choose_list .ioc li,
+  .ranking_list li .gameInfo,
+  .tab_list .ranking_list li,
+  .userPage_head .userPage_head_left .header_left_text a,
+  .userPage_head_left,
+  .video-topic-list .news_videos li {
+    float: none;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div p,
+  .Mobil_search_box,
+  .Recom_topics_ul li,
+  .The_article_box .The_body .content-bd img,
+  .The_main .The_main_le,
+  .The_main .The_main_ri,
+  .Thumb_comment_forward,
+  .div_seek .input_seek input,
+  .footer .fl_le,
+  .footer .fl_ri,
+  .footer .left-header-logo,
+  .game_Deta .game_Portrait,
+  .game_messag_ri,
+  .game_message_le,
+  .header,
+  .header .logo_seek,
+  .header .navbar ul li,
+  .header_left_text,
+  .score_left,
+  .score_right,
+  .tab-menu,
+  .userPage_head .userPage_head_left,
+  .userPage_head .userPage_head_left .header_left_img,
+  .userPage_head .userPage_head_right ul,
+  .userPage_head_left,
+  .userPage_head_right,
+  .video-topic-list .news_videos li,
+  .video-topic-list .news_videos.duli li,
+  .watching_focus_list .item-content .content-text.on a img,
+  .watching_focus_list .item-content .content-text.on p,
+  form .form-group .control-label {
+    width: 100%;
+  }
+
+  .Coming_soon_ul li img,
+  .Forum_user_ranking_box ul li div.portrait,
+  .header .navbar .pack_up,
+  .new_reviews_box .ranking_list li a img,
+  .ranking_list .ranking_cs .firm_img,
+  .recommend_list .recommend_name .game_name a img {
+    width: 1rem;
+  }
+
+  .bbstopic .con,
+  .bbstopic .desc,
+  .header .logo_seek .seek_portrait,
+  .independent .wgzdyh ul li,
+  .login_choose_box .login_choose,
+  .ranking_list li .gameInfo,
+  .tab_list .ranking_list li,
+  .w_1200 {
+    width: auto;
+  }
+
+  .Forum_user_ranking_box ul li div.level span,
+  .Recently_Viewed_list ul li p,
+  .bbstopic .info .total,
+  .bbstopic .li-si,
+  .div_seek .input_seek input,
+  .footer,
+  .game_Deta,
+  .game_Deta .game_Desc .game_name,
+  .header .logo_seek .log_portrait .user_message .dropdown_menu a,
+  .score .deta_p,
+  .tab-menu .tab-item,
+  .userPage_head {
+    text-align: center;
+  }
+
+  .all_discuss
+    .block-cont-gw
+    .cont-msg-gw
+    .msg-wrap-gw
+    .build-floor-gw
+    .wrap-user-gw,
+  .bbstopic .con,
+  .header .logo_seek .login_mask .w_1200 > div,
+  .login_choose_box .login_choose_list,
+  .ranking_list .ranking_ul > li,
+  .ranking_list li div p.grade {
+    margin-top: 0;
+  }
+
+  .Hot_forums_box,
+  .Independent_ul li,
+  .Mobil_search_box .Top_search ul li,
+  .Personal_box,
+  .Topic_ranking .Topic_ranking_list li,
+  .follow_me,
+  .game_Deta .game_Portrait .game_Portrait_bot span,
+  .idea .discuss,
+  .ranking_list .ranking_ul > li,
+  .tag_ul li,
+  .verification_shade button,
+  .verification_shade input,
+  .watching_focus_box .watching_focus_list {
+    border-radius: 0.1rem;
+  }
+
+  .Independent_ul li img,
+  .Mobil_search_box,
+  .Mobil_search_head .Search-header,
+  .follow_me .follow_m_img,
+  .header .navbar,
+  .header .navbar ._mask,
+  .login_choose_box .login_choose_list,
+  .poster_box ul,
+  .userPage_head .userPage_head_left .header_left_img,
+  .w_1200 {
+    height: 100%;
+  }
+
+  .Mobil_search_box,
+  .bbstopic .li-si,
+  .header .navbar,
+  .header .navbar ._mask,
+  .login_form form .label_box span {
+    top: 0;
+  }
+
+  .Promote_box .Promote_r,
+  .bbstopic,
+  .bbstopic .con,
+  .bbstopic .desc,
+  .bbstopic .info,
+  .footer .footer-left-header,
+  .game_Deta .game_Desc .tag a,
+  .game_message,
+  .news_videos li p,
+  .recommend_list .recommend_name,
+  .tag_ul,
+  .video-topic-list .news_videos li p,
+  .watching_focus_list .item-content .content-text.on a img {
+    height: auto !important;
+  }
+
+  .Coming_soon_ul li img,
+  .Forum_user_ranking_box ul li div.level span,
+  .Forum_user_ranking_box ul li div.name a,
+  .Forum_user_ranking_box ul li div.portrait,
+  .Mobil_search_box .Mobil_search_head,
+  .header,
+  .header .logo_seek,
+  .header .logo_seek .log_portrait .user_message,
+  .header .logo_seek .login_mask .select_way img,
+  .header .navbar .pack_up,
+  .new_reviews_box .ranking_list li a img,
+  .ranking_list .ranking_cs .firm_img,
+  .recommend_list .recommend_name .game_name a img {
+    height: 1rem;
+  }
+
+  .Recently_Viewed_list ul li img,
+  .footer .left-header-logo img,
+  .game_Deta .grade_box.clearfix,
+  .login_form .login_but,
+  .userPage_head .userPage_head_left .header_left_img img {
+    margin: 0 auto;
+  }
+
+  .Mobil_search_box .Top_search ul li,
+  .Mobil_search_head .input_inner,
+  .Mobil_search_head .return,
+  .game_message span,
+  .head-r,
+  .news_videos li div,
+  .tab_list_nav_box .tab_nav ul li {
+    float: left;
+  }
+
+  .Coming_soon_ul ul,
+  .Independent_ul,
+  .Independent_ul li p span,
+  .Recently_Viewed_list ul,
+  .Recom_topics_ul,
+  .Topic_ranking .Topic_ranking_list li .ioc span,
+  .bbstopic .desc,
+  .bbstopic .img,
+  .game_Deta .game_Desc,
+  .game_Deta .game_Desc .gam_The_installation .description span,
+  .game_messag_ri select,
+  .header .logo_seek .login_mask .select_way > div i,
+  .header_left_text,
+  .independent .tab_list .ranking_list.duli.Following li,
+  .new_reviews_box .ranking_list li div p.grade,
+  .new_reviews_box p.review_block_p,
+  .news_videos li,
+  .news_videos li p,
+  .news_videos ul,
+  .position_Box.recommend,
+  .ranking_list .ranking_cs .firm_img img,
+  .ranking_list .ranking_cs .star_p,
+  .ranking_list .ranking_ul li,
+  .ranking_list li .gameInfo p,
+  .ranking_list li a.tx img,
+  .recommend_list .recommend_name .game_name h4,
+  .section-title,
+  .tab_list .ranking_list,
+  .topic-reco li,
+  .type_name span.author_game a,
+  .userPage_head .userPage_head_left .header_left_img,
+  .w_1200 .main,
+  .watching_focus_list .item-content .content-text.on a {
+    margin: 0;
+  }
+
+  .Quick_login_box ul li,
+  .bbstopic .info .total span,
+  .footer .fl_ri ul li,
+  .game_Deta .game_Desc .tag a,
+  .logo_seek .san_san,
+  .ranking_list .ranking_cs .star_p span {
+    display: inline-block;
+  }
+
+  .new_reviews_box.anli,
+  .Independent_ul li img,
+  .Mobil_search_box .Top_search ul li a,
+  .cont-msg-gw .wrap-build-gw .global-clear-spacing,
+  .footer .floatleft > span,
+  .footer .left-header-logo,
+  .footer .left-header-logo img,
+  .gezx_ri,
+  .head-r,
+  .header .logo_seek .login_mask .select_way > div a,
+  .login_choose_box .login_choose_list .ioc li i,
+  .logo_seek .san_san span,
+  .news_videos li a,
+  .searcha-span,
+  .tab-menu,
+  .tab-menu .tab-item:not(:last-child):after,
+  .tab_list .ranking_list li,
+  .tab_seek_box,
+  .tag_ul li a,
+  .userPage_head .userPage_head_left .header_left_text a,
+  .w_The_login .w_The_login_tx img,
+  .ads {
+    display: block;
+  }
+
+  .friend_link,
+  .Mobil_search_box,
+  .My_tool,
+  .The_article_box .The_article_name .text_time,
+  .The_main_ri,
+  .The_main_ri.index_The_main_ri,
+  .Thumb_comment_forward ul li.fenx_box,
+  .eva-menu label,
+  .follow_me_box,
+  .game_Deta .berwm,
+  .game_bbs_ri,
+  .header .logo_seek .nav_form,
+  .header .navbar ._mask,
+  .header .user_name,
+  .main_header-tab .nav_justified li a small,
+  .popular_video_list li .text p,
+  .position p span,
+  .ranking_icon,
+  .ranking_list .ranking_cs .bnt,
+  .ranking_list .ranking_cs .star.star_1,
+  .ranking_list .ranking_cs li .gameInfo em,
+  .ranking_list li .gameInfo p span,
+  .ranking_list li .gameInfo p.tit,
+  .ranking_list li .ranking_list_img,
+  .ranking_list li a.download,
+  .ranking_list li div.download p,
+  .ranking_list li div.tit p.tag,
+  .ranking_top3,
+  .recommend_list .recommend_name .type_grade p,
+  .time_browse.floatright,
+  .watching_focus_list .item-content .content-text.on p,
+  .footer .floatleft > br {
+    display: none;
+  }
+
+  .Coming_soon_ul li,
+  .Independent_ul li img,
+  .Quick_login_box,
+  .Quick_login_box ul,
+  .Recently_Viewed_list ul,
+  .all_discuss .block-cont-gw .cont-msg-gw .msg-wrap-gw,
+  .all_discuss
+    .block-cont-gw
+    .cont-msg-gw
+    .msg-wrap-gw
+    .build-floor-gw
+    .build-msg-gw
+    .user-floor-gw,
+  .all_discuss .block-cont-gw .cont-msg-gw .user-address-gw,
+  .app-topic-list .Recently_Viewed_list ul li,
+  .bbstopic .img,
+  .comment_ .evaluate_item .item_content,
+  .game_messag_ri select,
+  .header .logo_seek,
+  .header .logo_seek .log_portrait .user_message,
+  .header .logo_seek .login_mask .w_1200 > div,
+  .header .navbar .w_1200,
+  .leri-ger3,
+  .leri-ger4,
+  .leri-ger5,
+  .ranking_list li .gameInfo,
+  .score_left,
+  .score_right,
+  .w_1200.persinal_box {
+    padding: 0;
+  }
+
+  .login_form h3,
+  .verification_shade i.Shut_down {
+    font-size: 0.3rem;
+  }
+
+  .comment_ .evaluate_item,
+  .eva-menu,
+  .footer .fl_le,
+  .footer .fl_ri,
+  .login_form .login_nav li a,
+  .login_form .login_nav li span,
+  .userPage_head .userPage_head_left .header_left_text h1 {
+    padding: 0.2rem 0;
+    max-width: 100%;
+  }
+
+  .Hot_forums_box ul li .forum-info h4,
+  .Hot_forums_box ul li > a,
+  .Independent_ul li p,
+  .bbstopic .title .name,
+  .game_message span,
+  .position p,
+  .ranking_list li .gameInfo h4,
+  .ranking_list li .gameInfo p,
+  .type_name span.author_game a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .A_evaluation,
+  .Is_loggedIn_release .Please_indicate,
+  .Is_loggedIn_release .form-group,
+  .Personal_box,
+  .Recommended_project .tit,
+  .bbstopic,
+  .follow_me,
+  .footer,
+  .gamebbs_nav .header_nav_box,
+  .idea .discuss,
+  .list-unstyled_box .follow_me,
+  .login_choose_box .login_choose_list,
+  .new_reviews_box .follow_me,
+  .post-topic-list ul li,
+  .ranking_min_nav ul li a,
+  .recommend_list .recommend_name,
+  .score,
+  .verification_shade > div,
+  .w_1200 .main.box_shadow,
+  .wgzdyh ul li {
+    padding: 0.15rem;
+  }
+
+  .Bar_charts li span,
+  .Forum_user_ranking_box ul li div.level span,
+  .Forum_user_ranking_box ul li div.name a,
+  .Hot_forums_box ul li .forum-info p,
+  .Inform_list .Inform_tet .The_theme h3,
+  .Is_loggedIn_release .Please_indicate .tit,
+  .Is_logged_in button,
+  .Personal_box .Personal_top a,
+  .Recommended_project .tit p,
+  .The_article_box .The_article_name .name_message .name_TOP a,
+  .Topic_ranking .Topic_ranking_list li a.ranking_list_top p,
+  .all_discuss
+    .block-cont-gw
+    .cont-msg-gw
+    .msg-wrap-gw
+    .build-floor-gw
+    .build-msg-gw
+    .user-floor-gw,
+  .comment_,
+  .div_seek .input_seek input,
+  .follow_me .follow_me_fnot p,
+  .footer .fl_ri p,
+  .footer span a,
+  .forums_nav ul.forums_ul li a,
+  .game_message span,
+  .header .logo_seek .login_mask .select_way p,
+  .item_content .item_text_body,
+  .item_content .item_text_body > p,
+  .login_choose_box .login_choose_list p,
+  .login_form form .label_box input,
+  .login_form form .label_box span,
+  .login_form form .label_box.on span,
+  .main_header-tab .nav_justified li a,
+  .more span,
+  .news_videos li p,
+  .post-topic-list ul li > a,
+  .ranking_list li .gameInfo p,
+  .ranking_nav ul li a,
+  .reply-area .hd a,
+  .reply-area .txt,
+  .score .deta_p span,
+  .tab-menu .tab-item,
+  .tag_ul li a,
+  .userPage_head .userPage_head_left .header_left_text p,
+  .userPage_head .userPage_head_right ul li span,
+  .userPage_head .userPage_head_right ul li span.stats_number,
+  .verification_shade button,
+  .verification_shade input,
+  .verification_shade p,
+  .watching_focus_list .item-content a,
+  .wgzdyh ul li .users-container a {
+    font-size: 0.2rem;
+  }
+
+  .Inform_list .Inform_tet .The_publisher span,
+  .action-bar .con span,
+  .game_Deta .game_Portrait .game_Portrait_bot span,
+  .login_choose_box .login_choose_list .ioc li span {
+    font-size: 0.18rem;
+  }
+
+  #header ul li a.on,
+  .A_evaluation,
+  .Game_score_box,
+  .bbstopic,
+  .forums_nav ul.forums_ul,
+  .ranking_list li a.tx img {
+    border-radius: 0;
+  }
+
+  .Mobil_search_head .input_inner input,
+  .Mobil_search_head .submit_btn,
+  .forums_nav ul.forums_ul,
+  .ranking_min_nav,
+  .ranking_nav ul,
+  .score_left,
+  .tab_list .ranking_list li:nth-child(odd) {
+    border: none;
+    margin-bottom: 0.15rem;
+  }
+
+  #header ul li a,
+  .Hot_forums_box ul li button,
+  .Inform_list .Inform_news,
+  .Inform_list .Inform_tet .The_publisher a,
+  .Inform_list.guzn .Inform_tet .The_theme span,
+  .Is_loggedIn_release .form-group .form-control,
+  .Mobil_search_box .Top_search p,
+  .Mobil_search_box .Top_search ul li a,
+  .Please_indicate .stars_prompt,
+  .Quick_login_box .Quick_login_tit span,
+  .Recently_Viewed_list ul li p,
+  .The_article_box .The_article_name .name_message div,
+  .all_discuss .msg-wrap-gw .wrap-issue-gw p,
+  .all_discuss .wrap-user-gw .user-name-gw a,
+  .bbstopic .desc,
+  .eva-menu .order a.active,
+  .eva-menu label,
+  .footer .floatleft > span,
+  .gzbutt span,
+  .list-unstyled li a,
+  .list-unstyled li span,
+  .list-unstyled_box ul.list-unstyled li a,
+  .login_form .login_tips,
+  .no_history p,
+  .position p,
+  .position p a,
+  .post-topic-list ul li > a,
+  .ranking_list li .gameInfo p.tab a,
+  .ranking_min_nav ul li,
+  .ranking_min_nav ul li a,
+  .recommend_list .recommend_name .game_name p,
+  .tab_list_nav_box .tab_nav ul li,
+  .topic-reco li a,
+  .topic-reco span,
+  .type_name span.author_game a,
+  .userPage_head .userPage_head_left .header_left_text a,
+  .verification_shade p.tit,
+  .watching_focus_list .item-content .content-text p,
+  .wgzdyh ul li .gzbutt span,
+  form .form-group .control-label,
+  form .form-group input.form-control {
+    font-size: 0.2rem;
+  }
+
+  .header .logo_seek .seek_portrait {
+    margin-top: 0.02rem;
+  }
+
+  .A_evaluation .evaluation_Not_logged p,
+  .A_evaluation .evaluation_Not_logged p a,
+  .Coming_soon_ul li .Coming_soon_div p,
+  .Hot_forums_box ul li .forum-info h4,
+  .Personal_box .Personal_top h3,
+  .Promote_box .Promote_r a,
+  .Topic_ranking .Topic_ranking_list li .Game_information_tetx p,
+  .bbstopic .title .name,
+  .change_a,
+  .follow_me_tit p,
+  .grad_box p,
+  .h3_tit p,
+  .login_form .login_but,
+  .login_form .login_nav li a,
+  .login_form .login_nav li span,
+  .ranking_list li .gameInfo h4,
+  .ranking_list li > span,
+  .recommend_list .recommend_name .game_name h4,
+  .score .title,
+  .upload_video a span {
+    font-size: 0.25rem;
+  }
+
+  .Promote_box .Promote_r p,
+  .The_article_box .The_body h2,
+  .game_Deta .game_Desc .game_name,
+  .header .navbar ul li a,
+  .userPage_head .userPage_head_left .header_left_text h1 {
+    font-size: 0.4rem;
+  }
+
+  .Popular_game .h3_tit p,
+  .Recommended_project .h3_tit p,
+  .h3_tit p {
+    padding: 0.3rem 0;
+  }
+
+  .eva-menu p {
+    font-size: 0.25rem;
+  }
+
+  .News_box .follow_me {
+    padding: 0.1rem 0.2rem;
+  }
+
+  .header .logo_seek .log_portrait .user_message .dropdown_menu {
+    width: 2.7rem;
+    right: 0.2rem;
+    top: 1.1rem;
+  }
+
+  .header .header_logo {
+    margin-top: 0.27rem;
+  }
+
+  .header_logo img {
+    margin-left: .2rem;
+    width: 2rem;
+  }
+
+  .header,
+  .header .logo_seek {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.7);
+    position: relative;
+  }
+
+  .logo_seek .san_san {
+    margin-top: 0.25rem;
+    margin-right: 0.3rem;
+    margin-left: 0.2rem;
+  }
+
+  .logo_seek .san_san img {
+    height: 0.5rem;
+  }
+
+  .header .logo_seek .log_portrait .user_message .user_portrait {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.2rem;
+    margin-top: 0.2rem;
+  }
+
+  .header .navbar {
+    position: fixed;
+    left: -110%;
+    width: 53%;
+    z-index: 99999;
+    -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.28);
+  }
+
+  .header .navbar ul {
+    position: relative;
+    z-index: 99;
+  }
+
+  .header .navbar ul li a {
+    height: 1rem;
+    line-height: 1rem;
+  }
+
+  .Promote_box .Promote_r a {
+    padding: 5px 14px;
+  }
+
+  .header .navbar .pack_up {
+    background: url(../img/accept.png);
+    background-repeat: no-repeat;
+    background-size: 0.7rem;
+    background-position: center;
+  }
+
+  .header .navbar ._mask {
+    width: 143%;
+    position: absolute;
+    left: 0;
+    z-index: 9;
+  }
+
+  .header .navbar ul li.on {
+    padding: 0 0.2rem;
+    -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.21);
+    box-shadow: 5px 0 30px rgba(0, 0, 0, 0.21);
+  }
+
+  .header .logo_seek .login_mask .w_1200 > i {
+    position: absolute;
+    right: 0;
+    margin: 0.2rem;
+  }
+
+  .header .logo_seek .login_mask .w_1200 > div {
+    min-height: 100vh;
+  }
+
+  .header .logo_seek .login_mask .select_way img {
+    width: 3rem;
+    margin-top: 1rem;
+  }
+
+  .header .logo_seek .login_mask .select_way > div a {
+    height: 14vh !important;
+    margin: 1.5vh 0;
+  }
+
+  .header .logo_seek .login_mask .select_way > div i {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  .header .logo_seek .login_mask .select_way p {
+    line-height: 2;
+  }
+
+  .recommend_list .recommend_img .cover_tag {
+    bottom: 0;
+    left: 0;
+    font-size: 0.25rem;
+    border-radius: 0;
+    display: none;
+  }
+
+  .recommend_list .recommend_name .type_grade .star_2 {
+    width: 100% !important;
+  }
+
+  .recommend_list .recommend_name .type_grade .star {
+    width: 17px;
+  }
+
+  .recommend_list .recommend_name .game_name {
+    width: 78%;
+  }
+
+  .recommend_list .recommend_name .game_name a img {
+    margin-right: 0.15rem;
+  }
+
+  .recommend_list {
+    margin-bottom: 0.25rem;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  .follow_me_tit p {
+    padding: 0.3rem;
+  }
+
+  .follow_me_tit i {
+    height: 0.5rem;
+    top: 28%;
+    width: 2px;
+  }
+
+  .recommend_list .recommend_name .game_name p {
+    line-height: 20px;
+    height: 20px;
+    font-size: 13px;
+    margin: 0.05rem 0;
+  }
+
+  .follow_me .follow_me_fnot .follow_me_ul li {
+    margin: 0.2rem 0.15rem 0;
+  }
+
+  .follow_me .follow_m_img {
+    margin: 0 0.25rem 0 0.2rem;
+  }
+
+  .follow_me .follow_m_img img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .follow_me .follow_me_fnot p {
+    text-align: left;
+  }
+
+  .list-unstyled_box ul.list-unstyled li {
+    margin: 0.1rem;
+  }
+
+  .list-unstyled_box ul.list-unstyled li a {
+    padding: 0.1rem 0.15rem;
+  }
+
+  .ranking_list li a img {
+    width: 1.15rem;
+    margin: 0 0.26rem 0 0.21rem;
+    border-radius: 0.15rem;
+  }
+
+  .ranking_list li div.tit {
+    width: 55%;
+  }
+
+  .ranking_list li div.download {
+    width: 10%;
+  }
+
+  .ranking_list li {
+    margin-bottom: 0.2rem;
+  }
+
+  .ranking_box .follow_me {
+    padding: 0.3rem 0.1rem 0;
+  }
+
+  .ranking_list li > span {
+    line-height: 1rem;
+  }
+
+  .ranking_list li div.download a {
+    line-height: 1rem;
+  }
+
+  .follow_me .follow_me_fnot .follow_me_ul {
+    height: 1.2rem;
+  }
+
+  .Promote_box .Promote_r {
+    width: 4rem;
+  }
+
+  .Promote_box img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .new_reviews_box .ranking_list li div.tit {
+    width: 69%;
+  }
+
+  .new_reviews_box .ranking_list .review_game {
+    padding-bottom: 0.15rem;
+  }
+
+  .new_reviews_box .review_block p {
+    margin-top: 0.15rem;
+    text-indent: 1rem;
+  }
+
+  .new_reviews_box p.review_block_p {
+    line-height: 0.55rem;
+    height: 0.55rem;
+  }
+
+  .new_reviews_box .follow_me {
+    margin-top: 0.15rem;
+  }
+
+  .footer .left-header-logo {
+    margin-bottom: 0.3rem;
+  }
+
+  .footer .left-header-logo img {
+    width: 4rem;
+  }
+
+  .footer .floatleft > span {
+    font-family: Arial;
+    color: #838383;
+    line-height: 2;
+  }
+  .footer .links {
+    margin-bottom: 0.1rem;
+  }
+
+  .tab-menu .tab-item {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    color: #999;
+  }
+
+  .tab-menu .tab-item.on {
+    color: #ff9935;
+    font-weight: 600;
+  }
+
+  .tab-menu {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 0.15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 5px #e6e6e6;
+    box-shadow: 0 2px 5px #e6e6e6;
+  }
+
+  .tab-menu .tab-item:not(:last-child):after {
+    content: "";
+    width: 1px;
+    height: 5.3333333333vw;
+    background: #f1f1f1;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+
+  .div_seek .input_seek {
+    padding: 0.25rem;
+    position: relative;
+  }
+
+  .div_seek .input_seek input {
+    border: 2px solid #ff9935;
+    padding: 0.2rem 0.15rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+  }
+
+  .div_seek .input_seek input::-webkit-input-placeholder {
+    color: #b8a2a2;
+  }
+
+  .div_seek .input_seek input:-moz-placeholder {
+    color: #b8a2a2;
+  }
+
+  .div_seek .input_seek input::-moz-placeholder {
+    color: #b8a2a2;
+  }
+
+  .div_seek .input_seek input:-ms-input-placeholder {
+    color: #b8a2a2;
+  }
+
+  .banner_swiper {
+    height: 5rem;
+  }
+
+  .ranking_list li div p.name {
+    font-size: 0.34rem;
+  }
+
+  .ranking_list li div.tit p {
+    line-height: 0.55rem;
+  }
+
+  .ranking_list li div p.grade .compound {
+    margin-top: 0.15rem;
+  }
+
+  .head-r {
+    position: relative;
+  }
+
+  .searcha-span {
+    margin-right: 0.3rem;
+    padding-top: 0.27rem;
+  }
+
+  .searcha-span img {
+    height: 0.45rem;
+    width: 0.45rem;
+  }
+
+  .Mobil_search_box {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 9999999999999999;
+  }
+
+  .Mobil_search_box .Mobil_search_head {
+    background: #ff9935;
+  }
+
+  .Mobil_search_head .return {
+    padding: 0.3rem 0.2rem 0;
+  }
+
+  .Mobil_search_head .input_inner {
+    margin: 0.22rem 0.28rem 0 0.1rem;
+    width: 75%;
+    position: relative;
+  }
+
+  .Mobil_search_head .input_inner input {
+    width: 95%;
+    height: 0.6rem;
+    border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    padding-left: 5%;
+  }
+
+  .Mobil_search_head .submit_btn {
+    background: url(../img/search2.png) no-repeat center center;
+    background-size: cover;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-top: 0.33rem;
+  }
+
+  .Mobil_search_box .Top_search p {
+    color: #999;
+    background-color: #fafafa;
+    padding: 0.15rem 0.2rem;
+  }
+
+  .Mobil_search_box .Top_search ul {
+    overflow: hidden;
+  }
+
+  .Mobil_search_box .Top_search ul li {
+    margin: 0.1rem;
+    background-color: #ff9935;
+  }
+
+  .Mobil_search_box .Top_search ul li a {
+    padding: 0.05rem 0.15rem;
+    color: #fff;
+  }
+
+  .header .logo_seek .log_portrait.log_user {
+    margin-top: 0.15rem;
+    margin-right: 0.2rem;
+  }
+
+  .w_The_login .w_The_login_tx img {
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+
+  .login_choose_box .login_choose_Shut_down {
+    z-index: 9999;
+    right: 0.25rem;
+    top: 0.5rem;
+  }
+
+  .login_choose_box .login_choose_list > img {
+    margin: 0.5rem auto 0;
+    width: 2.5rem;
+  }
+
+  .login_choose_box .login_choose_list .ioc li i {
+    margin: 0.3rem auto;
+  }
+
+  .ranking_nav ul li {
+    padding: 0 0.14rem;
+  }
+
+  .ranking_list .ranking_ul > li {
+    padding: 0.2rem;
+  }
+
+  .ranking_list li a.tx img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .ranking_list li .rank-num {
+    left: -0.015rem;
+    top: -0.015rem;
+  }
+
+  .ranking_list li a.tx {
+    border-radius: 0.35rem;
+    margin-right: 0.2rem;
+  }
+
+  .more span {
+    padding: 0.25rem 0.6rem;
+    border-radius: 0.15rem;
+  }
+
+  .more {
+    padding: 0.3rem;
+  }
+
+  .ranking_min_nav {
+    padding: 0.25rem 0;
+    background: #fff;
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .ranking_nav {
+    background: #fff;
+    margin-bottom: 0.15rem;
+  }
+
+  .position_Box {
+    margin-bottom: 0.2rem;
+  }
+
+  .position {
+    height: 0.8rem;
+    line-height: 0.7rem;
+  }
+
+  .ranking_list li .gameInfo p.tab a {
+    margin-right: 0.15rem;
+  }
+
+  .ranking_list li .gameInfo p.tab {
+    margin-top: 0.15rem;
+  }
+
+  .ranking_list .ranking_cs .firm_img {
+    margin-right: 0.2rem;
+  }
+
+  .ranking_list .ranking_cs li .gameInfo .info-item {
+    padding-left: 0.05rem;
+  }
+
+  #recommend_lb {
+    height: 4rem;
+    max-height: 100%;
+  }
+
+  .recommend_lb {
+    margin-top: 0.2rem;
+    border-radius: 0.15rem;
+  }
+
+  .recommend_lb .swiper-pagination-switch {
+    width: 0.15rem;
+    height: 0.15rem;
+    margin-right: 0.15rem;
+  }
+
+  .tag_ul li {
+    border: #ff9935 1px solid;
+    margin: 0.2rem 0.1rem 0;
+  }
+
+  .tag_ul li a {
+    padding: 0.1rem 0.15rem;
+  }
+
+  .change_a {
+    bottom: 0.32rem;
+  }
+
+  .ranking_list .ranking_ul li {
+    margin-top: 0.2rem;
+  }
+
+  .Independent_ul li {
+    margin-top: 0.2rem;
+    width: 42%;
+    padding: 3%;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  .Independent_ul li img {
+    width: 90%;
+    max-height: 3rem;
+    margin: 3% auto;
+  }
+
+  .Independent_bot {
+    margin-top: 0.15rem;
+  }
+
+  .Independent_ul li:nth-child(odd) {
+    margin: 0.2rem 2% 0 0;
+  }
+
+  .Independent_ul li:nth-child(even) {
+    margin: 0.2rem 0 0 2%;
+  }
+
+  .Independent_ul li p {
+    margin-top: 0.15rem;
+    height: 0.6rem;
+    line-height: 0.3rem;
+  }
+
+  .Coming_soon_ul li {
+    width: 42%;
+    padding: 3%;
+    border-radius: 0.1rem;
+    margin: 0;
+  }
+
+  .Coming_soon_ul li:nth-child(odd) {
+    margin: 0.2rem 1% 0 0;
+  }
+
+  .Coming_soon_ul li:nth-child(even) {
+    margin: 0.2rem 0 0 1%;
+  }
+
+  .Coming_soon_ul li img {
+    height: auto;
+    width: 90%;
+    margin: 3% auto;
+    float: none;
+    display: block;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div {
+    width: 100%;
+    float: none;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div p {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div a {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+
+  .Recom_topics_ul li {
+    margin: 0.2rem 0 0 0;
+    height: 4.5rem;
+  }
+
+  .forums_nav ul.forums_ul {
+    white-space: nowrap;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+  }
+
+  .forums_nav ul.forums_ul li a {
+    padding: 0.1rem 0.2rem;
+    background: #dddddd;
+  }
+
+  .watching_focus_box .watching_focus_list {
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .watching_focus_box .watching_focus_list:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  .type_name span.author_game a {
+    max-width: 49%;
+  }
+
+  .watching_focus_list .item-content .item-title {
+    line-height: normal;
+  }
+
+  .right_menu {
+    top: 0.3rem;
+    right: 0.2rem;
+  }
+
+  .watching_focus_list .item-content {
+    padding-bottom: 0.15rem;
+  }
+
+  .Thumb_comment_forward ul li {
+    max-width: 45%;
+  }
+
+  .Hot_forums_box {
+    padding: 0.2rem 0.2rem 0;
+  }
+
+  .Hot_forums_box ul li .item-icon img {
+    margin-right: 0.2rem;
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .Hot_forums_box ul li > a {
+    width: 66vw;
+  }
+
+  .Hot_forums_box ul li .forum-info h4 {
+    width: 42vw;
+    margin-top: 0.1rem;
+  }
+
+  .Hot_forums_box ul li .forum-info p {
+    margin: 0.15rem 0;
+  }
+
+  .Hot_forums_box ul li {
+    margin: 0.1rem 0 0.25rem;
+  }
+
+  .Hot_forums_box ul li button {
+    min-width: 20vw;
+    margin-top: 0.3rem;
+  }
+
+  .Recently_Viewed_list ul li {
+    margin: 3vw 2vw 0;
+    width: 27.5vw;
+  }
+
+  .Recently_Viewed_list ul {
+    padding-bottom: 0.2rem;
+  }
+
+  .Recently_Viewed_list ul li img {
+    width: 70%;
+  }
+
+  .Following_Game .Hot_forums_box ul li .forum-info h4,
+  .Following_Game .Hot_forums_box ul li .forum-info p,
+  .Hot_Forums .Hot_forums_box ul li .forum-info h4,
+  .Hot_Forums .Hot_forums_box ul li .forum-info p {
+    width: 65vw;
+  }
+
+  .Hot_forums_box ul.rem_Hot_Forums li > a {
+    width: 88vw;
+  }
+
+  .The_official .Hot_forums_box ul li > a .forum-info {
+    width: 45vw;
+  }
+
+  .Topic_ranking .Topic_ranking_list li .ioc div {
+    max-width: 28.9vw;
+  }
+
+  .Topic_ranking .Topic_ranking_list li {
+    padding: 0.2rem 0.2rem 0.1rem;
+  }
+
+  .Topic_ranking .Topic_ranking_list li .ioc span {
+    max-width: 65%;
+    font-size: 14px;
+  }
+
+  .Topic_ranking .Topic_ranking_list li .ioc i {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  .Topic_ranking .Topic_ranking_list li a.ranking_list_top img {
+    width: 3rem;
+    height: 1.6rem;
+  }
+
+  .Topic_ranking .Topic_ranking_list li a.ranking_list_top p {
+    height: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .header_nav_box::after,
+  .header_nav_box::before {
+    width: 0.3rem;
+  }
+
+  .header_nav_box {
+    padding: 0.15rem 0.3rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .The_article_box {
+    padding: 0.2rem;
+  }
+
+  .The_article_box .The_article_name .portrait {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+
+  .The_article_box .The_article_name .portrait img {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+
+  .The_article_box .The_article_name .name_message .name_TOP a {
+    line-height: 1.7;
+  }
+
+  .The_article_box .The_body h2 {
+    margin-top: 0.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .The_article_box .The_body .content-bd {
+    font-size: 0.32rem;
+    line-height: 1.8;
+    margin-top: 0.2rem;
+  }
+
+  .discuss .all_discuss .all_discuss_tit .number {
+    margin-right: -0.7rem;
+  }
+
+  .discuss .Comment_box .face_publish .text-publish button,
+  .discuss .all_discuss .all_discuss_tit .number {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  .discuss .all_discuss .all_discuss_tit .all_discuss_t {
+    left: -0.25rem !important;
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+
+  .discuss .Comment_box .Comment-status {
+    padding: 0.15rem 0.1rem 0.1rem;
+  }
+
+  .discuss .Comment_box .Comment-status .textarea-fw {
+    height: 1.5rem;
+  }
+
+  .all_discuss .block-cont-gw .cont-msg-gw .msg-wrap-gw .build-floor-gw {
+    padding: 0.1rem;
+  }
+
+  .discuss .all_discuss .all_discuss_tit {
+    margin-bottom: 0.3rem;
+  }
+
+  .all_discuss .block-cont-gw {
+    padding-top: 0.2rem;
+  }
+
+  .all_discuss .block-cont-gw .cont-msg-gw .global-clear-spacing a {
+    padding-left: 0.25rem;
+  }
+
+  .all_discuss
+    .block-cont-gw
+    .cont-msg-gw
+    .msg-wrap-gw
+    .build-floor-gw
+    .wrap-user-gw {
+    height: 0.7rem;
+    line-height: 2.5;
+  }
+
+  .cont-msg-gw .wrap-build-gw {
+    margin: 0.45rem 0 0.2rem;
+  }
+
+  .all_discuss .block-cont-gw .cont-msg-gw .wrap-user-gw {
+    margin-top: 0.15rem;
+  }
+
+  .expression {
+    width: 80vw;
+  }
+
+  .discuss .Comment_box .face_publish .text-publish button {
+    margin-right: -0.3rem;
+  }
+
+  .cont-msg-gw .wrap-action-gw {
+    margin-bottom: 0.15rem;
+  }
+
+  .all_discuss .block-cont-gw .cont-msg-gw .global-clear-spacing a {
+    padding-left: 0.15rem;
+  }
+
+  .cont-msg-gw .action-click-gw > span {
+    padding: 0 0.1rem;
+  }
+
+  .content-ft li {
+    width: 19vw;
+  }
+
+  .popular_video_list li .video_img a img {
+    width: 35vw;
+  }
+
+  .popular_video_list li .text {
+    width: 50vw;
+  }
+
+  .popular_video_list li .text a h4 {
+    margin-bottom: 0.15rem;
+  }
+
+  .Forum_user_ranking_box ul li div.name a {
+    line-height: 3.3;
+    width: 3rem;
+  }
+
+  .Forum_user_ranking_box ul li div.level span {
+    line-height: 3.3;
+    width: 1.5rem;
+  }
+
+  .jzgd {
+    padding: 1rem 0;
+  }
+
+  #example_video_1 {
+    height: 4rem;
+    border-radius: 0.2rem;
+    margin-top: 0.2rem;
+  }
+
+  .video-js .vjs-big-play-button {
+    top: 37% !important;
+    left: 37% !important;
+  }
+
+  .bbstopic .img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.15rem;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .bbstopic .li-si {
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+
+  .bbstopic .li-si a {
+    margin: 0 0.1rem 0.1rem !important;
+  }
+
+  .bbstopic .con {
+    overflow: initial;
+  }
+
+  .bbstopic .title .name {
+    width: 100%;
+  }
+
+  .bbstopic .info {
+    margin: 0.45rem 0 0.2rem;
+    display: block;
+    width: 100%;
+  }
+
+  .bbstopic .desc {
+    width: 66vw;
+    white-space: inherit;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .bbstopic .title {
+    height: 0.8rem;
+    line-height: 0.8rem;
+  }
+
+  .topic-reco {
+    padding: 0 0.2rem 0.2rem;
+  }
+
+  .topic-reco li {
+    padding: 0.25rem 0 0;
+    background-color: #fff;
+  }
+
+  .bbstopic,
+  .topic-reco-box {
+    margin-bottom: 0.2rem;
+  }
+
+  .gamebbs_nav .header_nav_box::after,
+  .gamebbs_nav .header_nav_box::before {
+    width: 0.2rem;
+  }
+
+  #header ul li {
+    padding: 0 0.1rem 0.2rem 0;
+  }
+
+  .game_Deta_1 {
+    padding: 0.7rem 0.1rem 0;
+  }
+
+  .game_Deta .game_Portrait .game_Portrait_top {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  .game_Deta .game_Desc .game_name {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .game_Deta .game_Desc .tag a {
+    margin-top: 0.15rem;
+    line-height: normal;
+    padding: 0.03rem 0.05rem;
+    margin-right: 0.1rem;
+    border: #ff9935 1px solid;
+    color: #ff9935;
+  }
+
+  .game_Deta .game_Desc {
+    position: inherit;
+    width: 100%;
+  }
+
+  .btn-default {
+    position: absolute;
+    top: 0.35rem;
+    right: 0.25rem;
+  }
+
+  .game_Deta .game_Portrait .game_Portrait_bot span {
+    padding: 0.05rem 0.1rem;
+    background-color: #ff9935;
+  }
+
+  .game_Deta .game_Desc .game_Desc_list p {
+    margin-top: 0.05rem;
+  }
+
+  .game_xiazai a {
+    padding: 2px 0.1rem;
+  }
+
+  .section-title {
+    margin-bottom: 0.15rem;
+  }
+
+  .Detailed_game_information .Detailed_game {
+    padding: 0.2rem 0.2rem 0.15rem;
+  }
+
+  .unstyled li {
+    width: 50%;
+  }
+
+  .poster_box {
+    height: 3.5rem;
+    padding: 0.15rem 0;
+  }
+
+  .news_videos li {
+    width: 100%;
+    margin: 0.15rem 0;
+  }
+
+  .news_videos li a {
+    overflow: hidden;
+  }
+
+  .news_videos li div {
+    width: 3rem;
+    height: 1.6rem;
+    margin-right: 0.15rem;
+  }
+
+  .news_videos li p {
+    line-height: 26px !important;
+    -webkit-line-clamp: 3;
+  }
+
+  .news_videos li i {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  .bbs_news li .text-wrapper .text {
+    max-height: 40px !important;
+  }
+
+  .bbs_news li .image {
+    max-height: 80px;
+    max-width: 140px;
+  }
+
+  .bbs_news li {
+    overflow: hidden;
+  }
+
+  .bbs_news li.image .text-wrapper {
+    padding-left: 0.15rem;
+  }
+
+  .Text_detai {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .game_Deta .grade_box.clearfix {
+    width: 165px;
+    height: auto;
+  }
+
+  #Game_score {
+    margin-top: 0.15rem;
+  }
+
+  .Bar_charts li {
+    margin: 0.15rem 0;
+  }
+
+  .Bar_charts li .Bar_charts_d1 {
+    width: 75%;
+  }
+
+  .Bar_charts {
+    padding-top: 0.25rem;
+    padding-left: 0.3rem;
+  }
+
+  .Bar_charts li i.compound {
+    margin: 0 0.25rem;
+  }
+
+  .score .deta_p span {
+    margin: 0.15rem 0.15rem 0;
+  }
+
+  .score_left .title {
+    margin-top: 0.07rem;
+  }
+
+  .score .grade_box em {
+    margin-top: 0.22rem;
+    margin-left: 0.15rem;
+  }
+
+  .score .grade_box.clearfix {
+    width: 165px;
+  }
+
+  .score .title {
+    margin-left: 0.15rem;
+  }
+
+  .score_left {
+    margin-bottom: 0.15rem;
+  }
+
+  .score_left .star_1 {
+    margin: 0.25rem 0 0.15rem 0;
+  }
+
+  .A_evaluation {
+    margin-top: 0.15rem;
+  }
+
+  .Is_logged_in button {
+    margin-top: 0.15rem;
+  }
+
+  .Is_logged_in button {
+    border-radius: 0.5rem;
+    min-width: 2rem;
+    height: 0.7rem;
+  }
+
+  .Please_indicate_ico_1,
+  .Please_indicate_ico_2 {
+    background-size: 3.5rem;
+  }
+
+  .Please_indicate_ico_1 {
+    width: 3.5rem;
+    height: 0.5rem;
+  }
+
+  .Is_loggedIn_release .Please_indicate .tit {
+    width: 100%;
+  }
+
+  .A_evaluation .evaluation_Not_logged {
+    margin-bottom: 0.2rem;
+  }
+
+  .comment_ .item_text_score,
+  .item_content .item_text_header {
+    padding-left: 1.3rem;
+  }
+
+  .wgzdyh ul li .users-container a {
+    max-width: 4.3rem;
+  }
+
+  .comment_ .evaluate_item .login_info {
+    width: 0.9rem;
+    top: 0.15rem;
+    left: 0.15rem;
+  }
+
+  .item_content .item_text_body > p,
+  .reply-area .txt {
+    line-height: 1.65;
+  }
+
+  .Personal_box {
+    margin-bottom: 0.2rem;
+  }
+
+  .userPage_head {
+    padding: 0.2rem 0.3rem;
+    border-radius: 0;
+    margin-bottom: 0.15rem;
+  }
+
+  .userPage_head .userPage_head_right ul li span.stats_number {
+    line-height: 2;
+  }
+
+  .userPage_head .userPage_head_left .header_left_img img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  .userPage_head .userPage_head_left .header_left_text p {
+    margin: 0.15rem;
+  }
+
+  .userPage_head .userPage_head_left .header_left_text a {
+    margin: 0.15rem auto;
+    max-width: 125px;
+  }
+
+  .userPage_head .userPage_head_right ul li {
+    padding: 0.05rem 0;
+  }
+
+  .tab_list_nav_box .tab_nav ul li {
+    margin: 0 0.2rem 0 0.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+  }
+
+  .Personal_box .Personal_top {
+    padding: 0.1rem 0 0.2rem;
+  }
+
+  .Is_loggedIn_release .form-group .form-control {
+    height: 2rem;
+  }
+
+  .Inform_list .Inform_tet .The_publisher a {
+    overflow: hidden;
+  }
+
+  .Personal_box .Personal_top a {
+    margin: 0.15rem;
+  }
+
+  .no_history img {
+    width: 3rem;
+  }
+
+  .tab_list .ranking_list li {
+    margin: 0.25rem 0;
+    padding-right: 0;
+  }
+
+  .gezx_ri {
+    display: block !important;
+  }
+
+  .video-topic-list .news_videos li p {
+    -webkit-line-clamp: 3 !important;
+  }
+
+  .post-topic-list ul.Inform_list li {
+    padding: 0.3rem 0.07rem;
+    margin: 0.15rem 0;
+  }
+
+  .Inform_list .Inform_news {
+    margin-left: 0;
+    margin-top: 0.2rem;
+    line-height: 1.8;
+  }
+
+  .Inform_list .Inform_img {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .Inform_list .Inform_tet {
+    padding-left: 1rem;
+  }
+
+  .app-topic-list .Recently_Viewed_list ul li {
+    margin-top: 5vw;
+    width: 26.1vw;
+    margin: 0.15rem;
+  }
+
+  .gzbutt span {
+    padding: 0.05rem;
+  }
+
+  .Inform_list.guzn .Inform_tet .The_theme span {
+    margin-right: 0.1rem;
+  }
+
+  .personal_g {
+    padding: 0 0.15rem;
+  }
+
+  .independent,
+  .independent .Personal_box {
+    border-radius: 0 !important;
+  }
+
+  .independent .video-topic-list .news_videos.duli li .tit a,
+  .post-topic-list ul li .tit a {
+    overflow: initial;
+  }
+
+  .tab_list .ranking_list.duli li {
+    padding: 0 0.15rem 0.1rem;
+  }
+
+  .app-topic-list .ranking_list li div.tit {
+    width: 73%;
+  }
+
+  .tab_list .ranking_list li a img {
+    margin: 0 0.15rem 0 0;
+  }
+
+  .independent .tab_list .ranking_list.duli li {
+    margin: 0.2rem 0.15rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .independent .tab_list .ranking_list.duli.Following li div.tit {
+    width: 53%;
+  }
+
+  .independent .tab_list .ranking_list.duli.Following li {
+    padding: 0.2rem 0.15rem;
+  }
+
+  .gzbutt {
+    min-width: 1.2rem;
+  }
+
+  .Basic_profile {
+    padding: 0 0.15rem;
+  }
+
+  form .form-group .control-label {
+    padding: 0 0.15rem;
+  }
+
+  .leri-ger3,
+  .leri-ger4,
+  .leri-ger5 {
+    width: 95%;
+  }
+
+  form .form-group .form-control {
+    height: 0.5rem;
+  }
+
+  form .form-group {
+    margin: 0 0 0.25rem;
+    min-height: 1.2rem;
+  }
+
+  form .form-group .control-label {
+    padding: 0 0 0.15rem;
+    text-align: left;
+  }
+
+  .profile-edit {
+    margin-top: 0.3rem;
+  }
+
+  .Modify_the_picture {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.7rem auto 1rem;
+  }
+
+  .Modify_the_picture i {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: -0.7rem;
+    margin-top: -0.7rem;
+  }
+
+  .login_form {
+    padding: 0.5rem 0.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .login_form form .label_box:nth-child(1) {
+    margin-top: 0.2rem;
+  }
+
+  .login_form form .label_box {
+    height: 0.7rem;
+    margin: 0 0 0.7rem;
+  }
+
+  .login_form form .label_box input {
+    height: 0.7rem;
+  }
+
+  .login_form form .label_box.on span {
+    top: -0.5rem;
+  }
+
+  .login_form .login_but {
+    width: 60%;
+    height: auto;
+    border-radius: 0.2rem;
+  }
+
+  .login_form button {
+    padding: 0.3rem 0.25rem;
+  }
+
+  .login_form .login_nav li {
+    margin: 0.4rem 0;
+  }
+
+  .login_form .login_tips {
+    margin: 0.5rem 0;
+  }
+
+  .Quick_login_box {
+    margin-bottom: 1rem;
+    margin-top: -0.5rem;
+  }
+
+  .Quick_login_box .Quick_login_tit span {
+    width: 4rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin-left: -2rem;
+    top: 50%;
+  }
+
+  .ranking_list li .gameInfo h4 {
+    line-height: 1.55;
+  }
+
+  .Quick_login_box ul li {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .login_form .login_tips.login_tit {
+    height: 0.5rem;
+  }
+
+  .verification_shade > div {
+    border-right: 0;
+    margin: 25vh auto 0;
+    width: 85%;
+    border-radius: 0.15rem;
+  }
+
+  .verification_shade p {
+    padding: 0.35rem 0;
+  }
+
+  .verification_shade input {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin: 0.2rem 0.1rem;
+  }
+
+  .verification_shade form > div span {
+    padding-bottom: 0.2rem;
+  }
+
+  .verification_shade button {
+    padding: 0.2rem 0.35rem;
+  }
+
+  .mistake img.rotating {
+    width: 80vw;
+  }
+
+  .form-inline {
+    display: none;
+  }
+
+  .grade_box.clearfix.ranking_star {
+    margin: 0.05rem 0 0.05rem 1.7rem;
+    height: 24px;
+  }
+
+  .uploading {
+    padding: 0.15rem;
+  }
+
+  .game_messag_ri select {
+    margin: 0 !important;
+  }
+
+  .w-e-toolbar {
+    z-index: 10002 !important;
+    position: relative !important;
+  }
+
+  .w-e-toolbar .w-e-menu {
+    padding: 1vw 1.8vw !important;
+    margin: 1vw 1.8vw !important;
+  }
+
+  .w-e-toolbar {
+    position: relative !important;
+  }
+
+  .w-e-toolbar .w-e-droplist {
+    left: 0 !important;
+    top: 2% !important;
+    z-index: 99 !important;
+  }
+
+  .w-e-toolbar {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+
+  .w-e-toolbar .w-e-menu.bi {
+    position: initial !important;
+  }
+
+  .game_message img {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 0.15rem;
+  }
+
+  .game_message {
+    line-height: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .game_message span {
+    margin: 0 0 0 0.15rem;
+  }
+
+  .seek_box .ranking_list .ranking_ul > li {
+    padding: 0.15rem;
+  }
+
+  .seek_box .ranking_list li a.tx img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .seek_box .Personal_box {
+    padding: 0;
+  }
+
+  .seek_box .ranking_list li .gameInfo {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .seek_box .tab_list .ranking_list li {
+    margin: 0.15rem 0;
+  }
+
+  .seek_box .ranking_list li .gameInfo h4 {
+    line-height: 1.7;
+  }
+
+  .seek_box .ranking_list .ranking_cs .firm_img {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .seek_box .ranking_list .ranking_cs li .gameInfo {
+    width: 100%;
+  }
+
+  .video-topic-list .news_videos.duli li {
+    margin: 0.15rem 0 0;
+  }
+
+  .seek_box .video-topic-list .news_videos.duli li {
+    margin: 0.15rem 0 0;
+    padding: 0.15rem;
+    width: 100%;
+  }
+
+  .seek_box .watching_focus_box .watching_focus_list {
+    margin-top: 0.15rem;
+  }
+
+  .seek_box .watching_focus_list .item-content .content-text.on p {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .post-topic-list ul li > a {
+    line-height: 27px;
+  }
+
+  .seek_box .watching_focus_list .item-content .content-text.on > a {
+    display: none;
+  }
+
+  .seek_box .ranking_list .ranking_ul > li {
+    -webkit-box-shadow: 0 2px 5px #e6e6e6;
+    box-shadow: 0 2px 5px #e6e6e6;
+    border: 1px solid rgba(221, 221, 221, 0.7);
+  }
+
+  .recommend_list .recommend_name .game_name h4 {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  .seek_box .grade_box.clearfix {
+    margin: 0 0 0 1.7rem;
+    height: 25px;
+  }
+
+  .bbstopic .li-si .newtopic {
+    display: none !important;
+  }
+
+  .bbstopic .li-si .newtogz {
+    display: inline-block;
+    margin: 0.2rem 0 !important;
+  }
+
+  .post_box {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: none;
+    visibility: visible;
+    opacity: 1;
+    box-shadow: none;
+  }
+
+  .post_box .group_create_entry li a span {
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+
+  .ecomment {
+    margin: 0.05rem 0;
+    padding: 0.05rem;
+    font-size: 0.15rem;
+  }
+
+  .pagination > li > a,
+  .pagination > li > span {
+    margin: 0 4px;
+  }
+
+  .overlay .model_content {
+    width: 85%;
+    max-width: 90%;
+  }
+
+  .model_content .model_body {
+    padding: 0;
+  }
+
+  .Hot_forums_box ul li .btn {
+    display: none;
+  }
+
+  #preview img,
+  #preview video {
+    width: 100%;
+  }
+
+  .game_message_le {
+    overflow: hidden;
+    padding: 0.1rem 0 0.2rem;
+  }
+
+  .position p {
+    padding: 0.05rem 0 0;
+  }
+
+  .developer-img {
+    width: auto;
+  }
+
+  .developer-header .developer-text > h1 {
+    font-size: 36px;
+    background-size: 122px;
+    margin-left: 10px;
+  }
+
+  .developer-cop h3 {
+    margin: 0 0 28px;
+    font-size: 28px;
+  }
+
+  .developer-cop ul {
+    max-width: 335px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .developer-cop ul li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .developer-cop ul.long-box-item li {
+    width: 100%;
+  }
+
+  .developer-cop ul.long-box-item li a {
+    padding: 0 0 0 10px;
+  }
+
+  .developer-cop ul.long-box-item li a img {
+    max-width: 100px;
+    width: 30%;
+    padding-top: 31px;
+    margin-right: 10px;
+  }
+
+  .developer-cop ul.long-box-item li a h4 {
+    max-width: 200px;
+    width: 60%;
+    padding-left: 15px;
+    float: left;
+  }
+
+  section.ads-item.no {
+    height: auto;
+    padding-top: 0;
+  }
+
+  section.ads-item.ads-first {
+    padding: 50px 0;
+    margin-top: -5px;
+  }
+
+  section.ads-item .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto !important;
+  }
+
+  section.ads-item.ads-first .container .ads-title {
+    font-size: 0.55rem;
+  }
+
+  section.ads-item.ads-first .container .ads-first-content {
+    font-size: 0.35rem;
+  }
+
+  section.ads-item .container .ads-button-nav {
+    margin: 20px auto 30px;
+  }
+
+  section.ads-item .container .ads-button-nav .ads-button {
+    display: inline-block;
+    min-width: 80px;
+    margin: 0 auto;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  section.ads-item .container .ads-contact .contact-item {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0.3rem;
+  }
+
+  section.ads-item .container .ads-contact .contact-item span {
+    font-size: 0.3rem;
+  }
+
+  section.ads-item .ads-item-title {
+    font-size: 0.45rem;
+  }
+
+  section.ads-item .ads-item-content {
+    font-size: 0.3rem;
+  }
+
+  section.ads-item .ads-item-content.desc {
+    padding: 0;
+  }
+
+  .ads-item .ads-super .ads-super-item {
+    width: 30%;
+  }
+
+  .ads-item .ads-super .ads-super-item .super-itme-icon-nav i {
+    width: 100%;
+    height: 80px;
+    background-size: contain;
+  }
+
+  .ads-item .ads-super .ads-super-item .super-item-title {
+    margin: 0.2rem 0 0;
+    font-size: 0.25rem;
+    line-height: normal;
+  }
+
+  section.ads-item .ads-accurate,
+  section.ads-item .ads-exposure {
+    width: 90%;
+    background-size: contain;
+  }
+
+  section.ads-item .ads-create-steps .ads-step-bg {
+    max-width: 60%;
+  }
+
+  section.ads-item .ads-create-steps .ads-step-item .step-text {
+    font-size: 0.25rem;
+    width: auto;
+    padding: 0 0 0 0.25rem;
+  }
+
+  .about-us,
+  .social-item {
+    width: 100%;
+  }
+
+  .social-result {
+    width: 150px;
+  }
+
+  .about-us-content > li:first-of-type {
+    padding: 0;
+    margin: 0.2rem;
+  }
+
+  .about-us-content .about-us-brief li {
+    font-size: 0.3rem;
+  }
+
+  .top_toolbar {
+    display: none;
+  }
+
+  .quick_link {
+    width: auto;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .quick_link li {
+    border: none;
+  }
+
+  .top_toolbar .wrapper .desc {
+    display: none;
+  }
+
+  .bottom_toolbar {
+    display: block;
+    background: #fff;
+    margin: 20px 0 -21px;
+  }
+
+  .login_choose_box .login_choose_list .ioc.china {
+    display: block;
+  }
+
+  .sitemap_box .control {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .sitemap_box .list li {
+    margin-right: 3%;
+    width: 30%;
+  }
+
+  .sitemap_box .list a {
+    font-size: 0.2rem;
+  }
+
+  .quick_link li a {
+    font-size: 0.2rem;
+  }
+
+  .Mobil_search_head .return img {
+    width: 30px;
+    display: block;
+  }
+
+  .post-topic-list ul li > a span {
+    line-height: normal;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div a {
+    padding: 0.1rem 0.2rem;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div p {
+    padding: 0.2rem 0;
+    height: 20px;
+  }
+
+  .use_help {
+    width: 100%;
+    margin: 0;
+  }
+
+  .use_nav {
+    width: 100%;
+    height: 1rem;
+    padding: 0;
+  }
+
+  .use_nav ul {
+    height: 130%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .use_nav li {
+    color: #333;
+    line-height: 1rem;
+    font-size: 0.4rem;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    height: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    float: none;
+  }
+
+  .use_nav li a {
+    width: auto;
+    height: auto;
+    border-left: none;
+    padding: 0 0.43rem;
+    font-size: 0.3rem;
+    position: relative;
+    line-height: 0.787rem;
+  }
+
+  .use_nav li a::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -5%;
+    width: 1px;
+    height: 0.297rem;
+    background: #d1d1d1;
+  }
+
+  .use_con {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.225rem;
+    padding: 0.851rem 0.451rem 2.12rem;
+  }
+
+  .use_nav li.on a::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0.106rem;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    margin-left: -0.3rem;
+    z-index: 2;
+  }
+
+  .use_nav li.on a {
+    color: #ff9935;
+  }
+
+  .help .help_list div {
+    width: 2.125rem;
+    margin: 0.425rem 0.425rem 0 0.425rem;
+  }
+
+  .use_con_tit span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .faqlist {
+    margin-top: 0.4rem;
+  }
+
+  .faqlist .faqhd {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .agreement_toptitle strong {
+    display: block;
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .agreement_infos h3 {
+    font-size: 0.25rem;
+  }
+
+  .use_con_txt h3 {
+    padding: 0.2rem 0;
+  }
+
+  .recommend_list .recommend_img img {
+    max-height: 3rem;
+    height: auto;
+  }
+
+  .game_xiazai .btn_log,
+  .game_xiazai a {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .login_choose_box .login_choose_list{
+    border-radius: 0;
+  }
+  .slide-ul p {
+    display: none;
+  }
+  .bbstopic .info .total span {
+    font-size: 12px;
+  }
+  .bbstopic .li-si .newtopic.gf {
+    display: inline-block !important;
+    margin: 0.2rem 0 !important;
+  }
+  .ranking_list .ranking_cs li .gameInfo {
+    width: auto;
+  }
+  .ranking_list .ranking_cs .star_p .game {
+    display: block;
+    margin: 0.05rem 0;
+  }
+  .model_content .model_body p.wx {
+    margin-top: 15px;
+  }
+  .model_content .model_body .panel_footer ul.share {
+    margin-bottom: 10px;
+  }
+  .select_title {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+  }
+  .select_title li {
+    margin: 0;
+  }
+  .select_title li a {
+    font-size: 0.25rem;
+  }
+  .banner-des {
+    height: 70px;
+  }
+  /* 最新帖子 start */
+  .news_box_m {
+    display: block;
+    margin-top: -10px;
+  }
+  .news_box_m ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+  }
+  .news_box_m ul li a.img {
+    float: right;
+    width: 40%;
+    display: block;
+  }
+  .news_box_m ul li a.img img {
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    max-height: 80px;
+    object-fit: cover;
+  }
+  .news_box_m ul li .info_box {
+    float: left;
+    width: 55%;
+    margin-right: 10px;
+  }
+  .news_box_m ul li .info_box .tag {
+    display: block;
+    margin-bottom: 0.2rem;
+    margin-left: -10px;
+    color: #a6a8b0;
+    padding-left: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    border-left: 4px solid #ff9935;
+  }
+  .news_box_m ul li .info_box h2 {
+    font-size: 14px;
+    line-height: 22px;
+    max-height: 44px;
+    font-weight: 600;
+    color: #000;
+    height: auto;
+    margin-bottom: 0.15rem;
+    overflow: hidden;
+  }
+  .news_box_m ul li p {
+    float: left;
+    width: 100%;
+    margin: 0.1rem 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+  }
+  .news_box_m ul li .bottom {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 0.1rem;
+    border-top: 1px solid #ddd;
+  }
+  .news_box_m ul li .bottom span {
+    color: #999;
+  }
+  .news_box_m ul li.big a.img {
+    float: none;
+    width: 100%;
+    max-height: 4rem;
+  }
+  .news_box_m ul li.big a.img img {
+    max-height: 4rem;
+  }
+
+  .news_box_m ul li.big .info_box {
+    float: none;
+    width: 100%;
+    position: relative;
+  }
+  .news_box_m ul li.big .info_box .tag {
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: -30px;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    line-height: 20px;
+    border: none;
+    color: #fff;
+    background: url(../img/mask.png) center no-repeat;
+    background-size: 100%;
+    text-align: center;
+  }
+  .news_box_m ul li.big .info_box h2 {
+    margin: 10px 0 0;
+    overflow: hidden;
+  }
+  /* 新闻帖子 end */
+  .grade_box em,
+  .section-title h3,
+  .new_reviews_box .review_block p {
+    font-size: 0.3rem;
+  }
+  .section-title h3 {
+    line-height: normal;
+  }
+  .btn-default span {
+    padding: 0;
+    font-size: 0.3rem;
+  }
+  .News_box.m {
+    display: block;
+    margin-top: -0.2rem;
+    margin-bottom: 0.1rem;
+  }
+  .News_box ul li {
+    line-height: normal;
+    height: 25px;
+  }
+  .News_box ul li a {
+    font-size: 0.3rem;
+  }
+  .forum_seek {
+    display: none;
+  }
+  .div_seek {
+    display: block;
+    margin-top: -0.2rem;
+  }
+  .Inform_list.guzn .gzbutt {
+    top: -10px;
+  }
+  .game_xiazai .btn_log,
+  .game_xiazai a {
+    margin: 0.1rem 0.2rem 0;
+  }
+  .game_Deta .game_Desc .gam_The_installation .description {
+    line-height: normal;
+  }
+  .new_reviews_box.anli .ranking_list li div p.grade .compound {
+    margin-top: 0.1rem;
+  }
+  .new_reviews_box.anli .new_reviews_box .review_block p {
+    font-size: 0.3rem;
+  }
+  #new_game {
+    margin-top: -0.25rem;
+  }
+  .new_reviews_box.anli {
+    margin: 0;
+  }
+  .new_reviews_box.anli .follow_me_tit p {
+    padding-bottom: 0;
+  }
+  .new_reviews_box.anli,
+  .Independent_box.home {
+    display: block;
+  }
+  .Independent_box.home .Independent_ul {
+    white-space: nowrap;
+    overflow-x: auto;
+    font-size: 0;
+    padding: 5vw 0 1vw;
+    overflow-y: hidden;
+  }
+  .Independent_box.home .Independent_ul li:nth-child(odd),
+  .Independent_box.home .Independent_ul li:nth-child(even) {
+    margin: auto;
+  }
+  .Independent_box.home .Independent_ul li {
+    float: none;
+    width: 33vw;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 4.8vw !important;
+  }
+  .Independent_box.home .Independent_bot a {
+    font-size: 14px;
+    display: block;
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .new_reviews_box {
+    margin-bottom: 0.4rem;
+  }
+  .game_reviews {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .new_reviews_box .follow_me {
+    display: inline-block;
+    width: 78.6666666667vw;
+    margin-right: 4vw;
+  }
+  .new_reviews_box .review_block p {
+    max-height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+  }
+  .w_1200.index {
+    padding: 0.15rem 0.25rem 0;
+  }
+  .w_1200 {
+    padding: 0 0.15rem;
+    max-width: 100%;
+  }
+  .The_main.main {
+    padding-top: 0.25rem;
+  }
+
+  .forums_nav ul.forums_ul,
+  .ranking_min_nav,
+  .ranking_nav ul {
+    -webkit-box-shadow: 0 2px 5px #e6e6e6;
+    box-shadow: 0 2px 5px #e6e6e6;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.7);
+  }
+
+  .Quick_login_box ul li,
+  .bbstopic .info .total,
+  .bbstopic .info .total span,
+  .footer .fl_le,
+  .footer .fl_ri,
+  .footer .fl_ri ul li,
+  .game_Deta .game_Desc .tag a,
+  .game_Deta .game_Portrait,
+  .game_messag_ri,
+  .game_message_le,
+  .header_left_img,
+  .header_left_text,
+  .independent .wgzdyh ul li,
+  .login_choose_box .login_choose_list .ioc li,
+  .ranking_list li .gameInfo,
+  .tab_list .ranking_list li,
+  .userPage_head .userPage_head_left .header_left_text a,
+  .userPage_head_left,
+  .video-topic-list .news_videos li {
+    float: none;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div p,
+  .Mobil_search_box,
+  .Recom_topics_ul li,
+  .The_article_box .The_body .content-bd img,
+  .The_main .The_main_le,
+  .The_main .The_main_ri,
+  .Thumb_comment_forward,
+  .div_seek .input_seek input,
+  .footer .fl_le,
+  .footer .fl_ri,
+  .footer .left-header-logo,
+  .game_Deta .game_Portrait,
+  .game_messag_ri,
+  .game_message_le,
+  .header,
+  .header .logo_seek,
+  .header .navbar ul li,
+  .header_left_text,
+  .score_left,
+  .score_right,
+  .tab-menu,
+  .userPage_head .userPage_head_left,
+  .userPage_head .userPage_head_left .header_left_img,
+  .userPage_head .userPage_head_right ul,
+  .userPage_head_left,
+  .userPage_head_right,
+  .video-topic-list .news_videos li,
+  .video-topic-list .news_videos.duli li,
+  .watching_focus_list .item-content .content-text.on a img,
+  .watching_focus_list .item-content .content-text.on p,
+  form .form-group .control-label {
+    width: 100%;
+  }
+
+  .Coming_soon_ul li img,
+  .Forum_user_ranking_box ul li div.portrait,
+  .header .navbar .pack_up,
+  .new_reviews_box .ranking_list li a img,
+  .ranking_list .ranking_cs .firm_img,
+  .recommend_list .recommend_name .game_name a img {
+    width: 1rem;
+  }
+
+  .bbstopic .con,
+  .bbstopic .desc,
+  .header .logo_seek .seek_portrait,
+  .independent .wgzdyh ul li,
+  .login_choose_box .login_choose,
+  .ranking_list li .gameInfo,
+  .tab_list .ranking_list li,
+  .w_1200 {
+    width: auto;
+  }
+
+  .Forum_user_ranking_box ul li div.level span,
+  .Recently_Viewed_list ul li p,
+  .bbstopic .info .total,
+  .bbstopic .li-si,
+  .div_seek .input_seek input,
+  .footer,
+  .game_Deta,
+  .game_Deta .game_Desc .game_name,
+  .header .logo_seek .log_portrait .user_message .dropdown_menu a,
+  .score .deta_p,
+  .tab-menu .tab-item,
+  .userPage_head {
+    text-align: center;
+  }
+
+  .all_discuss
+    .block-cont-gw
+    .cont-msg-gw
+    .msg-wrap-gw
+    .build-floor-gw
+    .wrap-user-gw,
+  .bbstopic .con,
+  .header .logo_seek .login_mask .w_1200 > div,
+  .login_choose_box .login_choose_list,
+  .ranking_list .ranking_ul > li,
+  .ranking_list li div p.grade {
+    margin-top: 0;
+  }
+
+  .Hot_forums_box,
+  .Independent_ul li,
+  .Mobil_search_box .Top_search ul li,
+  .Personal_box,
+  .Topic_ranking .Topic_ranking_list li,
+  .follow_me,
+  .game_Deta .game_Portrait .game_Portrait_bot span,
+  .idea .discuss,
+  .ranking_list .ranking_ul > li,
+  .tag_ul li,
+  .verification_shade button,
+  .verification_shade input,
+  .watching_focus_box .watching_focus_list {
+    border-radius: 0.1rem;
+  }
+
+  .Independent_ul li img,
+  .Mobil_search_box,
+  .Mobil_search_head .Search-header,
+  .follow_me .follow_m_img,
+  .header .navbar,
+  .header .navbar ._mask,
+  .login_choose_box .login_choose_list,
+  .poster_box ul,
+  .userPage_head .userPage_head_left .header_left_img,
+  .w_1200 {
+    height: 100%;
+  }
+
+  .Mobil_search_box,
+  .bbstopic .li-si,
+  .header .navbar,
+  .header .navbar ._mask,
+  .login_form form .label_box span {
+    top: 0;
+  }
+
+  .Promote_box .Promote_r,
+  .bbstopic,
+  .bbstopic .con,
+  .bbstopic .desc,
+  .bbstopic .info,
+  .footer .footer-left-header,
+  .game_Deta .game_Desc .tag a,
+  .game_message,
+  .news_videos li p,
+  .recommend_list .recommend_name,
+  .tag_ul,
+  .video-topic-list .news_videos li p,
+  .watching_focus_list .item-content .content-text.on a img {
+    height: auto !important;
+  }
+
+  .Coming_soon_ul li img,
+  .Forum_user_ranking_box ul li div.level span,
+  .Forum_user_ranking_box ul li div.name a,
+  .Forum_user_ranking_box ul li div.portrait,
+  .Mobil_search_box .Mobil_search_head,
+  .header,
+  .header .logo_seek,
+  .header .logo_seek .log_portrait .user_message,
+  .header .logo_seek .login_mask .select_way img,
+  .header .navbar .pack_up,
+  .new_reviews_box .ranking_list li a img,
+  .ranking_list .ranking_cs .firm_img,
+  .recommend_list .recommend_name .game_name a img {
+    height: 1rem;
+  }
+
+  .Recently_Viewed_list ul li img,
+  .footer .left-header-logo img,
+  .game_Deta .grade_box.clearfix,
+  .login_form .login_but,
+  .userPage_head .userPage_head_left .header_left_img img {
+    margin: 0 auto;
+  }
+
+  .Mobil_search_box .Top_search ul li,
+  .Mobil_search_head .input_inner,
+  .Mobil_search_head .return,
+  .game_message span,
+  .head-r,
+  .news_videos li div,
+  .tab_list_nav_box .tab_nav ul li {
+    float: left;
+  }
+
+  .Coming_soon_ul ul,
+  .Independent_ul,
+  .Independent_ul li p span,
+  .Recently_Viewed_list ul,
+  .Recom_topics_ul,
+  .Topic_ranking .Topic_ranking_list li .ioc span,
+  .bbstopic .desc,
+  .bbstopic .img,
+  .game_Deta .game_Desc,
+  .game_Deta .game_Desc .gam_The_installation .description span,
+  .game_messag_ri select,
+  .header .logo_seek .login_mask .select_way > div i,
+  .header_left_text,
+  .independent .tab_list .ranking_list.duli.Following li,
+  .new_reviews_box .ranking_list li div p.grade,
+  .new_reviews_box p.review_block_p,
+  .news_videos li,
+  .news_videos li p,
+  .news_videos ul,
+  .position_Box.recommend,
+  .ranking_list .ranking_cs .firm_img img,
+  .ranking_list .ranking_cs .star_p,
+  .ranking_list .ranking_ul li,
+  .ranking_list li .gameInfo p,
+  .ranking_list li a.tx img,
+  .recommend_list .recommend_name .game_name h4,
+  .section-title,
+  .tab_list .ranking_list,
+  .topic-reco li,
+  .type_name span.author_game a,
+  .userPage_head .userPage_head_left .header_left_img,
+  .w_1200 .main,
+  .watching_focus_list .item-content .content-text.on a {
+    margin: 0;
+  }
+
+  .Quick_login_box ul li,
+  .bbstopic .info .total span,
+  .footer .fl_ri ul li,
+  .game_Deta .game_Desc .tag a,
+  .logo_seek .san_san,
+  .ranking_list .ranking_cs .star_p span {
+    display: inline-block;
+  }
+  .new_reviews_box.anli,
+  .Independent_ul li img,
+  .Mobil_search_box .Top_search ul li a,
+  .cont-msg-gw .wrap-build-gw .global-clear-spacing,
+  .footer .floatleft > span,
+  .footer .left-header-logo,
+  .footer .left-header-logo img,
+  .gezx_ri,
+  .head-r,
+  .header .logo_seek .login_mask .select_way > div a,
+  .login_choose_box .login_choose_list .ioc li i,
+  .logo_seek .san_san span,
+  .news_videos li a,
+  .searcha-span,
+  .tab-menu,
+  .tab-menu .tab-item:not(:last-child):after,
+  .tab_list .ranking_list li,
+  .tab_seek_box,
+  .tag_ul li a,
+  .userPage_head .userPage_head_left .header_left_text a,
+  .w_The_login .w_The_login_tx img,
+  .ads {
+    display: block;
+  }
+
+  .friend_link,
+  .Mobil_search_box,
+  .My_tool,
+  .The_article_box .The_article_name .text_time,
+  .The_main_ri,
+  .The_main_ri.index_The_main_ri,
+  .Thumb_comment_forward ul li.fenx_box,
+  .eva-menu label,
+  .follow_me_box,
+  .game_Deta .berwm,
+  .game_bbs_ri,
+  .header .logo_seek .nav_form,
+  .header .navbar ._mask,
+  .header .user_name,
+  .main_header-tab .nav_justified li a small,
+  .popular_video_list li .text p,
+  .position p span,
+  .ranking_icon,
+  .ranking_list .ranking_cs .bnt,
+  .ranking_list .ranking_cs .star.star_1,
+  .ranking_list .ranking_cs li .gameInfo em,
+  .ranking_list li .gameInfo p span,
+  .ranking_list li .gameInfo p.tit,
+  .ranking_list li .ranking_list_img,
+  .ranking_list li a.download,
+  .ranking_list li div.download p,
+  .ranking_list li div.tit p.tag,
+  .ranking_top3,
+  .recommend_list .recommend_name .type_grade p,
+  .time_browse.floatright,
+  .watching_focus_list .item-content .content-text.on p,
+  .footer .floatleft > br {
+    display: none;
+  }
+
+  .Coming_soon_ul li,
+  .Independent_ul li img,
+  .Quick_login_box,
+  .Quick_login_box ul,
+  .Recently_Viewed_list ul,
+  .all_discuss .block-cont-gw .cont-msg-gw .msg-wrap-gw,
+  .all_discuss
+    .block-cont-gw
+    .cont-msg-gw
+    .msg-wrap-gw
+    .build-floor-gw
+    .build-msg-gw
+    .user-floor-gw,
+  .all_discuss .block-cont-gw .cont-msg-gw .user-address-gw,
+  .app-topic-list .Recently_Viewed_list ul li,
+  .bbstopic .img,
+  .comment_ .evaluate_item .item_content,
+  .game_messag_ri select,
+  .header .logo_seek,
+  .header .logo_seek .log_portrait .user_message,
+  .header .logo_seek .login_mask .w_1200 > div,
+  .header .navbar .w_1200,
+  .leri-ger3,
+  .leri-ger4,
+  .leri-ger5,
+  .ranking_list li .gameInfo,
+  .score_left,
+  .score_right,
+  .w_1200.persinal_box {
+    padding: 0;
+  }
+
+  .login_form h3,
+  .verification_shade i.Shut_down {
+    font-size: 0.3rem;
+  }
+
+  .comment_ .evaluate_item,
+  .eva-menu,
+  .footer .fl_le,
+  .footer .fl_ri,
+  .login_form .login_nav li a,
+  .login_form .login_nav li span,
+  .userPage_head .userPage_head_left .header_left_text h1 {
+    padding: 0.2rem 0;
+    max-width: 100%;
+  }
+
+  .Hot_forums_box ul li .forum-info h4,
+  .Hot_forums_box ul li > a,
+  .Independent_ul li p,
+  .bbstopic .title .name,
+  .game_message span,
+  .position p,
+  .ranking_list li .gameInfo h4,
+  .ranking_list li .gameInfo p,
+  .type_name span.author_game a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .A_evaluation,
+  .Is_loggedIn_release .Please_indicate,
+  .Is_loggedIn_release .form-group,
+  .Personal_box,
+  .Recommended_project .tit,
+  .bbstopic,
+  .follow_me,
+  .footer,
+  .gamebbs_nav .header_nav_box,
+  .idea .discuss,
+  .list-unstyled_box .follow_me,
+  .login_choose_box .login_choose_list,
+  .new_reviews_box .follow_me,
+  .post-topic-list ul li,
+  .ranking_min_nav ul li a,
+  .recommend_list .recommend_name,
+  .score,
+  .verification_shade > div,
+  .w_1200 .main.box_shadow,
+  .wgzdyh ul li {
+    padding: 0.15rem;
+  }
+
+  .Bar_charts li span,
+  .Forum_user_ranking_box ul li div.level span,
+  .Forum_user_ranking_box ul li div.name a,
+  .Hot_forums_box ul li .forum-info p,
+  .Inform_list .Inform_tet .The_theme h3,
+  .Is_loggedIn_release .Please_indicate .tit,
+  .Is_logged_in button,
+  .Personal_box .Personal_top a,
+  .Recommended_project .tit p,
+  .The_article_box .The_article_name .name_message .name_TOP a,
+  .Topic_ranking .Topic_ranking_list li a.ranking_list_top p,
+  .all_discuss
+    .block-cont-gw
+    .cont-msg-gw
+    .msg-wrap-gw
+    .build-floor-gw
+    .build-msg-gw
+    .user-floor-gw,
+  .comment_,
+  .div_seek .input_seek input,
+  .follow_me .follow_me_fnot p,
+  .footer .fl_ri p,
+  .footer span a,
+  .forums_nav ul.forums_ul li a,
+  .game_message span,
+  .header .logo_seek .login_mask .select_way p,
+  .item_content .item_text_body,
+  .item_content .item_text_body > p,
+  .login_choose_box .login_choose_list p,
+  .login_form form .label_box input,
+  .login_form form .label_box span,
+  .login_form form .label_box.on span,
+  .main_header-tab .nav_justified li a,
+  .more span,
+  .news_videos li p,
+  .post-topic-list ul li > a,
+  .ranking_list li .gameInfo p,
+  .ranking_nav ul li a,
+  .reply-area .hd a,
+  .reply-area .txt,
+  .score .deta_p span,
+  .tab-menu .tab-item,
+  .tag_ul li a,
+  .userPage_head .userPage_head_left .header_left_text p,
+  .userPage_head .userPage_head_right ul li span,
+  .userPage_head .userPage_head_right ul li span.stats_number,
+  .verification_shade button,
+  .verification_shade input,
+  .verification_shade p,
+  .watching_focus_list .item-content a,
+  .wgzdyh ul li .users-container a {
+    font-size: 0.2rem;
+  }
+
+  .Inform_list .Inform_tet .The_publisher span,
+  .action-bar .con span,
+  .game_Deta .game_Portrait .game_Portrait_bot span,
+  .login_choose_box .login_choose_list .ioc li span {
+    font-size: 0.2rem;
+  }
+
+  #header ul li a.on,
+  .A_evaluation,
+  .Game_score_box,
+  .bbstopic,
+  .forums_nav ul.forums_ul,
+  .ranking_list li a.tx img {
+    border-radius: 0;
+  }
+
+  .Mobil_search_head .input_inner input,
+  .Mobil_search_head .submit_btn,
+  .forums_nav ul.forums_ul,
+  .ranking_min_nav,
+  .ranking_nav ul,
+  .score_left,
+  .tab_list .ranking_list li:nth-child(odd) {
+    border: none;
+    margin-bottom: 0.15rem;
+  }
+
+  #header ul li a,
+  .Hot_forums_box ul li button,
+  .Inform_list .Inform_news,
+  .Inform_list .Inform_tet .The_publisher a,
+  .Inform_list.guzn .Inform_tet .The_theme span,
+  .Is_loggedIn_release .form-group .form-control,
+  .Mobil_search_box .Top_search p,
+  .Mobil_search_box .Top_search ul li a,
+  .Please_indicate .stars_prompt,
+  .Quick_login_box .Quick_login_tit span,
+  .Recently_Viewed_list ul li p,
+  .The_article_box .The_article_name .name_message div,
+  .all_discuss .msg-wrap-gw .wrap-issue-gw p,
+  .all_discuss .wrap-user-gw .user-name-gw a,
+  .bbstopic .desc,
+  .eva-menu .order a.active,
+  .eva-menu label,
+  .footer .floatleft > span,
+  .gzbutt span,
+  .list-unstyled li a,
+  .list-unstyled li span,
+  .list-unstyled_box ul.list-unstyled li a,
+  .login_form .login_tips,
+  .no_history p,
+  .position p,
+  .position p a,
+  .post-topic-list ul li > a,
+  .ranking_list li .gameInfo p.tab a,
+  .ranking_min_nav ul li,
+  .ranking_min_nav ul li a,
+  .recommend_list .recommend_name .game_name p,
+  .tab_list_nav_box .tab_nav ul li,
+  .topic-reco li a,
+  .topic-reco span,
+  .type_name span.author_game a,
+  .userPage_head .userPage_head_left .header_left_text a,
+  .verification_shade p.tit,
+  .watching_focus_list .item-content .content-text p,
+  .wgzdyh ul li .gzbutt span,
+  form .form-group .control-label,
+  form .form-group input.form-control {
+    font-size: 0.2rem;
+  }
+
+  .header .logo_seek .seek_portrait {
+    margin-top: 0.02rem;
+  }
+
+  .A_evaluation .evaluation_Not_logged p,
+  .A_evaluation .evaluation_Not_logged p a,
+  .Coming_soon_ul li .Coming_soon_div p,
+  .Hot_forums_box ul li .forum-info h4,
+  .Personal_box .Personal_top h3,
+  .Promote_box .Promote_r a,
+  .Topic_ranking .Topic_ranking_list li .Game_information_tetx p,
+  .bbstopic .title .name,
+  .change_a,
+  .follow_me_tit p,
+  .grad_box p,
+  .h3_tit p,
+  .login_form .login_but,
+  .login_form .login_nav li a,
+  .login_form .login_nav li span,
+  .ranking_list li .gameInfo h4,
+  .ranking_list li > span,
+  .recommend_list .recommend_name .game_name h4,
+  .score .title,
+  .upload_video a span {
+    font-size: 0.25rem;
+  }
+
+  .Promote_box .Promote_r p,
+  .The_article_box .The_body h2,
+  .game_Deta .game_Desc .game_name,
+  .header .navbar ul li a,
+  .userPage_head .userPage_head_left .header_left_text h1 {
+    font-size: 0.4rem;
+  }
+
+  .Popular_game .h3_tit p,
+  .Recommended_project .h3_tit p,
+  .h3_tit p {
+    padding: 0.3rem 0;
+  }
+
+  .eva-menu p {
+    font-size: 0.25rem;
+  }
+
+  .News_box .follow_me {
+    padding: 0.1rem 0.2rem;
+  }
+
+  .header .logo_seek .log_portrait .user_message .dropdown_menu {
+    width: 2.7rem;
+    right: 0.2rem;
+    top: 1.1rem;
+  }
+
+  .header .header_logo {
+    margin-top: 0.27rem;
+  }
+
+  .header_logo img {
+    margin-left: .2rem;
+    width: 2rem;
+  }
+
+  .header,
+  .header .logo_seek {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.7);
+    position: relative;
+  }
+
+  .logo_seek .san_san {
+    margin-top: 0.25rem;
+    margin-right: 0.3rem;
+    margin-left: 0.2rem;
+  }
+
+  .logo_seek .san_san img {
+    height: 0.5rem;
+  }
+
+  .header .logo_seek .log_portrait .user_message .user_portrait {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.2rem;
+    margin-top: 0.2rem;
+  }
+
+  .header .navbar {
+    position: fixed;
+    left: -110%;
+    width: 55%;
+    z-index: 99999;
+    -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.28);
+  }
+
+  .header .navbar ul {
+    position: relative;
+    z-index: 99;
+  }
+
+  .header .navbar ul li a {
+    height: 1rem;
+    line-height: 1rem;
+  }
+
+  .Promote_box .Promote_r a {
+    padding: 5px 14px;
+  }
+
+  .header .navbar .pack_up {
+    background: url(../img/accept.png);
+    background-repeat: no-repeat;
+    background-size: 0.7rem;
+    background-position: center;
+  }
+
+  .header .navbar ._mask {
+    width: 143%;
+    position: absolute;
+    left: 0;
+    z-index: 9;
+  }
+
+  .header .navbar ul li.on {
+    padding: 0 0.2rem;
+    -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.21);
+    box-shadow: 5px 0 30px rgba(0, 0, 0, 0.21);
+  }
+
+  .header .logo_seek .login_mask .w_1200 > i {
+    position: absolute;
+    right: 0;
+    margin: 0.2rem;
+  }
+
+  .header .logo_seek .login_mask .w_1200 > div {
+    min-height: 100vh;
+  }
+
+  .header .logo_seek .login_mask .select_way img {
+    width: 3rem;
+    margin-top: 1rem;
+  }
+
+  .header .logo_seek .login_mask .select_way > div a {
+    height: 14vh !important;
+    margin: 1.5vh 0;
+  }
+
+  .header .logo_seek .login_mask .select_way > div i {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  .header .logo_seek .login_mask .select_way p {
+    line-height: 2;
+  }
+
+  .recommend_list .recommend_img .cover_tag {
+    bottom: 0;
+    left: 0;
+    font-size: 0.25rem;
+    border-radius: 0;
+    display: none;
+  }
+
+  .recommend_list .recommend_name .type_grade .star_2 {
+    width: 100% !important;
+  }
+
+  .recommend_list .recommend_name .type_grade .star {
+    width: 17px;
+  }
+
+  .recommend_list .recommend_name .game_name {
+    width: 78%;
+  }
+
+  .recommend_list .recommend_name .game_name a img {
+    margin-right: 0.15rem;
+  }
+
+  .recommend_list {
+    margin-bottom: 0.25rem;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  .follow_me_tit p {
+    padding: 0.3rem;
+  }
+
+  .follow_me_tit i {
+    height: 0.5rem;
+    top: 28%;
+    width: 2px;
+  }
+
+  .recommend_list .recommend_name .game_name p {
+    line-height: 20px;
+    height: 20px;
+    font-size: 13px;
+    margin: 0.05rem 0;
+  }
+
+  .follow_me .follow_me_fnot .follow_me_ul li {
+    margin: 0.2rem 0.15rem 0;
+  }
+
+  .follow_me .follow_m_img {
+    margin: 0 0.25rem 0 0.2rem;
+  }
+
+  .follow_me .follow_m_img img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .follow_me .follow_me_fnot p {
+    text-align: left;
+  }
+
+  .list-unstyled_box ul.list-unstyled li {
+    margin: 0.1rem;
+  }
+
+  .list-unstyled_box ul.list-unstyled li a {
+    padding: 0.1rem 0.15rem;
+  }
+
+  .ranking_list li a img {
+    width: 1.15rem;
+    margin: 0 0.26rem 0 0.21rem;
+    border-radius: 0.15rem;
+  }
+
+  .ranking_list li div.tit {
+    width: 55%;
+  }
+
+  .ranking_list li div.download {
+    width: 10%;
+  }
+
+  .ranking_list li {
+    margin-bottom: 0.2rem;
+  }
+
+  .ranking_box .follow_me {
+    padding: 0.3rem 0.1rem 0;
+  }
+
+  .ranking_list li > span {
+    line-height: 1rem;
+  }
+
+  .ranking_list li div.download a {
+    line-height: 1rem;
+  }
+
+  .follow_me .follow_me_fnot .follow_me_ul {
+    height: 1.2rem;
+  }
+
+  .Promote_box .Promote_r {
+    width: 4rem;
+  }
+
+  .Promote_box img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .new_reviews_box .ranking_list li div.tit {
+    width: 69%;
+  }
+
+  .new_reviews_box .ranking_list .review_game {
+    padding-bottom: 0.15rem;
+  }
+
+  .new_reviews_box .review_block p {
+    margin-top: 0.15rem;
+    text-indent: 1rem;
+  }
+
+  .new_reviews_box p.review_block_p {
+    line-height: 0.55rem;
+    height: 0.55rem;
+  }
+
+  .new_reviews_box .follow_me {
+    margin-top: 0.15rem;
+  }
+
+  .footer .left-header-logo {
+    margin-bottom: 0.3rem;
+  }
+
+  .footer .left-header-logo img {
+    width: 4rem;
+  }
+
+  .footer .floatleft > span {
+    font-family: Arial;
+    color: #838383;
+    line-height: 2;
+  }
+  .footer .links {
+    margin-bottom: 0.1rem;
+  }
+
+  .tab-menu .tab-item {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    color: #999;
+  }
+
+  .tab-menu .tab-item.on {
+    color: #ff9935;
+    font-weight: 600;
+  }
+
+  .tab-menu {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 0.15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 5px #e6e6e6;
+    box-shadow: 0 2px 5px #e6e6e6;
+  }
+
+  .tab-menu .tab-item:not(:last-child):after {
+    content: "";
+    width: 1px;
+    height: 5.3333333333vw;
+    background: #f1f1f1;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+
+  .div_seek .input_seek {
+    padding: 0.25rem;
+    position: relative;
+  }
+
+  .div_seek .input_seek input {
+    border: 2px solid #ff9935;
+    padding: 0.2rem 0.15rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+  }
+
+  .div_seek .input_seek input::-webkit-input-placeholder {
+    color: #b8a2a2;
+  }
+
+  .div_seek .input_seek input:-moz-placeholder {
+    color: #b8a2a2;
+  }
+
+  .div_seek .input_seek input::-moz-placeholder {
+    color: #b8a2a2;
+  }
+
+  .div_seek .input_seek input:-ms-input-placeholder {
+    color: #b8a2a2;
+  }
+
+  .banner_swiper {
+    height: 5rem;
+  }
+
+  .ranking_list li div p.name {
+    font-size: 0.34rem;
+  }
+
+  .ranking_list li div.tit p {
+    line-height: 0.55rem;
+  }
+
+  .ranking_list li div p.grade .compound {
+    margin-top: 0.15rem;
+  }
+
+  .head-r {
+    position: relative;
+  }
+
+  .searcha-span {
+    margin-right: 0.3rem;
+    padding-top: 0.27rem;
+  }
+
+  .searcha-span img {
+    height: 0.45rem;
+    width: 0.45rem;
+  }
+
+  .Mobil_search_box {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 9999999999999999;
+  }
+
+  .Mobil_search_box .Mobil_search_head {
+    background: #ff9935;
+  }
+
+  .Mobil_search_head .return {
+    padding: 0.3rem 0.2rem 0;
+  }
+
+  .Mobil_search_head .input_inner {
+    margin: 0.22rem 0.28rem 0 0.1rem;
+    width: 75%;
+    position: relative;
+  }
+
+  .Mobil_search_head .input_inner input {
+    width: 95%;
+    height: 0.6rem;
+    border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    padding-left: 5%;
+  }
+
+  .Mobil_search_head .submit_btn {
+    background: url(../img/search2.png) no-repeat center center;
+    background-size: cover;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-top: 0.33rem;
+  }
+
+  .Mobil_search_box .Top_search p {
+    color: #999;
+    background-color: #fafafa;
+    padding: 0.15rem 0.2rem;
+  }
+
+  .Mobil_search_box .Top_search ul {
+    overflow: hidden;
+  }
+
+  .Mobil_search_box .Top_search ul li {
+    margin: 0.1rem;
+    background-color: #ff9935;
+  }
+
+  .Mobil_search_box .Top_search ul li a {
+    padding: 0.05rem 0.15rem;
+    color: #fff;
+  }
+
+  .header .logo_seek .log_portrait.log_user {
+    margin-top: 0.15rem;
+    margin-right: 0.2rem;
+  }
+
+  .w_The_login .w_The_login_tx img {
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+
+  .login_choose_box .login_choose_Shut_down {
+    z-index: 9999;
+    right: 0.25rem;
+    top: 0.5rem;
+  }
+
+  .login_choose_box .login_choose_list > img {
+    margin: 0.5rem auto 0;
+    width: 2.5rem;
+  }
+
+  .login_choose_box .login_choose_list .ioc li i {
+    margin: 0.3rem auto;
+  }
+
+  .ranking_nav ul li {
+    padding: 0 0.14rem;
+  }
+
+  .ranking_list .ranking_ul > li {
+    padding: 0.2rem;
+  }
+
+  .ranking_list li a.tx img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .ranking_list li .rank-num {
+    left: -0.015rem;
+    top: -0.015rem;
+  }
+
+  .ranking_list li a.tx {
+    border-radius: 0.35rem;
+    margin-right: 0.2rem;
+  }
+
+  .more span {
+    padding: 0.25rem 0.6rem;
+    border-radius: 0.15rem;
+  }
+
+  .more {
+    padding: 0.3rem;
+  }
+
+  .ranking_min_nav {
+    padding: 0.25rem 0;
+    background: #fff;
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .ranking_nav {
+    background: #fff;
+    margin-bottom: 0.15rem;
+  }
+
+  .position_Box {
+    margin-bottom: 0.2rem;
+  }
+
+  .position {
+    height: 0.8rem;
+    line-height: 0.7rem;
+  }
+
+  .ranking_list li .gameInfo p.tab a {
+    margin-right: 0.15rem;
+  }
+
+  .ranking_list li .gameInfo p.tab {
+    margin-top: 0.15rem;
+  }
+
+  .ranking_list .ranking_cs .firm_img {
+    margin-right: 0.2rem;
+  }
+
+  .ranking_list .ranking_cs li .gameInfo .info-item {
+    padding-left: 0.05rem;
+  }
+
+  #recommend_lb {
+    height: 4rem;
+    max-height: 100%;
+  }
+
+  .recommend_lb {
+    margin-top: 0.2rem;
+    border-radius: 0.15rem;
+  }
+
+  .recommend_lb .swiper-pagination-switch {
+    width: 0.15rem;
+    height: 0.15rem;
+    margin-right: 0.15rem;
+  }
+
+  .tag_ul li {
+    border: #ff9935 1px solid;
+    margin: 0.2rem 0.1rem 0;
+  }
+
+  .tag_ul li a {
+    padding: 0.1rem 0.15rem;
+  }
+
+  .change_a {
+    bottom: 0.32rem;
+  }
+
+  .ranking_list .ranking_ul li {
+    margin-top: 0.2rem;
+  }
+
+  .Independent_ul li {
+    margin-top: 0.2rem;
+    width: 42%;
+    padding: 3%;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  .Independent_ul li img {
+    width: 90%;
+    max-height: 2.6rem;
+    margin: 3% auto;
+  }
+
+  .Independent_bot {
+    margin-top: 0.15rem;
+  }
+
+  .Independent_ul li:nth-child(odd) {
+    margin: 0.2rem 2% 0 0;
+  }
+
+  .Independent_ul li:nth-child(even) {
+    margin: 0.2rem 0 0 2%;
+  }
+
+  .Independent_ul li p {
+    margin-top: 0.15rem;
+    height: 0.6rem;
+    line-height: 0.3rem;
+  }
+
+  .Coming_soon_ul li {
+    width: 42%;
+    padding: 3%;
+    border-radius: 0.1rem;
+    margin: 0;
+  }
+
+  .Coming_soon_ul li:nth-child(odd) {
+    margin: 0.2rem 1% 0 0;
+  }
+
+  .Coming_soon_ul li:nth-child(even) {
+    margin: 0.2rem 0 0 1%;
+  }
+
+  .Coming_soon_ul li img {
+    height: auto;
+    width: 90%;
+    margin: 3% auto;
+    float: none;
+    display: block;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div {
+    width: 100%;
+    float: none;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div p {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div a {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+
+  .Recom_topics_ul li {
+    margin: 0.2rem 0 0 0;
+    height: 4.5rem;
+  }
+
+  .forums_nav ul.forums_ul {
+    white-space: nowrap;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+  }
+
+  .forums_nav ul.forums_ul li a {
+    padding: 0.1rem 0.2rem;
+    background: #dddddd;
+  }
+
+  .watching_focus_box .watching_focus_list {
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .watching_focus_box .watching_focus_list:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  .type_name span.author_game a {
+    max-width: 49%;
+  }
+
+  .watching_focus_list .item-content .item-title {
+    line-height: normal;
+  }
+
+  .right_menu {
+    top: 0.3rem;
+    right: 0.2rem;
+  }
+
+  .watching_focus_list .item-content {
+    padding-bottom: 0.15rem;
+  }
+
+  .Thumb_comment_forward ul li {
+    max-width: 45%;
+  }
+
+  .Hot_forums_box {
+    padding: 0.2rem 0.2rem 0;
+  }
+
+  .Hot_forums_box ul li .item-icon img {
+    margin-right: 0.2rem;
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .Hot_forums_box ul li > a {
+    width: 66vw;
+  }
+
+  .Hot_forums_box ul li .forum-info h4 {
+    width: 42vw;
+    margin-top: 0.1rem;
+  }
+
+  .Hot_forums_box ul li .forum-info p {
+    margin: 0.15rem 0;
+  }
+
+  .Hot_forums_box ul li {
+    margin: 0.1rem 0 0.25rem;
+  }
+
+  .Hot_forums_box ul li button {
+    min-width: 20vw;
+    margin-top: 0.3rem;
+  }
+
+  .Recently_Viewed_list ul li {
+    margin: 3vw 2vw 0;
+    width: 27.5vw;
+  }
+
+  .Recently_Viewed_list ul {
+    padding-bottom: 0.2rem;
+  }
+
+  .Recently_Viewed_list ul li img {
+    width: 70%;
+  }
+
+  .Following_Game .Hot_forums_box ul li .forum-info h4,
+  .Following_Game .Hot_forums_box ul li .forum-info p,
+  .Hot_Forums .Hot_forums_box ul li .forum-info h4,
+  .Hot_Forums .Hot_forums_box ul li .forum-info p {
+    width: 65vw;
+  }
+
+  .Hot_forums_box ul.rem_Hot_Forums li > a {
+    width: 88vw;
+  }
+
+  .The_official .Hot_forums_box ul li > a .forum-info {
+    width: 45vw;
+  }
+
+  .Topic_ranking .Topic_ranking_list li .ioc div {
+    max-width: 28.9vw;
+  }
+
+  .Topic_ranking .Topic_ranking_list li {
+    padding: 0.2rem 0.2rem 0.1rem;
+  }
+
+  .Topic_ranking .Topic_ranking_list li .ioc span {
+    max-width: 65%;
+    font-size: 14px;
+  }
+
+  .Topic_ranking .Topic_ranking_list li .ioc i {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  .Topic_ranking .Topic_ranking_list li a.ranking_list_top img {
+    width: 3rem;
+    height: 1.6rem;
+  }
+
+  .Topic_ranking .Topic_ranking_list li a.ranking_list_top p {
+    height: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .header_nav_box::after,
+  .header_nav_box::before {
+    width: 0.3rem;
+  }
+
+  .header_nav_box {
+    padding: 0.15rem 0.3rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .The_article_box {
+    padding: 0.2rem;
+  }
+
+  .The_article_box .The_article_name .portrait {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+
+  .The_article_box .The_article_name .portrait img {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+
+  .The_article_box .The_article_name .name_message .name_TOP a {
+    line-height: 1.7;
+  }
+
+  .The_article_box .The_body h2 {
+    margin-top: 0.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .The_article_box .The_body .content-bd {
+    font-size: 0.32rem;
+    line-height: 1.8;
+    margin-top: 0.2rem;
+  }
+
+  .discuss .all_discuss .all_discuss_tit .number {
+    margin-right: -0.7rem;
+  }
+
+  .discuss .Comment_box .face_publish .text-publish button,
+  .discuss .all_discuss .all_discuss_tit .number {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  .discuss .all_discuss .all_discuss_tit .all_discuss_t {
+    left: -0.25rem !important;
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+
+  .discuss .Comment_box .Comment-status {
+    padding: 0.15rem 0.1rem 0.1rem;
+  }
+
+  .discuss .Comment_box .Comment-status .textarea-fw {
+    height: 1.5rem;
+  }
+
+  .all_discuss .block-cont-gw .cont-msg-gw .msg-wrap-gw .build-floor-gw {
+    padding: 0.1rem;
+  }
+
+  .discuss .all_discuss .all_discuss_tit {
+    margin-bottom: 0.3rem;
+  }
+
+  .all_discuss .block-cont-gw {
+    padding-top: 0.2rem;
+  }
+
+  .all_discuss .block-cont-gw .cont-msg-gw .global-clear-spacing a {
+    padding-left: 0.25rem;
+  }
+
+  .all_discuss
+    .block-cont-gw
+    .cont-msg-gw
+    .msg-wrap-gw
+    .build-floor-gw
+    .wrap-user-gw {
+    height: 0.7rem;
+    line-height: 2.5;
+  }
+
+  .cont-msg-gw .wrap-build-gw {
+    margin: 0.45rem 0 0.2rem;
+  }
+
+  .all_discuss .block-cont-gw .cont-msg-gw .wrap-user-gw {
+    margin-top: 0.15rem;
+  }
+
+  .expression {
+    width: 80vw;
+  }
+
+  .discuss .Comment_box .face_publish .text-publish button {
+    margin-right: -0.3rem;
+  }
+
+  .cont-msg-gw .wrap-action-gw {
+    margin-bottom: 0.15rem;
+  }
+
+  .all_discuss .block-cont-gw .cont-msg-gw .global-clear-spacing a {
+    padding-left: 0.15rem;
+  }
+
+  .cont-msg-gw .action-click-gw > span {
+    padding: 0 0.1rem;
+  }
+
+  .content-ft li {
+    width: 19vw;
+  }
+
+  .popular_video_list li .video_img a img {
+    width: 35vw;
+  }
+
+  .popular_video_list li .text {
+    width: 50vw;
+  }
+
+  .popular_video_list li .text a h4 {
+    margin-bottom: 0.15rem;
+  }
+
+  .Forum_user_ranking_box ul li div.name a {
+    line-height: 3.3;
+    width: 3rem;
+  }
+
+  .Forum_user_ranking_box ul li div.level span {
+    line-height: 3.3;
+    width: 1.5rem;
+  }
+
+  .jzgd {
+    padding: 1rem 0;
+  }
+
+  #example_video_1 {
+    height: 4rem;
+    border-radius: 0.2rem;
+    margin-top: 0.2rem;
+  }
+
+  .video-js .vjs-big-play-button {
+    top: 37% !important;
+    left: 37% !important;
+  }
+
+  .bbstopic .img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.15rem;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .bbstopic .li-si {
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+
+  .bbstopic .li-si a {
+    margin: 0 0.1rem 0.1rem !important;
+  }
+
+  .bbstopic .con {
+    overflow: initial;
+  }
+
+  .bbstopic .title .name {
+    width: 100%;
+  }
+
+  .bbstopic .info {
+    margin: 0.45rem 0 0.2rem;
+    display: block;
+    width: 100%;
+  }
+
+  .bbstopic .desc {
+    width: 66vw;
+    white-space: inherit;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .bbstopic .title {
+    height: 0.8rem;
+    line-height: 0.8rem;
+  }
+
+  .topic-reco {
+    padding: 0 0.2rem 0.2rem;
+  }
+
+  .topic-reco li {
+    padding: 0.25rem 0 0;
+    background-color: #fff;
+  }
+
+  .bbstopic,
+  .topic-reco-box {
+    margin-bottom: 0.2rem;
+  }
+
+  .gamebbs_nav .header_nav_box::after,
+  .gamebbs_nav .header_nav_box::before {
+    width: 0.2rem;
+  }
+
+  #header ul li {
+    padding: 0 0.1rem 0.2rem 0;
+  }
+
+  .game_Deta_1 {
+    padding: 0.7rem 0.1rem 0;
+  }
+
+  .game_Deta .game_Portrait .game_Portrait_top {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  .game_Deta .game_Desc .game_name {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .game_Deta .game_Desc .tag a {
+    margin-top: 0.15rem;
+    line-height: normal;
+    padding: 0.03rem 0.05rem;
+    margin-right: 0.1rem;
+    border: #ff9935 1px solid;
+    color: #ff9935;
+  }
+
+  .game_Deta .game_Desc {
+    position: inherit;
+    width: 100%;
+  }
+
+  .btn-default {
+    position: absolute;
+    top: 0.35rem;
+    right: 0.25rem;
+  }
+
+  .game_Deta .game_Portrait .game_Portrait_bot span {
+    padding: 0.1rem 0.2rem;
+    background-color: #ff9935;
+  }
+
+  .game_Deta .game_Desc .game_Desc_list p {
+    margin-top: 0.05rem;
+  }
+
+  .game_xiazai a {
+    padding: 2px 0.1rem;
+  }
+
+  .section-title {
+    margin-bottom: 0.15rem;
+  }
+
+  .Detailed_game_information .Detailed_game {
+    padding: 0.2rem 0.2rem 0.15rem;
+  }
+
+  .unstyled li {
+    width: 50%;
+  }
+
+  .poster_box {
+    height: 3.5rem;
+    padding: 0.15rem 0;
+  }
+
+  .news_videos li {
+    width: 100%;
+    margin: 0.15rem 0;
+  }
+
+  .news_videos li a {
+    overflow: hidden;
+  }
+
+  .news_videos li div {
+    width: 3rem;
+    height: 1.6rem;
+    margin-right: 0.15rem;
+  }
+
+  .news_videos li p {
+    line-height: 26px !important;
+    -webkit-line-clamp: 3;
+  }
+
+  .news_videos li i {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  .bbs_news li .text-wrapper .text {
+    max-height: 40px !important;
+  }
+
+  .bbs_news li .image {
+    max-height: 80px;
+    max-width: 140px;
+  }
+
+  .bbs_news li {
+    overflow: hidden;
+  }
+
+  .bbs_news li.image .text-wrapper {
+    padding-left: 0.15rem;
+  }
+
+  .Text_detai {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .game_Deta .grade_box.clearfix {
+    width: 165px;
+    height: auto;
+  }
+
+  #Game_score {
+    margin-top: 0.15rem;
+  }
+
+  .Bar_charts li {
+    margin: 0.15rem 0;
+  }
+
+  .Bar_charts li .Bar_charts_d1 {
+    width: 75%;
+  }
+
+  .Bar_charts {
+    padding-top: 0.25rem;
+    padding-left: 0.3rem;
+  }
+
+  .Bar_charts li i.compound {
+    margin: 0 0.25rem;
+  }
+
+  .score .deta_p span {
+    margin: 0.15rem 0.15rem 0;
+  }
+
+  .score_left .title {
+    margin-top: 0.07rem;
+  }
+
+  .score .grade_box em {
+    margin-top: 0.22rem;
+    margin-left: 0.15rem;
+  }
+
+  .score .grade_box.clearfix {
+    width: 165px;
+  }
+
+  .score .title {
+    margin-left: 0.15rem;
+  }
+
+  .score_left {
+    margin-bottom: 0.15rem;
+  }
+
+  .score_left .star_1 {
+    margin: 0.25rem 0 0.15rem 0;
+  }
+
+  .A_evaluation {
+    margin-top: 0.15rem;
+  }
+
+  .Is_logged_in button {
+    margin-top: 0.15rem;
+  }
+
+  .Is_logged_in button {
+    border-radius: 0.5rem;
+    min-width: 2rem;
+    height: 0.7rem;
+  }
+
+  .Please_indicate_ico_1,
+  .Please_indicate_ico_2 {
+    background-size: 3.5rem;
+  }
+
+  .Please_indicate_ico_1 {
+    width: 3.5rem;
+    height: 0.5rem;
+  }
+
+  .Is_loggedIn_release .Please_indicate .tit {
+    width: 100%;
+  }
+
+  .A_evaluation .evaluation_Not_logged {
+    margin-bottom: 0.2rem;
+  }
+
+  .comment_ .item_text_score,
+  .item_content .item_text_header {
+    padding-left: 1.3rem;
+  }
+
+  .wgzdyh ul li .users-container a {
+    max-width: 4.3rem;
+  }
+
+  .comment_ .evaluate_item .login_info {
+    width: 0.9rem;
+    top: 0.15rem;
+    left: 0.15rem;
+  }
+
+  .item_content .item_text_body > p,
+  .reply-area .txt {
+    line-height: 1.65;
+  }
+
+  .Personal_box {
+    margin-bottom: 0.2rem;
+  }
+
+  .userPage_head {
+    padding: 0.2rem 0.3rem;
+    border-radius: 0;
+    margin-bottom: 0.15rem;
+  }
+
+  .userPage_head .userPage_head_right ul li span.stats_number {
+    line-height: 2;
+  }
+
+  .userPage_head .userPage_head_left .header_left_img img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  .userPage_head .userPage_head_left .header_left_text p {
+    margin: 0.15rem;
+  }
+
+  .userPage_head .userPage_head_left .header_left_text a {
+    margin: 0.15rem auto;
+    max-width: 125px;
+  }
+
+  .userPage_head .userPage_head_right ul li {
+    padding: 0.05rem 0;
+  }
+
+  .tab_list_nav_box .tab_nav ul li {
+    margin: 0 0.2rem 0 0.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+  }
+
+  .Personal_box .Personal_top {
+    padding: 0.1rem 0 0.2rem;
+  }
+
+  .Is_loggedIn_release .form-group .form-control {
+    height: 2rem;
+  }
+
+  .Inform_list .Inform_tet .The_publisher a {
+    overflow: hidden;
+  }
+
+  .Personal_box .Personal_top a {
+    margin: 0.15rem;
+  }
+
+  .no_history img {
+    width: 3rem;
+  }
+
+  .tab_list .ranking_list li {
+    margin: 0.25rem 0;
+    padding-right: 0;
+  }
+
+  .gezx_ri {
+    display: block !important;
+  }
+
+  .video-topic-list .news_videos li p {
+    -webkit-line-clamp: 3 !important;
+  }
+
+  .post-topic-list ul.Inform_list li {
+    padding: 0.3rem 0.07rem;
+    margin: 0.15rem 0;
+  }
+
+  .Inform_list .Inform_news {
+    margin-left: 0;
+    margin-top: 0.2rem;
+    line-height: 1.8;
+  }
+
+  .Inform_list .Inform_img {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .Inform_list .Inform_tet {
+    padding-left: 1rem;
+  }
+
+  .app-topic-list .Recently_Viewed_list ul li {
+    margin-top: 5vw;
+    width: 26.1vw;
+    margin: 0.15rem;
+  }
+
+  .gzbutt span {
+    padding: 0.05rem;
+  }
+
+  .Inform_list.guzn .Inform_tet .The_theme span {
+    margin-right: 0.1rem;
+  }
+
+  .personal_g {
+    padding: 0 0.15rem;
+  }
+
+  .independent,
+  .independent .Personal_box {
+    border-radius: 0 !important;
+  }
+
+  .independent .video-topic-list .news_videos.duli li .tit a,
+  .post-topic-list ul li .tit a {
+    overflow: initial;
+  }
+
+  .tab_list .ranking_list.duli li {
+    padding: 0 0.15rem 0.1rem;
+  }
+
+  .app-topic-list .ranking_list li div.tit {
+    width: 73%;
+  }
+
+  .tab_list .ranking_list li a img {
+    margin: 0 0.15rem 0 0;
+  }
+
+  .independent .tab_list .ranking_list.duli li {
+    margin: 0.2rem 0.15rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .independent .tab_list .ranking_list.duli.Following li div.tit {
+    width: 53%;
+  }
+
+  .independent .tab_list .ranking_list.duli.Following li {
+    padding: 0.2rem 0.15rem;
+  }
+
+  .gzbutt {
+    min-width: 1.2rem;
+  }
+
+  .Basic_profile {
+    padding: 0 0.15rem;
+  }
+
+  form .form-group .control-label {
+    padding: 0 0.15rem;
+  }
+
+  .leri-ger3,
+  .leri-ger4,
+  .leri-ger5 {
+    width: 95%;
+  }
+
+  form .form-group .form-control {
+    height: 0.5rem;
+  }
+
+  form .form-group {
+    margin: 0 0 0.25rem;
+    min-height: 1.2rem;
+  }
+
+  form .form-group .control-label {
+    padding: 0 0 0.15rem;
+    text-align: left;
+  }
+
+  .profile-edit {
+    margin-top: 0.3rem;
+  }
+
+  .Modify_the_picture {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.7rem auto 1rem;
+  }
+
+  .Modify_the_picture i {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: -0.7rem;
+    margin-top: -0.7rem;
+  }
+
+  .login_form {
+    padding: 0.5rem 0.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .login_form form .label_box:nth-child(1) {
+    margin-top: 0.2rem;
+  }
+
+  .login_form form .label_box {
+    height: 0.7rem;
+    margin: 0 0 0.7rem;
+  }
+
+  .login_form form .label_box input {
+    height: 0.7rem;
+  }
+
+  .login_form form .label_box.on span {
+    top: -0.5rem;
+  }
+
+  .login_form .login_but {
+    width: 60%;
+    height: auto;
+    border-radius: 0.2rem;
+  }
+
+  .login_form button {
+    padding: 0.3rem 0.25rem;
+  }
+
+  .login_form .login_nav li {
+    margin: 0.4rem 0;
+  }
+
+  .login_form .login_tips {
+    margin: 0.5rem 0;
+  }
+
+  .Quick_login_box {
+    margin-bottom: 1rem;
+    margin-top: -0.5rem;
+  }
+
+  .Quick_login_box .Quick_login_tit span {
+    width: 4rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin-left: -2rem;
+    top: 50%;
+  }
+
+  .ranking_list li .gameInfo h4 {
+    line-height: 1.55;
+  }
+
+  .Quick_login_box ul li {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .login_form .login_tips.login_tit {
+    height: 0.5rem;
+  }
+
+  .verification_shade > div {
+    border-right: 0;
+    margin: 25vh auto 0;
+    width: 85%;
+    border-radius: 0.15rem;
+  }
+
+  .verification_shade p {
+    padding: 0.35rem 0;
+  }
+
+  .verification_shade input {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin: 0.2rem 0.1rem;
+  }
+
+  .verification_shade form > div span {
+    padding-bottom: 0.2rem;
+  }
+
+  .verification_shade button {
+    padding: 0.2rem 0.35rem;
+  }
+
+  .mistake img.rotating {
+    width: 80vw;
+  }
+
+  .form-inline {
+    display: none;
+  }
+
+  .grade_box.clearfix.ranking_star {
+    margin: 0.05rem 0 0.05rem 1.7rem;
+    height: 24px;
+  }
+
+  .uploading {
+    padding: 0.15rem;
+  }
+
+  .game_messag_ri select {
+    margin: 0 !important;
+  }
+
+  .w-e-toolbar {
+    z-index: 10002 !important;
+    position: relative !important;
+  }
+
+  .w-e-toolbar .w-e-menu {
+    padding: 1vw 1.8vw !important;
+    margin: 1vw 1.8vw !important;
+  }
+
+  .w-e-toolbar {
+    position: relative !important;
+  }
+
+  .w-e-toolbar .w-e-droplist {
+    left: 0 !important;
+    top: 2% !important;
+    z-index: 99 !important;
+  }
+
+  .w-e-toolbar {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+
+  .w-e-toolbar .w-e-menu.bi {
+    position: initial !important;
+  }
+
+  .game_message img {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 0.15rem;
+  }
+
+  .game_message {
+    line-height: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .game_message span {
+    margin: 0 0 0 0.15rem;
+  }
+
+  .seek_box .ranking_list .ranking_ul > li {
+    padding: 0.15rem;
+  }
+
+  .seek_box .ranking_list li a.tx img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .seek_box .Personal_box {
+    padding: 0;
+  }
+
+  .seek_box .ranking_list li .gameInfo {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .seek_box .tab_list .ranking_list li {
+    margin: 0.15rem 0;
+  }
+
+  .seek_box .ranking_list li .gameInfo h4 {
+    line-height: 1.7;
+  }
+
+  .seek_box .ranking_list .ranking_cs .firm_img {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .seek_box .ranking_list .ranking_cs li .gameInfo {
+    width: 100%;
+  }
+
+  .video-topic-list .news_videos.duli li {
+    margin: 0.15rem 0 0;
+  }
+
+  .seek_box .video-topic-list .news_videos.duli li {
+    margin: 0.15rem 0 0;
+    padding: 0.15rem;
+    width: 100%;
+  }
+
+  .seek_box .watching_focus_box .watching_focus_list {
+    margin-top: 0.15rem;
+  }
+
+  .seek_box .watching_focus_list .item-content .content-text.on p {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .post-topic-list ul li > a {
+    line-height: 27px;
+  }
+
+  .seek_box .watching_focus_list .item-content .content-text.on > a {
+    display: none;
+  }
+
+  .seek_box .ranking_list .ranking_ul > li {
+    -webkit-box-shadow: 0 2px 5px #e6e6e6;
+    box-shadow: 0 2px 5px #e6e6e6;
+    border: 1px solid rgba(221, 221, 221, 0.7);
+  }
+
+  .recommend_list .recommend_name .game_name h4 {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  .seek_box .grade_box.clearfix {
+    margin: 0 0 0 1.7rem;
+    height: 25px;
+  }
+
+  .bbstopic .li-si .newtopic {
+    display: none !important;
+  }
+
+  .bbstopic .li-si .newtogz {
+    display: inline-block;
+    margin: 0.2rem 0 !important;
+  }
+
+  .post_box {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: none;
+    visibility: visible;
+    opacity: 1;
+    box-shadow: none;
+  }
+
+  .post_box .group_create_entry li a span {
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+
+  .ecomment {
+    margin: 0.05rem 0;
+    padding: 0.05rem;
+    font-size: 0.15rem;
+  }
+
+  .pagination > li > a,
+  .pagination > li > span {
+    margin: 0 4px;
+  }
+
+  .overlay .model_content {
+    width: 85%;
+    max-width: 90%;
+  }
+
+  .model_content .model_body {
+    padding: 0;
+  }
+
+  .Hot_forums_box ul li .btn {
+    display: none;
+  }
+
+  #preview img,
+  #preview video {
+    width: 100%;
+  }
+
+  .game_message_le {
+    overflow: hidden;
+    padding: 0.1rem 0 0.2rem;
+  }
+
+  .position p {
+    padding: 0.05rem 0 0;
+  }
+
+  .developer-img {
+    width: auto;
+  }
+
+  .developer-header .developer-text > h1 {
+    font-size: 36px;
+    background-size: 122px;
+    margin-left: 10px;
+  }
+
+  .developer-cop h3 {
+    margin: 0 0 28px;
+    font-size: 28px;
+  }
+
+  .developer-cop ul {
+    max-width: 335px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .developer-cop ul li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .developer-cop ul.long-box-item li {
+    width: 100%;
+  }
+
+  .developer-cop ul.long-box-item li a {
+    padding: 0 0 0 10px;
+  }
+
+  .developer-cop ul.long-box-item li a img {
+    max-width: 100px;
+    width: 30%;
+    padding-top: 31px;
+    margin-right: 10px;
+  }
+
+  .developer-cop ul.long-box-item li a h4 {
+    max-width: 200px;
+    width: 60%;
+    padding-left: 15px;
+    float: left;
+  }
+
+  section.ads-item.no {
+    height: auto;
+    padding-top: 0;
+  }
+
+  section.ads-item.ads-first {
+    padding: 50px 0;
+    margin-top: -5px;
+  }
+
+  section.ads-item .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto !important;
+  }
+
+  section.ads-item.ads-first .container .ads-title {
+    font-size: 0.55rem;
+  }
+
+  section.ads-item.ads-first .container .ads-first-content {
+    font-size: 0.35rem;
+  }
+
+  section.ads-item .container .ads-button-nav {
+    margin: 20px auto 30px;
+  }
+
+  section.ads-item .container .ads-button-nav .ads-button {
+    display: inline-block;
+    min-width: 80px;
+    margin: 0 auto;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  section.ads-item .container .ads-contact .contact-item {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0.3rem;
+  }
+
+  section.ads-item .container .ads-contact .contact-item span {
+    font-size: 0.3rem;
+  }
+
+  section.ads-item .ads-item-title {
+    font-size: 0.45rem;
+  }
+
+  section.ads-item .ads-item-content {
+    font-size: 0.3rem;
+  }
+
+  section.ads-item .ads-item-content.desc {
+    padding: 0;
+  }
+
+  .ads-item .ads-super .ads-super-item {
+    width: 30%;
+  }
+
+  .ads-item .ads-super .ads-super-item .super-itme-icon-nav i {
+    width: 100%;
+    height: 80px;
+    background-size: contain;
+  }
+
+  .ads-item .ads-super .ads-super-item .super-item-title {
+    margin: 0.2rem 0 0;
+    font-size: 0.25rem;
+    line-height: normal;
+  }
+
+  section.ads-item .ads-accurate,
+  section.ads-item .ads-exposure {
+    width: 90%;
+    background-size: contain;
+  }
+
+  section.ads-item .ads-create-steps .ads-step-bg {
+    max-width: 60%;
+  }
+
+  section.ads-item .ads-create-steps .ads-step-item .step-text {
+    font-size: 0.25rem;
+    width: auto;
+    padding: 0 0 0 0.25rem;
+  }
+
+  .about-us,
+  .social-item {
+    width: 100%;
+  }
+
+  .social-result {
+    width: 150px;
+  }
+
+  .about-us-content > li:first-of-type {
+    padding: 0;
+    margin: 0.2rem;
+  }
+
+  .about-us-content .about-us-brief li {
+    font-size: 0.3rem;
+  }
+
+  .top_toolbar {
+    display: none;
+  }
+
+  .quick_link {
+    width: auto;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .quick_link li {
+    border: none;
+  }
+
+  .top_toolbar .wrapper .desc {
+    display: none;
+  }
+
+  .bottom_toolbar {
+    display: block;
+    background: #fff;
+    margin: 20px 0 -21px;
+  }
+
+  .login_choose_box .login_choose_list .ioc.china {
+    display: block;
+  }
+
+  .sitemap_box .control {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .sitemap_box .list li {
+    margin-right: 3%;
+    width: 30%;
+  }
+
+  .sitemap_box .list a {
+    font-size: 0.2rem;
+  }
+
+  .quick_link li a {
+    font-size: 0.2rem;
+  }
+
+  .Mobil_search_head .return img {
+    width: 0.3rem;
+    display: block;
+  }
+
+  .post-topic-list ul li > a span {
+    line-height: normal;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div p {
+    padding: 0.2rem 0;
+    height: 20px;
+  }
+
+  .use_help {
+    width: 100%;
+    margin: 0;
+  }
+
+  .use_nav {
+    width: 100%;
+    height: 1rem;
+    padding: 0;
+  }
+
+  .use_nav ul {
+    height: 130%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .use_nav li {
+    color: #333;
+    line-height: 1rem;
+    font-size: 0.4rem;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    height: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    float: none;
+  }
+
+  .use_nav li a {
+    width: auto;
+    height: auto;
+    border-left: none;
+    padding: 0 0.43rem;
+    font-size: 0.3rem;
+    position: relative;
+    line-height: 0.787rem;
+  }
+
+  .use_nav li a::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -5%;
+    width: 1px;
+    height: 0.297rem;
+    background: #d1d1d1;
+  }
+
+  .use_con {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.225rem;
+    padding: 0.851rem 0.451rem 2.12rem;
+  }
+
+  .use_nav li.on a::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0.106rem;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    margin-left: -0.3rem;
+    z-index: 2;
+  }
+
+  .use_nav li.on a {
+    color: #ff9935;
+  }
+
+  .help .help_list div {
+    width: 2.125rem;
+    margin: 0.425rem 0.425rem 0 0.425rem;
+  }
+
+  .use_con_tit span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .faqlist {
+    margin-top: 0.4rem;
+  }
+
+  .faqlist .faqhd {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .agreement_toptitle strong {
+    display: block;
+    font-size: 0.35rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .agreement_infos h3 {
+    font-size: 0.3rem;
+  }
+
+  .use_con_txt h3 {
+    padding: 0.2rem 0;
+  }
+
+  .recommend_list .recommend_img img {
+    max-height: 3rem;
+    height: auto;
+  }
+
+  .game_xiazai .btn_log,
+  .game_xiazai a {
+    padding: 0;
+  }
+
+  .footer span a {
+    font-size: 0.25rem;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .login_choose_box .login_choose_list{
+    border-radius: 0;
+  }
+  .slide-ul p {
+    display: none;
+  }
+  .bbstopic .info .total span {
+    font-size: 12px;
+  }
+  .bbstopic .li-si .newtopic.gf {
+    display: inline-block !important;
+    margin: 0.2rem 0 !important;
+  }
+  .ranking_list .ranking_cs li .gameInfo {
+    width: auto;
+  }
+  .ranking_list .ranking_cs .star_p .game {
+    display: block;
+    margin: 0.05rem 0;
+  }
+  .model_content .model_body p.wx {
+    margin-top: 15px;
+  }
+  .model_content .model_body .panel_footer ul.share {
+    margin-bottom: 10px;
+  }
+  .select_title {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+  }
+  .select_title li {
+    margin: 0;
+  }
+  .select_title li a {
+    font-size: 0.3rem;
+  }
+  .news_box_m {
+    display: block;
+    margin-top: -10px;
+  }
+  /* 最新帖子 start */
+  .news_box_m ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+  }
+  .news_box_m ul li a.img {
+    float: right;
+    width: 40%;
+    display: block;
+  }
+  .news_box_m ul li a.img img {
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    max-height: 80px;
+    object-fit: cover;
+  }
+  .news_box_m ul li .info_box {
+    float: left;
+    width: 55%;
+    margin-right: 10px;
+  }
+  .news_box_m ul li .info_box .tag {
+    display: block;
+    margin-bottom: 0.2rem;
+    margin-left: -10px;
+    color: #a6a8b0;
+    padding-left: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    border-left: 4px solid #ff9935;
+  }
+  .news_box_m ul li .info_box h2 {
+    font-size: 14px;
+    line-height: 22px;
+    max-height: 44px;
+    font-weight: 600;
+    color: #000;
+    height: auto;
+    margin-bottom: 0.15rem;
+    overflow: hidden;
+  }
+  .news_box_m ul li p {
+    float: left;
+    width: 100%;
+    margin: 0.1rem 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+  }
+  .news_box_m ul li .bottom {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 0.1rem;
+    border-top: 1px solid #ddd;
+  }
+  .news_box_m ul li .bottom span {
+    color: #999;
+  }
+  .news_box_m ul li.big a.img {
+    float: none;
+    width: 100%;
+    max-height: 4rem;
+  }
+  .news_box_m ul li.big a.img img {
+    max-height: 4rem;
+  }
+  .news_box_m ul li.big .info_box {
+    float: none;
+    width: 100%;
+    position: relative;
+  }
+  .news_box_m ul li.big .info_box .tag {
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: -30px;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    line-height: 20px;
+    border: none;
+    color: #fff;
+    background: url(../img/mask.png) center no-repeat;
+    background-size: 100%;
+    text-align: center;
+  }
+  .news_box_m ul li.big .info_box h2 {
+    margin: 10px 0 0;
+    overflow: hidden;
+  }
+  /* 新闻帖子 end */
+  .section-title h3 {
+    line-height: normal;
+  }
+  .grade_box em,
+  .section-title h3,
+  .new_reviews_box .review_block p {
+    font-size: 0.3rem;
+  }
+  .btn-default span {
+    padding: 0;
+    font-size: 0.3rem;
+  }
+  .News_box.m {
+    display: block;
+    margin-top: -0.2rem;
+    margin-bottom: 0.1rem;
+  }
+  .News_box ul li {
+    line-height: normal;
+    height: 25px;
+  }
+  .News_box ul li a {
+    font-size: 0.3rem;
+  }
+  .forum_seek {
+    display: none;
+  }
+  .div_seek {
+    display: block;
+    margin-top: -0.2rem;
+  }
+  .Inform_list.guzn .gzbutt {
+    top: -10px;
+  }
+  .game_xiazai .btn_log,
+  .game_xiazai a {
+    margin: 0.1rem 0.2rem 0;
+  }
+  .game_Deta .game_Desc .gam_The_installation .description {
+    line-height: normal;
+  }
+  .new_reviews_box.anli .ranking_list li div p.grade .compound {
+    margin-top: 0.1rem;
+  }
+  .new_reviews_box.anli .new_reviews_box .review_block p {
+    font-size: 0.3rem;
+  }
+  #new_game {
+    margin-top: -0.25rem;
+  }
+  .new_reviews_box.anli {
+    margin: 0;
+  }
+  .new_reviews_box.anli .follow_me_tit p {
+    padding-bottom: 0;
+  }
+  .new_reviews_box.anli,
+  .Independent_box.home {
+    display: block;
+  }
+  .Independent_box.home .Independent_ul {
+    white-space: nowrap;
+    overflow-x: auto;
+    font-size: 0;
+    padding: 5vw 0 1vw;
+    overflow-y: hidden;
+  }
+  .Independent_box.home .Independent_ul li:nth-child(odd),
+  .Independent_box.home .Independent_ul li:nth-child(even) {
+    margin: auto;
+  }
+  .Independent_box.home .Independent_ul li {
+    float: none;
+    width: 33vw;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 4.8vw !important;
+  }
+  .Independent_box.home .Independent_bot a {
+    font-size: 14px;
+    display: block;
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .new_reviews_box {
+    margin-bottom: 0.4rem;
+  }
+  .game_reviews {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .new_reviews_box .follow_me {
+    display: inline-block;
+    width: 78.6666666667vw;
+    margin-right: 4vw;
+  }
+  .new_reviews_box .review_block p {
+    max-height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+  }
+  .w_1200.index {
+    padding: 0.15rem 0.25rem 0;
+  }
+
+  .w_1200 {
+    padding: 0 0.15rem;
+    max-width: 100%;
+  }
+  .The_main.main {
+    padding-top: 0.25rem;
+  }
+
+  .forums_nav ul.forums_ul,
+  .ranking_min_nav,
+  .ranking_nav ul {
+    -webkit-box-shadow: 0 2px 5px #e6e6e6;
+    box-shadow: 0 2px 5px #e6e6e6;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.7);
+  }
+
+  .Quick_login_box ul li,
+  .bbstopic .info .total,
+  .bbstopic .info .total span,
+  .footer .fl_le,
+  .footer .fl_ri,
+  .footer .fl_ri ul li,
+  .game_Deta .game_Desc .tag a,
+  .game_Deta .game_Portrait,
+  .game_messag_ri,
+  .game_message_le,
+  .header_left_img,
+  .header_left_text,
+  .independent .wgzdyh ul li,
+  .login_choose_box .login_choose_list .ioc li,
+  .ranking_list li .gameInfo,
+  .tab_list .ranking_list li,
+  .userPage_head .userPage_head_left .header_left_text a,
+  .userPage_head_left,
+  .video-topic-list .news_videos li {
+    float: none;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div p,
+  .Mobil_search_box,
+  .Recom_topics_ul li,
+  .The_article_box .The_body .content-bd img,
+  .The_main .The_main_le,
+  .The_main .The_main_ri,
+  .Thumb_comment_forward,
+  .div_seek .input_seek input,
+  .footer .fl_le,
+  .footer .fl_ri,
+  .footer .left-header-logo,
+  .game_Deta .game_Portrait,
+  .game_messag_ri,
+  .game_message_le,
+  .header,
+  .header .logo_seek,
+  .header .navbar ul li,
+  .header_left_text,
+  .score_left,
+  .score_right,
+  .tab-menu,
+  .userPage_head .userPage_head_left,
+  .userPage_head .userPage_head_left .header_left_img,
+  .userPage_head .userPage_head_right ul,
+  .userPage_head_left,
+  .userPage_head_right,
+  .video-topic-list .news_videos li,
+  .video-topic-list .news_videos.duli li,
+  .watching_focus_list .item-content .content-text.on a img,
+  .watching_focus_list .item-content .content-text.on p,
+  form .form-group .control-label {
+    width: 100%;
+  }
+
+  .Coming_soon_ul li img,
+  .Forum_user_ranking_box ul li div.portrait,
+  .header .navbar .pack_up,
+  .new_reviews_box .ranking_list li a img,
+  .ranking_list .ranking_cs .firm_img,
+  .recommend_list .recommend_name .game_name a img {
+    width: 1rem;
+  }
+
+  .bbstopic .con,
+  .bbstopic .desc,
+  .header .logo_seek .seek_portrait,
+  .independent .wgzdyh ul li,
+  .login_choose_box .login_choose,
+  .ranking_list li .gameInfo,
+  .tab_list .ranking_list li,
+  .w_1200 {
+    width: auto;
+  }
+
+  .Forum_user_ranking_box ul li div.level span,
+  .Recently_Viewed_list ul li p,
+  .bbstopic .info .total,
+  .bbstopic .li-si,
+  .div_seek .input_seek input,
+  .footer,
+  .game_Deta,
+  .game_Deta .game_Desc .game_name,
+  .header .logo_seek .log_portrait .user_message .dropdown_menu a,
+  .score .deta_p,
+  .tab-menu .tab-item,
+  .userPage_head {
+    text-align: center;
+  }
+
+  .all_discuss
+    .block-cont-gw
+    .cont-msg-gw
+    .msg-wrap-gw
+    .build-floor-gw
+    .wrap-user-gw,
+  .bbstopic .con,
+  .header .logo_seek .login_mask .w_1200 > div,
+  .login_choose_box .login_choose_list,
+  .ranking_list .ranking_ul > li,
+  .ranking_list li div p.grade {
+    margin-top: 0;
+  }
+
+  .Hot_forums_box,
+  .Independent_ul li,
+  .Mobil_search_box .Top_search ul li,
+  .Personal_box,
+  .Topic_ranking .Topic_ranking_list li,
+  .follow_me,
+  .game_Deta .game_Portrait .game_Portrait_bot span,
+  .idea .discuss,
+  .ranking_list .ranking_ul > li,
+  .tag_ul li,
+  .verification_shade button,
+  .verification_shade input,
+  .watching_focus_box .watching_focus_list {
+    border-radius: 0.1rem;
+  }
+
+  .Independent_ul li img,
+  .Mobil_search_box,
+  .Mobil_search_head .Search-header,
+  .follow_me .follow_m_img,
+  .header .navbar,
+  .header .navbar ._mask,
+  .login_choose_box .login_choose_list,
+  .poster_box ul,
+  .userPage_head .userPage_head_left .header_left_img,
+  .w_1200 {
+    height: 100%;
+  }
+
+  .Mobil_search_box,
+  .bbstopic .li-si,
+  .header .navbar,
+  .header .navbar ._mask,
+  .login_form form .label_box span {
+    top: 0;
+  }
+
+  .Promote_box .Promote_r,
+  .bbstopic,
+  .bbstopic .con,
+  .bbstopic .desc,
+  .bbstopic .info,
+  .footer .footer-left-header,
+  .game_Deta .game_Desc .tag a,
+  .game_message,
+  .news_videos li p,
+  .recommend_list .recommend_name,
+  .tag_ul,
+  .video-topic-list .news_videos li p,
+  .watching_focus_list .item-content .content-text.on a img {
+    height: auto !important;
+  }
+
+  .Coming_soon_ul li img,
+  .Forum_user_ranking_box ul li div.level span,
+  .Forum_user_ranking_box ul li div.name a,
+  .Forum_user_ranking_box ul li div.portrait,
+  .Mobil_search_box .Mobil_search_head,
+  .header,
+  .header .logo_seek,
+  .header .logo_seek .log_portrait .user_message,
+  .header .logo_seek .login_mask .select_way img,
+  .header .navbar .pack_up,
+  .new_reviews_box .ranking_list li a img,
+  .ranking_list .ranking_cs .firm_img,
+  .recommend_list .recommend_name .game_name a img {
+    height: 1rem;
+  }
+
+  .Recently_Viewed_list ul li img,
+  .footer .left-header-logo img,
+  .game_Deta .grade_box.clearfix,
+  .login_form .login_but,
+  .userPage_head .userPage_head_left .header_left_img img {
+    margin: 0 auto;
+  }
+
+  .Mobil_search_box .Top_search ul li,
+  .Mobil_search_head .input_inner,
+  .Mobil_search_head .return,
+  .game_message span,
+  .head-r,
+  .news_videos li div,
+  .tab_list_nav_box .tab_nav ul li {
+    float: left;
+  }
+
+  .Coming_soon_ul ul,
+  .Independent_ul,
+  .Independent_ul li p span,
+  .Recently_Viewed_list ul,
+  .Recom_topics_ul,
+  .Topic_ranking .Topic_ranking_list li .ioc span,
+  .bbstopic .desc,
+  .bbstopic .img,
+  .game_Deta .game_Desc,
+  .game_Deta .game_Desc .gam_The_installation .description span,
+  .game_messag_ri select,
+  .header .logo_seek .login_mask .select_way > div i,
+  .header_left_text,
+  .independent .tab_list .ranking_list.duli.Following li,
+  .new_reviews_box .ranking_list li div p.grade,
+  .new_reviews_box p.review_block_p,
+  .news_videos li,
+  .news_videos li p,
+  .news_videos ul,
+  .position_Box.recommend,
+  .ranking_list .ranking_cs .firm_img img,
+  .ranking_list .ranking_cs .star_p,
+  .ranking_list .ranking_ul li,
+  .ranking_list li .gameInfo p,
+  .ranking_list li a.tx img,
+  .recommend_list .recommend_name .game_name h4,
+  .section-title,
+  .tab_list .ranking_list,
+  .topic-reco li,
+  .type_name span.author_game a,
+  .userPage_head .userPage_head_left .header_left_img,
+  .w_1200 .main,
+  .watching_focus_list .item-content .content-text.on a {
+    margin: 0;
+  }
+
+  .Quick_login_box ul li,
+  .bbstopic .info .total span,
+  .footer .fl_ri ul li,
+  .game_Deta .game_Desc .tag a,
+  .logo_seek .san_san,
+  .ranking_list .ranking_cs .star_p span {
+    display: inline-block;
+  }
+  .new_reviews_box.anli,
+  .Independent_ul li img,
+  .Mobil_search_box .Top_search ul li a,
+  .The_main_ri.index_The_main_ri,
+  .cont-msg-gw .wrap-build-gw .global-clear-spacing,
+  .footer .floatleft > span,
+  .footer .left-header-logo,
+  .footer .left-header-logo img,
+  .gezx_ri,
+  .head-r,
+  .header .logo_seek .login_mask .select_way > div a,
+  .login_choose_box .login_choose_list .ioc li i,
+  .logo_seek .san_san span,
+  .news_videos li a,
+  .searcha-span,
+  .tab-menu,
+  .tab-menu .tab-item:not(:last-child):after,
+  .tab_list .ranking_list li,
+  .tab_seek_box,
+  .tag_ul li a,
+  .userPage_head .userPage_head_left .header_left_text a,
+  .w_The_login .w_The_login_tx img,
+  .ads {
+    display: block;
+  }
+
+  .friend_link,
+  .Mobil_search_box,
+  .My_tool,
+  .The_article_box .The_article_name .text_time,
+  .The_main_ri,
+  .Thumb_comment_forward ul li.fenx_box,
+  .eva-menu label,
+  .follow_me_box,
+  .game_Deta .berwm,
+  .game_bbs_ri,
+  .header .logo_seek .nav_form,
+  .header .navbar ._mask,
+  .header .user_name,
+  .main_header-tab .nav_justified li a small,
+  .popular_video_list li .text p,
+  .position p span,
+  .ranking_icon,
+  .ranking_list .ranking_cs .bnt,
+  .ranking_list .ranking_cs .star.star_1,
+  .ranking_list .ranking_cs li .gameInfo em,
+  .ranking_list li .gameInfo p span,
+  .ranking_list li .gameInfo p.tit,
+  .ranking_list li .ranking_list_img,
+  .ranking_list li a.download,
+  .ranking_list li div.download p,
+  .ranking_list li div.tit p.tag,
+  .ranking_top3,
+  .recommend_list .recommend_name .type_grade p,
+  .time_browse.floatright,
+  .watching_focus_list .item-content .content-text.on p,
+  .footer .floatleft > br {
+    display: none;
+  }
+
+  .Coming_soon_ul li,
+  .Independent_ul li img,
+  .Quick_login_box,
+  .Quick_login_box ul,
+  .Recently_Viewed_list ul,
+  .all_discuss .block-cont-gw .cont-msg-gw .msg-wrap-gw,
+  .all_discuss
+    .block-cont-gw
+    .cont-msg-gw
+    .msg-wrap-gw
+    .build-floor-gw
+    .build-msg-gw
+    .user-floor-gw,
+  .all_discuss .block-cont-gw .cont-msg-gw .user-address-gw,
+  .app-topic-list .Recently_Viewed_list ul li,
+  .bbstopic .img,
+  .comment_ .evaluate_item .item_content,
+  .game_messag_ri select,
+  .header .logo_seek,
+  .header .logo_seek .log_portrait .user_message,
+  .header .logo_seek .login_mask .w_1200 > div,
+  .header .navbar .w_1200,
+  .leri-ger3,
+  .leri-ger4,
+  .leri-ger5,
+  .ranking_list li .gameInfo,
+  .score_left,
+  .score_right,
+  .w_1200.persinal_box {
+    padding: 0;
+  }
+
+  .login_form h3,
+  .verification_shade i.Shut_down {
+    font-size: 0.4rem;
+  }
+
+  .comment_ .evaluate_item,
+  .eva-menu,
+  .footer .fl_le,
+  .footer .fl_ri,
+  .login_form .login_nav li a,
+  .login_form .login_nav li span,
+  .userPage_head .userPage_head_left .header_left_text h1 {
+    padding: 0.2rem 0;
+    max-width: 100%;
+  }
+
+  .Hot_forums_box ul li .forum-info h4,
+  .Hot_forums_box ul li > a,
+  .Independent_ul li p,
+  .bbstopic .title .name,
+  .game_message span,
+  .position p,
+  .ranking_list li .gameInfo h4,
+  .ranking_list li .gameInfo p,
+  .type_name span.author_game a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .A_evaluation,
+  .Is_loggedIn_release .Please_indicate,
+  .Is_loggedIn_release .form-group,
+  .Personal_box,
+  .Recommended_project .tit,
+  .bbstopic,
+  .follow_me,
+  .footer,
+  .gamebbs_nav .header_nav_box,
+  .idea .discuss,
+  .list-unstyled_box .follow_me,
+  .login_choose_box .login_choose_list,
+  .new_reviews_box .follow_me,
+  .post-topic-list ul li,
+  .ranking_min_nav ul li a,
+  .recommend_list .recommend_name,
+  .score,
+  .verification_shade > div,
+  .w_1200 .main.box_shadow,
+  .wgzdyh ul li {
+    padding: 0.15rem;
+  }
+
+  .Bar_charts li span,
+  .Forum_user_ranking_box ul li div.level span,
+  .Forum_user_ranking_box ul li div.name a,
+  .Hot_forums_box ul li .forum-info p,
+  .Inform_list .Inform_tet .The_theme h3,
+  .Is_loggedIn_release .Please_indicate .tit,
+  .Is_logged_in button,
+  .Personal_box .Personal_top a,
+  .Recommended_project .tit p,
+  .The_article_box .The_article_name .name_message .name_TOP a,
+  .Topic_ranking .Topic_ranking_list li a.ranking_list_top p,
+  .all_discuss
+    .block-cont-gw
+    .cont-msg-gw
+    .msg-wrap-gw
+    .build-floor-gw
+    .build-msg-gw
+    .user-floor-gw,
+  .comment_,
+  .div_seek .input_seek input,
+  .follow_me .follow_me_fnot p,
+  .footer .fl_ri p,
+  .forums_nav ul.forums_ul li a,
+  .game_message span,
+  .header .logo_seek .login_mask .select_way p,
+  .item_content .item_text_body,
+  .item_content .item_text_body > p,
+  .login_choose_box .login_choose_list p,
+  .login_form form .label_box input,
+  .login_form form .label_box span,
+  .login_form form .label_box.on span,
+  .main_header-tab .nav_justified li a,
+  .more span,
+  .news_videos li p,
+  .post-topic-list ul li > a,
+  .ranking_list li .gameInfo p,
+  .ranking_nav ul li a,
+  .reply-area .hd a,
+  .reply-area .txt,
+  .score .deta_p span,
+  .tab-menu .tab-item,
+  .tag_ul li a,
+  .userPage_head .userPage_head_left .header_left_text p,
+  .userPage_head .userPage_head_right ul li span,
+  .userPage_head .userPage_head_right ul li span.stats_number,
+  .verification_shade button,
+  .verification_shade input,
+  .verification_shade p,
+  .wgzdyh ul li .users-container a {
+    font-size: 0.25rem;
+  }
+
+  .Inform_list .Inform_tet .The_publisher span,
+  .action-bar .con span,
+  .game_Deta .game_Portrait .game_Portrait_bot span {
+    font-size: 0.22rem;
+  }
+
+  #header ul li a.on,
+  .A_evaluation,
+  .Game_score_box,
+  .bbstopic,
+  .forums_nav ul.forums_ul,
+  .ranking_list li a.tx img {
+    border-radius: 0;
+  }
+
+  .Mobil_search_head .input_inner input,
+  .Mobil_search_head .submit_btn,
+  .forums_nav ul.forums_ul,
+  .ranking_min_nav,
+  .ranking_nav ul,
+  .score_left,
+  .tab_list .ranking_list li:nth-child(odd) {
+    border: none;
+    margin-bottom: 0.15rem;
+  }
+
+  #header ul li a,
+  .Hot_forums_box ul li button,
+  .Inform_list .Inform_news,
+  .Inform_list .Inform_tet .The_publisher a,
+  .Inform_list.guzn .Inform_tet .The_theme span,
+  .Is_loggedIn_release .form-group .form-control,
+  .Mobil_search_box .Top_search p,
+  .Mobil_search_box .Top_search ul li a,
+  .Please_indicate .stars_prompt,
+  .Quick_login_box .Quick_login_tit span,
+  .Recently_Viewed_list ul li p,
+  .The_article_box .The_article_name .name_message div,
+  .all_discuss .msg-wrap-gw .wrap-issue-gw p,
+  .all_discuss .wrap-user-gw .user-name-gw a,
+  .bbstopic .desc,
+  .eva-menu .order a.active,
+  .eva-menu label,
+  .gzbutt span,
+  .list-unstyled li a,
+  .list-unstyled li span,
+  .list-unstyled_box ul.list-unstyled li a,
+  .login_form .login_tips,
+  .no_history p,
+  .position p,
+  .position p a,
+  .post-topic-list ul li > a,
+  .ranking_list li .gameInfo p.tab a,
+  .ranking_min_nav ul li,
+  .ranking_min_nav ul li a,
+  .recommend_list .recommend_name .game_name p,
+  .tab_list_nav_box .tab_nav ul li,
+  .topic-reco li a,
+  .topic-reco span,
+  .type_name span.author_game a,
+  .userPage_head .userPage_head_left .header_left_text a,
+  .verification_shade p.tit,
+  .wgzdyh ul li .gzbutt span,
+  form .form-group .control-label,
+  form .form-group input.form-control {
+    font-size: 0.3rem;
+  }
+
+  .header .logo_seek .seek_portrait {
+    margin-top: 0.02rem;
+  }
+
+  .A_evaluation .evaluation_Not_logged p,
+  .A_evaluation .evaluation_Not_logged p a,
+  .Coming_soon_ul li .Coming_soon_div p,
+  .Hot_forums_box ul li .forum-info h4,
+  .Personal_box .Personal_top h3,
+  .Promote_box .Promote_r a,
+  .Topic_ranking .Topic_ranking_list li .Game_information_tetx p,
+  .bbstopic .title .name,
+  .change_a,
+  .follow_me_tit p,
+  .grad_box p,
+  .h3_tit p,
+  .login_form .login_but,
+  .login_form .login_nav li a,
+  .login_form .login_nav li span,
+  .ranking_list li .gameInfo h4,
+  .ranking_list li > span,
+  .recommend_list .recommend_name .game_name h4,
+  .score .title,
+  .upload_video a span {
+    font-size: 0.33rem;
+  }
+
+  .Promote_box .Promote_r p,
+  .The_article_box .The_body h2,
+  .game_Deta .game_Desc .game_name,
+  .header .navbar ul li a,
+  .userPage_head .userPage_head_left .header_left_text h1 {
+    font-size: 0.5rem;
+  }
+
+  .Popular_game .h3_tit p,
+  .Recommended_project .h3_tit p,
+  .h3_tit p {
+    padding: 0.3rem 0;
+  }
+
+  .eva-menu p {
+    font-size: 0.25rem;
+  }
+
+  .News_box .follow_me {
+    padding: 0.1rem 0.2rem;
+  }
+
+  .header .logo_seek .log_portrait .user_message .dropdown_menu {
+    width: 2.7rem;
+    right: 0.2rem;
+    top: 1.1rem;
+  }
+
+  .header .header_logo {
+    margin-top: 0.27rem;
+  }
+
+  .header_logo img {
+    margin-left: .2rem;
+    width: 2rem;
+  }
+
+  .header,
+  .header .logo_seek {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.7);
+    position: relative;
+  }
+
+  .logo_seek .san_san {
+    margin-top: 0.25rem;
+    margin-right: 0.3rem;
+    margin-left: 0.2rem;
+  }
+
+  .logo_seek .san_san img {
+    height: 0.5rem;
+  }
+
+  .header .logo_seek .log_portrait .user_message .user_portrait {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.2rem;
+    margin-top: 0.2rem;
+  }
+
+  .header .navbar {
+    position: fixed;
+    left: -110%;
+    width: 70%;
+    z-index: 99999;
+    -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.28);
+  }
+
+  .header .navbar ul {
+    position: relative;
+    z-index: 99;
+  }
+
+  .header .navbar ul li a {
+    height: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .Promote_box .Promote_r a {
+    padding: 5px 14px;
+  }
+
+  .header .navbar .pack_up {
+    background: url(../img/accept.png);
+    background-repeat: no-repeat;
+    background-size: 0.7rem;
+    background-position: center;
+  }
+
+  .header .navbar ._mask {
+    width: 143%;
+    position: absolute;
+    left: 0;
+    z-index: 9;
+  }
+
+  .header .navbar ul li.on {
+    padding: 0 0.2rem;
+    -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.21);
+    box-shadow: 5px 0 30px rgba(0, 0, 0, 0.21);
+  }
+
+  .header .logo_seek .login_mask .w_1200 > i {
+    position: absolute;
+    right: 0;
+    margin: 0.2rem;
+  }
+
+  .header .logo_seek .login_mask .w_1200 > div {
+    min-height: 100vh;
+  }
+
+  .header .logo_seek .login_mask .select_way img {
+    width: 3rem;
+    margin-top: 1rem;
+  }
+
+  .header .logo_seek .login_mask .select_way > div a {
+    height: 14vh !important;
+    margin: 1.5vh 0;
+  }
+
+  .header .logo_seek .login_mask .select_way > div i {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  .header .logo_seek .login_mask .select_way p {
+    line-height: 2;
+  }
+
+  .recommend_list .recommend_img .cover_tag {
+    bottom: 0;
+    left: 0;
+    font-size: 0.25rem;
+    border-radius: 0;
+    display: none;
+  }
+
+  .recommend_list .recommend_name .type_grade .star_2 {
+    width: 100% !important;
+  }
+
+  .recommend_list .recommend_name .type_grade .star {
+    width: 17px;
+  }
+
+  .recommend_list .recommend_name .game_name {
+    width: 78%;
+  }
+
+  .recommend_list .recommend_name .game_name a img {
+    margin-right: 0.15rem;
+  }
+
+  .recommend_list {
+    margin-bottom: 0.25rem;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  .follow_me_tit p {
+    padding: 0.3rem;
+  }
+
+  .follow_me_tit i {
+    height: 0.5rem;
+    top: 28%;
+    width: 2px;
+  }
+
+  .recommend_list .recommend_name .game_name p {
+    line-height: 20px;
+    height: 20px;
+    font-size: 13px;
+    margin: 0.05rem 0;
+  }
+
+  .follow_me .follow_me_fnot .follow_me_ul li {
+    margin: 0.2rem 0.15rem 0;
+  }
+
+  .follow_me .follow_m_img {
+    margin: 0 0.25rem 0 0.2rem;
+  }
+
+  .follow_me .follow_m_img img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .follow_me .follow_me_fnot p {
+    text-align: left;
+  }
+
+  .list-unstyled_box ul.list-unstyled li {
+    margin: 0.1rem;
+  }
+
+  .list-unstyled_box ul.list-unstyled li a {
+    padding: 0.1rem 0.15rem;
+  }
+
+  .ranking_list li a img {
+    width: 1.15rem;
+    margin: 0 0.26rem 0 0.21rem;
+    border-radius: 0.15rem;
+  }
+
+  .ranking_list li div.tit {
+    width: 55%;
+  }
+
+  .ranking_list li div.download {
+    width: 10%;
+  }
+
+  .ranking_list li {
+    margin-bottom: 0.2rem;
+  }
+
+  .ranking_box .follow_me {
+    padding: 0.3rem 0.1rem 0;
+  }
+
+  .ranking_list li > span {
+    line-height: 1rem;
+  }
+
+  .ranking_list li div.download a {
+    line-height: 1rem;
+  }
+
+  .follow_me .follow_me_fnot .follow_me_ul {
+    height: 1.2rem;
+  }
+
+  .Promote_box .Promote_r {
+    width: 4rem;
+  }
+
+  .Promote_box img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .new_reviews_box .ranking_list li div.tit {
+    width: 69%;
+  }
+
+  .new_reviews_box .ranking_list .review_game {
+    padding-bottom: 0.15rem;
+  }
+
+  .new_reviews_box .review_block p {
+    margin-top: 0.15rem;
+    text-indent: 1rem;
+  }
+
+  .new_reviews_box p.review_block_p {
+    line-height: 0.55rem;
+    height: 0.55rem;
+  }
+
+  .new_reviews_box .follow_me {
+    margin-top: 0.15rem;
+  }
+
+  .footer .left-header-logo {
+    margin-bottom: 0.3rem;
+  }
+
+  .footer .left-header-logo img {
+    width: 4rem;
+  }
+
+  .footer .floatleft > span {
+    font-family: Arial;
+    color: #838383;
+    line-height: 25px;
+    font-size: 0.25rem;
+  }
+  .footer .links {
+    margin-bottom: 0.1rem;
+  }
+
+  .tab-menu .tab-item {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    color: #999;
+  }
+
+  .tab-menu .tab-item.on {
+    color: #ff9935;
+    font-weight: 600;
+  }
+
+  .tab-menu {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 0.15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 5px #e6e6e6;
+    box-shadow: 0 2px 5px #e6e6e6;
+  }
+
+  .tab-menu .tab-item:not(:last-child):after {
+    content: "";
+    width: 1px;
+    height: 5.3333333333vw;
+    background: #f1f1f1;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+
+  .div_seek .input_seek {
+    padding: 0.25rem;
+    position: relative;
+  }
+
+  .div_seek .input_seek input {
+    border: 2px solid #ff9935;
+    padding: 0.2rem 0.15rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+  }
+
+  .div_seek .input_seek input::-webkit-input-placeholder {
+    color: #b8a2a2;
+  }
+
+  .div_seek .input_seek input:-moz-placeholder {
+    color: #b8a2a2;
+  }
+
+  .div_seek .input_seek input::-moz-placeholder {
+    color: #b8a2a2;
+  }
+
+  .div_seek .input_seek input:-ms-input-placeholder {
+    color: #b8a2a2;
+  }
+
+  .banner_swiper {
+    height: 5rem;
+  }
+
+  .ranking_list li div p.name {
+    font-size: 0.34rem;
+  }
+
+  .ranking_list li div.tit p {
+    line-height: 0.55rem;
+  }
+
+  .ranking_list li div p.grade .compound {
+    margin-top: 0.15rem;
+  }
+
+  .head-r {
+    position: relative;
+  }
+
+  .searcha-span {
+    margin-right: 0.3rem;
+    padding-top: 0.27rem;
+  }
+
+  .searcha-span img {
+    height: 0.45rem;
+    width: 0.45rem;
+  }
+
+  .Mobil_search_box {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 9999999999999999;
+  }
+
+  .Mobil_search_box .Mobil_search_head {
+    background: #ff9935;
+  }
+
+  .Mobil_search_head .return {
+    padding: 0.3rem 0.2rem 0;
+  }
+
+  .Mobil_search_head .return img {
+    display: block;
+    width: 0.333rem;
+  }
+
+  .Mobil_search_head .input_inner {
+    margin: 0.22rem 0.28rem 0 0.1rem;
+    width: 75%;
+    position: relative;
+  }
+
+  .Mobil_search_head .input_inner input {
+    width: 95%;
+    height: 0.6rem;
+    border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    padding-left: 5%;
+  }
+
+  .Mobil_search_head .submit_btn {
+    background: url(../img/search2.png) no-repeat center center;
+    background-size: cover;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-top: 0.33rem;
+  }
+
+  .Mobil_search_box .Top_search p {
+    color: #999;
+    background-color: #fafafa;
+    padding: 0.15rem 0.2rem;
+  }
+
+  .Mobil_search_box .Top_search ul {
+    overflow: hidden;
+  }
+
+  .Mobil_search_box .Top_search ul li {
+    margin: 0.1rem;
+    background-color: #ff9935;
+  }
+
+  .Mobil_search_box .Top_search ul li a {
+    padding: 0.05rem 0.15rem;
+    color: #fff;
+  }
+
+  .header .logo_seek .log_portrait.log_user {
+    margin-top: 0.15rem;
+    margin-right: 0.2rem;
+  }
+
+  .w_The_login .w_The_login_tx img {
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+
+  .login_choose_box .login_choose_Shut_down {
+    z-index: 9999;
+    right: 0.25rem;
+    top: 0.5rem;
+  }
+
+  .login_choose_box .login_choose_list > img {
+    margin: 0.5rem auto 0;
+    width: 2.5rem;
+  }
+
+  .login_choose_box .login_choose_list .ioc li i {
+    margin: 0.3rem auto;
+  }
+
+  .ranking_nav ul li {
+    padding: 0 0.14rem;
+  }
+
+  .ranking_list .ranking_ul > li {
+    padding: 0.2rem;
+  }
+
+  .ranking_list li a.tx img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .ranking_list li .rank-num {
+    left: -0.25rem;
+    top: -0.25rem;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  .ranking_ul.ranking_cs li .rank-num {
+    left: -0.25rem;
+    top: -0.25rem;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  .ranking_list li a.tx {
+    border-radius: 0.35rem;
+    margin-right: 0.2rem;
+  }
+
+  .more span {
+    padding: 0.25rem 0.6rem;
+    border-radius: 0.15rem;
+  }
+
+  .more {
+    padding: 0.3rem;
+  }
+
+  .ranking_min_nav {
+    padding: 0.25rem 0;
+    background: #fff;
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .ranking_nav {
+    background: #fff;
+    margin-bottom: 0.15rem;
+  }
+
+  .position_Box {
+    margin-bottom: 0.2rem;
+  }
+
+  .position {
+    height: 0.8rem;
+    line-height: 0.7rem;
+  }
+
+  .ranking_list li .gameInfo p.tab a {
+    margin-right: 0.15rem;
+  }
+
+  .ranking_list li .gameInfo p.tab {
+    margin-top: 0.15rem;
+  }
+
+  .ranking_list .ranking_cs .firm_img {
+    margin-right: 0.2rem;
+  }
+
+  .ranking_list .ranking_cs li .gameInfo .info-item {
+    padding-left: 0.05rem;
+  }
+
+  #recommend_lb {
+    height: 4rem;
+    max-height: 100%;
+  }
+
+  .recommend_lb {
+    margin-top: 0.2rem;
+    border-radius: 0.15rem;
+  }
+
+  .recommend_lb .swiper-pagination-switch {
+    width: 0.15rem;
+    height: 0.15rem;
+    margin-right: 0.15rem;
+  }
+
+  .tag_ul li {
+    border: #ff9935 1px solid;
+    margin: 0.2rem 0.1rem 0;
+  }
+
+  .tag_ul li a {
+    padding: 0.1rem 0.15rem;
+  }
+
+  .change_a {
+    bottom: 0.32rem;
+  }
+
+  .ranking_list .ranking_ul li {
+    margin-top: 0.2rem;
+  }
+
+  .Independent_ul li {
+    margin-top: 0.2rem;
+    width: 42%;
+    padding: 3%;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  .Independent_ul li img {
+    width: 90%;
+    max-height: 2.6rem;
+    margin: 3% auto;
+  }
+
+  .Independent_bot {
+    margin-top: 0.15rem;
+  }
+
+  .Independent_ul li:nth-child(odd) {
+    margin: 0.2rem 2% 0 0;
+  }
+
+  .Independent_ul li:nth-child(even) {
+    margin: 0.2rem 0 0 2%;
+  }
+
+  .Independent_ul li p {
+    margin-top: 0.15rem;
+    height: 0.6rem;
+    line-height: 0.3rem;
+  }
+
+  .Coming_soon_ul li {
+    width: 42%;
+    padding: 3%;
+    border-radius: 0.1rem;
+    margin: 0;
+  }
+
+  .Coming_soon_ul li:nth-child(odd) {
+    margin: 0.2rem 1% 0 0;
+  }
+
+  .Coming_soon_ul li:nth-child(even) {
+    margin: 0.2rem 0 0 1%;
+  }
+
+  .Coming_soon_ul li img {
+    height: auto;
+    width: 90%;
+    margin: 3% auto;
+    float: none;
+    display: block;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div {
+    width: 100%;
+    float: none;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div p {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div a {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+
+  .Recom_topics_ul li {
+    margin: 0.2rem 0 0 0;
+    height: 4.5rem;
+  }
+
+  .forums_nav ul.forums_ul {
+    white-space: nowrap;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+  }
+
+  .forums_nav ul.forums_ul li a {
+    padding: 0.1rem 0.2rem;
+    background: #dddddd;
+  }
+
+  .watching_focus_box .watching_focus_list {
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .watching_focus_box .watching_focus_list:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  .type_name span.author_game a {
+    max-width: 49%;
+  }
+
+  .watching_focus_list .item-content .item-title {
+    line-height: normal;
+  }
+
+  .right_menu {
+    top: 0.3rem;
+    right: 0.2rem;
+  }
+
+  .watching_focus_list .item-content {
+    padding-bottom: 0.15rem;
+  }
+
+  .Thumb_comment_forward ul li {
+    max-width: 45%;
+  }
+
+  .Hot_forums_box {
+    padding: 0.2rem 0.2rem 0;
+  }
+
+  .Hot_forums_box ul li .item-icon img {
+    margin-right: 0.2rem;
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .Hot_forums_box ul li > a {
+    width: 66vw;
+  }
+
+  .Hot_forums_box ul li .forum-info h4 {
+    width: 42vw;
+    margin-top: 0.1rem;
+  }
+
+  .Hot_forums_box ul li .forum-info p {
+    margin: 0.15rem 0;
+  }
+
+  .Hot_forums_box ul li {
+    margin: 0.1rem 0 0.25rem;
+  }
+
+  .Hot_forums_box ul li button {
+    min-width: 20vw;
+    margin-top: 0.3rem;
+  }
+
+  .Recently_Viewed_list ul li {
+    margin: 3vw 2vw 0;
+    width: 27.5vw;
+  }
+
+  .Recently_Viewed_list ul {
+    padding-bottom: 0.2rem;
+  }
+
+  .Recently_Viewed_list ul li img {
+    width: 70%;
+  }
+
+  .Following_Game .Hot_forums_box ul li .forum-info h4,
+  .Following_Game .Hot_forums_box ul li .forum-info p,
+  .Hot_Forums .Hot_forums_box ul li .forum-info h4,
+  .Hot_Forums .Hot_forums_box ul li .forum-info p {
+    width: 65vw;
+  }
+
+  .Hot_forums_box ul.rem_Hot_Forums li > a {
+    width: 88vw;
+  }
+
+  .The_official .Hot_forums_box ul li > a .forum-info {
+    width: 45vw;
+  }
+
+  .Topic_ranking .Topic_ranking_list li .ioc div {
+    max-width: 28.9vw;
+  }
+
+  .Topic_ranking .Topic_ranking_list li {
+    padding: 0.2rem 0.2rem 0.1rem;
+  }
+
+  .Topic_ranking .Topic_ranking_list li .ioc span {
+    max-width: 65%;
+    font-size: 14px;
+  }
+
+  .Topic_ranking .Topic_ranking_list li .ioc i {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  .Topic_ranking .Topic_ranking_list li a.ranking_list_top img {
+    width: 3rem;
+    height: 1.6rem;
+  }
+
+  .Topic_ranking .Topic_ranking_list li a.ranking_list_top p {
+    height: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .header_nav_box::after,
+  .header_nav_box::before {
+    width: 0.3rem;
+  }
+
+  .header_nav_box {
+    padding: 0.15rem 0.3rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .The_article_box {
+    padding: 0.2rem;
+  }
+
+  .The_article_box .The_article_name .portrait {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+
+  .The_article_box .The_article_name .portrait img {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+
+  .The_article_box .The_article_name .name_message .name_TOP a {
+    line-height: 1.7;
+  }
+
+  .The_article_box .The_body h2 {
+    margin-top: 0.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .The_article_box .The_body .content-bd {
+    font-size: 0.32rem;
+    line-height: 1.8;
+    margin-top: 0.2rem;
+  }
+
+  .discuss .all_discuss .all_discuss_tit .number {
+    margin-right: -0.7rem;
+  }
+
+  .discuss .Comment_box .face_publish .text-publish button,
+  .discuss .all_discuss .all_discuss_tit .number {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  .discuss .all_discuss .all_discuss_tit .all_discuss_t {
+    left: -0.25rem !important;
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+
+  .discuss .Comment_box .Comment-status {
+    padding: 0.15rem 0.1rem 0.1rem;
+  }
+
+  .discuss .Comment_box .Comment-status .textarea-fw {
+    height: 1.5rem;
+  }
+
+  .all_discuss .block-cont-gw .cont-msg-gw .msg-wrap-gw .build-floor-gw {
+    padding: 0.1rem;
+  }
+
+  .discuss .all_discuss .all_discuss_tit {
+    margin-bottom: 0.3rem;
+  }
+
+  .all_discuss .block-cont-gw {
+    padding-top: 0.2rem;
+  }
+
+  .all_discuss .block-cont-gw .cont-msg-gw .global-clear-spacing a {
+    padding-left: 0.25rem;
+  }
+
+  .all_discuss
+    .block-cont-gw
+    .cont-msg-gw
+    .msg-wrap-gw
+    .build-floor-gw
+    .wrap-user-gw {
+    height: 0.7rem;
+    line-height: 2.5;
+  }
+
+  .cont-msg-gw .wrap-build-gw {
+    margin: 0.45rem 0 0.2rem;
+  }
+
+  .all_discuss .block-cont-gw .cont-msg-gw .wrap-user-gw {
+    margin-top: 0.15rem;
+  }
+
+  .expression {
+    width: 80vw;
+  }
+
+  .discuss .Comment_box .face_publish .text-publish button {
+    margin-right: -0.3rem;
+  }
+
+  .cont-msg-gw .wrap-action-gw {
+    margin-bottom: 0.15rem;
+  }
+
+  .all_discuss .block-cont-gw .cont-msg-gw .global-clear-spacing a {
+    padding-left: 0.15rem;
+  }
+
+  .cont-msg-gw .action-click-gw > span {
+    padding: 0 0.1rem;
+  }
+
+  .content-ft li {
+    width: 19vw;
+  }
+
+  .popular_video_list li .video_img a img {
+    width: 35vw;
+  }
+
+  .popular_video_list li .text {
+    width: 50vw;
+  }
+
+  .popular_video_list li .text a h4 {
+    margin-bottom: 0.15rem;
+  }
+
+  .Forum_user_ranking_box ul li div.name a {
+    line-height: 3.3;
+    width: 3rem;
+  }
+
+  .Forum_user_ranking_box ul li div.level span {
+    line-height: 3.3;
+    width: 1.5rem;
+  }
+
+  .jzgd {
+    padding: 1rem 0;
+  }
+
+  #example_video_1 {
+    height: 4rem;
+    border-radius: 0.2rem;
+    margin-top: 0.2rem;
+  }
+
+  .video-js .vjs-big-play-button {
+    top: 37% !important;
+    left: 37% !important;
+  }
+
+  .bbstopic .img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.15rem;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .bbstopic .li-si {
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+
+  .bbstopic .li-si a {
+    margin: 0 0.1rem 0.1rem !important;
+  }
+
+  .bbstopic .con {
+    overflow: initial;
+  }
+
+  .bbstopic .title .name {
+    width: 100%;
+  }
+
+  .bbstopic .info {
+    margin: 0.45rem 0 0.2rem;
+    display: block;
+    width: 100%;
+  }
+
+  .bbstopic .desc {
+    width: 66vw;
+    white-space: inherit;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .bbstopic .title {
+    height: 0.8rem;
+    line-height: 0.8rem;
+  }
+
+  .topic-reco {
+    padding: 0 0.2rem 0.2rem;
+  }
+
+  .topic-reco li {
+    padding: 0.25rem 0 0;
+    background-color: #fff;
+  }
+
+  .bbstopic,
+  .topic-reco-box {
+    margin-bottom: 0.2rem;
+  }
+
+  .gamebbs_nav .header_nav_box::after,
+  .gamebbs_nav .header_nav_box::before {
+    width: 0.2rem;
+  }
+
+  #header ul li {
+    padding: 0 0.1rem 0.2rem 0;
+  }
+
+  .game_Deta_1 {
+    padding: 0.7rem 0.1rem 0;
+  }
+
+  .game_Deta .game_Portrait .game_Portrait_top {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  .game_Deta .game_Desc .game_name {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0.1rem;
+  }
+
+  .game_Deta .game_Desc .tag a {
+    margin-top: 0.15rem;
+    line-height: normal;
+    padding: 0.03rem 0.05rem;
+    margin-right: 0.1rem;
+    border: #ff9935 1px solid;
+    color: #ff9935;
+  }
+
+  .game_Deta .game_Desc {
+    position: inherit;
+    width: 100%;
+  }
+
+  .btn-default {
+    position: absolute;
+    top: 0.35rem;
+    right: 0.25rem;
+  }
+
+  .game_Deta .game_Portrait .game_Portrait_bot span {
+    padding: 0.1rem 0.2rem;
+    background-color: #ff9935;
+  }
+
+  .game_Deta .game_Desc .game_Desc_list p {
+    margin-top: 0.05rem;
+  }
+
+  .game_xiazai a {
+    padding: 2px 0.1rem;
+  }
+
+  .section-title {
+    margin-bottom: 0.15rem;
+  }
+
+  .Detailed_game_information .Detailed_game {
+    padding: 0.2rem 0.2rem 0.15rem;
+  }
+
+  .unstyled li {
+    width: 50%;
+  }
+
+  .poster_box {
+    height: 3.5rem;
+    padding: 0.15rem 0;
+  }
+
+  .news_videos li {
+    width: 100%;
+    margin: 0.15rem 0;
+  }
+
+  .news_videos li a {
+    overflow: hidden;
+  }
+
+  .news_videos li div {
+    width: 3rem;
+    height: 1.6rem;
+    margin-right: 0.15rem;
+  }
+
+  .news_videos li p {
+    line-height: 26px !important;
+    -webkit-line-clamp: 3;
+  }
+
+  .news_videos li i {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  .bbs_news li .text-wrapper .text {
+    max-height: 40px !important;
+  }
+
+  .bbs_news li .image {
+    max-height: 80px;
+    max-width: 140px;
+  }
+
+  .bbs_news li {
+    overflow: hidden;
+  }
+
+  .bbs_news li.image .text-wrapper {
+    padding-left: 0.15rem;
+  }
+
+  .Text_detai {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .game_Deta .grade_box.clearfix {
+    width: 165px;
+    height: auto;
+  }
+
+  #Game_score {
+    margin-top: 0.15rem;
+  }
+
+  .Bar_charts li {
+    margin: 0.15rem 0;
+  }
+
+  .Bar_charts li .Bar_charts_d1 {
+    width: 75%;
+  }
+
+  .Bar_charts {
+    padding-top: 0.25rem;
+    padding-left: 0.3rem;
+  }
+
+  .Bar_charts li i.compound {
+    margin: 0 0.25rem;
+  }
+
+  .score .deta_p span {
+    margin: 0.15rem 0.15rem 0;
+    max-width: 100%;
+  }
+
+  .score_left .title {
+    margin-top: 0.07rem;
+  }
+
+  .score .grade_box em {
+    margin-top: 0.22rem;
+    margin-left: 0.15rem;
+  }
+
+  .score .grade_box.clearfix {
+    width: 165px;
+  }
+
+  .score .title {
+    margin-left: 0.15rem;
+  }
+
+  .score_left {
+    margin-bottom: 0.15rem;
+  }
+
+  .score_left .star_1 {
+    margin: 0.25rem 0 0.15rem 0;
+  }
+
+  .A_evaluation {
+    margin-top: 0.15rem;
+  }
+
+  .Is_logged_in button {
+    margin-top: 0.15rem;
+  }
+
+  .Is_logged_in button {
+    border-radius: 0.5rem;
+    min-width: 2rem;
+    height: 0.7rem;
+  }
+
+  .Please_indicate_ico_1,
+  .Please_indicate_ico_2 {
+    background-size: 3.5rem;
+  }
+
+  .Please_indicate_ico_1 {
+    width: 3.5rem;
+    height: 0.5rem;
+  }
+
+  .Is_loggedIn_release .Please_indicate .tit {
+    width: 100%;
+  }
+
+  .A_evaluation .evaluation_Not_logged {
+    margin-bottom: 0.2rem;
+  }
+
+  .comment_ .item_text_score,
+  .item_content .item_text_header {
+    padding-left: 1.3rem;
+  }
+
+  .comment_ .evaluate_item .login_info img {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+
+  .wgzdyh ul li .users-container a {
+    max-width: 4.3rem;
+  }
+
+  .comment_ .evaluate_item .login_info {
+    width: 0.9rem;
+    top: 0.15rem;
+    left: 0.15rem;
+  }
+
+  .item_content .item_text_body > p,
+  .reply-area .txt {
+    line-height: 1.65;
+  }
+
+  .Personal_box {
+    margin-bottom: 0.2rem;
+  }
+
+  .userPage_head {
+    padding: 0.2rem 0.3rem;
+    border-radius: 0;
+    margin-bottom: 0.15rem;
+  }
+
+  .userPage_head .userPage_head_right ul li span.stats_number {
+    line-height: 2;
+  }
+
+  .userPage_head .userPage_head_left .header_left_img img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  .userPage_head .userPage_head_left .header_left_text p {
+    margin: 0.15rem;
+  }
+
+  .userPage_head .userPage_head_left .header_left_text a {
+    margin: 0.15rem auto;
+    max-width: 125px;
+  }
+
+  .userPage_head .userPage_head_right ul li {
+    padding: 0.05rem 0;
+  }
+
+  .tab_list_nav_box .tab_nav ul li {
+    margin: 0 0.2rem 0 0.2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+  }
+
+  .Personal_box .Personal_top {
+    padding: 0.1rem 0 0.2rem;
+  }
+
+  .Is_loggedIn_release .form-group .form-control {
+    height: 2rem;
+  }
+
+  .Inform_list .Inform_tet .The_publisher a {
+    overflow: hidden;
+  }
+
+  .Personal_box .Personal_top a {
+    margin: 0.15rem;
+  }
+
+  .no_history img {
+    width: 3rem;
+  }
+
+  .tab_list .ranking_list li {
+    margin: 0.25rem 0;
+    padding-right: 0;
+  }
+
+  .gezx_ri {
+    display: block !important;
+  }
+
+  .video-topic-list .news_videos li p {
+    -webkit-line-clamp: 3 !important;
+  }
+
+  .post-topic-list ul.Inform_list li {
+    padding: 0.3rem 0.07rem;
+    margin: 0.15rem 0;
+  }
+
+  .Inform_list .Inform_news {
+    margin-left: 0;
+    margin-top: 0.2rem;
+    line-height: 1.8;
+  }
+
+  .Inform_list .Inform_img {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .Inform_list .Inform_tet {
+    padding-left: 1rem;
+  }
+
+  .app-topic-list .Recently_Viewed_list ul li {
+    margin-top: 5vw;
+    width: 26.1vw;
+    margin: 0.15rem;
+  }
+
+  .gzbutt span {
+    padding: 0.05rem;
+  }
+
+  .Inform_list.guzn .Inform_tet .The_theme span {
+    margin-right: 0.1rem;
+  }
+
+  .personal_g {
+    padding: 0 0.15rem;
+  }
+
+  .independent,
+  .independent .Personal_box {
+    border-radius: 0 !important;
+  }
+
+  .independent .video-topic-list .news_videos.duli li .tit a,
+  .post-topic-list ul li .tit a {
+    overflow: initial;
+  }
+
+  .tab_list .ranking_list.duli li {
+    padding: 0 0.15rem 0.1rem;
+  }
+
+  .app-topic-list .ranking_list li div.tit {
+    width: 73%;
+  }
+
+  .tab_list .ranking_list li a img {
+    margin: 0 0.15rem 0 0;
+  }
+
+  .independent .tab_list .ranking_list.duli li {
+    margin: 0.2rem 0.15rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .independent .tab_list .ranking_list.duli.Following li div.tit {
+    width: 53%;
+  }
+
+  .independent .tab_list .ranking_list.duli.Following li {
+    padding: 0.2rem 0.15rem;
+  }
+
+  .gzbutt {
+    min-width: 1.2rem;
+  }
+
+  .Basic_profile {
+    padding: 0 0.15rem;
+  }
+
+  form .form-group .control-label {
+    padding: 0 0.15rem;
+  }
+
+  .leri-ger3,
+  .leri-ger4,
+  .leri-ger5 {
+    width: 95%;
+  }
+
+  form .form-group .form-control {
+    height: 0.5rem;
+  }
+
+  form .form-group {
+    margin: 0 0 0.25rem;
+    min-height: 1.2rem;
+  }
+
+  form .form-group .control-label {
+    padding: 0 0 0.15rem;
+    text-align: left;
+  }
+
+  .profile-edit {
+    margin-top: 0.3rem;
+  }
+
+  .Modify_the_picture {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.7rem auto 1rem;
+  }
+
+  .Modify_the_picture i {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-left: -0.7rem;
+    margin-top: -0.7rem;
+  }
+
+  .login_form {
+    padding: 0.5rem 0.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .login_form form .label_box:nth-child(1) {
+    margin-top: 0.2rem;
+  }
+
+  .login_form form .label_box {
+    height: 0.7rem;
+    margin: 0 0 0.7rem;
+  }
+
+  .login_form form .label_box input {
+    height: 0.7rem;
+  }
+
+  .login_form form .label_box.on span {
+    top: -0.5rem;
+  }
+
+  .login_form .login_but {
+    width: 60%;
+    height: auto;
+    border-radius: 0.2rem;
+  }
+
+  .login_form button {
+    padding: 0.3rem 0.25rem;
+  }
+
+  .login_form .login_nav li {
+    margin: 0.4rem 0;
+  }
+
+  .login_form .login_tips {
+    margin: 0.5rem 0;
+  }
+
+  .Quick_login_box {
+    margin-bottom: 1rem;
+    margin-top: -0.5rem;
+  }
+
+  .Quick_login_box .Quick_login_tit span {
+    width: 4rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin-left: -2rem;
+    top: 50%;
+  }
+
+  .ranking_list li .gameInfo h4 {
+    line-height: 1.55;
+  }
+
+  .Quick_login_box ul li {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .login_form .login_tips.login_tit {
+    height: 0.5rem;
+  }
+
+  .verification_shade > div {
+    border-right: 0;
+    margin: 25vh auto 0;
+    width: 85%;
+    border-radius: 0.15rem;
+  }
+
+  .verification_shade p {
+    padding: 0.35rem 0;
+  }
+
+  .verification_shade input {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin: 0.2rem 0.1rem;
+  }
+
+  .verification_shade form > div span {
+    padding-bottom: 0.2rem;
+  }
+
+  .verification_shade button {
+    padding: 0.2rem 0.35rem;
+  }
+
+  .mistake img.rotating {
+    width: 80vw;
+  }
+
+  .form-inline {
+    display: none;
+  }
+
+  .grade_box.clearfix.ranking_star {
+    margin: 0.05rem 0 0.05rem 1.7rem;
+    height: 24px;
+  }
+
+  .uploading {
+    padding: 0.15rem;
+  }
+
+  .game_messag_ri select {
+    margin: 0 !important;
+  }
+
+  .w-e-toolbar {
+    z-index: 10002 !important;
+    position: relative !important;
+  }
+
+  .w-e-toolbar .w-e-menu {
+    padding: 1vw 1.8vw !important;
+    margin: 1vw 1.8vw !important;
+  }
+
+  .w-e-toolbar {
+    position: relative !important;
+  }
+
+  .w-e-toolbar .w-e-droplist {
+    left: 0 !important;
+    top: 2% !important;
+    z-index: 99 !important;
+  }
+
+  .w-e-toolbar {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+  }
+
+  .w-e-toolbar .w-e-menu.bi {
+    position: initial !important;
+  }
+
+  .game_message img {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 0.15rem;
+  }
+
+  .game_message {
+    line-height: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .game_message span {
+    margin: 0 0 0 0.15rem;
+  }
+
+  .seek_box .ranking_list .ranking_ul > li {
+    padding: 0.15rem;
+  }
+
+  .seek_box .ranking_list li a.tx img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .seek_box .Personal_box {
+    padding: 0;
+  }
+
+  .seek_box .ranking_list li .gameInfo {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .seek_box .tab_list .ranking_list li {
+    margin: 0.15rem 0;
+  }
+
+  .seek_box .ranking_list li .gameInfo h4 {
+    line-height: 1.7;
+  }
+
+  .seek_box .ranking_list .ranking_cs .firm_img {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .seek_box .ranking_list .ranking_cs li .gameInfo {
+    width: 100%;
+  }
+
+  .video-topic-list .news_videos.duli li {
+    margin: 0.15rem 0 0;
+  }
+
+  .seek_box .video-topic-list .news_videos.duli li {
+    margin: 0.15rem 0 0;
+    padding: 0.15rem;
+    width: 100%;
+  }
+
+  .seek_box .watching_focus_box .watching_focus_list {
+    margin-top: 0.15rem;
+  }
+
+  .seek_box .watching_focus_list .item-content .content-text.on p {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .post-topic-list ul li > a {
+    line-height: 27px;
+  }
+
+  .seek_box .watching_focus_list .item-content .content-text.on > a {
+    display: none;
+  }
+
+  .seek_box .ranking_list .ranking_ul > li {
+    -webkit-box-shadow: 0 2px 5px #e6e6e6;
+    box-shadow: 0 2px 5px #e6e6e6;
+    border: 1px solid rgba(221, 221, 221, 0.7);
+  }
+
+  .recommend_list .recommend_name .game_name h4 {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  .seek_box .grade_box.clearfix {
+    margin: 0 0 0 1.7rem;
+    height: 25px;
+  }
+
+  .bbstopic .li-si .newtopic {
+    display: none !important;
+  }
+
+  .bbstopic .li-si .newtogz {
+    display: inline-block;
+    margin: 0.2rem 0 !important;
+  }
+
+  .post_box {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: none;
+    visibility: visible;
+    opacity: 1;
+    box-shadow: none;
+  }
+
+  .post_box .group_create_entry li a span {
+    width: 0.65rem;
+    height: 0.65rem;
+  }
+
+  .ecomment {
+    margin: 0.1rem 0;
+    padding: 0 0.1rem 0.1rem;
+    font-size: 0.3rem;
+  }
+
+  .ecomment .ecommenttext {
+    margin: 0.05rem;
+    font-size: 0.3rem;
+  }
+
+  .pagination > li > a,
+  .pagination > li > span {
+    margin: 0 4px;
+  }
+
+  .overlay .model_content {
+    width: 85%;
+    max-width: 90%;
+  }
+
+  .model_content .model_body {
+    padding: 0;
+  }
+
+  .Hot_forums_box ul li .btn {
+    display: none;
+  }
+
+  #preview img,
+  #preview video {
+    width: 100%;
+  }
+
+  .game_message_le {
+    overflow: hidden;
+    padding: 0.1rem 0 0.2rem;
+  }
+
+  .position p {
+    padding: 0.05rem 0 0;
+  }
+
+  .developer-img {
+    width: auto;
+  }
+
+  .developer-header .developer-text > h1 {
+    font-size: 36px;
+    background-size: 122px;
+    margin-left: 10px;
+  }
+
+  .developer-cop h3 {
+    margin: 0 0 28px;
+    font-size: 28px;
+  }
+
+  .developer-cop ul {
+    max-width: 335px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .developer-cop ul li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .developer-cop ul.long-box-item li {
+    width: 100%;
+  }
+
+  .developer-cop ul.long-box-item li a {
+    padding: 0 0 0 10px;
+  }
+
+  .developer-cop ul.long-box-item li a img {
+    max-width: 100px;
+    width: 30%;
+    padding-top: 31px;
+    margin-right: 10px;
+  }
+
+  .developer-cop ul.long-box-item li a h4 {
+    max-width: 200px;
+    width: 60%;
+    padding-left: 15px;
+    float: left;
+  }
+
+  section.ads-item.no {
+    height: auto;
+    padding-top: 0;
+  }
+
+  section.ads-item.ads-first {
+    padding: 50px 0;
+    margin-top: -5px;
+  }
+
+  section.ads-item .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto !important;
+  }
+
+  section.ads-item.ads-first .container .ads-title {
+    font-size: 0.55rem;
+  }
+
+  section.ads-item.ads-first .container .ads-first-content {
+    font-size: 0.35rem;
+  }
+
+  section.ads-item .container .ads-button-nav {
+    margin: 20px auto 30px;
+  }
+
+  section.ads-item .container .ads-button-nav .ads-button {
+    display: inline-block;
+    min-width: 80px;
+    margin: 0 auto;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  section.ads-item .container .ads-contact .contact-item {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 0.3rem;
+  }
+
+  section.ads-item .container .ads-contact .contact-item span {
+    font-size: 0.3rem;
+  }
+
+  section.ads-item .ads-item-title {
+    font-size: 0.45rem;
+  }
+
+  section.ads-item .ads-item-content {
+    font-size: 0.3rem;
+  }
+
+  section.ads-item .ads-item-content.desc {
+    padding: 0;
+  }
+
+  .ads-item .ads-super .ads-super-item {
+    width: 30%;
+  }
+
+  .ads-item .ads-super .ads-super-item .super-itme-icon-nav i {
+    width: 100%;
+    height: 80px;
+    background-size: contain;
+  }
+
+  .ads-item .ads-super .ads-super-item .super-item-title {
+    margin: 0.2rem 0 0;
+    font-size: 0.25rem;
+    line-height: normal;
+  }
+
+  section.ads-item .ads-accurate,
+  section.ads-item .ads-exposure {
+    width: 90%;
+    background-size: contain;
+  }
+
+  section.ads-item .ads-create-steps .ads-step-bg {
+    max-width: 60%;
+  }
+
+  section.ads-item .ads-create-steps .ads-step-item .step-text {
+    font-size: 0.25rem;
+    width: auto;
+    padding: 0 0 0 0.25rem;
+  }
+
+  .about-us,
+  .social-item {
+    width: 100%;
+  }
+
+  .social-result {
+    width: 150px;
+  }
+
+  .about-us-content > li:first-of-type {
+    padding: 0;
+    margin: 0.2rem;
+  }
+
+  .about-us-content .about-us-brief li {
+    font-size: 0.3rem;
+  }
+
+  .top_toolbar {
+    display: none;
+  }
+
+  .quick_link {
+    width: auto;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .quick_link li {
+    border: none;
+  }
+
+  .top_toolbar .wrapper .desc {
+    display: none;
+  }
+
+  .bottom_toolbar {
+    display: block;
+    background: #fff;
+    margin: 20px 0 -21px;
+  }
+
+  .login_choose_box .login_choose_list .ioc.china {
+    display: block;
+  }
+
+  .sitemap_box .control {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .sitemap_box .list li {
+    margin-right: 3%;
+    width: 30%;
+  }
+
+  .sitemap_box .list a {
+    font-size: 0.3rem;
+  }
+
+  .quick_link li a {
+    font-size: 0.3rem;
+  }
+
+  .ranking_list li .rank-num {
+    font-size: 0.4rem;
+  }
+
+  .Coming_soon_ul li .Coming_soon_div p {
+    padding: 0.2rem 0;
+    height: 20px;
+  }
+
+  .use_help {
+    width: 100%;
+    margin: 0;
+  }
+
+  .use_nav {
+    width: 100%;
+    height: 1rem;
+    padding: 0;
+  }
+
+  .use_nav ul {
+    height: 130%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .use_nav li {
+    color: #333;
+    line-height: 1rem;
+    font-size: 0.4rem;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    height: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    float: none;
+  }
+
+  .use_nav li a {
+    width: auto;
+    height: auto;
+    border-left: none;
+    padding: 0 0.43rem;
+    font-size: 0.3rem;
+    position: relative;
+    line-height: 0.787rem;
+  }
+
+  .use_nav li a::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -5%;
+    width: 1px;
+    height: 0.297rem;
+    background: #d1d1d1;
+  }
+
+  .use_con {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.225rem;
+    padding: 0.851rem 0.451rem 2.12rem;
+  }
+
+  .use_nav li.on a::before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0.106rem;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    margin-left: -0.3rem;
+    z-index: 2;
+  }
+
+  .use_nav li.on a {
+    color: #ff9935;
+  }
+
+  .help .help_list div {
+    width: 2.125rem;
+    margin: 0.425rem 0.425rem 0 0.425rem;
+  }
+
+  .use_con_tit span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .faqlist {
+    margin-top: 0.4rem;
+  }
+
+  .faqlist .faqhd {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .agreement_toptitle strong {
+    font-size: 0.4rem;
+  }
+
+  .agreement_infos h3 {
+    font-size: 0.35rem;
+  }
+
+  .use_con_txt h3 {
+    padding: 0.2rem 0;
+  }
+
+  .watching_focus_list .item-content .content-text p,
+  .watching_focus_list .item-content a {
+    font-size: 0.3rem;
+  }
+
+  .recommend_list .recommend_img img {
+    max-height: 3rem;
+    height: auto;
+  }
+
+  .game_xiazai .btn_log,
+  .game_xiazai a {
+    padding: 0;
+  }
+
+  .footer span a {
+    font-size: 0.25rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .use_nav li {
+    padding: 0;
+  }
+
+  .use_nav li a {
+    line-height: 1rem;
+  }
+
+  .use_nav li a::after {
+    top: 40%;
+  }
+
+  .use_nav li.on a::before {
+    bottom: 0;
+  }
+
+  .game_xiazai .btn_log,
+  .game_xiazai a {
+    padding: 0;
+  }
+  .footer .floatleft > br {
+    display: none;
+  }
+}

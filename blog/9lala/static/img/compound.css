@@ -1,0 +1,448 @@
+#gopng_2_outer {
+height: 200px;
+width: 149px;
+overflow: hidden;
+}
+#gopng_2 {
+background: url(http://gopng/static/images/sprite.png) -0px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 0px;
+_margin-left: -0px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_1_outer {
+height: 199px;
+width: 149px;
+overflow: hidden;
+}
+#gopng_1 {
+background: url(http://gopng/static/images/sprite.png) -149px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 149px;
+_margin-left: -149px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_3_outer {
+height: 196px;
+width: 149px;
+overflow: hidden;
+}
+#gopng_3 {
+background: url(http://gopng/static/images/sprite.png) -298px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 298px;
+_margin-left: -298px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_分享气泡_outer {
+height: 106px;
+width: 225px;
+overflow: hidden;
+}
+#gopng_分享气泡 {
+background: url(http://gopng/static/images/sprite.png) -0px -200px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 0px;
+_margin-left: -0px;
+_padding-top: 200px;
+_margin-top: -200px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_more_outer {
+height: 87px;
+width: 242px;
+overflow: hidden;
+}
+#gopng_more {
+background: url(http://gopng/static/images/sprite.png) -225px -200px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 225px;
+_margin-left: -225px;
+_padding-top: 200px;
+_margin-top: -200px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_no1_outer {
+height: 64px;
+width: 64px;
+overflow: hidden;
+}
+#gopng_no1 {
+background: url(http://gopng/static/images/sprite.png) -447px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 447px;
+_margin-left: -447px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_no2_outer {
+height: 64px;
+width: 64px;
+overflow: hidden;
+}
+#gopng_no2 {
+background: url(http://gopng/static/images/sprite.png) -511px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 511px;
+_margin-left: -511px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_no3_outer {
+height: 64px;
+width: 64px;
+overflow: hidden;
+}
+#gopng_no3 {
+background: url(http://gopng/static/images/sprite.png) -447px -64px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 447px;
+_margin-left: -447px;
+_padding-top: 64px;
+_margin-top: -64px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_no4_outer {
+height: 64px;
+width: 64px;
+overflow: hidden;
+}
+#gopng_no4 {
+background: url(http://gopng/static/images/sprite.png) -511px -64px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 511px;
+_margin-left: -511px;
+_padding-top: 64px;
+_margin-top: -64px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_上传_outer {
+height: 60px;
+width: 43px;
+overflow: hidden;
+}
+#gopng_上传 {
+background: url(http://gopng/static/images/sprite.png) -447px -128px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 447px;
+_margin-left: -447px;
+_padding-top: 128px;
+_margin-top: -128px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_TOP100_outer {
+height: 57px;
+width: 266px;
+overflow: hidden;
+}
+#gopng_TOP100 {
+background: url(http://gopng/static/images/sprite.png) -0px -306px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 0px;
+_margin-left: -0px;
+_padding-top: 306px;
+_margin-top: -306px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_栏目标题_outer {
+height: 47px;
+width: 6px;
+overflow: hidden;
+}
+#gopng_栏目标题 {
+background: url(http://gopng/static/images/sprite.png) -575px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 575px;
+_margin-left: -575px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_收藏_outer {
+height: 36px;
+width: 27px;
+overflow: hidden;
+}
+#gopng_收藏 {
+background: url(http://gopng/static/images/sprite.png) -490px -128px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 490px;
+_margin-left: -490px;
+_padding-top: 128px;
+_margin-top: -128px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_分享_outer {
+height: 29px;
+width: 27px;
+overflow: hidden;
+}
+#gopng_分享 {
+background: url(http://gopng/static/images/sprite.png) -517px -128px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 517px;
+_margin-left: -517px;
+_padding-top: 128px;
+_margin-top: -128px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_足迹_outer {
+height: 28px;
+width: 29px;
+overflow: hidden;
+}
+#gopng_足迹 {
+background: url(http://gopng/static/images/sprite.png) -544px -128px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 544px;
+_margin-left: -544px;
+_padding-top: 128px;
+_margin-top: -128px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_热门_outer {
+height: 26px;
+width: 22px;
+overflow: hidden;
+}
+#gopng_热门 {
+background: url(http://gopng/static/images/sprite.png) -575px -64px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 575px;
+_margin-left: -575px;
+_padding-top: 64px;
+_margin-top: -64px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_下载_outer {
+height: 25px;
+width: 26px;
+overflow: hidden;
+}
+#gopng_下载 {
+background: url(http://gopng/static/images/sprite.png) -573px -128px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 573px;
+_margin-left: -573px;
+_padding-top: 128px;
+_margin-top: -128px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_草稿箱_outer {
+height: 23px;
+width: 20px;
+overflow: hidden;
+}
+#gopng_草稿箱 {
+background: url(http://gopng/static/images/sprite.png) -575px -90px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 575px;
+_margin-left: -575px;
+_padding-top: 90px;
+_margin-top: -90px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_赞-灰色_outer {
+height: 23px;
+width: 22px;
+overflow: hidden;
+}
+#gopng_赞-灰色 {
+background: url(http://gopng/static/images/sprite.png) -490px -164px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 490px;
+_margin-left: -490px;
+_padding-top: 164px;
+_margin-top: -164px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_点赞_outer {
+height: 22px;
+width: 22px;
+overflow: hidden;
+}
+#gopng_点赞 {
+background: url(http://gopng/static/images/sprite.png) -512px -164px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 512px;
+_margin-left: -512px;
+_padding-top: 164px;
+_margin-top: -164px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_留言_outer {
+height: 20px;
+width: 20px;
+overflow: hidden;
+}
+#gopng_留言 {
+background: url(http://gopng/static/images/sprite.png) -534px -164px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 534px;
+_margin-left: -534px;
+_padding-top: 164px;
+_margin-top: -164px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_星星-灰_outer {
+height: 20px;
+width: 20px;
+overflow: hidden;
+}
+#gopng_星星-灰 {
+background: url(http://gopng/static/images/sprite.png) -554px -164px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 554px;
+_margin-left: -554px;
+_padding-top: 164px;
+_margin-top: -164px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_半星_outer {
+height: 20px;
+width: 21px;
+overflow: hidden;
+}
+#gopng_半星 {
+background: url(http://gopng/static/images/sprite.png) -574px -164px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 574px;
+_margin-left: -574px;
+_padding-top: 164px;
+_margin-top: -164px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_全星_outer {
+height: 20px;
+width: 21px;
+overflow: hidden;
+}
+#gopng_全星 {
+background: url(http://gopng/static/images/sprite.png) -467px -200px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 467px;
+_margin-left: -467px;
+_padding-top: 200px;
+_margin-top: -200px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_start-橙色-小_outer {
+height: 17px;
+width: 18px;
+overflow: hidden;
+}
+#gopng_start-橙色-小 {
+background: url(http://gopng/static/images/sprite.png) -581px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 581px;
+_margin-left: -581px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_浏览过_outer {
+height: 17px;
+width: 32px;
+overflow: hidden;
+}
+#gopng_浏览过 {
+background: url(http://gopng/static/images/sprite.png) -488px -200px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 488px;
+_margin-left: -488px;
+_padding-top: 200px;
+_margin-top: -200px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_非选中_outer {
+height: 16px;
+width: 16px;
+overflow: hidden;
+}
+#gopng_非选中 {
+background: url(http://gopng/static/images/sprite.png) -581px -17px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 581px;
+_margin-left: -581px;
+_padding-top: 17px;
+_margin-top: -17px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
+#gopng_选中_outer {
+height: 14px;
+width: 14px;
+overflow: hidden;
+}
+#gopng_选中 {
+background: url(http://gopng/static/images/sprite.png) -581px -33px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 581px;
+_margin-left: -581px;
+_padding-top: 33px;
+_margin-top: -33px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="http://gopng/static/images/sprite.png");
+}
