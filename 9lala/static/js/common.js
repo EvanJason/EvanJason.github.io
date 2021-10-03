@@ -1,20 +1,19 @@
 /* -------------------------pc ------------------------*/
 
-$(function() {
+$(function () {
   // 热门搜索
-  $(".search-section input.seek_text").focus(function() {
+  $(".search-section input.seek_text").focus(function () {
     $(".search-section .search-box").show();
   });
 
-  $(".search-section input.seek_text").blur(function() {
+  $(".search-section input.seek_text").blur(function () {
     $(".search-section .search-box").hide();
   });
 
-  //
-  $(".login_form form .label_box").each(function(index, i) {
-    $(i).click(function() {
+  $(".login_form form .label_box").each(function (index, i) {
+    $(i).click(function () {
       docie();
-      $(".login_form form .label_box ").each(function(index, i) {
+      $(".login_form form .label_box ").each(function (index, i) {
         inp();
       });
       $(i).addClass("on");
@@ -26,7 +25,7 @@ $(function() {
 
   //回到顶部
   function goTop(min_height) {
-    $(".go_up").click(function() {
+    $(".go_up").click(function () {
       $("html,body").animate(
         {
           scrollTop: 0
@@ -35,7 +34,7 @@ $(function() {
       );
     });
     min_height = min_height ? min_height : 400;
-    $(window).scroll(function() {
+    $(window).scroll(function () {
       var s = $(window).scrollTop();
       if (s > $(document).height() / 5) {
         $(".go_up").addClass("show");
@@ -49,7 +48,7 @@ $(function() {
 });
 
 function inp() {
-  $(".login_form form .label_box ").each(function(index, i) {
+  $(".login_form form .label_box ").each(function (index, i) {
     var isFocus = $(i)
       .find("input")
       .is(":focus");
@@ -75,7 +74,7 @@ function docie() {
 }
 
 /* -------------------------自适应 ------------------------*/
-$(function() {
+$(function () {
   var LINswitch = true;
   var pcimg = $(".banner_swiper img").attr("src");
   var ydimg = $(".banner_swiper img").attr("data-m-img");
@@ -84,7 +83,7 @@ $(function() {
     Mobile_execution();
   }
   //移动端下 点击三横 侧边导航
-  $(".logo_seek .san_san").click(function() {
+  $(".logo_seek .san_san").click(function () {
     $("#To_login_1").hide(0);
     docie();
     $(".dropdown_menu").slideUp(0);
@@ -94,12 +93,12 @@ $(function() {
     });
   });
 
-  $(".searcha-span").click(function() {
+  $(".searcha-span").click(function () {
     if ($(window).width() < 720) {
       $(".Mobil_search_box").show();
     }
   });
-  $(window).resize(function() {
+  $(window).resize(function () {
     if ($(window).width() < 720 && LINswitch === true) {
       Mobile_execution();
     }
@@ -121,19 +120,19 @@ $(function() {
 function tab_seek_box() {
   $(".tab_seek_box").html(
     "<!-- 导航 -->" +
-      '    <div class="tab-menu">' +
-      '        <a href="" class="tab-item ">IOS</a>' +
-      '        <a href="" class="tab-item "> Android</a>' +
-      '        <a href="" class="tab-item ">PC</a>' +
-      "    </div>" +
-      "    <!-- 搜索 -->" +
-      '    <div class="div_seek">' +
-      '        <form action="">' +
-      '            <div class="input_seek">' +
-      '                <input type="text" name="text" placeholder="search..."  value="">' +
-      "            </div>" +
-      "        </form>" +
-      "     </div>"
+    '    <div class="tab-menu">' +
+    '        <a href="" class="tab-item ">IOS</a>' +
+    '        <a href="" class="tab-item "> Android</a>' +
+    '        <a href="" class="tab-item ">PC</a>' +
+    "    </div>" +
+    "    <!-- 搜索 -->" +
+    '    <div class="div_seek">' +
+    '        <form action="">' +
+    '            <div class="input_seek">' +
+    '                <input type="text" name="text" placeholder="search..."  value="">' +
+    "            </div>" +
+    "        </form>" +
+    "     </div>"
   );
 }
 
@@ -149,7 +148,7 @@ function monitor(a) {
 }
 
 // 响应式设置font-sizi
-(function(designWidth, maxWidth) {
+(function (designWidth, maxWidth) {
   var doc = document,
     win = window,
     docEl = doc.documentElement,
@@ -178,7 +177,7 @@ function monitor(a) {
 
   win.addEventListener(
     "resize",
-    function() {
+    function () {
       clearTimeout(tid); //防止执行两次
       tid = setTimeout(refreshRem, 300);
     },
@@ -187,7 +186,7 @@ function monitor(a) {
 
   win.addEventListener(
     "pageshow",
-    function(e) {
+    function (e) {
       if (e.persisted) {
         // 浏览器后退的时候重新计算
         clearTimeout(tid);
@@ -202,7 +201,7 @@ function monitor(a) {
   } else {
     doc.addEventListener(
       "DOMContentLoaded",
-      function(e) {
+      function (e) {
         doc.body.style.fontSize = "16px";
       },
       false
