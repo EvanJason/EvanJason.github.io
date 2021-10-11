@@ -6,7 +6,7 @@ export default {
     'outputPath': "about/index.html",
     'title': "关于",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>关于</h1>\n<h3 id="%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D">自我介绍<a class="anchor" href="#%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D">§</a></h3>\n<ul>\n<li>前端小白</li>\n<li>喜欢各种有趣科技型的事物，追各种番剧</li>\n<li>爱好广泛的养生佛系家里蹲青年</li>\n<li>记录技术，展示文字，生活杂谈</li>\n<li>努力努力再努力！</li>\n</ul>'
+            __html: '<h1>关于</h1>\n<h3 id="%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D">自我介绍<a class="anchor" href="#%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D">§</a></h3>\n<ul>\n<li>喜欢各种有趣科技型的事物，追各种番剧</li>\n<li>爱好广泛的养生佛系家里蹲青年</li>\n<li>记录技术，展示文字，生活杂谈</li>\n<li>热爱生活，努力奋斗，达到想要的目标</li>\n</ul>\n<p><img src="../pic/bg.png" alt=""></p>\n<h3 id="%E8%B5%9E%E5%8A%A9%E4%BD%9C%E8%80%85">赞助作者<a class="anchor" href="#%E8%B5%9E%E5%8A%A9%E4%BD%9C%E8%80%85">§</a></h3>\n<div>\n    <img src="https://willern.gitee.io/img/reward-wechat.jpg" target="_blank" alt="img" width="200" style="margin-right: 5px;display: inline-block;" />\n    <img src="https://willern.gitee.io/img/reward-alipay.jpg" target="_blank" alt="img" width="200" style="margin-right: 5px;display: inline-block;" />\n</div>'
         } }),
     'head': React.createElement("link", { href: "https://willern.gitee.io/img/favicon.ico", rel: "shortcut icon" }),
     'script': React.createElement(React.Fragment, null,
@@ -15,20 +15,22 @@ export default {
         React.createElement("script", { src: "/index.js", type: "module" })),
     'contentTitle': React.createElement("h1", { key: "0" }, "\u5173\u4E8E"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h3 id="%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D">自我介绍<a class="anchor" href="#%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D">§</a></h3>\n<ul>\n<li>前端小白</li>\n<li>喜欢各种有趣科技型的事物，追各种番剧</li>\n<li>爱好广泛的养生佛系家里蹲青年</li>\n<li>记录技术，展示文字，生活杂谈</li>\n<li>努力努力再努力！</li>\n</ul>'
+            __html: '<h3 id="%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D">自我介绍<a class="anchor" href="#%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D">§</a></h3>\n<ul>\n<li>喜欢各种有趣科技型的事物，追各种番剧</li>\n<li>爱好广泛的养生佛系家里蹲青年</li>\n<li>记录技术，展示文字，生活杂谈</li>\n<li>热爱生活，努力奋斗，达到想要的目标</li>\n</ul>\n<p><img src="../pic/bg.png" alt=""></p>\n<h3 id="%E8%B5%9E%E5%8A%A9%E4%BD%9C%E8%80%85">赞助作者<a class="anchor" href="#%E8%B5%9E%E5%8A%A9%E4%BD%9C%E8%80%85">§</a></h3>\n<div>\n    <img src="https://willern.gitee.io/img/reward-wechat.jpg" target="_blank" alt="img" width="200" style="margin-right: 5px;display: inline-block;" />\n    <img src="https://willern.gitee.io/img/reward-alipay.jpg" target="_blank" alt="img" width="200" style="margin-right: 5px;display: inline-block;" />\n</div>'
         } }),
     'toc': React.createElement("nav", { key: "0", className: "toc" },
         React.createElement("ol", null,
             React.createElement("li", null,
-                React.createElement("a", { href: "#%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D" }, "\u81EA\u6211\u4ECB\u7ECD")))),
+                React.createElement("a", { href: "#%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D" }, "\u81EA\u6211\u4ECB\u7ECD")),
+            React.createElement("li", null,
+                React.createElement("a", { href: "#%E8%B5%9E%E5%8A%A9%E4%BD%9C%E8%80%85" }, "\u8D5E\u52A9\u4F5C\u8005")))),
     'author': "EvanJason",
     'contributors': [
         "EvanJason"
     ],
-    'date': "2021-10-10T16:40:21.000Z",
+    'date': "2021-10-11T13:47:43.000Z",
     'updated': null,
-    'excerpt': "自我介绍 - 前端小白 - 喜欢各种有趣科技型的事物，追各种番剧 - 爱好广泛的养生佛系家里蹲青年 - 记录技术，展示文字，生活杂谈 - 努力努力再努力！",
-    'cover': undefined,
+    'excerpt': "自我介绍 - 喜欢各种有趣科技型的事物，追各种番剧 - 爱好广泛的养生佛系家里蹲青年 - 记录技术，展示文字，生活杂谈 - 热爱生活，努力奋斗，达到想要的目标 赞助作者 ",
+    'cover': "../pic/bg.png",
     'blog': {
         "isPost": false,
         "posts": [
