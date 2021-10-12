@@ -22,7 +22,7 @@ export default {
     'contributors': [
         "EvanJason"
     ],
-    'date': "2021-10-11T13:47:43.000Z",
+    'date': "2021-10-12T12:17:26.000Z",
     'updated': null,
     'excerpt': "",
     'cover': undefined,
