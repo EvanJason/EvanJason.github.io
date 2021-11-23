@@ -39,7 +39,7 @@ export default {
         "categories": [
             {
                 "name": "Angular",
-                "count": 8
+                "count": 11
             },
             {
                 "name": "Vue",
@@ -47,7 +47,7 @@ export default {
             },
             {
                 "name": "antd",
-                "count": 2
+                "count": 3
             },
             {
                 "name": "工具",
@@ -104,12 +104,12 @@ export default {
         ],
         "tags": [
             {
-                "name": "Vue",
+                "name": "antd",
                 "count": 4
             },
             {
-                "name": "antd",
-                "count": 3
+                "name": "Vue",
+                "count": 4
             },
             {
                 "name": "Angular",
@@ -136,6 +136,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "表格",
+                "count": 2
+            },
+            {
                 "name": "页面水印",
                 "count": 2
             },
@@ -156,7 +160,15 @@ export default {
                 "count": 1
             },
             {
+                "name": "localstorage",
+                "count": 1
+            },
+            {
                 "name": "React",
+                "count": 1
+            },
+            {
+                "name": "sessionstorage",
                 "count": 1
             },
             {
@@ -169,6 +181,10 @@ export default {
             },
             {
                 "name": "webpack",
+                "count": 1
+            },
+            {
+                "name": "光标处",
                 "count": 1
             },
             {
@@ -208,6 +224,10 @@ export default {
                 "count": 1
             },
             {
+                "name": "插入功能",
+                "count": 1
+            },
+            {
                 "name": "日常生活",
                 "count": 1
             },
@@ -232,7 +252,11 @@ export default {
                 "count": 1
             },
             {
-                "name": "表格",
+                "name": "聚焦",
+                "count": 1
+            },
+            {
+                "name": "自定义",
                 "count": 1
             },
             {
