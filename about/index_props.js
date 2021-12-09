@@ -27,7 +27,7 @@ export default {
     'contributors': [
         "EvanJason"
     ],
-    'date': "2021-12-09T15:06:26.000Z",
+    'date': "2021-12-09T15:18:19.000Z",
     'updated': null,
     'excerpt': "自我介绍 - 喜欢各种有趣科技型的事物，追各种番剧 - 爱好广泛的养生佛系家里蹲青年 - 记录技术，展示文字，生活杂谈 - 热爱生活，努力奋斗，达到想要的目标 赞助作者 ",
     'cover': "../pic/bg.png",
