@@ -1,97 +1,37 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "categories/Vue/",
+    'pagePath': "tags/打包/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "categories/Vue/index.html",
+    'outputPath': "tags/打包/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "Vue",
+    'title': "打包",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/2020/Vue 父子路由的实现以及父子路由的高亮切换显示问题.md",
-                "title": "Vue 父子路由的实现以及父子路由的高亮切换显示问题",
-                "link": "posts/2020/Vue 父子路由的实现以及父子路由的高亮切换显示问题.html",
-                "date": "2020/07/11",
+                "pagePath": "posts/2021/解决react项目生产环境部署，浏览器可以看到源码的问题.md",
+                "title": "解决 react 项目生产环境部署，浏览器可以看到源码的问题",
+                "link": "posts/2021/解决react项目生产环境部署，浏览器可以看到源码的问题.html",
+                "date": "2021/11/21",
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
                     "EvanJason"
                 ],
                 "categories": [
-                    "Vue"
+                    "React"
                 ],
                 "tags": [
-                    "Vue",
-                    "路由高亮",
-                    "父子路由"
+                    "React",
+                    "打包"
                 ],
-                "excerpt": "Vue 父子路由的实现以及父子路由的高亮切换显示问题"
-            },
-            {
-                "pagePath": "posts/2020/Vue实现分页功能.md",
-                "title": "Vue实现分页功能",
-                "link": "posts/2020/Vue实现分页功能.html",
-                "date": "2020/07/03",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "Vue"
-                ],
-                "tags": [
-                    "Vue",
-                    "分页"
-                ],
-                "excerpt": "Vue实现分页功能",
-                "cover": "https://willern.gitee.io/2020/07/03/20200703/show.gif"
-            },
-            {
-                "pagePath": "posts/2020/Vue 动态绑定多个class 带上三元运算或其他条件.md",
-                "title": "Vue 动态绑定多个class 带上三元运算或其他条件",
-                "link": "posts/2020/Vue 动态绑定多个class 带上三元运算或其他条件.html",
-                "date": "2020/06/24",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "Vue"
-                ],
-                "tags": [
-                    "Vue",
-                    "条件判断",
-                    "多类名"
-                ],
-                "excerpt": "Vue 动态绑定多个class 带上三元运算或其他条件"
-            },
-            {
-                "pagePath": "posts/2020/Vue-router（路由）的知识点.md",
-                "title": "Vue-router（路由）的知识点",
-                "link": "posts/2020/Vue-router（路由）的知识点.html",
-                "date": "2020/05/01",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "Vue"
-                ],
-                "tags": [
-                    "Vue",
-                    "vue-router"
-                ],
-                "excerpt": "Vue-router（路由）的知识点"
+                "excerpt": "React生产环境还有源代码的问题解决,并记录"
             }
         ],
         "categories": [

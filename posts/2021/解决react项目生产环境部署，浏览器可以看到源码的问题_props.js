@@ -1,38 +1,49 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "about/README.md",
-    'layoutPath': "_layout.tsx",
-    'outputPath': "about/index.html",
-    'title': "关于",
+    'pagePath': "posts/2021/解决react项目生产环境部署，浏览器可以看到源码的问题.md",
+    'layoutPath': "posts/_layout.tsx",
+    'outputPath': "posts/2021/解决react项目生产环境部署，浏览器可以看到源码的问题.html",
+    'title': "解决 react 项目生产环境部署，浏览器可以看到源码的问题",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>关于</h1>\n<h3 id="%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D">自我介绍<a class="anchor" href="#%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D">§</a></h3>\n<ul>\n<li>喜欢各种有趣科技型的事物，追各种番剧</li>\n<li>爱好广泛的养生佛系家里蹲青年</li>\n<li>记录技术，展示文字，生活杂谈</li>\n<li>热爱生活，努力奋斗，达到想要的目标</li>\n</ul>\n<p><img src="../pic/bg.png" alt=""></p>\n<h3 id="%E8%B5%9E%E5%8A%A9%E4%BD%9C%E8%80%85">赞助作者<a class="anchor" href="#%E8%B5%9E%E5%8A%A9%E4%BD%9C%E8%80%85">§</a></h3>\n<div>\n    <img src="https://willern.gitee.io/img/reward-wechat.jpg" target="_blank" alt="img" width="200" style="margin-right: 5px;display: inline-block;" />\n    <img src="https://willern.gitee.io/img/reward-alipay.jpg" target="_blank" alt="img" width="200" style="margin-right: 5px;display: inline-block;" />\n</div>'
+            __html: '<h1>解决 react 项目生产环境部署，浏览器可以看到源码的问题</h1>\n<p>React 生产环境还有源代码的问题解决</p>\n<h2 id="%E5%89%8D%E8%A8%80">前言<a class="anchor" href="#%E5%89%8D%E8%A8%80">§</a></h2>\n<p>create-react-app 创建的 react 项目，打包生成后仍有源代码，这是因为 source-map 的问题</p>\n<h2 id="%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%B8%80">解决方案一<a class="anchor" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%B8%80">§</a></h2>\n<p>1.在项目根目录下新建文件.env.production，内容:</p>\n<pre class="language-autoit"><code class="language-autoit">GENERATE_SOURCEMAP<span class="token operator">=</span><span class="token boolean">false</span>\n</code></pre>\n<p>2.重新打包即可</p>\n<h2 id="%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%BA%8C">解决方案二<a class="anchor" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%BA%8C">§</a></h2>\n<p>1.寻找配置文件 webpack.config.js，代码如下</p>\n<pre class="language-autoit"><code class="language-autoit"><span class="token keyword">const</span> shouldUseSourceMap <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>GENERATE_SOURCEMAP !<span class="token operator">==</span> <span class="token string">\'false\'</span><span class="token comment">;</span>\n</code></pre>\n<p>2.直接修改这行代码，写成配置（只针对于生产环境）</p>\n<p>3.打包重新运行</p>\n<h2 id="%E6%9B%B4%E5%A4%9A">更多<a class="anchor" href="#%E6%9B%B4%E5%A4%9A">§</a></h2>\n<p>更多参考 <a href="https://www.html.cn/create-react-app/docs/adding-custom-environment-variables/">https://www.html.cn/create-react-app/docs/adding-custom-environment-variables/</a></p>'
         } }),
     'head': React.createElement("link", { href: "https://willern.gitee.io/img/favicon.ico", rel: "shortcut icon" }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'contentTitle': React.createElement("h1", { key: "0" }, "\u5173\u4E8E"),
+    'contentTitle': React.createElement("h1", { key: "0" }, "\u89E3\u51B3 react \u9879\u76EE\u751F\u4EA7\u73AF\u5883\u90E8\u7F72\uFF0C\u6D4F\u89C8\u5668\u53EF\u4EE5\u770B\u5230\u6E90\u7801\u7684\u95EE\u9898"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h3 id="%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D">自我介绍<a class="anchor" href="#%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D">§</a></h3>\n<ul>\n<li>喜欢各种有趣科技型的事物，追各种番剧</li>\n<li>爱好广泛的养生佛系家里蹲青年</li>\n<li>记录技术，展示文字，生活杂谈</li>\n<li>热爱生活，努力奋斗，达到想要的目标</li>\n</ul>\n<p><img src="../pic/bg.png" alt=""></p>\n<h3 id="%E8%B5%9E%E5%8A%A9%E4%BD%9C%E8%80%85">赞助作者<a class="anchor" href="#%E8%B5%9E%E5%8A%A9%E4%BD%9C%E8%80%85">§</a></h3>\n<div>\n    <img src="https://willern.gitee.io/img/reward-wechat.jpg" target="_blank" alt="img" width="200" style="margin-right: 5px;display: inline-block;" />\n    <img src="https://willern.gitee.io/img/reward-alipay.jpg" target="_blank" alt="img" width="200" style="margin-right: 5px;display: inline-block;" />\n</div>'
+            __html: '<p>React 生产环境还有源代码的问题解决</p>\n<h2 id="%E5%89%8D%E8%A8%80">前言<a class="anchor" href="#%E5%89%8D%E8%A8%80">§</a></h2>\n<p>create-react-app 创建的 react 项目，打包生成后仍有源代码，这是因为 source-map 的问题</p>\n<h2 id="%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%B8%80">解决方案一<a class="anchor" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%B8%80">§</a></h2>\n<p>1.在项目根目录下新建文件.env.production，内容:</p>\n<pre class="language-autoit"><code class="language-autoit">GENERATE_SOURCEMAP<span class="token operator">=</span><span class="token boolean">false</span>\n</code></pre>\n<p>2.重新打包即可</p>\n<h2 id="%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%BA%8C">解决方案二<a class="anchor" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%BA%8C">§</a></h2>\n<p>1.寻找配置文件 webpack.config.js，代码如下</p>\n<pre class="language-autoit"><code class="language-autoit"><span class="token keyword">const</span> shouldUseSourceMap <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>GENERATE_SOURCEMAP !<span class="token operator">==</span> <span class="token string">\'false\'</span><span class="token comment">;</span>\n</code></pre>\n<p>2.直接修改这行代码，写成配置（只针对于生产环境）</p>\n<p>3.打包重新运行</p>\n<h2 id="%E6%9B%B4%E5%A4%9A">更多<a class="anchor" href="#%E6%9B%B4%E5%A4%9A">§</a></h2>\n<p>更多参考 <a href="https://www.html.cn/create-react-app/docs/adding-custom-environment-variables/">https://www.html.cn/create-react-app/docs/adding-custom-environment-variables/</a></p>'
         } }),
     'toc': React.createElement("nav", { key: "0", className: "toc" },
         React.createElement("ol", null,
             React.createElement("li", null,
-                React.createElement("a", { href: "#%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D" }, "\u81EA\u6211\u4ECB\u7ECD")),
+                React.createElement("a", { href: "#%E5%89%8D%E8%A8%80" }, "\u524D\u8A00")),
             React.createElement("li", null,
-                React.createElement("a", { href: "#%E8%B5%9E%E5%8A%A9%E4%BD%9C%E8%80%85" }, "\u8D5E\u52A9\u4F5C\u8005")))),
-    'author': "EvanJason",
+                React.createElement("a", { href: "#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%B8%80" }, "\u89E3\u51B3\u65B9\u6848\u4E00")),
+            React.createElement("li", null,
+                React.createElement("a", { href: "#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%BA%8C" }, "\u89E3\u51B3\u65B9\u6848\u4E8C")),
+            React.createElement("li", null,
+                React.createElement("a", { href: "#%E6%9B%B4%E5%A4%9A" }, "\u66F4\u591A")))),
+    'author': "深海如梦",
     'contributors': [
         "EvanJason"
     ],
-    'date': "2021-12-09T15:06:26.000Z",
+    'date': "2021/11/21",
     'updated': null,
-    'excerpt': "自我介绍 - 喜欢各种有趣科技型的事物，追各种番剧 - 爱好广泛的养生佛系家里蹲青年 - 记录技术，展示文字，生活杂谈 - 热爱生活，努力奋斗，达到想要的目标 赞助作者 ",
-    'cover': "../pic/bg.png",
+    'excerpt': "React生产环境还有源代码的问题解决,并记录",
+    'cover': undefined,
+    'categories': [
+        "React"
+    ],
+    'tags': [
+        "React",
+        "打包"
+    ],
     'blog': {
-        "isPost": false,
+        "isPost": true,
         "posts": [
             {
                 "pagePath": "posts/2021/解决react项目生产环境部署，浏览器可以看到源码的问题.md",

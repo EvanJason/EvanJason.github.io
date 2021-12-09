@@ -68,6 +68,10 @@ export default {
                 "count": 3
             },
             {
+                "name": "React",
+                "count": 2
+            },
+            {
                 "name": "工具",
                 "count": 2
             },
@@ -81,10 +85,6 @@ export default {
             },
             {
                 "name": "ngx-clipboard",
-                "count": 1
-            },
-            {
-                "name": "React",
                 "count": 1
             },
             {
@@ -134,6 +134,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "React",
+                "count": 2
+            },
+            {
                 "name": "vscode",
                 "count": 2
             },
@@ -179,10 +183,6 @@ export default {
             },
             {
                 "name": "localstorage",
-                "count": 1
-            },
-            {
-                "name": "React",
                 "count": 1
             },
             {
@@ -235,6 +235,10 @@ export default {
             },
             {
                 "name": "快捷键",
+                "count": 1
+            },
+            {
+                "name": "打包",
                 "count": 1
             },
             {

@@ -15,6 +15,25 @@ export default {
         "isPost": false,
         "posts": [
             {
+                "pagePath": "posts/2021/解决react项目生产环境部署，浏览器可以看到源码的问题.md",
+                "title": "解决 react 项目生产环境部署，浏览器可以看到源码的问题",
+                "link": "posts/2021/解决react项目生产环境部署，浏览器可以看到源码的问题.html",
+                "date": "2021/11/21",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "React"
+                ],
+                "tags": [
+                    "React",
+                    "打包"
+                ],
+                "excerpt": "React生产环境还有源代码的问题解决,并记录"
+            },
+            {
                 "pagePath": "posts/2021/使用react-router-cache-route实现页面状态的缓存.md",
                 "title": "使用react-router-cache-route实现页面状态的缓存",
                 "link": "posts/2021/使用react-router-cache-route实现页面状态的缓存.html",
@@ -48,6 +67,10 @@ export default {
                 "count": 3
             },
             {
+                "name": "React",
+                "count": 2
+            },
+            {
                 "name": "工具",
                 "count": 2
             },
@@ -61,10 +84,6 @@ export default {
             },
             {
                 "name": "ngx-clipboard",
-                "count": 1
-            },
-            {
-                "name": "React",
                 "count": 1
             },
             {
@@ -114,6 +133,10 @@ export default {
                 "count": 2
             },
             {
+                "name": "React",
+                "count": 2
+            },
+            {
                 "name": "vscode",
                 "count": 2
             },
@@ -159,10 +182,6 @@ export default {
             },
             {
                 "name": "localstorage",
-                "count": 1
-            },
-            {
-                "name": "React",
                 "count": 1
             },
             {
@@ -215,6 +234,10 @@ export default {
             },
             {
                 "name": "快捷键",
+                "count": 1
+            },
+            {
+                "name": "打包",
                 "count": 1
             },
             {
