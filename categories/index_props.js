@@ -22,13 +22,34 @@ export default {
     'contributors': [
         "EvanJason"
     ],
-    'date': "2021-12-12T14:25:12.000Z",
+    'date': "2022-01-02T16:04:13.000Z",
     'updated': null,
     'excerpt': "",
     'cover': undefined,
     'blog': {
         "isPost": false,
         "posts": [
+            {
+                "pagePath": "posts/2021/2021年总结 + 新的一年目标和规划.md",
+                "title": "2021年总结 + 新的一年目标和规划",
+                "link": "posts/2021/2021年总结 + 新的一年目标和规划.html",
+                "date": "2021/12/31",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "日常生活",
+                    "年终总结"
+                ],
+                "tags": [
+                    "日常生活",
+                    "年终总结"
+                ],
+                "excerpt": "2021年总结 + 新的一年目标和规划",
+                "cover": "../../pic/finish/4d03-a370d991827003abcad4040bdd0349dd.png"
+            },
             {
                 "pagePath": "posts/2021/解决react项目生产环境部署，浏览器可以看到源码的问题.md",
                 "title": "解决 react 项目生产环境部署，浏览器可以看到源码的问题",
@@ -565,6 +586,14 @@ export default {
                 "count": 2
             },
             {
+                "name": "年终总结",
+                "count": 2
+            },
+            {
+                "name": "日常生活",
+                "count": 2
+            },
+            {
                 "name": "Echarts",
                 "count": 1
             },
@@ -597,14 +626,6 @@ export default {
                 "count": 1
             },
             {
-                "name": "年终总结",
-                "count": 1
-            },
-            {
-                "name": "日常生活",
-                "count": 1
-            },
-            {
                 "name": "水印",
                 "count": 1
             }
@@ -632,6 +653,14 @@ export default {
             },
             {
                 "name": "多类名",
+                "count": 2
+            },
+            {
+                "name": "年终总结",
+                "count": 2
+            },
+            {
+                "name": "日常生活",
                 "count": 2
             },
             {
@@ -719,10 +748,6 @@ export default {
                 "count": 1
             },
             {
-                "name": "年终总结",
-                "count": 1
-            },
-            {
                 "name": "快捷键",
                 "count": 1
             },
@@ -736,10 +761,6 @@ export default {
             },
             {
                 "name": "插入功能",
-                "count": 1
-            },
-            {
-                "name": "日常生活",
                 "count": 1
             },
             {

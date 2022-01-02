@@ -58,6 +58,14 @@ export default {
                 "count": 2
             },
             {
+                "name": "年终总结",
+                "count": 2
+            },
+            {
+                "name": "日常生活",
+                "count": 2
+            },
+            {
                 "name": "Echarts",
                 "count": 1
             },
@@ -90,14 +98,6 @@ export default {
                 "count": 1
             },
             {
-                "name": "年终总结",
-                "count": 1
-            },
-            {
-                "name": "日常生活",
-                "count": 1
-            },
-            {
                 "name": "水印",
                 "count": 1
             }
@@ -125,6 +125,14 @@ export default {
             },
             {
                 "name": "多类名",
+                "count": 2
+            },
+            {
+                "name": "年终总结",
+                "count": 2
+            },
+            {
+                "name": "日常生活",
                 "count": 2
             },
             {
@@ -212,10 +220,6 @@ export default {
                 "count": 1
             },
             {
-                "name": "年终总结",
-                "count": 1
-            },
-            {
                 "name": "快捷键",
                 "count": 1
             },
@@ -229,10 +233,6 @@ export default {
             },
             {
                 "name": "插入功能",
-                "count": 1
-            },
-            {
-                "name": "日常生活",
                 "count": 1
             },
             {
