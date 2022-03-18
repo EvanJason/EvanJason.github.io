@@ -18,7 +18,7 @@ export default {
                 "pagePath": "posts/2022/React-Echarts图表点击事件.md",
                 "title": "echarts图表点击事件",
                 "link": "posts/2022/React-Echarts图表点击事件.html",
-                "date": "2022/02/20",
+                "date": "2023/02/20",
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
