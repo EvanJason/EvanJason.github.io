@@ -247,15 +247,15 @@ export default {
                 "count": 11
             },
             {
+                "name": "React",
+                "count": 4
+            },
+            {
                 "name": "Vue",
                 "count": 4
             },
             {
                 "name": "antd",
-                "count": 3
-            },
-            {
-                "name": "React",
                 "count": 3
             },
             {
@@ -269,6 +269,10 @@ export default {
             {
                 "name": "日常生活",
                 "count": 2
+            },
+            {
+                "name": "Antd",
+                "count": 1
             },
             {
                 "name": "Echarts",
@@ -317,12 +321,12 @@ export default {
                 "count": 4
             },
             {
-                "name": "Vue",
+                "name": "React",
                 "count": 4
             },
             {
-                "name": "React",
-                "count": 3
+                "name": "Vue",
+                "count": 4
             },
             {
                 "name": "Angular",
@@ -366,6 +370,10 @@ export default {
             },
             {
                 "name": "Angular RouteReuseStrategy",
+                "count": 1
+            },
+            {
+                "name": "Antd",
                 "count": 1
             },
             {

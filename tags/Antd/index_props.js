@@ -1,39 +1,38 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "tags/富文本/",
+    'pagePath': "tags/Antd/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "tags/富文本/index.html",
+    'outputPath': "tags/Antd/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "富文本",
+    'title': "Antd",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/2020/wangEditor富文本编辑器.md",
-                "title": "wangEditor富文本编辑器",
-                "link": "posts/2020/wangEditor富文本编辑器.html",
-                "date": "2020/10/25",
+                "pagePath": "posts/2022/React-Antd表格选中行事件.md",
+                "title": "antd表格选中行事件",
+                "link": "posts/2022/React-Antd表格选中行事件.html",
+                "date": "2022/03/10",
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
                     "EvanJason"
                 ],
                 "categories": [
-                    "wangEditor",
-                    "Angular",
-                    "富文本"
+                    "React",
+                    "Antd"
                 ],
                 "tags": [
-                    "wangEditor",
-                    "富文本"
+                    "React",
+                    "Antd"
                 ],
-                "excerpt": "wangEditor富文本编辑器"
+                "excerpt": "antd表格选中行事件"
             }
         ],
         "categories": [
