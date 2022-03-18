@@ -7,10 +7,10 @@ tags:
   - ECharts
 date: 2023/02/20
 author: 深海如梦
-excerpt: React、Echarts柱状图点击图上柱状事件
+excerpt: echarts图表点击事件
 ---
 
-# React、Echarts柱状图点击图上柱状事件，并实现高亮展示点击 的柱状
+# echarts图表点击事件
 
 问题：echarts图表点击事件，进行查询条件，实现高亮
 
