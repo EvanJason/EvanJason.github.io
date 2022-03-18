@@ -1,58 +1,38 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "tags/页面水印/",
+    'pagePath': "categories/ECharts/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "tags/页面水印/index.html",
+    'outputPath': "categories/ECharts/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "页面水印",
+    'title': "ECharts",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/2021/通用水印功能实现.md",
-                "title": "通用水印功能实现",
-                "link": "posts/2021/通用水印功能实现.html",
-                "date": "2021/08/16",
+                "pagePath": "posts/2022/React、Echarts图表点击事件.md",
+                "title": "React、Echarts柱状图点击图上柱状事件，并实现高亮展示点击 的柱状",
+                "link": "posts/2022/React、Echarts图表点击事件.html",
+                "date": "2023/02/20",
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
                     "EvanJason"
                 ],
                 "categories": [
-                    "水印"
+                    "React",
+                    "ECharts"
                 ],
                 "tags": [
-                    "水印",
-                    "页面水印"
+                    "React",
+                    "ECharts"
                 ],
-                "excerpt": "新的水印功能实现"
-            },
-            {
-                "pagePath": "posts/2021/Angular 页面水印功能实现.md",
-                "title": "Angular 页面水印功能实现",
-                "link": "posts/2021/Angular 页面水印功能实现.html",
-                "date": "2021/01/27",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "Angular"
-                ],
-                "tags": [
-                    "水印",
-                    "页面水印",
-                    "Angular"
-                ],
-                "excerpt": "Angular 页面水印功能实现",
-                "cover": "https://willern.gitee.io/2021/01/27/20210127/water-mark.png"
+                "excerpt": "React、Echarts柱状图点击图上柱状事件"
             }
         ],
         "categories": [

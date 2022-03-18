@@ -58,6 +58,26 @@ export default {
         "isPost": true,
         "posts": [
             {
+                "pagePath": "posts/2022/React、Echarts图表点击事件.md",
+                "title": "React、Echarts柱状图点击图上柱状事件，并实现高亮展示点击 的柱状",
+                "link": "posts/2022/React、Echarts图表点击事件.html",
+                "date": "2023/02/20",
+                "updated": null,
+                "author": "深海如梦",
+                "contributors": [
+                    "EvanJason"
+                ],
+                "categories": [
+                    "React",
+                    "ECharts"
+                ],
+                "tags": [
+                    "React",
+                    "ECharts"
+                ],
+                "excerpt": "React、Echarts柱状图点击图上柱状事件"
+            },
+            {
                 "pagePath": "posts/2021/2021年总结 + 新的一年目标和规划.md",
                 "title": "2021年总结 + 新的一年目标和规划",
                 "link": "posts/2021/2021年总结 + 新的一年目标和规划.html",
@@ -607,7 +627,7 @@ export default {
             },
             {
                 "name": "React",
-                "count": 2
+                "count": 3
             },
             {
                 "name": "工具",
@@ -623,6 +643,10 @@ export default {
             },
             {
                 "name": "Echarts",
+                "count": 1
+            },
+            {
+                "name": "ECharts",
                 "count": 1
             },
             {
@@ -668,11 +692,11 @@ export default {
                 "count": 4
             },
             {
-                "name": "Angular",
-                "count": 2
+                "name": "React",
+                "count": 3
             },
             {
-                "name": "React",
+                "name": "Angular",
                 "count": 2
             },
             {
@@ -721,6 +745,10 @@ export default {
             },
             {
                 "name": "Echarts",
+                "count": 1
+            },
+            {
+                "name": "ECharts",
                 "count": 1
             },
             {

@@ -45,7 +45,7 @@ export default {
             },
             {
                 "name": "React",
-                "count": 2
+                "count": 3
             },
             {
                 "name": "工具",
@@ -61,6 +61,10 @@ export default {
             },
             {
                 "name": "Echarts",
+                "count": 1
+            },
+            {
+                "name": "ECharts",
                 "count": 1
             },
             {
@@ -106,11 +110,11 @@ export default {
                 "count": 4
             },
             {
-                "name": "Angular",
-                "count": 2
+                "name": "React",
+                "count": 3
             },
             {
-                "name": "React",
+                "name": "Angular",
                 "count": 2
             },
             {
@@ -159,6 +163,10 @@ export default {
             },
             {
                 "name": "Echarts",
+                "count": 1
+            },
+            {
+                "name": "ECharts",
                 "count": 1
             },
             {
