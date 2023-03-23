@@ -2,12 +2,17 @@
 categories:
   - React
   - ECharts
+
 tags:
   - React
   - ECharts
-date: 2023/02/20
+
+date: 2023-02-20
+
 author: 深海如梦
+
 excerpt: echarts图表点击事件
+
 ---
 
 # echarts图表点击事件
