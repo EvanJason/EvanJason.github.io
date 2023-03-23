@@ -1,0 +1,88 @@
+<!doctype html><html class="" data-reactroot=""><head><link rel="shortcut icon" href="https://willern.gitee.io/img/favicon.ico"/>
+<meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"/><meta data-react-helmet="true" name="description" content="前端技术讨论交流，知识杂谈，生活分享。"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/><meta data-react-helmet="true" property="og:title" content="解决网站网页html css兼容性问题 · 深海如梦的作战实践基地"/><meta data-react-helmet="true" property="og:description" content="前端技术讨论交流，知识杂谈，生活分享。"/><meta data-react-helmet="true" property="og:type" content="article"/><meta data-react-helmet="true" name="twitter:card" content="summary"/>
+<title data-react-helmet="true">解决网站网页html css兼容性问题 · 深海如梦的作战实践基地</title>
+<link data-react-helmet="true" rel="stylesheet" href="/assets/index.css"/><link data-react-helmet="true" id="prismTheme" rel="stylesheet" href="/assets/prism.css"/>
+<script data-react-helmet="true" >
+    const shouldSetIsDark = document.cookie.includes('is_dark=1') ? true : document.cookie.includes('is_dark=0') ? false : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (shouldSetIsDark) {
+      document.documentElement.classList.add('is_dark');
+      document.getElementById('prismTheme').href = "/assets/prism_tomorrow.css";
+    }
+  </script>
+</head><body><a class="czs-menu-l show_on_mobile aside_button_open" href="#" style="background-image:url(&quot;/assets/czs-menu-l.svg&quot;)"></a><a class="show_on_mobile aside_button_text" href="/">深海如梦的作战实践基地</a><aside class="hide_on_mobile"><div class="aside_card"><a class="czs-menu-l show_on_mobile aside_button_close" href="#" style="background-image:url(&quot;/assets/czs-close-l.svg&quot;)"></a><h1><a href="/">深海如梦的作战实践基地</a></h1><p class="description">前端技术讨论交流，知识杂谈，生活分享。</p><ul class="social list_style_none"><li class="flex_center"><a class="czs-github-logo" href="https://github.com/yourhug" target="_blank" style="background-image:url(&quot;/assets/czs-github-logo.svg&quot;)"></a></li><li class="flex_center"><a class="czs-message-l" href="mailto:linkenmum@163.com" target="_blank" style="background-image:url(&quot;/assets/czs-message-l.svg&quot;)"></a></li><li style="flex-grow:1"></li><li class="toggle_dark flex_center"><span class="czs-sun" style="background-image:url(&quot;/assets/czs-sun.svg&quot;)"></span><span class="czs-sun-l" style="background-image:url(&quot;/assets/czs-sun-l.svg&quot;)"></span><span class="czs-moon" style="background-image:url(&quot;/assets/czs-moon.svg&quot;)"></span><span class="czs-moon-l" style="background-image:url(&quot;/assets/czs-moon-l.svg&quot;)"></span></li></ul><nav><ul class="menu list_style_none"><li><a class="flex_center" href="/"><span class="czs-home-l" style="background-image:url(&quot;/assets/czs-home-l.svg&quot;)"></span>首页</a></li><li><a class="flex_center" href="/categories/"><span class="czs-category-l" style="background-image:url(&quot;/assets/czs-category-l.svg&quot;)"></span>分类</a></li><li><a class="flex_center" href="/tags/"><span class="czs-tag-l" style="background-image:url(&quot;/assets/czs-tag-l.svg&quot;)"></span>标签</a></li><li><a class="flex_center" href="/about/"><span class="czs-about-l" style="background-image:url(&quot;/assets/czs-about-l.svg&quot;)"></span>关于</a></li><li><a class="flex_center" href="/archives/"><span class="czs-box-l" style="background-image:url(&quot;/assets/czs-box-l.svg&quot;)"></span>归档</a></li><li><a class="flex_center" href="/links/"><span class="czs-link-l" style="background-image:url(&quot;/assets/czs-link-l.svg&quot;)"></span>友情链接</a></li></ul></nav></div><nav class="toc"><ol><li><a href="#%E8%A7%A3%E5%86%B3ie8-css-nth-child4n-%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98%E4%B8%BB%E8%A6%81%E6%98%AF%E5%88%A9%E7%94%A8%E7%A1%AC%E6%96%B9%E6%B3%95">解决ie8 css :nth-child(4n) 不兼容问题主要是利用硬方法</a></li><li><a href="#%E8%A7%A3%E5%86%B3ie7%E7%9A%84%E9%AB%98%E5%BA%A6%E4%B8%A2%E5%A4%B1">解决ie7的高度丢失</a></li><li><a href="#css--webkit-box-orient-vertical-%E5%B1%9E%E6%80%A7%E7%BC%96%E8%AF%91%E5%90%8E%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98">CSS -webkit-box-orient: vertical 属性编译后丢失问题</a></li><li><a href="#%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A">高斯模糊</a></li><li><a href="#rgba%E5%85%BC%E5%AE%B9">rgba兼容</a></li><li><a href="#box-shadow-%E5%85%BC%E5%AE%B9">box-shadow 兼容</a></li><li><a href="#filter%E7%95%8C%E9%9D%A2%E6%BB%A4%E9%95%9C">filter界面滤镜</a></li><li><a href="#%E5%9C%86%E8%A7%92border-radius%E5%85%BC%E5%AE%B9">圆角border-radius兼容</a></li></ol></nav></aside><section class="main"><h1>解决网站网页html css兼容性问题</h1><div class="main_post_meta"><time dateTime="2021/01/21">2021-01-21</time> · <!-- -->深海如梦</div><article><p>总结了在项目设计中遇到的兼容性问题，在此整理出来，以备不时之需。</p>
+<h3 id="%E8%A7%A3%E5%86%B3ie8-css-nth-child4n-%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98%E4%B8%BB%E8%A6%81%E6%98%AF%E5%88%A9%E7%94%A8%E7%A1%AC%E6%96%B9%E6%B3%95">解决ie8 css :nth-child(4n) 不兼容问题主要是利用硬方法<a class="anchor" href="#%E8%A7%A3%E5%86%B3ie8-css-nth-child4n-%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98%E4%B8%BB%E8%A6%81%E6%98%AF%E5%88%A9%E7%94%A8%E7%A1%AC%E6%96%B9%E6%B3%95">§</a></h3>
+<pre class="language-css"><code class="language-css"><span class="token selector">第一种：利用first-child<span class="token punctuation">,</span>该方法在ie可以使用
+<span class="token class">.huo_game_</span> ul li<span class="token pseudo-class">:first-child</span><span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token punctuation">,</span>
+<span class="token class">.huo_game_</span> ul li<span class="token pseudo-class">:first-child</span><span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token punctuation">,</span>
+<span class="token class">.huo_game_</span> ul li<span class="token pseudo-class">:first-child</span><span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li<span class="token combinator">+</span>li</span> <span class="token punctuation">{</span>
+  <span class="token property">margin-right</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+//还有一种方法就是利用jq的nth-child
+$<span class="token punctuation">(</span><span class="token string">".huo_game_ ul li:nth-child(4n)"</span><span class="token punctuation">)</span>.<span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"margin-right"</span><span class="token punctuation">,</span><span class="token string">"0"</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="%E8%A7%A3%E5%86%B3ie7%E7%9A%84%E9%AB%98%E5%BA%A6%E4%B8%A2%E5%A4%B1">解决ie7的高度丢失<a class="anchor" href="#%E8%A7%A3%E5%86%B3ie7%E7%9A%84%E9%AB%98%E5%BA%A6%E4%B8%A2%E5%A4%B1">§</a></h3>
+<p>*padding 或者 _paddding
+*height _height
+*margin _margin
+*width _width</p>
+<h3 id="css--webkit-box-orient-vertical-%E5%B1%9E%E6%80%A7%E7%BC%96%E8%AF%91%E5%90%8E%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98">CSS -webkit-box-orient: vertical 属性编译后丢失问题<a class="anchor" href="#css--webkit-box-orient-vertical-%E5%B1%9E%E6%80%A7%E7%BC%96%E8%AF%91%E5%90%8E%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98">§</a></h3>
+<p>解决方法</p>
+<pre class="language-css"><code class="language-css"><span class="token comment">/* autoprefixer: ignore next */</span>
+<span class="token property">-webkit-box-orient</span><span class="token punctuation">:</span> vertical<span class="token punctuation">;</span>
+</code></pre>
+<h3 id="%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A">高斯模糊<a class="anchor" href="#%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A">§</a></h3>
+<pre class="language-css"><code class="language-css"><span class="token property">filter</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>blur.svg#blur<span class="token punctuation">)</span></span><span class="token punctuation">;</span> <span class="token comment">/* FireFox, Chrome, Opera */</span>
+<span class="token property">-webkit-filter</span><span class="token punctuation">:</span> <span class="token function">blur</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token unit">px</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">/* Chrome, Opera */</span>
+<span class="token property">-moz-filter</span><span class="token punctuation">:</span> <span class="token function">blur</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token unit">px</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token property">-ms-filter</span><span class="token punctuation">:</span> <span class="token function">blur</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token unit">px</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token property">filter</span><span class="token punctuation">:</span> <span class="token function">blur</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token unit">px</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">/* IE6~IE9 */</span>
+<span class="token property">filter</span><span class="token punctuation">:</span> <span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.<span class="token function">Blur</span><span class="token punctuation">(</span>PixelRadius=<span class="token number">1</span><span class="token punctuation">,</span> MakeShadow=false<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/*知识点*/</span>
+<span class="token property">filter</span><span class="token punctuation">:</span><span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.<span class="token function">Blur</span><span class="token punctuation">(</span>PixelRadius=<span class="token string">'x'</span><span class="token punctuation">,</span> MakeShadow=<span class="token string">'x'</span><span class="token punctuation">,</span> ShadowOpacity=<span class="token string">'x'</span><span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>PixelRadius，设置对象的模糊半径，1~100数值。</li>
+<li>MakeShadow，设置对象是否投影，布尔值，true和false</li>
+<li>ShadowOpacity，设置对象投影不透明度，0.0~1.0，假如MakeShadow为false那么该值无效。</li>
+</ul>
+<h3 id="rgba%E5%85%BC%E5%AE%B9">rgba兼容<a class="anchor" href="#rgba%E5%85%BC%E5%AE%B9">§</a></h3>
+<p><strong>ie8及以下版本</strong></p>
+<pre class="language-css"><code class="language-css"><span class="token property">background</span><span class="token punctuation">:</span> <span class="token color"><span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">.4</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span>
+<span class="token property">filter</span><span class="token punctuation">:</span> <span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.<span class="token function">gradient</span><span class="token punctuation">(</span>startcolorstr=<span class="token hexcode color">#66000000</span><span class="token punctuation">,</span> endcolorstr=<span class="token hexcode color">#66000000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>这个颜色“#66000000”是由两部分组成的。
+第一部是#号后面的66。是rgba透明度0.4的IEfilter值。从0.1到0.9每个数字对应一个IEfilter值。对应关系如下：</p>
+<p><a href="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWFnZXMyMDE1LmNuYmxvZ3MuY29tL2Jsb2cvNzU3ODI0LzIwMTcwMy83NTc4MjQtMjAxNzAzMjExMDI1NTgyNjgtMjA1NDc4MDUyMS5wbmc?x-oss-process=image/format,png"><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWFnZXMyMDE1LmNuYmxvZ3MuY29tL2Jsb2cvNzU3ODI0LzIwMTcwMy83NTc4MjQtMjAxNzAzMjExMDI1NTgyNjgtMjA1NDc4MDUyMS5wbmc?x-oss-process=image/format,png" alt="img"></a></p>
+<p>img</p>
+<p>即：alpha*255得到的值再转换为16进制即可。</p>
+<p>第二部分是7f后面的六位 是六进制的颜色值，跟rgb函数中的取值相同，比如rgb(255,255,255)对应#ffffff。</p>
+<h3 id="box-shadow-%E5%85%BC%E5%AE%B9">box-shadow 兼容<a class="anchor" href="#box-shadow-%E5%85%BC%E5%AE%B9">§</a></h3>
+<p><strong>ie8及以下版本</strong></p>
+<pre class="language-css"><code class="language-css"><span class="token property">-moz-box-shadow</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token hexcode color">#000</span><span class="token punctuation">;</span>
+<span class="token property">-webkit-box-shadow</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token hexcode color">#000</span><span class="token punctuation">;</span>
+<span class="token property">box-shadow</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token number">5</span><span class="token unit">px</span> <span class="token hexcode color">#000</span><span class="token punctuation">;</span>
+
+<span class="token property">filter</span><span class="token punctuation">:</span> <span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.<span class="token function">Shadow</span><span class="token punctuation">(</span>color=<span class="token color">gray</span><span class="token punctuation">,</span> Direction=<span class="token number">125</span><span class="token punctuation">,</span> Strength=<span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>strength是阴影大小，direction是阴影方位，单位为度，可以为负数，color是阴影颜色 （尽量使用数字）
+使用IE滤镜实现盒子阴影的盒子必须是行元素或以行元素显示（block或inline-block;）</p>
+<h3 id="filter%E7%95%8C%E9%9D%A2%E6%BB%A4%E9%95%9C">filter界面滤镜<a class="anchor" href="#filter%E7%95%8C%E9%9D%A2%E6%BB%A4%E9%95%9C">§</a></h3>
+<p>在ie中 <code>filter</code> 分为静态滤镜(Visual Filters)和过渡转场(Transitions Reference)，前者是的效果可以设置元素的不透明度、渐变、模糊、对比度、明度等这些，后者注重的ie的动画效果。</p>
+<pre class="language-css"><code class="language-css"><span class="token selector"><span class="token class">.test</span></span><span class="token punctuation">{</span>
+    <span class="token property">filter</span><span class="token punctuation">:</span><span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.    <span class="token comment">/*.后面都是紧跟着各种滤镜和转场函数*/</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/*如：模糊滤镜*/</span>
+<span class="token selector"><span class="token class">.blur</span></span><span class="token punctuation">{</span>
+    <span class="token property">filter</span><span class="token punctuation">:</span><span class="token property">progid</span><span class="token punctuation">:</span>DXImageTransform.Microsoft.<span class="token function">Blur</span><span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment">/*.函数的开头第一个字母必须大写，括号()里面的滤镜的各种值*/</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>一般常用Blur,Shadow,Gradient,对应，filter:blur(),box-shadow,rgba();</p>
+<h3 id="%E5%9C%86%E8%A7%92border-radius%E5%85%BC%E5%AE%B9">圆角border-radius兼容<a class="anchor" href="#%E5%9C%86%E8%A7%92border-radius%E5%85%BC%E5%AE%B9">§</a></h3>
+<p>需要下载PIE.htc
+然后css中</p>
+<pre class="language-css"><code class="language-css"><span class="token comment">/*关键属性设置 需要把路径设置好*/</span>
+<span class="token property">behavior</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>PIE.htc<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
+</code></pre></article></section><footer>Powered by&amp;nbsp;<a href="https://github.com/xcatliu/pagic" target="_blank">Pagic</a></footer><script src="https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js"></script><script src="https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script type="module" src="/index.js"></script></body></html>

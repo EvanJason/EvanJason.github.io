@@ -1,0 +1,325 @@
+/*  */
+.banner_swiper {
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.banner_swiper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.grad_box {
+  float: right;
+  color: #fff;
+  padding: 0 2%;
+  width: 96%;
+}
+.grad_box .floatleft {
+  width: 40%;
+}
+.grad_box p {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px 0;
+  text-align: right;
+}
+.grad_box em {
+  float: right;
+  font-size: 18px;
+  margin-left: 15px;
+  margin-top: -1px;
+}
+.grad_box span {
+  width: 109px;
+  height: 20px;
+  float: right;
+}
+.grade_1 {
+  background-position: -0px -0px;
+}
+.grade_2 {
+  background-position: -0px -20px;
+  float: left !important;
+}
+.banner-des {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  background: url(../img/des_bg.png) center top no-repeat;
+  width: 100%;
+  height: 80px;
+}
+/* 首页主体 */
+.recommend_list {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.recommend_list .recommend_img {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.recommend_list .recommend_img:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+.recommend_list .recommend_img img {
+  width: 100%;
+  height: 350px;
+  display: block;
+  object-fit: cover;
+}
+
+.recommend_list .recommend_img .cover_tag {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  background: url(../img/mask.png) center no-repeat;
+  background-size: 100%;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 12px;
+  cursor: default;
+}
+
+.recommend_list .recommend_name {
+  padding: 15px;
+  height: 75px;
+}
+.recommend_list .recommend_name .game_name {
+  width: 60%;
+}
+.recommend_list .recommend_name .type_grade {
+  max-width: 40%;
+  margin-top: 5px;
+  text-align: right;
+}
+.recommend_list .recommend_name .game_name a img {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin-right: 15px;
+}
+.recommend_list .recommend_name .game_name h4 {
+  margin: 5px 0;
+  font-size: 22px;
+  color: #000;
+  font-weight: 100;
+}
+.recommend_list .recommend_name .game_name p {
+  color: #999;
+  line-height: 30px;
+  height: 30px;
+}
+.recommend_list .recommend_name .type_grade p {
+  text-align: right;
+  float: right;
+  width: 100%;
+}
+.recommend_list .recommend_name .type_grade a {
+  color: #ff9935;
+  padding: 0 5px;
+  text-align: right;
+  float: right;
+}
+/* app 推广 */
+.Promote_box img {
+  width: 130px;
+  height: 130px;
+}
+.Promote_box .Promote_r {
+  text-align: center;
+  width: 240px;
+  height: 130px;
+}
+.Promote_box .Promote_r p {
+  color: #ff9935;
+  font-size: 26px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+.Promote_box .Promote_r a {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 1px solid #ff9935;
+  color: #ff9935;
+  border-radius: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.Promote_box .Promote_r a:hover {
+  color: #fff;
+  background-color: #ff9935;
+}
+/* 新闻资讯 */
+.News_box .follow_me {
+  padding: 10px 20px;
+}
+.News_box ul li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 35px;
+  height: 35px;
+}
+.News_box ul li a {
+  color: #000000;
+  font-size: 16px;
+}
+.News_box ul li a span {
+  color: #999999;
+  margin-right: 5px;
+}
+/* 新评论 */
+.new_reviews_box .ranking_list li {
+  margin: 0;
+}
+.new_reviews_box .ranking_list .review_game {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.new_reviews_box .ranking_list li a img {
+  width: 65px;
+  margin: 0 10px 0 0;
+}
+.new_reviews_box .ranking_list li div p.grade {
+  margin-top: 12px;
+}
+.new_reviews_box .ranking_list li div.tit {
+  width: 310px;
+}
+.new_reviews_box .follow_me {
+  padding: 15px 15px 5px;
+  margin-top: 20px;
+}
+.new_reviews_box .follow_me:nth-child(2) {
+  margin-top: 0;
+}
+.new_reviews_box .review_block p {
+  text-indent: 0.2rem;
+  white-space: unset;
+  margin-top: 15px;
+  color: #999999;
+  max-height: 95px;
+  overflow: hidden;
+}
+.new_reviews_box .review_block p a:hover {
+  text-decoration: underline;
+}
+.new_reviews_box p.review_block_p {
+  text-align: right;
+  color: #ff9935;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 0;
+}
+.new_reviews_box .review_block_p a {
+  color: #ff9935;
+}
+/* 热门的游戏 */
+.Popular_game .h3_tit p {
+  padding: 0 0 20px;
+}
+.Popular_game .h3_tit .h3_ico {
+  height: 26px;
+  width: 22px;
+  background-position: -575px -64px;
+}
+.Recommended_project .h3_tit .h3_ico {
+  height: 26px;
+  width: 22px;
+  background-position: -575px -64px;
+}
+.Recommended_project .h3_tit p {
+  padding: 0 0 20px;
+}
+.Recommended_project .tit {
+  padding: 15px;
+  color: #ff9935;
+}
+.Recommended_project .tit p {
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+} /* 热门标签 */
+.list-unstyled_box .follow_me {
+  padding: 15px;
+}
+.list-unstyled_box ul.list-unstyled {
+  overflow: hidden;
+}
+.list-unstyled_box ul.list-unstyled li {
+  margin: 5px;
+  padding: 0;
+  float: left;
+}
+
+.list-unstyled_box ul.list-unstyled li a {
+  display: block;
+  padding: 5px 10px;
+  background-color: #ff9935;
+  border: 1px solid #ff9935;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.list-unstyled_box ul.list-unstyled li:hover a {
+  color: #ff9935;
+  border: 1px solid #ff9935 !important;
+  background-color: #fff !important;
+}
+.new_reviews_box.anli,
+.Independent_box.home {
+  display: none;
+}
+@media (max-width: 959px) {
+  .banner_swiper {
+    height: 5rem;
+  }
+  /* 首页移动端 */
+  .list-unstyled_box,
+  .ranking_box,
+  .News_box,
+  .new_reviews_box,
+  .Promote_box {
+    display: none;
+  }
+  .banner-des {
+    height: 70px;
+    background-size: cover;
+  }
+  .grad_box p {
+    padding: 5px 0;
+  }
+  .grad_box .floatleft {
+    width: 60%;
+    font-size: 15px;
+  }
+  .grad_box span {
+    width: 20px;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+  }
+  .grad_box span.grade_2 {
+    width: 100% !important;
+  }
+  .grad_box em {
+    margin-left: 5px;
+    font-size: 15px;
+  }
+}
