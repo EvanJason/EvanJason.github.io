@@ -1,5 +1,8 @@
 # 深海如梦的博客
 
+## 新博客
+https://evanjason.github.io/newBlog/
+
 ## 各个项目管理
 https://evanjason.github.io/management/
 
