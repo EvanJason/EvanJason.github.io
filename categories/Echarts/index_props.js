@@ -1,39 +1,38 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "categories/Echarts/",
+    'pagePath': "categories/ECharts/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "categories/Echarts/index.html",
+    'outputPath': "categories/ECharts/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "Echarts",
+    'title': "ECharts",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/2020/Echarts 配置和知识点.md",
-                "title": "Echarts 配置和知识点",
-                "link": "posts/2020/Echarts 配置和知识点.html",
-                "date": "2020/09/28",
+                "pagePath": "posts/2022/React-Echarts图表点击事件.md",
+                "title": "echarts图表点击事件",
+                "link": "posts/2022/React-Echarts图表点击事件.html",
+                "date": "2023/02/20",
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
                     "EvanJason"
                 ],
                 "categories": [
-                    "Angular",
-                    "Echarts"
+                    "React",
+                    "ECharts"
                 ],
                 "tags": [
-                    "知识点",
-                    "配置",
-                    "Echarts"
+                    "React",
+                    "ECharts"
                 ],
-                "excerpt": "Echarts 配置和知识点"
+                "excerpt": "echarts图表点击事件"
             }
         ],
         "categories": [

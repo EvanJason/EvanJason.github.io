@@ -1,100 +1,38 @@
 import projectConfig from '/pagic.config.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "tags/antd/",
+    'pagePath': "tags/Antd/",
     'layoutPath': "archives/_layout.tsx",
-    'outputPath': "tags/antd/index.html",
+    'outputPath': "tags/Antd/index.html",
     'head': null,
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
-    'title': "antd",
+    'title': "Antd",
     'content': null,
     'blog': {
         "isPost": false,
         "posts": [
             {
-                "pagePath": "posts/2021/Angular表格自定义列配置.md",
-                "title": "Angular 表格自定义列配置",
-                "link": "posts/2021/Angular表格自定义列配置.html",
-                "date": "2021/10/10",
+                "pagePath": "posts/2022/React-Antd表格选中行事件.md",
+                "title": "antd表格选中行事件",
+                "link": "posts/2022/React-Antd表格选中行事件.html",
+                "date": "2023/03/10",
                 "updated": null,
                 "author": "深海如梦",
                 "contributors": [
                     "EvanJason"
                 ],
                 "categories": [
-                    "antd",
-                    "Angular"
+                    "React",
+                    "Antd"
                 ],
                 "tags": [
-                    "antd",
-                    "表格",
-                    "自定义"
+                    "React",
+                    "Antd"
                 ],
-                "excerpt": "Angular表格自定义列配置"
-            },
-            {
-                "pagePath": "posts/2021/antd表格穿梭框功能.md",
-                "title": "antd表格穿梭框功能",
-                "link": "posts/2021/antd表格穿梭框功能.html",
-                "date": "2021/05/15",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "antd",
-                    "Angular"
-                ],
-                "tags": [
-                    "antd",
-                    "穿梭框",
-                    "表格"
-                ],
-                "excerpt": "angular-antd穿梭框功能实现"
-            },
-            {
-                "pagePath": "posts/2020/Angular 多类名条件判断.md",
-                "title": "Angular 多类名条件判断",
-                "link": "posts/2020/Angular 多类名条件判断.html",
-                "date": "2020/10/22",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "Angular"
-                ],
-                "tags": [
-                    "antd",
-                    "条件判断",
-                    "多类名"
-                ],
-                "excerpt": "Angular 多类名条件判断"
-            },
-            {
-                "pagePath": "posts/2020/angular 复制粘贴事件.md",
-                "title": "Angular 复制粘贴事件",
-                "link": "posts/2020/angular 复制粘贴事件.html",
-                "date": "2020/10/20",
-                "updated": null,
-                "author": "深海如梦",
-                "contributors": [
-                    "EvanJason"
-                ],
-                "categories": [
-                    "Angular",
-                    "ngx-clipboard"
-                ],
-                "tags": [
-                    "antd",
-                    "复制粘贴"
-                ],
-                "excerpt": "Angular 复制粘贴事件"
+                "excerpt": "antd表格选中行事件"
             }
         ],
         "categories": [
