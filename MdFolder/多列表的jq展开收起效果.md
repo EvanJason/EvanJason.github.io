@@ -21,7 +21,7 @@ excerpt: 在做项目的时候碰到的一个需求要做多列表的展开和�
 
 **效果图如下：**
 
-![效果图](https://img-blog.csdnimg.cn/2019120610061415.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dxc3NoMjE=,size_16,color_FFFFFF,t_70)
+![效果图](/images/2019120610061415.png)
 
 
 **jq代码：**
