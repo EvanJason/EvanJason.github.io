@@ -1,4 +1,6 @@
 ---
+title: 使用react-router-cache-route实现页面状态的缓存
+
 categories:
   - React
 
@@ -6,7 +8,7 @@ tags:
   - React
   - 缓存
 
-date: 2021-07-15
+date: "2021-07-15"
 
 author: 深海如梦
 

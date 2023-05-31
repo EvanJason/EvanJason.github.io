@@ -1,4 +1,6 @@
 ---
+title: 组件化Context Provider
+
 categories:
   - React
   - Context Provider
@@ -7,7 +9,7 @@ tags:
   - React
   - Context Provider
 
-date: 2023-04-13
+date: "2023-04-13"
 
 author: 深海如梦
 

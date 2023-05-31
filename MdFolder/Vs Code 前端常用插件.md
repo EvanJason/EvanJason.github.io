@@ -1,4 +1,6 @@
 ---
+title: Vs Code 前端常用插件
+
 categories:
   - vscode
 
@@ -8,7 +10,7 @@ tags:
 
 author: 深海如梦
 
-date: 2021-05-06
+date: "2021-05-06"
 
 excerpt: 前端常用插件
 

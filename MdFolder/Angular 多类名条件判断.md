@@ -1,4 +1,6 @@
 ---
+title: Angular 多类名条件判断
+
 categories:
   - Angular
 
@@ -7,7 +9,7 @@ tags:
   - 条件判断
   - 多类名
 
-date: 2020-10-22
+date: "2020-10-22"
 
 author: 深海如梦
 

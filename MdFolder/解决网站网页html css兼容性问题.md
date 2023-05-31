@@ -1,4 +1,6 @@
 ---
+title: 解决网站网页html css兼容性问题
+
 categories:
   - 前端
 
@@ -7,7 +9,7 @@ tags:
   - 兼容性
   - css
 
-date: 2021-01-21
+date: "2021-01-21"
 
 author: 深海如梦
 

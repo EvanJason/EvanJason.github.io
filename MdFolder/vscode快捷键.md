@@ -1,4 +1,6 @@
 ---
+title: vscode快捷键
+
 categories:
   - 工具
 
@@ -6,7 +8,7 @@ tags:
   - vscode
   - 快捷键
 
-date: 2021-05-25
+date: "2021-05-25"
 
 author: 深海如梦
 

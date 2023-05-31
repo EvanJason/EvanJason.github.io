@@ -1,4 +1,6 @@
 ---
+title: Vue实现分页功能
+
 categories:
   - Vue
 
@@ -6,7 +8,7 @@ tags:
   - Vue 
   - 分页
 
-date: 2020-07-03
+date: "2020-07-03"
 
 author: 深海如梦
 

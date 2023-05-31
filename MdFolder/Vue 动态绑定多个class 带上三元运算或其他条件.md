@@ -1,4 +1,6 @@
 ---
+title: Vue 动态绑定多个class 带上三元运算或其他条件
+
 categories:
   - Vue
 
@@ -7,7 +9,7 @@ tags:
   - 条件判断
   - 多类名
 
-date: 2020-06-24
+date: "2020-06-24"
 
 author: 深海如梦
 

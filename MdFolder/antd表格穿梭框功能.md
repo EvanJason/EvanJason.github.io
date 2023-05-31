@@ -1,4 +1,5 @@
 ---
+title: antd表格穿梭框功能
 
 categories:
   - antd
@@ -9,7 +10,7 @@ tags:
   - 穿梭框  
   - 表格
 
-date: 2021-05-15
+date: "2021-05-15"
 
 author: 深海如梦
 

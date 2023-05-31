@@ -1,4 +1,6 @@
 ---
+title: Angular表格自定义列配置
+
 categories:
   - antd
   - Angular
@@ -8,7 +10,7 @@ tags:
   - 表格
   - 自定义
 
-date: 2021-10-10
+date: "2021-10-10"
 
 author: 深海如梦
 

@@ -1,4 +1,6 @@
 ---
+title: Echarts 配置和知识点
+
 categories:
   - Angular
   - Echarts
@@ -10,7 +12,7 @@ tags:
 
 author: 深海如梦
 
-date: 2020-09-28
+date: "2020-09-28"
 
 excerpt: Echarts 配置和知识点
 

@@ -1,4 +1,6 @@
 ---
+title: 解决react项目生产环境部署，浏览器可以看到源码的问题
+
 categories:
   - React
 
@@ -6,7 +8,7 @@ tags:
   - React
   - 打包
 
-date: 2021-11-21
+date: "2021-11-21"
 
 author: 深海如梦
 

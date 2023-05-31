@@ -1,11 +1,13 @@
 ---
+title: Typescript升级指南
+
 categories:
   - Typescript
 
 tags:
   - Typescript
 
-date: 2023-03-10
+date: "2023-03-10"
 
 author: 深海如梦
 

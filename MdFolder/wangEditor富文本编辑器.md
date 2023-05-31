@@ -1,4 +1,6 @@
 ---
+title: wangEditor富文本编辑器
+
 categories:
   - wangEditor
   - Angular
@@ -10,7 +12,7 @@ tags:
 
 author: 深海如梦
 
-date: 2020-10-25
+date: "2020-10-25"
 
 excerpt: wangEditor富文本编辑器
 

@@ -1,4 +1,6 @@
 ---
+title: React-Echarts图表点击事件
+
 categories:
   - React
   - ECharts
@@ -7,7 +9,7 @@ tags:
   - React
   - ECharts
 
-date: 2023-02-20
+date: "2023-02-20"
 
 author: 深海如梦
 

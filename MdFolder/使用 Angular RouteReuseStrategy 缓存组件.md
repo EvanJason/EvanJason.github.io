@@ -1,4 +1,6 @@
 ---
+title: 使用 Angular RouteReuseStrategy 缓存组件
+
 categories:
   - Angular
 
@@ -7,7 +9,7 @@ tags:
   - Angular RouteReuseStrategy
   - 缓存
 
-date: 2020-10-29
+date: "2020-10-29"
 
 author: 深海如梦
 

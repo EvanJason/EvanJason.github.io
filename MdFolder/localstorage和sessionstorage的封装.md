@@ -1,4 +1,6 @@
 ---
+title: localstorage和sessionstorage的封装
+
 categories:
   - Angular
 
@@ -6,7 +8,7 @@ tags:
   - localstorage
   - sessionstorage
 
-date: 2021-10-15
+date: "2021-10-15"
 
 author: 深海如梦
 

@@ -1,4 +1,6 @@
 ---
+title: Angular 页面水印功能实现
+
 categories:
   - Angular
 
@@ -7,7 +9,7 @@ tags:
   - 页面水印  
   - Angular
 
-date: 2021-01-27
+date: "2021-01-27"
 
 author: 深海如梦
 

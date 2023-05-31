@@ -1,4 +1,6 @@
 ---
+title: Vue-router（路由）的知识点
+
 categories:
   - Vue
 
@@ -6,7 +8,7 @@ tags:
   - Vue 
   -	vue-router
 
-date: 2020-05-01
+date: "2020-05-01"
 
 author: 深海如梦
 
