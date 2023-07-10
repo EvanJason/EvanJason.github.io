@@ -106,17 +106,13 @@ const SankeyChartOutlinedSvg = () => (<svg width="1em" height="1em" fill="curren
         p-id="2392"></path>
 </svg>);
 <Icon component={SankeyChartOutlinedSvg} />
+
 ```
 
-#### Icon 中的 component 组件的接受的属性如下：
+Icon 中的 component 组件的接受的属性如下参考
+https://ant-design.gitee.io/components/icon-cn#%E8%87%AA%E5%AE%9A%E4%B9%89-svg-%E5%9B%BE%E6%A0%87
 
-| 字段      | 说明                    | 类型             | 只读值       |
-| --------- | ----------------------- | ---------------- | ------------ |
-| className | 计算后的 `svg` 类名     | string           | -            |
-| fill      | `svg` 元素填充的颜色    | string           | currentColor |
-| height    | `svg` 元素高度          | string \| number | 1em          |
-| style     | 计算后的 `svg` 元素样式 | CSSProperties    |              |
-| width     | `svg` 元素宽度          | string \| number | 1em          |
+
 
 
 
