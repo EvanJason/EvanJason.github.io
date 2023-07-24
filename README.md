@@ -1,8 +1,5 @@
 # 深海如梦的博客
 
-## 新博客
-https://evanjason.github.io/newBlog/
-
 ## 各个项目管理
 https://evanjason.github.io/management/
 
@@ -14,3 +11,10 @@ https://evanjason.github.io/9lala/
 
 ## hexo博客
 https://willern.gitee.io/
+
+
+#### git bash
+GIT_USER=EvanJason yarn deploy
+
+#### powerShell
+cmd /C 'set "GIT_USER=<GITHUB_USERNAME>" && yarn deploy'
