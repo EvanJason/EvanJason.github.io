@@ -1,0 +1,359 @@
+/* 排行导航 */
+.ranking_nav ul {
+  overflow: hidden;
+  text-align: center;
+}
+.ranking_nav ul li {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  padding: 45px 30px;
+}
+.ranking_nav ul li a {
+  padding: 10px 0;
+}
+.ranking_nav ul li.active a {
+  color: #ff9935;
+}
+.ranking_nav ul li i {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ff9935;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.ranking_nav ul li.active i {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.ranking_nav ul li:hover a {
+  color: #ff9935;
+}
+.ranking_nav ul li:hover i {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.ranking_nav ul li a {
+  color: #adadad;
+  display: block;
+  font-size: 24px;
+}
+/* top 100 图标 */
+.ranking_icon div {
+  text-align: center;
+}
+.ranking_icon .ranking_top {
+  padding: 15px 10px;
+}
+.ranking_icon .ranking_top i.compound {
+  height: 57px;
+  width: 266px;
+  background-position: -0px -306px;
+}
+.ranking_icon .ranking_bot {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ff9935;
+}
+.ranking_icon .ranking_bot i {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+  background: url(../img/phbxx.png);
+}
+.ranking_min_nav {
+  padding: 15px 0;
+}
+.ranking_min_nav ul {
+  overflow: hidden;
+}
+.ranking_min_nav ul li {
+  float: left;
+  font-size: 18px;
+  color: #aeaeae;
+}
+.ranking_min_nav ul li.on a {
+  color: #ff9935;
+}
+.ranking_min_nav ul li a {
+  padding: 10px;
+  font-size: 18px;
+  color: #aeaeae;
+}
+.ranking_min_nav ul li:hover a {
+  color: #ff9935;
+}
+.ranking_top3 {
+  overflow: hidden;
+  text-align: center;
+  padding: 50px 120px 10px;
+  height: 420px;
+}
+.ranking_top3 .ranking_num {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  float: left;
+  position: relative;
+  width: 265px;
+  overflow: hidden;
+  margin: 0 27px;
+}
+.ranking_top3 .ranking_num .ranking_img {
+  height: 199px;
+  position: relative;
+}
+.ranking_top3 .ranking_num .ranking_img .compound {
+  height: 199px;
+  width: 149px;
+  background-position: -0px -0px;
+  position: absolute;
+  top: 0;
+  left: 59px;
+  z-index: 10;
+}
+.ranking_top3 .ranking_num.rank_num1 {
+  bottom: -50px;
+}
+.ranking_top3 .ranking_num.rank_num3 {
+  bottom: -50px;
+}
+.ranking_top3 .ranking_num.rank_num2 .ranking_img .compound {
+  background-position: -149px -0px;
+}
+.ranking_top3 .ranking_num.rank_num3 .ranking_img .compound {
+  background-position: -298px -0px;
+}
+.ranking_top3 .ranking_num .ranking_img img {
+  width: 105px;
+  margin-top: 60px;
+  border-radius: 1000px;
+  padding: 0 45px;
+}
+.ranking_top3 .ranking_num p {
+  font-size: 24px;
+  line-height: 35px;
+  height: 35px;
+  width: 100%;
+  overflow: hidden;
+}
+.ranking_top3 .ranking_num p.down {
+  color: #9d9696;
+  font-size: 18px;
+}
+.ranking_top3 .ranking_num p.reser {
+  color: #000;
+}
+.ranking_top3 .ranking_num a {
+  width: 90px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 2px solid #ff9935;
+  display: block;
+  color: #ff9935;
+  margin: 15px auto;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.ranking_top3 .ranking_num a:hover,
+.ranking_list .ranking_cs .bnt:hover {
+  background-color: #ff9935;
+  color: #fff !important;
+}
+/* 排行列表 */
+.ranking_list .ranking_ul > li {
+  position: relative;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 35px 35px 25px 35px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 5px #e6e6e6;
+  box-shadow: 0 2px 5px #e6e6e6;
+  border: 1px solid rgba(221, 221, 221, 0.7);
+  margin-top: 20px;
+}
+.ranking_list li .rank-num {
+  background: url(../img/compound.png) no-repeat;
+  background-position: -511px -64px;
+  width: 40px;
+  height: 60px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 24px;
+  color: #fff;
+  line-height: 38px;
+  text-align: center;
+  padding-right: 20px;
+}
+.ranking_list li .rank-num.num1 {
+  background-position: -447px -0px;
+}
+.ranking_list li .rank-num.num2 {
+  background-position: -447px -64px;
+}
+.ranking_list li .rank-num.num3 {
+  background-position: -511px -0px;
+}
+.ranking_list li .gameInfo {
+  width: 550px;
+  padding-left: 30px;
+}
+.ranking_list li .gameInfo h4 {
+  line-height: 32px;
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+  font-weight: 500;
+}
+.ranking_list li .gameInfo p {
+  overflow: hidden;
+  line-height: 24px;
+  font-size: 14px;
+  color: #999;
+  margin: 5px 0;
+}
+.ranking_list li a.download {
+  display: block;
+  position: absolute;
+  left: 5.3%;
+  bottom: 13%;
+  font-size: 16px;
+  color: #ff9935;
+  padding: 5px 8px;
+}
+.ranking_list li a.download i {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ff9935;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-top: 5px;
+}
+.ranking_list li a.download:hover i {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.ranking_list li .gameInfo p.tit {
+  color: #333;
+  height: 98px;
+  overflow: hidden;
+}
+.ranking_list li .gameInfo p.tab a {
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  background: #f0f0f0;
+  color: #333;
+  padding: 0 8px;
+  border-radius: 4px;
+  margin-right: 14px;
+  box-shadow: 0 2px 5px #e6e6e6;
+  border: 1px solid rgba(221, 221, 221, 0.7);
+}
+.ranking_list li a.tx {
+  border-radius: 35px;
+  overflow: hidden;
+}
+.ranking_list li a.tx img {
+  width: 150px;
+  display: block;
+  height: 150px;
+}
+.ranking_list li .ranking_list_img {
+  width: 360px;
+  padding-left: 25px;
+  border-left: 1px solid #eee;
+}
+.ranking_list li .ranking_list_img ul li {
+  width: 360px;
+  height: 210px;
+  margin: 0;
+}
+.ranking_list li .ranking_list_img ul li img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 0;
+  object-fit: cover;
+}
+.ranking_list li .ranking_list_img ul.three {
+  width: 368px;
+  margin-right: -9px;
+}
+.ranking_list li .ranking_list_img ul.three li {
+  width: 31.5%;
+  float: left;
+  margin-bottom: 0;
+  margin-right: 1.75%;
+}
+/* 厂商 */
+.ranking_list .ranking_cs .firm_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+.ranking_list .ranking_cs .firm_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.ranking_list .ranking_cs .bnt {
+  padding: 5px 20px;
+  display: block;
+  margin: 75px 35px 0 0;
+  border: #ff9935 2px solid;
+  border-radius: 15px;
+  color: #ff9935;
+  font-size: 22px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.ranking_list .ranking_cs .star {
+  width: 107px;
+  height: 17px;
+  float: left;
+}
+.ranking_list .ranking_cs .star_p {
+  margin: 10px 0 -2px;
+  line-height: inherit;
+}
+.ranking_list .ranking_cs .star.star_1 {
+  background-position: -0px -57px;
+}
+.ranking_list .ranking_cs .star.star_2 {
+  background-position: -0px -40px;
+}
+.ranking_list .ranking_cs .gameInfo .tit {
+  height: 123px;
+}
+.ranking_list .ranking_cs li .gameInfo .info-item,
+.ranking_list .ranking_cs li .gameInfo em {
+  padding-left: 11px;
+  font-size: 16px;
+  color: #ff9935;
+}
+
+.ranking_list .ranking_cs li .gameInfo {
+  width: 670px;
+}
+.grade_box.clearfix {
+  width: 150px;
+  margin: 5px 0;
+}
+.star_1 {
+  margin-top: 2px;
+}
+.grade_box em {
+  margin-top: 0;
+}
