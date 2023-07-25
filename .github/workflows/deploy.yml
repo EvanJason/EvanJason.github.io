@@ -21,10 +21,16 @@ jobs:
       - name: 打包项目
         run: yarn build
 
-      - name: 复制文件
-        run: cp -r 9lala ./build/9lala
+      - name: 部署9lala项目
+        run: cp -r ./propject/9lala ./build/9lala
 
-      - name: 部署到 GitHub Pages
+      - name: 部署lcarSystem项目
+        run: cp -r ./propject/lcarSystem ./build/lcarSystem
+
+      - name: 部署management项目
+        run: cp -r ./propject/management ./build/management
+
+      - name: 部署docusaurus到GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
