@@ -53,7 +53,6 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -65,7 +64,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          blogSidebarTitle: '文章',
+          blogSidebarTitle: '近期文章',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -90,7 +89,7 @@ const config = {
         isCloseable: true,
       },
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/blog.jpg',
       navbar: {
         title: '深海如梦的博客',
         logo: {
@@ -120,15 +119,15 @@ const config = {
             items: [
               {
                 label: "9lala游戏网站",
-                to: "https://evanjason.github.io/9lala/",
+                href: "9lala",
               },
               {
                 label: "项目管理系统",
-                to: "https://evanjason.github.io/management/",
+                href: "management",
               },
               {
                 label: "react后台管理系统",
-                to: "https://evanjason.github.io/lcarSystem/",
+                href: "lcarSystem",
               },
             ],
           },
