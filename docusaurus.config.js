@@ -119,15 +119,15 @@ const config = {
             items: [
               {
                 label: "9lala游戏网站",
-                href: "9lala",
+                to: "https://evanjason.github.io/9lala/",
               },
               {
                 label: "项目管理系统",
-                href: "management",
+                to: "https://evanjason.github.io/management/",
               },
               {
                 label: "react后台管理系统",
-                href: "lcarSystem",
+                to: "https://evanjason.github.io/lcarSystem/",
               },
             ],
           },
