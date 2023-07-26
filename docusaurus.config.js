@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '深海如梦',
-  tagline: '作战实践基地',
+  tagline: '深海如梦的小站',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -147,7 +147,7 @@ const config = {
           //   to: "menuClassify",
           // },
           {
-            href: 'https://github.com/EvanJason/EvanJason.github.io',
+            href: 'https://github.com/EvanJason',
             label: 'GitHub',
             position: 'right',
           },

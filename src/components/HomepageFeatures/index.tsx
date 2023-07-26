@@ -23,7 +23,6 @@ const FeatureList: FeatureItem[] = [
     // Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        前端作战实践基地<br />
         记录生活，知识归纳
       </>
     ),
