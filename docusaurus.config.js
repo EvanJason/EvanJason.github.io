@@ -108,11 +108,11 @@ const config = {
             position: 'right',
             label: '文档',
           },
-          // {
-          //   label: '博客',
-          //   position: 'right',
-          //   to: 'blog',
-          // },
+          {
+            label: '博客',
+            position: 'right',
+            to: 'blog',
+          },
           {
             label: '项目',
             position: 'right',
