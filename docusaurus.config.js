@@ -21,7 +21,7 @@ const config = {
   organizationName: 'EvanJason', // github账户名
   deploymentBranch: 'gh-pages', // 部署到的分支名
 
-  onBrokenLinks: 'ignore',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
