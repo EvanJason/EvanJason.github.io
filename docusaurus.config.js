@@ -65,6 +65,9 @@ const config = {
           editUrl:
             'https://github.com/EvanJason/EvanJason.github.io/tree/main/',
           blogSidebarTitle: '近期文章',
+          blogSidebarCount: 'ALL',
+          blogTitle: '深海如梦',
+          blogDescription: '深海如梦的小站'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
