@@ -67,7 +67,7 @@ const config = {
           blogSidebarTitle: '近期文章',
           blogSidebarCount: 'ALL',
           blogTitle: '深海如梦',
-          blogDescription: '深海如梦的小站'
+          blogDescription: '深海如梦的小站',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -110,6 +110,11 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'right',
             label: '文档',
+          },
+          {
+            label: '面试',
+            position: 'right',
+            to: 'docs/面试/前端底层原理'
           },
           {
             label: '博客',
