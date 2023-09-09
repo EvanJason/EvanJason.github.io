@@ -114,7 +114,7 @@ const config = {
           {
             label: '面试',
             position: 'right',
-            to: 'docs/面试/前端底层原理'
+            to: '/docs/tags/interview'
           },
           {
             label: '博客',
