@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '深海如梦',
-  tagline: '深海如梦的小站',
+  tagline: '深海如梦的博客',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -32,20 +32,29 @@ const config = {
     locales: ['zh-Hans'],
   },
 
-  // plugins: [
-  //   [
-  //     '@docusaurus/plugin-content-blog',
-  //     {
-  //       id: "secret-garden",
-  //       path: 'blog',
-  //       routeBasePath: 'blog',
-  //       feedOptions: {
-  //         type: "all",
-  //         title: '深海如梦',
-  //       },
-  //     },
-  //   ],
-  // ],
+  plugins: [
+    // [
+    //   '@docusaurus/plugin-content-blog',
+    //   {
+    //     path: 'blog',
+    //     editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
+    //     `https://github.com/EvanJason/EvanJason.github.io/edit/main/${blogDirPath}/${blogPath}`,
+    //     editLocalizedFiles: false,
+    //     blogDescription: '深海如梦的博客',
+    //     blogSidebarCount: 10,
+    //     blogSidebarTitle: 'Blogs',
+    //     postsPerPage: 10,
+    //     showReadingTime: true,
+    //     readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+    //     defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
+    //     feedOptions: {
+    //       type: 'all',
+    //       title: '深海如梦',
+    //       copyright: `Copyright © ${new Date().getFullYear()} 深海如梦 Built with Docusaurus.`,
+    //     },
+    //   },
+    // ],
+  ],
   presets: [
     [
       'classic',
@@ -111,16 +120,16 @@ const config = {
             position: 'right',
             label: '文档',
           },
-          {
-            label: '面试',
-            position: 'right',
-            to: '/docs/tags/interview'
-          },
-          {
-            label: '博客',
-            position: 'right',
-            to: 'blog',
-          },
+          // {
+          //   label: '面试',
+          //   position: 'right',
+          //   to: '/docs/tags/interview'
+          // },
+          // {
+          //   label: '博客',
+          //   position: 'right',
+          //   to: 'blog',
+          // },
           {
             label: '项目',
             position: 'right',
@@ -160,6 +169,11 @@ const config = {
             position: 'right',
           },
         ],
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+        }
       },
       // footer: {
       //   style: 'dark',
