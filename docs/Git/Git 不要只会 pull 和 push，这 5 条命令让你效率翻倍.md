@@ -1,3 +1,19 @@
+---
+
+title: Git 不要只会 pull 和 push，这 5 条命令让你效率翻倍
+
+categories:
+  - Git
+tags:
+  - Git
+
+date: "2023-08-26"
+
+authors: lin
+
+excerpt: Git 不要只会 pull 和 push，这 5 条命令让你效率翻倍
+
+---
 # Git 不要只会 pull 和 push，这 5 条命令让你效率翻倍
 
 
