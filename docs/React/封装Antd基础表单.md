@@ -46,6 +46,7 @@ export interface formItemAttr {
     type: 'DATE' | 'INPUT' | 'SELECT' | 'CHECKBOX' | 'RADIO' | 'TEXTAREA' | 'CUSTOM'
     render?: (formRef: React.RefObject<FormInstance<any>>, item: any) => React.ReactNode
     allowClear?: boolean
+    maxLength?: number
 }
 export interface IProps_BaseForm {
     formList: Array<formItemAttr>;
@@ -107,17 +108,19 @@ const BaseForm = (props: IProps_BaseForm) => {
                     </FormItem>
                 case 'INPUT':
                     return <FormItem label={label} name={field} initialValue={initialValue} key={field} rules={rules}>
-                        <Input type="text" disabled={disabled} placeholder={placeholder} style={{ width }} />
+                        <Input type="text" disabled={disabled} showCount maxLength={item.maxLength || 50} placeholder={placeholder} style={{ width }} />
                     </FormItem>
                 case 'SELECT':
                     return <FormItem label={label} name={[field]} initialValue={initialValue} key={field} rules={rules}>
                         <Select
                             mode={item.mode}
                             maxTagCount={item.mode ? 1 : undefined}
+                            maxTagTextLength={item.mode ? 20 : undefined}
                             style={{ width }}
                             placeholder={placeholder}
                             options={item.options || []}
                             disabled={disabled}
+                            optionFilterProp="label"
                             allowClear={item.allowClear}
                         />
                     </FormItem>
@@ -182,9 +185,9 @@ const BaseForm = (props: IProps_BaseForm) => {
 export default BaseForm
 ```
 
-## 使用示例
 
-ContactForm组件
+
+## ContactForm组件
 
 ```tsx
 import { Button, Form, FormInstance, Input, Select, Space } from 'antd';
@@ -327,7 +330,8 @@ const ContactForm = (props: IProps_ContactForm) => {
 export default ContactForm
 ```
 
-主组件
+## 使用示例
+
 ```tsx
 import { Card, Divider } from 'antd'
 import BaseForm, { formActionType, formItemAttr } from 'components/common/BaseForm'
