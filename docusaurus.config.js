@@ -111,10 +111,6 @@ const config = {
         // style: 'dark',
         items: [
           {
-            type: 'search', //需要配置algolia
-            position: 'right',
-          },
-          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'right',
@@ -168,6 +164,10 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'search', //需要配置algolia
+            position: 'right',
+          },
         ],
       },
       docs: {
@@ -219,15 +219,15 @@ const config = {
       // colorMode: {
       //   respectPrefersColorScheme: true
       // },
-      // algolia: { //关于全局搜索需要配置的东西
-      //   // The application ID provided by Algolia
-      //   appId: 'BWG0DEIDEP',
+      algolia: { //关于全局搜索需要配置的东西
+        // The Application ID provided by Algolia
+        appId: '2ZZWGAZ9F1',
 
-      //   // Public API key: it is safe to commit it
-      //   apiKey: 'd3f9fff64e1510e7299229fb32996203',
-
-      //   indexName: 'messiahhh',
-      // }
+        // (Search-Only API Key)
+        apiKey: 'fd0d0d8ab8affd2faf0d8550b5dbd8ea',
+        // 索引名字
+        indexName: 'evanjson_oscean',
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
