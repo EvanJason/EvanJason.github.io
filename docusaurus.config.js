@@ -83,6 +83,15 @@ const config = {
         },
       }),
     ],
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        changefreq: 'weekly',
+        priority: 0.5,
+        ignorePatterns: ['/tags/**'],
+        filename: 'sitemap.xml',
+      },
+    ],
   ],
 
   themeConfig:
@@ -227,6 +236,7 @@ const config = {
         apiKey: 'fd0d0d8ab8affd2faf0d8550b5dbd8ea',
         // 索引名字
         indexName: 'evanjson_oscean',
+        contextualSearch: true,
       },
       prism: {
         theme: lightCodeTheme,
