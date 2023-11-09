@@ -10,20 +10,22 @@ jobs:
     name: 开始任务
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
 
-      - name: Get the content of docsearch.json as config
-        id: algolia_config
-        run: echo "::set-output name=config::$(cat docsearch.json | jq -r tostring)"
+      - name: Sleep for 10 seconds
+        run: sleep 10s
+        shell: bash
 
-      - name: Run algolia/docsearch-scraper image
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Run scraper
         env:
           ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
           ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-          CONFIG: ${{ steps.algolia_config.outputs.config }}
         run: |
-          docker run \
-            --env APPLICATION_ID=${ALGOLIA_APP_ID} \
-            --env API_KEY=${ALGOLIA_API_KEY} \
-            --env "CONFIG=${CONFIG}" \
+          CONFIG="$(cat docsearch.json)"
+          docker run -i --rm \
+            -e APPLICATION_ID=${ALGOLIA_APP_ID} \
+            -e API_KEY=${ALGOLIA_API_KEY} \
+            -e CONFIG="${CONFIG}" \
             algolia/docsearch-scraper
