@@ -2,8 +2,8 @@ name: 索引爬虫 docsearch
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   algolia:
