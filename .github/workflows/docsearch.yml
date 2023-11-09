@@ -1,16 +1,17 @@
 name: 索引爬虫 docsearch
 
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
+on: deployment
 
 jobs:
   algolia:
     name: 进入任务
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
       - name: Get the content of docsearch.json as config
         id: algolia_config
