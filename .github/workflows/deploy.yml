@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    name: 进入任务
+    name: 开始任务
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
