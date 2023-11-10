@@ -4,8 +4,8 @@
   <ShortName>深海如梦</ShortName>
   <Description>Search 深海如梦</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://EvanJason.github.io/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://EvanJason.github.io/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://EvanJason.github.io/opensearch.xml" />
-  <moz:SearchForm>https://EvanJason.github.io/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://evanjason.github.io/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://evanjason.github.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://evanjason.github.io/opensearch.xml" />
+  <moz:SearchForm>https://evanjason.github.io/</moz:SearchForm>
 </OpenSearchDescription>
