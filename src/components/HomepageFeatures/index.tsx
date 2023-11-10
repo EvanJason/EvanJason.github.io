@@ -14,7 +14,7 @@ const FeatureList: FeatureItem[] = [
     // Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        欢迎给一个star <a target="_blank" rel="noopener noreferrer" href="https://github.com/EvanJason/EvanJason.github.io">GitHub</a>
+        欢迎给一个star <a target="_blank" rel="noopener noreferrer" href="https://github.com/evanjason/evanjason.github.io">GitHub</a>
       </>
     ),
   },

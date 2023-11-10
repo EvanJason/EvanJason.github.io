@@ -11,14 +11,14 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://EvanJason.github.io',
+  url: 'https://evanjason.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  projectName: 'EvanJason.github.io', // Usually your repo name.
-  organizationName: 'EvanJason', // github账户名
+  projectName: 'evanjason.github.io', // Usually your repo name.
+  organizationName: 'evanjason', // github账户名
   deploymentBranch: 'gh-pages', // 部署到的分支名
 
   onBrokenLinks: 'throw',
@@ -38,7 +38,7 @@ const config = {
     //   {
     //     path: 'blog',
     //     editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-    //     `https://github.com/EvanJason/EvanJason.github.io/edit/main/${blogDirPath}/${blogPath}`,
+    //     `https://github.com/evanjason/evanjason.github.io/edit/main/${blogDirPath}/${blogPath}`,
     //     editLocalizedFiles: false,
     //     blogDescription: '深海如梦的博客',
     //     blogSidebarCount: 10,
@@ -65,14 +65,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/EvanJason/EvanJason.github.io/tree/main/',
+            'https://github.com/evanjason/evanjason.github.io/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/EvanJason/EvanJason.github.io/tree/main/',
+            'https://github.com/evanjason/evanjason.github.io/tree/main/',
           blogSidebarTitle: '近期文章',
           blogSidebarCount: 'ALL',
           blogTitle: '深海如梦',
@@ -95,7 +95,7 @@ const config = {
       // },
       announcementBar: {
         id: 'support_us',
-        content: '⭐️ 如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/EvanJason/EvanJason.github.io">GitHub</a>',
+        content: '⭐️ 如果这个网站能帮助到你，欢迎给一个star支持作者  <a target="_blank" rel="noopener noreferrer" href="https://github.com/evanjason/evanjason.github.io">GitHub</a>',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
@@ -160,7 +160,7 @@ const config = {
           //   to: "menuClassify",
           // },
           {
-            href: 'https://github.com/EvanJason',
+            href: 'https://github.com/evanjason',
             label: 'GitHub',
             position: 'right',
           },

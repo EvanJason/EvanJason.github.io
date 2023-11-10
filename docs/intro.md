@@ -29,12 +29,12 @@ sidebar_position: 1
 ![Git](https://img.shields.io/badge/-Git-333333?style=flat-square&logo=git)
 ![GitHub](https://img.shields.io/badge/-GitHub-333333?style=flat-square&logo=github)
 
-<a href="https://github.com/EvanJason">
-  <img align="right" src="https://metrics.lecoq.io/EvanJason?template=terminal" />
+<a href="https://github.com/evanjason">
+  <img align="right" src="https://metrics.lecoq.io/evanjason?template=terminal" />
 </a>
 
-<img width="340px" src="https://github-readme-stats.vercel.app/api?username=EvanJason&theme=vue-dark&count_private=true&show_icons=true" />
-<img width="340px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=EvanJason&theme=vue-dark&layout=compact" />
+<img width="340px" src="https://github-readme-stats.vercel.app/api?username=evanjason&theme=vue-dark&count_private=true&show_icons=true" />
+<img width="340px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=evanjason&theme=vue-dark&layout=compact" />
 
 ## 👍 赞助作者
 <img src="/img/reward-wechat.jpg" alt="img" width="200" style={{ marginRight: 5, display: 'inline-block' }} />

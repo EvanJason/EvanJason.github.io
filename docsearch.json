@@ -1,10 +1,10 @@
 {
     "index_name": "evanjson_oscean",
     "start_urls": [
-        "https://EvanJason.github.io"
+        "https://evanjason.github.io"
     ],
     "sitemap_urls": [
-        "https://EvanJason.github.io/sitemap.xml"
+        "https://evanjason.github.io/sitemap.xml"
     ],
     "selectors": {
         "lvl0": {

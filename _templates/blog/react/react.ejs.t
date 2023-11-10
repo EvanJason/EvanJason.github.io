@@ -6,8 +6,8 @@ id: <%= name %>
 title: 
 author: 深海
 author_title: 追光少年
-author_url: https://github.com/EvanJason
-author_image_url: https://github.com/EvanJason.png
+author_url: https://github.com/evanjason
+author_image_url: https://github.com/evanjason.png
 description: 
 tags: [前端, React]
 ---
@@ -26,7 +26,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <!-- truncate -->
 
 
-[源码：Github - React-Examples](https://github.com/EvanJason)
+[源码：Github - React-Examples](https://github.com/evanjason)
 
 ## 创建 React 工程
 
