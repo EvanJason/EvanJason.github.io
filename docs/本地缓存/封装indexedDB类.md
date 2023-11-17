@@ -3,11 +3,9 @@
 title: 封装indexedDB类
 
 categories:
-  - vh
-  - ios
+  - 缓存
 tags:
-  - vh
-  - ios
+  - 缓存
 
 date: "2023-09-01"
 
