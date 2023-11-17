@@ -48,4 +48,4 @@ try {
 
 ## 相关
 
-[localstorage和sessionstorage的封装](/docs/TypeScript/localstorage和sessionstorage的封装.md)
+[localstorage和sessionstorage的封装](/docs/本地缓存/localstorage和sessionstorage的封装.md)
