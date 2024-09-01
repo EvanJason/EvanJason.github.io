@@ -21,13 +21,6 @@ excerpt: vue2 element-ui el-cascader多选样式优化
 
 # vue2 element-ui el-cascader多选样式优化
 
-
-
-
-
-
- 
-
 * 参考：https://blog.csdn.net/Kyiiiii/article/details/130216370
 * 参考2：https://www.cnblogs.com/canjiaXQD/p/15054267.html
 * 解决问题：el-cascader 级联选择组件，父子节点不关联时，去除radio按钮
