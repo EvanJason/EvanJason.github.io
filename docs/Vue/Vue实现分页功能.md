@@ -26,7 +26,7 @@ excerpt: Vue实现分页功能
 <div class="page" v-if="pageCout > 0">
   <ul class="epages">
     <li class="page-item" v-if="curPage > 1">
-      <button href="#9lala" @click="JumpTo(curPage -1)">&laquo;</button>
+      <button href="#" @click="JumpTo(curPage -1)">&laquo;</button>
     </li>
     <li class="page-item" :class="{active: curPage == 1}" @click="JumpTo(1)">
       <button>1</button>
@@ -47,7 +47,7 @@ excerpt: Vue实现分页功能
     </li>
     <li class="page-item" :class="{disabled: curPage  == pageCout }"
       v-if="pageCout  > 1 &&curPage  < pageCout -1">
-      <button href="#9lala" @click="JumpTo(curPage +1)">&raquo;</button>
+      <button href="#" @click="JumpTo(curPage +1)">&raquo;</button>
     </li>
   </ul>
 

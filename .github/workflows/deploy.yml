@@ -24,8 +24,8 @@ jobs:
       - name: 部署9lala项目
         run: cp -r ./propject/9lala ./build/9lala
 
-      - name: 部署lcarSystem项目
-        run: cp -r ./propject/lcarSystem ./build/lcarSystem
+      - name: 部署lbti项目
+        run: cp -r ./propject/lbti ./build/lbti
 
       - name: 部署management项目
         run: cp -r ./propject/management ./build/management

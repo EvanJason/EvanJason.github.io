@@ -139,8 +139,8 @@ const config = {
                 to: "https://evanjason.github.io/management/",
               },
               {
-                label: "react后台管理系统",
-                to: "https://evanjason.github.io/lcarSystem/",
+                label: "LBTI",
+                to: "https://evanjason.github.io/lbti/",
               },
             ],
           },
