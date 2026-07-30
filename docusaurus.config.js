@@ -175,45 +175,6 @@ const config = {
           hideable: true,
         }
       },
-      // footer: {
-      //   style: 'dark',
-      //   links: [
-      //     {
-      //       title: '框架手册',
-      //       items: [
-      //         {
-      //           label: 'Ant Design',
-      //           to: 'https://ant-design.gitee.io/docs/react/introduce-cn',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: '项目',
-      //       items: [
-      //         {
-      //           label: 'vue网站demo',
-      //           href: 'https://evanjason.github.io/9lala/',
-      //         },
-      //         {
-      //           label: 'react项目demo',
-      //           href: 'https://evanjason.github.io/lcarSystem/',
-      //         },
-      //       ],
-      //     },
-      //     {
-      //       title: '友情链接',
-      //       items: [
-      //         {
-      //           label: '旧技术博客',
-      //           to: 'https://willern.gitee.io/',
-      //         },
-      //         {
-      //           label: 'docusaurus',
-      //           href: 'https://github.com/facebook/docusaurus',
-      //         },
-      //       ],
-      //     },
-      //   ],
       //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       // },
       // colorMode: {
