@@ -19,3 +19,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .vscode
+
+# WorkBuddy 本地数据
+.workbuddy/
+
+# 一键推送脚本（本地工具，不入库）
+push.sh
+push.bat
+
+# 日志与临时文件
+*.log
+*.tmp

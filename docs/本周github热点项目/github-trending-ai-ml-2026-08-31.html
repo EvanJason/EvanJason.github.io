@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>本周 GitHub AI/ML 热门项目 — 2026-08-31</title>
+<style>
+  /* ===== Theme: Aurora Cyan (2026-08-31) ===== */
+  :root {
+    --theme-1: #06B6D4;
+    --theme-2: #0284C7;
+    --theme-3: #1E40AF;
+    --accent: #0284C7;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --bg-card: #FFFFFF;
+    --shadow: 0 10px 40px rgba(6, 182, 212, 0.12);
+    --shadow-hover: 0 20px 60px rgba(6, 182, 212, 0.22);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    color: var(--text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    min-height: 100vh;
+    background:
+      radial-gradient(ellipse at top left, rgba(6, 182, 212, 0.30) 0%, transparent 55%),
+      radial-gradient(ellipse at bottom right, rgba(30, 64, 175, 0.28) 0%, transparent 55%),
+      linear-gradient(135deg, #E0F7FA 0%, #DBEAFE 50%, #CFFAFE 100%);
+    background-attachment: fixed;
+    padding: 60px 20px 80px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* ===== Header ===== */
+  .header {
+    color: white;
+    margin-bottom: 50px;
+    padding: 50px 40px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.94) 0%, rgba(2, 132, 199, 0.94) 50%, rgba(30, 64, 175, 0.94) 100%);
+    box-shadow: 0 20px 60px rgba(2, 132, 199, 0.32);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,255,255,0.18) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .header::after {
+    content: "";
+    position: absolute;
+    bottom: -60%;
+    left: -10%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .header-content { position: relative; z-index: 1; }
+  .header-eyebrow {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(10px);
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+  }
+  .header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .header p {
+    font-size: 16px;
+    opacity: 0.95;
+    margin-bottom: 24px;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .meta-item {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    padding: 8px 18px;
+    border-radius: 100px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+  }
+  .meta-item strong { font-weight: 600; }
+
+  /* ===== Section Title ===== */
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 22px;
+    background: linear-gradient(180deg, var(--theme-1) 0%, var(--theme-2) 100%);
+    border-radius: 3px;
+  }
+
+  /* ===== Summary Bar ===== */
+  .summary {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 24px 28px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+  }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+  }
+  .summary-cell {
+    text-align: center;
+    padding: 12px;
+  }
+  .summary-cell .num {
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--theme-1) 0%, var(--theme-3) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 4px;
+  }
+  .summary-cell .label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+  }
+
+  /* ===== Card Grid ===== */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 24px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--theme-1) 0%, var(--theme-2) 50%, var(--theme-3) 100%);
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .card-rank {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: linear-gradient(135deg, var(--theme-1) 0%, var(--theme-3) 100%);
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(6, 182, 212, 0.35);
+  }
+
+  .card-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .card-title a {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .card-title a:hover {
+    color: var(--accent);
+  }
+  .lang-tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.12) 0%, rgba(2, 132, 199, 0.12) 100%);
+    color: var(--accent);
+    border: 1px solid rgba(6, 182, 212, 0.22);
+  }
+
+  .card-stats {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  .card-stats .stat {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .card-stats .stat-num {
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .card-stats .stat-weekly {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .card-summary {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    line-height: 1.6;
+    padding-left: 12px;
+    border-left: 3px solid var(--theme-1);
+  }
+
+  .card-section {
+    margin-bottom: 12px;
+  }
+  .card-section-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 6px;
+  }
+  .card-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .card-section li {
+    font-size: 13px;
+    color: var(--text-primary);
+    padding: 4px 0 4px 18px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .card-section li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--theme-1);
+    font-size: 12px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+  }
+  .tag {
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 11px;
+    background: rgba(6, 182, 212, 0.08);
+    color: var(--accent);
+    border: 1px solid rgba(6, 182, 212, 0.20);
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    margin-top: 60px;
+    padding: 28px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .header { padding: 36px 24px; }
+    .header h1 { font-size: 26px; }
+    .card { padding: 22px; }
+    .cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-content">
+      <span class="header-eyebrow">GITHUB TRENDING · WEEKLY</span>
+      <h1>本周 GitHub AI/ML 热门项目</h1>
+      <p>聚焦 AI 代理、LLM 工具链、Claude 生态与开源基础模型——本周开发者最关注什么？</p>
+      <div class="meta">
+        <div class="meta-item">📅 数据抓取：<strong>2026-08-31 09:30 GMT+8</strong></div>
+        <div class="meta-item">📊 收录项目：<strong>18 个</strong></div>
+        <div class="meta-item">🎨 主题：<strong>Aurora Cyan</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <div class="summary-grid">
+      <div class="summary-cell">
+        <div class="num">18</div>
+        <div class="label">本周 AI/ML 项目</div>
+      </div>
+      <div class="summary-cell">
+        <div class="num">59,575+</div>
+        <div class="label">本周新增 Star</div>
+      </div>
+      <div class="summary-cell">
+        <div class="num">5,510</div>
+        <div class="label">单项目最高周增</div>
+      </div>
+      <div class="summary-cell">
+        <div class="num">5</div>
+        <div class="label">涉及编程语言</div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title">热门项目（按本周新增 Star 降序）</h2>
+
+  <div class="cards">
+
+    <!-- 1. openai/codex -->
+    <div class="card">
+      <div class="card-rank">1</div>
+      <div class="card-title">
+        <a href="https://github.com/openai/codex" target="_blank">openai/codex</a>
+        <span class="lang-tag">Rust</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">120,106</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+5,510</span></span>
+      </div>
+      <div class="card-summary">OpenAI 官方开源的轻量级编码代理，直接在终端里跑——把 GPT 级代码能力塞进 CLI。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>终端原生编码 Agent，支持自然语言指令直接生成/修改代码</li>
+          <li>基于 Rust 构建，启动快、内存占用低、可嵌入 IDE 工作流</li>
+          <li>官方维护，与 OpenAI 最新模型同步更新</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">CLI 开发者</span>
+          <span class="tag">自动化编程</span>
+          <span class="tag">OpenAI 生态</span>
+          <span class="tag">终端工具</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. MadsLorentzen/ai-job-search -->
+    <div class="card">
+      <div class="card-rank">2</div>
+      <div class="card-title">
+        <a href="https://github.com/MadsLorentzen/ai-job-search" target="_blank">MadsLorentzen/ai-job-search</a>
+        <span class="lang-tag">Python</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">38,522</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+5,348</span></span>
+      </div>
+      <div class="card-summary">跑在你本机上的 AI 求职框架——基于 Claude Code 自动评估 JD、定制简历、写求职信、准备面试。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>JD 智能评估：自动分析职位匹配度并打分</li>
+          <li>简历个性化定制 + 求职信自动撰写</li>
+          <li>面试问题预测，结合岗位要求生成备考清单</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">求职人群</span>
+          <span class="tag">Claude Code</span>
+          <span class="tag">本地 Agent</span>
+          <span class="tag">求职自动化</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. calesthio/OpenMontage -->
+    <div class="card">
+      <div class="card-rank">3</div>
+      <div class="card-title">
+        <a href="https://github.com/calesthio/OpenMontage" target="_blank">calesthio/OpenMontage</a>
+        <span class="lang-tag">Python</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">54,636</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+4,974</span></span>
+      </div>
+      <div class="card-summary">全球首个开源 Agent 化视频制作系统——12 条生产管线、100+ 工具、700+ Agent 技能文件。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>12 条端到端视频生产线，覆盖剪辑/特效/配音/字幕</li>
+          <li>100+ 现成工具 + 700+ Agent 技能文件，可直接拼装工作流</li>
+          <li>模块化 Agent 架构，支持自定义扩展</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">视频创作</span>
+          <span class="tag">Agent 编排</span>
+          <span class="tag">内容生产</span>
+          <span class="tag">影视自动化</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Alishahryar1/free-claude-code -->
+    <div class="card">
+      <div class="card-rank">4</div>
+      <div class="card-title">
+        <a href="https://github.com/Alishahryar1/free-claude-code" target="_blank">Alishahryar1/free-claude-code</a>
+        <span class="lang-tag">Python</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">51,936</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+4,324</span></span>
+      </div>
+      <div class="card-summary">让 Claude Code / Codex / Pi / OpenCode 等顶级编码 Agent 免费用——13 亿+ 免费 token，终端/IDE/手机全平台支持。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>聚合 13 亿+ 免费 token，跨多家 LLM 路由自动切换</li>
+          <li>支持终端、IDE、手机端调用，兼容主流编码 Agent</li>
+          <li>语音交互支持（OpenClaw 兼容）</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">个人开发者</span>
+          <span class="tag">免费 AI 编码</span>
+          <span class="tag">跨平台</span>
+          <span class="tag">Claude Code</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. K-Dense-AI/scientific-agent-skills -->
+    <div class="card">
+      <div class="card-rank">5</div>
+      <div class="card-title">
+        <a href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank">K-Dense-AI/scientific-agent-skills</a>
+        <span class="lang-tag">Python</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">39,218</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+4,309</span></span>
+      </div>
+      <div class="card-summary">把任何 AI Agent 武装成 AI 科学家——165 个验证技能 + 100+ 科学数据库，覆盖生物/化学/医学/药物发现。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>165 个开箱即用、经过验证的科学技能模块</li>
+          <li>100+ 科学数据库直连，覆盖生/化/医/药</li>
+          <li>兼容 Cursor、Claude Code、Codex、Pi、Antigravity 等主流 Agent 平台</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">科研人员</span>
+          <span class="tag">AI for Science</span>
+          <span class="tag">药物发现</span>
+          <span class="tag">生物信息</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. rohitg00/ai-engineering-from-scratch -->
+    <div class="card">
+      <div class="card-rank">6</div>
+      <div class="card-title">
+        <a href="https://github.com/rohitg00/ai-engineering-from-scratch" target="_blank">rohitg00/ai-engineering-from-scratch</a>
+        <span class="lang-tag">Python</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">51,271</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+3,720</span></span>
+      </div>
+      <div class="card-summary">AI 工程从零学起——Learn it. Build it. Ship it for others. 一站式 AI 工程师成长路径。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>系统化 AI 工程学习路径，从原理到生产部署</li>
+          <li>大量可运行示例与练习，强调动手实践</li>
+          <li>聚焦"为他人发布"，培养产品化思维</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">AI 工程师入门</span>
+          <span class="tag">教学资源</span>
+          <span class="tag">自学路径</span>
+          <span class="tag">实战项目</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. AgriciDaniel/claude-obsidian -->
+    <div class="card">
+      <div class="card-rank">7</div>
+      <div class="card-title">
+        <a href="https://github.com/AgriciDaniel/claude-obsidian" target="_blank">AgriciDaniel/claude-obsidian</a>
+        <span class="lang-tag">Python</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">14,397</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+3,156</span></span>
+      </div>
+      <div class="card-summary">Obsidian + Claude Code 打造的「自组织 AI 第二大脑」——知识图谱 + PKM，开源 Notion 替代。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>Claude Code 驱动，自动构建 Obsidian 知识图谱</li>
+          <li>本地优先的个人知识管理（PKM）系统</li>
+          <li>可作为 Notion 的开源替代方案</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">知识管理</span>
+          <span class="tag">Obsidian 用户</span>
+          <span class="tag">PKM</span>
+          <span class="tag">个人第二大脑</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. tashfeenahmed/freellmapi -->
+    <div class="card">
+      <div class="card-rank">8</div>
+      <div class="card-title">
+        <a href="https://github.com/tashfeenahmed/freellmapi" target="_blank">tashfeenahmed/freellmapi</a>
+        <span class="lang-tag">TypeScript</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">22,773</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+3,037</span></span>
+      </div>
+      <div class="card-summary">一个统一 /v1 端点打通 34 家免费 LLM 提供商、635 个模型端点——智能路由 + 自动切换 + 密钥加密。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>单端点 /v1 兼容 OpenAI，聚合 34 家免费提供商、635 个模型端点</li>
+          <li>智能路由 + 自动 failover，单一 API 即可负载均衡</li>
+          <li>支持任意 OpenAI 兼容的自定义端点，密钥加密存储</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">LLM 路由</span>
+          <span class="tag">免费 API</span>
+          <span class="tag">OpenAI 兼容</span>
+          <span class="tag">个人实验</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. tinyhumansai/openhuman -->
+    <div class="card">
+      <div class="card-rank">9</div>
+      <div class="card-title">
+        <a href="https://github.com/tinyhumansai/openhuman" target="_blank">tinyhumansai/openhuman</a>
+        <span class="lang-tag">Rust</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">39,021</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+2,526</span></span>
+      </div>
+      <div class="card-summary">你的个人 AI 超级智能——本地优先记忆大脑 + Agent 集群编排器 + 深度研究员，三合一。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>本地优先的长期记忆引擎，构建"生活记忆大脑"</li>
+          <li>Agent 集群与工作流编排（orchestrator）</li>
+          <li>深度研究能力，自动完成多步推理任务</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">个人 AI 助理</span>
+          <span class="tag">本地部署</span>
+          <span class="tag">Agent 编排</span>
+          <span class="tag">深度研究</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. anthropics/claude-plugins-community -->
+    <div class="card">
+      <div class="card-rank">10</div>
+      <div class="card-title">
+        <a href="https://github.com/anthropics/claude-plugins-community" target="_blank">anthropics/claude-plugins-community</a>
+        <span class="lang-tag">Python</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">2,878</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+2,162</span></span>
+      </div>
+      <div class="card-summary">Claude Cowork 与 Claude Code 的社区插件市场——只读镜像，提交插件去 clau.de/plugin-directory-submission。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>社区维护的 Claude Code/Cowork 插件目录</li>
+          <li>分类浏览，覆盖开发/写作/研究/办公等场景</li>
+          <li>官方只读镜像，确保插件来源可追溯</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">Claude Code 用户</span>
+          <span class="tag">插件开发</span>
+          <span class="tag">社区资源</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. THU-MAIC/OpenMAIC -->
+    <div class="card">
+      <div class="card-rank">11</div>
+      <div class="card-title">
+        <a href="https://github.com/THU-MAIC/OpenMAIC" target="_blank">THU-MAIC/OpenMAIC</a>
+        <span class="lang-tag">TypeScript</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">24,000</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+2,085</span></span>
+      </div>
+      <div class="card-summary">清华 MAIC 出品的 Open Multi-Agent Interactive Classroom——一键开启沉浸式多智能体学习体验。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>多 Agent 协作的交互式课堂，老师/学生/助教角色分工</li>
+          <li>沉浸式学习体验，支持多种学科场景</li>
+          <li>一键部署，开箱即用</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">在线教育</span>
+          <span class="tag">多 Agent</span>
+          <span class="tag">交互学习</span>
+          <span class="tag">清华 MAIC</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. apache/maka -->
+    <div class="card">
+      <div class="card-rank">12</div>
+      <div class="card-title">
+        <a href="https://github.com/apache/maka" target="_blank">apache/maka</a>
+        <span class="lang-tag">TypeScript</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">4,192</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+1,973</span></span>
+      </div>
+      <div class="card-summary">Apache Maka（孵化中）——本地优先的 AI Agent 工作台，所有事件以 append-only 日志形式记录，可完整审计回溯。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>本地优先架构，数据不出本机</li>
+          <li>模型消息、工具调用、权限决策、终止事件全部 append-only 日志化</li>
+          <li>Apache 孵化项目，规范与治理有保障</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">Apache 项目</span>
+          <span class="tag">Agent 工作台</span>
+          <span class="tag">本地部署</span>
+          <span class="tag">审计合规</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13. anthropics/claude-plugins-official -->
+    <div class="card">
+      <div class="card-rank">13</div>
+      <div class="card-title">
+        <a href="https://github.com/anthropics/claude-plugins-official" target="_blank">anthropics/claude-plugins-official</a>
+        <span class="lang-tag">Python</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">35,610</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+1,940</span></span>
+      </div>
+      <div class="card-summary">Anthropic 官方维护的高质量 Claude Code 插件目录——质量与安全由官方把控。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>官方精选插件，质量经过 Anthropic 团队审核</li>
+          <li>覆盖多种企业级用例（开发、运维、数据分析）</li>
+          <li>与 Claude Code 新特性同步首发</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">企业用户</span>
+          <span class="tag">Claude Code</span>
+          <span class="tag">官方插件</span>
+          <span class="tag">生产环境</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 14. abi/screenshot-to-code -->
+    <div class="card">
+      <div class="card-rank">14</div>
+      <div class="card-title">
+        <a href="https://github.com/abi/screenshot-to-code" target="_blank">abi/screenshot-to-code</a>
+        <span class="lang-tag">Python</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">76,389</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+1,909</span></span>
+      </div>
+      <div class="card-summary">截图直接转代码——丢一张设计稿，出来干净的 HTML/Tailwind/React/Vue。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>截图 → HTML/Tailwind/React/Vue 代码自动生成</li>
+          <li>支持多种前端框架输出，灵活选择</li>
+          <li>识别像素级细节，生成的代码可读性高</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">前端开发</span>
+          <span class="tag">设计转代码</span>
+          <span class="tag">UI 还原</span>
+          <span class="tag">原型快速搭建</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 15. can1357/oh-my-pi -->
+    <div class="card">
+      <div class="card-rank">15</div>
+      <div class="card-title">
+        <a href="https://github.com/can1357/oh-my-pi" target="_blank">can1357/oh-my-pi</a>
+        <span class="lang-tag">TypeScript</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">28,497</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+1,826</span></span>
+      </div>
+      <div class="card-summary">⌥ 与 IDE 深度打通的编码 Agent——直接接管编辑器上下文，告别复制粘贴。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>深度集成 IDE，实时感知编辑器上下文</li>
+          <li>原生编码 Agent 体验，无中间桥梁</li>
+          <li>支持自然语言直接驱动 IDE 操作</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">IDE 用户</span>
+          <span class="tag">编码 Agent</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">深度集成</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 16. marin-community/marin -->
+    <div class="card">
+      <div class="card-rank">16</div>
+      <div class="card-title">
+        <a href="https://github.com/marin-community/marin" target="_blank">marin-community/marin</a>
+        <span class="lang-tag">Python</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">3,052</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+1,599</span></span>
+      </div>
+      <div class="card-summary">开源基础模型研究与开发框架——从数据到训练到评估，端到端基础设施。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>覆盖基础模型全生命周期：数据、训练、评估</li>
+          <li>模块化设计，便于实验迭代</li>
+          <li>社区驱动，进展透明</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">基础模型研究</span>
+          <span class="tag">开源 LLM</span>
+          <span class="tag">实验框架</span>
+          <span class="tag">学术研究</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 17. cursor/plugins -->
+    <div class="card">
+      <div class="card-rank">17</div>
+      <div class="card-title">
+        <a href="https://github.com/cursor/plugins" target="_blank">cursor/plugins</a>
+        <span class="lang-tag">TypeScript</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">6,272</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+1,503</span></span>
+      </div>
+      <div class="card-summary">Cursor 官方插件规范与首批官方插件——把 AI IDE 生态的拼图补齐。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>定义 Cursor 插件规范，统一开发接口</li>
+          <li>提供官方插件作为参考实现</li>
+          <li>为第三方插件生态铺路</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">Cursor 用户</span>
+          <span class="tag">插件开发</span>
+          <span class="tag">AI IDE 生态</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 18. htdt/godogen -->
+    <div class="card">
+      <div class="card-rank">18</div>
+      <div class="card-title">
+        <a href="https://github.com/htdt/godogen" target="_blank">htdt/godogen</a>
+        <span class="lang-tag">Python</span>
+      </div>
+      <div class="card-stats">
+        <span class="stat">⭐ <span class="stat-num">6,588</span></span>
+        <span class="stat">📈 本周 <span class="stat-weekly">+1,033</span></span>
+      </div>
+      <div class="card-summary">Claude Code + Codex 联合驱动的自主游戏开发——Godot/Bevy/Babylon.js 多引擎通吃。</div>
+      <div class="card-section">
+        <div class="card-section-title">核心功能</div>
+        <ul>
+          <li>AI 自主完成游戏开发全流程（设计/编码/调试）</li>
+          <li>支持 Godot、Bevy、Babylon.js 三大游戏引擎</li>
+          <li>Claude Code + Codex 双模型协同</li>
+        </ul>
+      </div>
+      <div class="card-section">
+        <div class="card-section-title">适用场景</div>
+        <div class="tags">
+          <span class="tag">游戏开发</span>
+          <span class="tag">独立开发者</span>
+          <span class="tag">AI 辅助编程</span>
+          <span class="tag">原型迭代</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>📊 数据来源：<a href="https://github.com/trending" target="_blank">GitHub Trending (Weekly)</a> · 抓取于 2026-08-31 09:30 GMT+8</p>
+    <p>🤖 由 <strong>AI HOT</strong> Skill 自动抓取并整理 · 主题：Aurora Cyan</p>
+  </div>
+
+</div>
+</body>
+</html>

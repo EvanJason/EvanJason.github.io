@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>本周 GitHub AI/ML 热门项目 — 2026-08-24</title>
+<style>
+  /* ===== Theme: Magenta Coral (2026-08-24) ===== */
+  :root {
+    --theme-1: #FF6B6B;
+    --theme-2: #C938B6;
+    --theme-3: #7209B7;
+    --accent: #C938B6;
+    --text-primary: #1A1A2E;
+    --text-secondary: #4A4A6A;
+    --bg-card: #FFFFFF;
+    --shadow: 0 10px 40px rgba(201, 56, 182, 0.12);
+    --shadow-hover: 0 20px 60px rgba(201, 56, 182, 0.22);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    color: var(--text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    min-height: 100vh;
+    background:
+      radial-gradient(ellipse at top left, rgba(255, 107, 107, 0.35) 0%, transparent 55%),
+      radial-gradient(ellipse at bottom right, rgba(114, 9, 183, 0.35) 0%, transparent 55%),
+      linear-gradient(135deg, #FFE3E3 0%, #F4DCFB 50%, #E3D5F5 100%);
+    background-attachment: fixed;
+    padding: 60px 20px 80px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* ===== Header ===== */
+  .header {
+    color: white;
+    margin-bottom: 50px;
+    padding: 50px 40px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.92) 0%, rgba(201, 56, 182, 0.92) 50%, rgba(114, 9, 183, 0.92) 100%);
+    box-shadow: 0 20px 60px rgba(114, 9, 183, 0.35);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .header::after {
+    content: "";
+    position: absolute;
+    bottom: -60%;
+    left: -10%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .header-content { position: relative; z-index: 1; }
+  .header-eyebrow {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .header p {
+    font-size: 16px;
+    opacity: 0.95;
+    margin-bottom: 24px;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 13px;
+  }
+  .meta-chip {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    padding: 6px 14px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  .meta-chip strong { font-weight: 600; }
+
+  /* ===== Section Title ===== */
+  .section-title {
+    margin: 50px 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .section-title h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.3px;
+  }
+  .section-title .count {
+    background: var(--bg-card);
+    color: var(--accent);
+    padding: 4px 14px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(201, 56, 182, 0.15);
+  }
+  .section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(201, 56, 182, 0.3) 0%, transparent 100%);
+  }
+
+  /* ===== Card ===== */
+  .card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--theme-1) 0%, var(--theme-2) 50%, var(--theme-3) 100%);
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .rank-badge {
+    position: absolute;
+    top: 28px;
+    right: 32px;
+    font-size: 56px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--theme-1) 0%, var(--theme-2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.18;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+    letter-spacing: -0.4px;
+    transition: color 0.2s;
+  }
+  .card-title:hover { color: var(--accent); }
+
+  .lang-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(201, 56, 182, 0.08);
+    color: var(--accent);
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid rgba(201, 56, 182, 0.15);
+  }
+  .lang-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .star-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+  .star-line span {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .star-line .total { color: var(--text-primary); font-weight: 600; }
+  .star-line .weekly {
+    background: linear-gradient(135deg, var(--theme-1) 0%, var(--theme-2) 100%);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .star-line .forks { color: var(--text-secondary); }
+
+  .summary {
+    font-size: 16px;
+    color: var(--text-primary);
+    margin-bottom: 22px;
+    padding: 16px 18px;
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.05) 0%, rgba(201, 56, 182, 0.05) 100%);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 12px 12px 0;
+    line-height: 1.7;
+  }
+  .summary-label {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-right: 8px;
+    text-transform: uppercase;
+  }
+
+  .features {
+    margin-bottom: 22px;
+  }
+  .features-title,
+  .use-cases-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .features-title::before,
+  .use-cases-title::before {
+    content: "";
+    width: 16px;
+    height: 2px;
+    background: var(--accent);
+  }
+  .features ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+  }
+  .features li {
+    position: relative;
+    padding-left: 26px;
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+  .features li::before {
+    content: "▸";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .use-cases {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .use-case-tag {
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(201, 56, 182, 0.1) 100%);
+    color: var(--text-primary);
+    padding: 5px 12px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid rgba(201, 56, 182, 0.2);
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    margin-top: 70px;
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  .footer strong { color: var(--accent); }
+  .footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px dashed var(--accent);
+  }
+
+  @media (max-width: 720px) {
+    body { padding: 24px 14px 50px; }
+    .header { padding: 32px 24px; border-radius: 20px; }
+    .header h1 { font-size: 26px; }
+    .card { padding: 24px 20px; }
+    .rank-badge { font-size: 40px; top: 20px; right: 20px; }
+    .card-title { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="header-eyebrow">WEEKLY · 2026.08.17 – 2026.08.24</div>
+      <h1>本周 GitHub AI/ML 热门项目</h1>
+      <p>追踪 AI、LLM、机器学习与 Agent 领域的开源新风向，按本周新增 Star 数排序</p>
+      <div class="meta">
+        <span class="meta-chip">📅 数据抓取 <strong>2026-08-24 09:51 GMT+8</strong></span>
+        <span class="meta-chip">🎨 主题色 <strong>Magenta Coral</strong></span>
+        <span class="meta-chip">🤖 AI/ML 项目 <strong>7 个</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section -->
+  <div class="section-title">
+    <h2>热门项目</h2>
+    <span class="count">7 PROJECTS</span>
+  </div>
+
+  <!-- Card 1 -->
+  <div class="card">
+    <div class="rank-badge">01</div>
+    <div class="card-header">
+      <a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" class="card-title">harry0703 / MoneyPrinterTurbo</a>
+      <span class="lang-tag"><span class="lang-dot"></span>Python</span>
+    </div>
+    <div class="star-line">
+      <span class="total">⭐ 115,338</span>
+      <span class="weekly">▲ 本周 +11,167</span>
+      <span class="forks">🔱 17,521</span>
+    </div>
+    <div class="summary">
+      <span class="summary-label">一句话</span>只需提供视频主题或关键词，即可一键自动生成文案、匹配素材、合成字幕、搭配背景音乐，并最终输出高清短视频的一站式 AI 视频生成工具。
+    </div>
+    <div class="features">
+      <div class="features-title">核心功能</div>
+      <ul>
+        <li>AI Agent 自动生成视频脚本并提炼素材搜索关键词</li>
+        <li>集成主流 LLM、素材库、TTS、字幕与背景音乐全流程</li>
+        <li>提供 AI Agent / WebUI / API / CLI 四种使用方式，代码按 MVC 分层</li>
+      </ul>
+    </div>
+    <div class="use-cases">
+      <span class="use-cases-title">适用场景</span>
+      <span class="use-case-tag">自媒体内容创作</span>
+      <span class="use-case-tag">批量短视频生产</span>
+      <span class="use-case-tag">营销内容团队</span>
+      <span class="use-case-tag">口播带货视频</span>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <div class="rank-badge">02</div>
+    <div class="card-header">
+      <a href="https://github.com/volcengine/OpenViking" target="_blank" class="card-title">volcengine / OpenViking</a>
+      <span class="lang-tag"><span class="lang-dot"></span>Python</span>
+    </div>
+    <div class="star-line">
+      <span class="total">⭐ 32,506</span>
+      <span class="weekly">▲ 本周 +3,799</span>
+      <span class="forks">🔱 2,483</span>
+    </div>
+    <div class="summary">
+      <span class="summary-label">一句话</span>开源的 AI Agent 上下文数据库，把记忆、资源、技能统一挂载到 <code>viking://</code> 文件系统协议下，让 Agent 像浏览文件一样操作自己的上下文。
+    </div>
+    <div class="features">
+      <div class="features-title">核心功能</div>
+      <ul>
+        <li>三层上下文加载（L0 摘要 / L1 概览 / L2 详情），按需读取节省 token</li>
+        <li>目录式递归检索：向量粗筛 → 逐层下钻，结果连同上下文一起返回</li>
+        <li>会话结束自动沉淀长期记忆（用户偏好、Agent 经验）</li>
+      </ul>
+    </div>
+    <div class="use-cases">
+      <span class="use-cases-title">适用场景</span>
+      <span class="use-case-tag">长期记忆 Agent</span>
+      <span class="use-case-tag">RAG 检索增强</span>
+      <span class="use-case-tag">Agent 平台</span>
+      <span class="use-case-tag">企业知识库</span>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <div class="rank-badge">03</div>
+    <div class="card-header">
+      <a href="https://github.com/modular/modular" target="_blank" class="card-title">modular / modular</a>
+      <span class="lang-tag"><span class="lang-dot"></span>Mojo</span>
+    </div>
+    <div class="star-line">
+      <span class="total">⭐ 28,984</span>
+      <span class="weekly">▲ 本周 +2,176</span>
+      <span class="forks">🔱 3,077</span>
+    </div>
+    <div class="summary">
+      <span class="summary-label">一句话</span>Modular Platform 的开源主仓库，包含面向 AI 推理的 MAX 框架与系统级编程语言 Mojo，让大模型服务兼具 Python 易用性与硬件级性能。
+    </div>
+    <div class="features">
+      <div class="features-title">核心功能</div>
+      <ul>
+        <li>MAX 推理服务器，暴露 OpenAI 兼容 endpoint，开箱即用</li>
+        <li>Mojo 语言：类 Python 语法、原生 MLIR 编译、多硬件后端</li>
+        <li>MAX 模型流水线（Python graphs） + 加速器内核库（max/kernels）</li>
+      </ul>
+    </div>
+    <div class="use-cases">
+      <span class="use-cases-title">适用场景</span>
+      <span class="use-case-tag">大模型推理部署</span>
+      <span class="use-case-tag">高性能 ML 系统</span>
+      <span class="use-case-tag">自定义算子开发</span>
+      <span class="use-case-tag">跨硬件加速</span>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card">
+    <div class="rank-badge">04</div>
+    <div class="card-header">
+      <a href="https://github.com/cursor/plugins" target="_blank" class="card-title">cursor / plugins</a>
+      <span class="lang-tag"><span class="lang-dot"></span>TypeScript</span>
+    </div>
+    <div class="star-line">
+      <span class="total">⭐ 4,826</span>
+      <span class="weekly">▲ 本周 +1,761</span>
+      <span class="forks">🔱 396</span>
+    </div>
+    <div class="summary">
+      <span class="summary-label">一句话</span>Cursor 官方维护的插件市场与插件规范，覆盖代码审查、教学规划、子代理编排等高频场景，为 Cursor IDE 提供可一键安装的扩展能力。
+    </div>
+    <div class="features">
+      <div class="features-title">核心功能</div>
+      <ul>
+        <li>插件全部以独立目录组织，自带 <code>.cursor-plugin/plugin.json</code> 清单</li>
+        <li>内置 Thermo-nuclear 评审、Orchestrate、CLI for Agents 等杀手级插件</li>
+        <li>Cursor SDK TypeScript 接口，便于团队自建 Agent 自动化流程</li>
+      </ul>
+    </div>
+    <div class="use-cases">
+      <span class="use-cases-title">适用场景</span>
+      <span class="use-case-tag">Cursor IDE 用户</span>
+      <span class="use-case-tag">AI 编程自动化</span>
+      <span class="use-case-tag">团队 CI/CD</span>
+      <span class="use-case-tag">PR 自动评审</span>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card">
+    <div class="rank-badge">05</div>
+    <div class="card-header">
+      <a href="https://github.com/jundot/omlx" target="_blank" class="card-title">jundot / omlx</a>
+      <span class="lang-tag"><span class="lang-dot"></span>Python</span>
+    </div>
+    <div class="star-line">
+      <span class="total">⭐ 20,452</span>
+      <span class="weekly">▲ 本周 +1,671</span>
+      <span class="forks">🔱 1,732</span>
+    </div>
+    <div class="summary">
+      <span class="summary-label">一句话</span>专为 Apple Silicon 优化的本地 LLM 推理服务器，配备持续批处理与内存/SSD 两级 KV 缓存，直接从 macOS 菜单栏管理，让本地大模型真正能用。
+    </div>
+    <div class="features">
+      <div class="features-title">核心功能</div>
+      <ul>
+        <li>持续批处理 + 跨请求热缓存，长上下文工具调用不再反复重算</li>
+        <li>macOS 菜单栏即时开关模型、调整上下文，CLI 提供后台服务模式</li>
+        <li>GLM-5.2 / M3 / Qwen3.5 等模型可启用原生自定义 kernel（M3 Ultra 提速约 30×）</li>
+      </ul>
+    </div>
+    <div class="use-cases">
+      <span class="use-cases-title">适用场景</span>
+      <span class="use-case-tag">Mac 本地大模型推理</span>
+      <span class="use-case-tag">Claude Code 本地后端</span>
+      <span class="use-case-tag">隐私敏感型团队</span>
+      <span class="use-case-tag">离线开发编程</span>
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="card">
+    <div class="rank-badge">06</div>
+    <div class="card-header">
+      <a href="https://github.com/apache/maka" target="_blank" class="card-title">apache / maka</a>
+      <span class="lang-tag"><span class="lang-dot"></span>TypeScript</span>
+    </div>
+    <div class="star-line">
+      <span class="total">⭐ 2,369</span>
+      <span class="weekly">▲ 本周 +859</span>
+      <span class="forks">🔱 270</span>
+    </div>
+    <div class="summary">
+      <span class="summary-label">一句话</span>Apache 孵化中的本地优先 Agent 工作空间，把模型消息、工具调用、权限决策以 append-only 方式记录，提供可回放、可恢复、可评测的执行事实。
+    </div>
+    <div class="features">
+      <div class="features-title">核心功能</div>
+      <ul>
+        <li>一次 Runtime Host 同时驱动桌面 App、TUI/CLI 与 Eval 三种入口</li>
+        <li>短上下文 ≠ 删历史：可裁剪提示词，但完整证据永久保留</li>
+        <li>可选用云端 API / 本地模型 / 自有网关作为 Agent 后端</li>
+      </ul>
+    </div>
+    <div class="use-cases">
+      <span class="use-cases-title">适用场景</span>
+      <span class="use-case-tag">本地 Agent 调试</span>
+      <span class="use-case-tag">AI 工作自动化</span>
+      <span class="use-case-tag">Agent 评测平台</span>
+      <span class="use-case-tag">可审计 Agent</span>
+    </div>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="card">
+    <div class="rank-badge">07</div>
+    <div class="card-header">
+      <a href="https://github.com/anthropics/claude-plugins-community" target="_blank" class="card-title">anthropics / claude-plugins-community</a>
+      <span class="lang-tag"><span class="lang-dot"></span>Python</span>
+    </div>
+    <div class="star-line">
+      <span class="total">⭐ 980</span>
+      <span class="weekly">▲ 本周 +406</span>
+      <span class="forks">🔱 127</span>
+    </div>
+    <div class="summary">
+      <span class="summary-label">一句话</span>Anthropic 官方维护的 Claude Cowork / Claude Code 社区插件市场只读镜像，列表中每个插件都经过自动化安全扫描与审核才上架。
+    </div>
+    <div class="features">
+      <div class="features-title">核心功能</div>
+      <ul>
+        <li>通过 <code>marketplace.json</code> 暴露经过审核的社区插件列表</li>
+        <li>一行命令安装到 Claude Code 或在 Claude Cowork 中使用</li>
+        <li>源自 claude.ai 提交管线，每晚自动同步更新</li>
+      </ul>
+    </div>
+    <div class="use-cases">
+      <span class="use-cases-title">适用场景</span>
+      <span class="use-case-tag">Claude Code 用户</span>
+      <span class="use-case-tag">企业内部插件分发</span>
+      <span class="use-case-tag">AI 工作流扩展</span>
+      <span class="use-case-tag">安全合规插件</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    数据来源 · <a href="https://github.com/trending?since=weekly" target="_blank">GitHub Trending Weekly</a><br>
+    抓取时间 · 2026-08-24 09:51 GMT+8 &nbsp;·&nbsp; 本周区间 · 2026-08-17 – 2026-08-24<br>
+    由 <strong>WorkBuddy</strong> 自动生成 · 每周一推送
+  </footer>
+
+</div>
+
+</body>
+</html>

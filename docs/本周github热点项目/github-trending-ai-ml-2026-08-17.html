@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 本周 AI/ML 热门项目 · 2026-08-17</title>
+<style>
+:root {
+  --primary: #4F46E5;
+  --primary-soft: #818CF8;
+  --primary-deep: #312E81;
+  --accent: #A78BFA;
+  --bg-start: #EEF2FF;
+  --bg-mid: #E0E7FF;
+  --bg-end: #C7D2FE;
+  --text-dark: #1E1B4B;
+  --text-muted: #4B5563;
+  --surface: rgba(255,255,255,0.72);
+  --surface-strong: rgba(255,255,255,0.92);
+  --border: rgba(79,70,229,0.12);
+  --shadow: 0 1px 2px rgba(30,27,75,0.04), 0 8px 32px rgba(79,70,229,0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { min-height: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(167,139,250,0.35), transparent 60%),
+    radial-gradient(900px 500px at 0% 100%, rgba(129,140,248,0.25), transparent 65%),
+    linear-gradient(135deg, var(--bg-start) 0%, var(--bg-mid) 45%, var(--bg-end) 100%);
+  background-attachment: fixed;
+  color: var(--text-dark);
+  line-height: 1.65;
+  padding: 56px 24px 96px;
+  min-height: 100vh;
+}
+.wrap { max-width: 1080px; margin: 0 auto; }
+header {
+  display: flex; flex-direction: column; gap: 18px;
+  padding-bottom: 28px; margin-bottom: 36px;
+  border-bottom: 1px solid var(--border);
+}
+.brand-row { display: flex; align-items: center; gap: 14px; }
+.brand-mark {
+  width: 38px; height: 38px; border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-deep));
+  display: grid; place-items: center;
+  color: #fff; font-weight: 700; font-size: 16px; letter-spacing: 0.5px;
+  box-shadow: 0 6px 18px rgba(79,70,229,0.35);
+}
+h1 {
+  font-size: 30px; font-weight: 700; letter-spacing: -0.4px;
+  color: var(--text-dark);
+}
+h1 .accent { color: var(--primary); }
+.subtitle {
+  color: var(--text-muted); font-size: 14px; font-weight: 500;
+  display: flex; flex-wrap: wrap; gap: 18px; align-items: center;
+}
+.subtitle .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--primary); opacity: 0.6; }
+.meta-bar {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px; margin-top: 8px;
+}
+.meta-pill {
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.meta-pill .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); font-weight: 600; }
+.meta-pill .value { font-size: 18px; font-weight: 700; color: var(--text-dark); }
+.meta-pill .value small { font-size: 12px; font-weight: 500; color: var(--text-muted); margin-left: 4px; }
+
+.card {
+  position: relative;
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 26px 28px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(79,70,229,0.28);
+  box-shadow: 0 2px 4px rgba(30,27,75,0.06), 0 18px 40px rgba(79,70,229,0.16);
+}
+.card-head {
+  display: flex; align-items: center; gap: 14px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.rank {
+  font-size: 12px; font-weight: 700; color: var(--primary);
+  background: rgba(79,70,229,0.08);
+  padding: 4px 10px; border-radius: 999px;
+  letter-spacing: 0.5px;
+}
+.title-block { display: flex; align-items: center; gap: 10px; flex: 1 1 auto; min-width: 0; }
+.repo-name {
+  font-size: 17px; font-weight: 700; color: var(--text-dark);
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  font-family: "SF Mono", "JetBrains Mono", Consolas, monospace;
+  word-break: break-all;
+}
+.repo-name:hover { color: var(--primary); border-bottom-color: var(--primary); }
+.lang-tag {
+  font-size: 11px; font-weight: 600;
+  color: var(--lang-color, #555);
+  background: rgba(0,0,0,0.04);
+  padding: 3px 10px; border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.06);
+  white-space: nowrap;
+}
+.stars-block { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.stars-total {
+  font-size: 14px; font-weight: 600; color: var(--text-dark);
+  display: flex; align-items: center; gap: 4px;
+}
+.stars-total svg { color: #F59E0B; }
+.stars-week {
+  font-size: 12px; color: var(--primary); font-weight: 600;
+  display: flex; align-items: center; gap: 3px;
+}
+.delta-arrow { font-size: 10px; }
+.summary {
+  font-size: 14.5px; color: var(--text-dark);
+  margin-bottom: 16px; line-height: 1.7;
+  padding-left: 12px;
+  border-left: 3px solid var(--primary-soft);
+}
+.features { margin-bottom: 16px; }
+.features h4 {
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--primary); margin-bottom: 8px; font-weight: 700;
+}
+.features ul { list-style: none; }
+.features li {
+  font-size: 14px; color: var(--text-dark);
+  padding: 5px 0 5px 22px;
+  position: relative;
+}
+.features li::before {
+  content: ""; position: absolute; left: 4px; top: 13px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--primary);
+}
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag {
+  font-size: 12px; font-weight: 500;
+  color: var(--primary);
+  background: rgba(79,70,229,0.06);
+  padding: 4px 12px; border-radius: 6px;
+  border: 1px solid rgba(79,70,229,0.1);
+}
+footer {
+  margin-top: 56px; padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted); font-size: 12.5px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+footer .source { font-weight: 600; color: var(--text-dark); }
+
+@media (max-width: 640px) {
+  body { padding: 32px 16px 64px; }
+  h1 { font-size: 22px; }
+  .card { padding: 20px; }
+  .card-head { flex-direction: column; align-items: flex-start; }
+  .stars-block { flex-direction: row; gap: 12px; align-items: center; align-self: stretch; justify-content: space-between; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand-row">
+      <div class="brand-mark">G</div>
+      <h1>GitHub 本周 <span class="accent">AI / ML</span> 热门项目</h1>
+    </div>
+    <div class="subtitle">
+      <span>Weekly Trending</span>
+      <span class="dot"></span>
+      <span>仅展示与人工智能、机器学习、LLM、Agent、生成式模型相关的项目</span>
+    </div>
+    <div class="meta-bar">
+      <div class="meta-pill">
+        <span class="label">数据抓取时间</span>
+        <span class="value">2026-08-17<small>13:07</small></span>
+      </div>
+      <div class="meta-pill">
+        <span class="label">上榜项目</span>
+        <span class="value">13<small>个 AI/ML 仓库</small></span>
+      </div>
+      <div class="meta-pill">
+        <span class="label">排序维度</span>
+        <span class="value">本周新增 <small>Star 降序</small></span>
+      </div>
+      <div class="meta-pill">
+        <span class="label">主题色</span>
+        <span class="value">Indigo<small>Indigo · #4F46E5</small></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <article class="card" data-rank="1">
+      <div class="card-head">
+        <span class="rank">No.01</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener">cathrynlavery/diagram-design</a>
+          <span class="lang-tag" style="--lang-color: #E34C26">HTML</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>19,792</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>15,600 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">为 Claude Code 量身打造的 29 种编辑级图表库，提供自包含的 HTML + SVG 模板，让 AI 编程助手输出干净、专业、无冗余装饰的可视化。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>29 种编辑级图表模板，覆盖架构图、流程图、时序图等常见场景</li>
+          <li>纯 HTML + SVG 自包含输出，无需构建工具或外部依赖</li>
+          <li>无阴影、无渐变冗余的极简设计风格，输出即印刷级</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#可视化</span>
+        <span class="tag">#Claude Code</span>
+        <span class="tag">#设计系统</span>
+        <span class="tag">#提示工程</span>
+      </div>
+    </article>
+
+    <article class="card" data-rank="2">
+      <div class="card-head">
+        <span class="rank">No.02</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/PrimeIntellect-ai/prime-agent" target="_blank" rel="noopener">PrimeIntellect-ai/prime-agent</a>
+          <span class="lang-tag" style="--lang-color: #3178C6">TypeScript</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>16,654</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>6,435 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">PrimeIntellect 推出的可自我改进的 RLM（Recursive Language Model）智能体，专注于编码工作流与长时间自主任务执行。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>支持长时程自主任务的递归语言模型 (RLM) 架构</li>
+          <li>面向编码工作流深度优化，可自我学习并迭代</li>
+          <li>原生支持工具调用与多步骤推理，便于构建复杂 Agent 系统</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#Agent</span>
+        <span class="tag">#代码生成</span>
+        <span class="tag">#自主任务</span>
+        <span class="tag">#RLM</span>
+      </div>
+    </article>
+
+    <article class="card" data-rank="3">
+      <div class="card-head">
+        <span class="rank">No.03</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/semantica-agi/semantica" target="_blank" rel="noopener">semantica-agi/semantica</a>
+          <span class="lang-tag" style="--lang-color: #3572A5">Python</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>8,277</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>5,284 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">面向上下文与可问责 AI 系统的图原生基础设施，将知识图谱作为 Agent 推理的核心数据层，实现可追溯、可审计的智能决策。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>图原生 (Graph-Native) 架构，把上下文建模为可遍历的知识图谱</li>
+          <li>支持可问责 (Accountable) 的 AI 决策链路，记录每一步推理依据</li>
+          <li>为多 Agent 协作提供统一的上下文共享与冲突消解机制</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#知识图谱</span>
+        <span class="tag">#可解释AI</span>
+        <span class="tag">#Agent基础设施</span>
+        <span class="tag">#AGI</span>
+      </div>
+    </article>
+
+    <article class="card" data-rank="4">
+      <div class="card-head">
+        <span class="rank">No.04</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener">TencentCloud/TencentDB-Agent-Memory</a>
+          <span class="lang-tag" style="--lang-color: #3178C6">TypeScript</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>22,329</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>3,637 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">腾讯云推出的团队级 AI Agent 记忆中枢，把对话、文档、代码沉淀为 Chat Memory、Skill、LLM-Wiki、Code-Graph 四类可治理、可复用的记忆资产。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>四类记忆资产：Chat Memory、Skill、LLM-Wiki、Code-Graph，覆盖 Agent 全场景</li>
+          <li>团队级共享记忆，跨 Agent 与框架统一调用</li>
+          <li>可治理 (governed) 设计，支持权限控制、审计与版本管理</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#Agent记忆</span>
+        <span class="tag">#团队协作</span>
+        <span class="tag">#腾讯云</span>
+        <span class="tag">#知识管理</span>
+      </div>
+    </article>
+
+    <article class="card" data-rank="5">
+      <div class="card-head">
+        <span class="rank">No.05</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/cactus-compute/needle/needle" target="_blank" rel="noopener">cactus-compute/needle</a>
+          <span class="lang-tag" style="--lang-color: #3572A5">Python</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>6,744</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>2,950 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">面向手机、可穿戴、智能家居与机器人等端侧设备的 14MB 超轻量基础模型，让大模型能力真正运行在本地硬件上。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>仅 14MB 模型体积，可直接部署在手机、可穿戴与 IoT 设备</li>
+          <li>针对端侧推理优化，无需联网即可完成本地 AI 任务</li>
+          <li>覆盖对话、视觉等多模态基础能力，是端侧 Agent 的算力底座</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#端侧AI</span>
+        <span class="tag">#轻量模型</span>
+        <span class="tag">#IoT</span>
+        <span class="tag">#具身智能</span>
+      </div>
+    </article>
+
+    <article class="card" data-rank="6">
+      <div class="card-head">
+        <span class="rank">No.06</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/addyosmani/agent-skills" target="_blank" rel="noopener">addyosmani/agent-skills</a>
+          <span class="lang-tag" style="--lang-color: #F1E05A">JavaScript</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>87,821</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>2,882 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">Google Chrome 团队工程总监 Addy Osmani 维护的 AI 编程 Agent 生产级技能库，把工程最佳实践沉淀为 Agent 可直接调用的工具。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>面向 AI 编程 Agent 的工程级技能 (skills)，覆盖代码评审、测试、重构等</li>
+          <li>由 Addy Osmani 维护，质量与最佳实践对标大型工程团队</li>
+          <li>可与 Claude Code、Cursor 等主流 Agent 框架集成</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#AI编程</span>
+        <span class="tag">#工程效能</span>
+        <span class="tag">#Agent技能</span>
+        <span class="tag">#最佳实践</span>
+      </div>
+    </article>
+
+    <article class="card" data-rank="7">
+      <div class="card-head">
+        <span class="rank">No.07</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/unslothai/unsloth" target="_blank" rel="noopener">unslothai/unsloth</a>
+          <span class="lang-tag" style="--lang-color: #3572A5">Python</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>72,758</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>2,645 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">本地化运行与训练 LLM 及扩散模型的一体化 UI，支持 Qwen3.8、Kimi K3、Gemma 4、DeepSeek-V4、FLUX 等主流模型，是消费级显卡玩转大模型的利器。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>可视化界面一键启动 Qwen、DeepSeek、FLUX 等模型的本地推理与微调</li>
+          <li>对显存与速度深度优化，单卡 4090 也能跑 70B 级别模型</li>
+          <li>支持 LoRA / QLoRA 微调，附带 Notebook 与一键脚本</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#LLM</span>
+        <span class="tag">#本地部署</span>
+        <span class="tag">#模型微调</span>
+        <span class="tag">#扩散模型</span>
+      </div>
+    </article>
+
+    <article class="card" data-rank="8">
+      <div class="card-head">
+        <span class="rank">No.08</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/macro-inc/macro" target="_blank" rel="noopener">macro-inc/macro</a>
+          <span class="lang-tag" style="--lang-color: #DEA584">Rust</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>3,441</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>2,588 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">用 Rust 构建的统一团队工作台，把邮件、聊天、文档、任务、Agent、电话与 CRM 通过 @ 关联，并由共享 AI 记忆串联所有上下文。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>一站式整合邮件、聊天、文档、任务、CRM 与电话会议</li>
+          <li>通过 @ 语法跨模块关联对象，构建可被 AI 检索的语义网</li>
+          <li>共享 AI 记忆层：所有交互沉淀为团队级上下文，避免信息孤岛</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#协作平台</span>
+        <span class="tag">#Rust</span>
+        <span class="tag">#AI记忆</span>
+        <span class="tag">#统一工作台</span>
+      </div>
+    </article>
+
+    <article class="card" data-rank="9">
+      <div class="card-head">
+        <span class="rank">No.09</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/paperclipai/paperclip" target="_blank" rel="noopener">paperclipai/paperclip</a>
+          <span class="lang-tag" style="--lang-color: #3178C6">TypeScript</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>78,572</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>2,499 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">定位为团队管理 AI Agent 的开源控制台，让企业像对待正式员工一样注册、调度、考核和审计 AI Agent。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>统一的 Agent 注册与权限管理，支持按角色分配任务</li>
+          <li>可观测的 Agent 工作流：监控任务执行、产出与异常</li>
+          <li>面向企业场景设计，支持 SSO、审计日志与合规要求</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#Agent管理</span>
+        <span class="tag">#企业AI</span>
+        <span class="tag">#可观测性</span>
+        <span class="tag">#开源SaaS</span>
+      </div>
+    </article>
+
+    <article class="card" data-rank="10">
+      <div class="card-head">
+        <span class="rank">No.10</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/vitali87/code-graph-rag" target="_blank" rel="noopener">vitali87/code-graph-rag</a>
+          <span class="lang-tag" style="--lang-color: #3572A5">Python</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>4,444</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>1,686 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">面向多语言 monorepo 的代码知识图谱 RAG 引擎，让 AI 能查询、理解并直接编辑大型代码仓库，是代码 Agent 的基础设施。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>把整个 monorepo 构建为代码知识图谱，支持多语言 (Python/JS/Go/Java 等)</li>
+          <li>RAG 驱动的代码问答、依赖分析、跨文件重构建议</li>
+          <li>可与 Claude、GPT 等 LLM 集成，让 AI 真正理解大型仓库结构</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#RAG</span>
+        <span class="tag">#代码理解</span>
+        <span class="tag">#知识图谱</span>
+        <span class="tag">#Monorepo</span>
+      </div>
+    </article>
+
+    <article class="card" data-rank="11">
+      <div class="card-head">
+        <span class="rank">No.11</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/ToolJet/ToolJet" target="_blank" rel="noopener">ToolJet/ToolJet</a>
+          <span class="lang-tag" style="--lang-color: #F1E05A">JavaScript</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>40,171</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>1,518 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">开源企业内部工具与 AI Agent 应用生成平台，零代码构建内部系统、仪表盘、业务应用与 AI 智能体工作流。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>拖拽式低代码构建内部工具、仪表盘、业务应用</li>
+          <li>原生集成 AI Agent 工作流，可一键对接主流大模型与数据库</li>
+          <li>40k+ star 的成熟开源生态，企业级权限与多租户支持</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#低代码</span>
+        <span class="tag">#内部工具</span>
+        <span class="tag">#企业AI</span>
+        <span class="tag">#Agent平台</span>
+      </div>
+    </article>
+
+    <article class="card" data-rank="12">
+      <div class="card-head">
+        <span class="rank">No.12</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/NVIDIA-NeMo/Switchyard" target="_blank" rel="noopener">NVIDIA-NeMo/Switchyard</a>
+          <span class="lang-tag" style="--lang-color: #DEA584">Rust</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>1,718</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>1,435 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">NVIDIA NeMo 团队开源的 LLM 流量路由器，保持原生 OpenAI / Anthropic API 兼容的同时，让应用灵活地在多模型、多厂商间调度。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>兼容 OpenAI / Anthropic 原生 API，零代码迁移即可接入</li>
+          <li>支持多模型路由与负载均衡，可按成本、延迟自动选模型</li>
+          <li>内建 Benchmarking 能力，方便对比不同模型与厂商</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#LLM网关</span>
+        <span class="tag">#模型路由</span>
+        <span class="tag">#NVIDIA</span>
+        <span class="tag">#性能优化</span>
+      </div>
+    </article>
+
+    <article class="card" data-rank="13">
+      <div class="card-head">
+        <span class="rank">No.13</span>
+        <div class="title-block">
+          <a class="repo-name" href="https://github.com/Lightricks/LTX-2" target="_blank" rel="noopener">Lightricks/LTX-2</a>
+          <span class="lang-tag" style="--lang-color: #3572A5">Python</span>
+        </div>
+        <div class="stars-block">
+          <div class="stars-total">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path fill="currentColor" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>
+            </svg>
+            <span>9,069</span>
+          </div>
+          <div class="stars-week">
+            <span class="delta-arrow">▲</span>
+            <span>497 本周</span>
+          </div>
+        </div>
+      </div>
+      <p class="summary">Lightricks 官方开源的 LTX-2 音视频生成模型 Python 推理与 LoRA 训练包，支持文本生成高质量音视频内容。</p>
+      <div class="features">
+        <h4>核心功能</h4>
+        <ul>
+          <li>官方 Python 推理包，支持 LTX-2 模型的音频+视频联合生成</li>
+          <li>配套 LoRA 训练工具，可针对特定风格或场景微调</li>
+          <li>面向开发者友好的 API，便于集成到创作工具与 SaaS 中</li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag">#视频生成</span>
+        <span class="tag">#音频生成</span>
+        <span class="tag">#LoRA</span>
+        <span class="tag">#多模态</span>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <div><span class="source">数据来源：</span>GitHub Trending（<code>https://github.com/trending?since=weekly</code>），筛选时间窗为自然周（周一至周日）。</div>
+    <div>AI/ML 判定依据：项目描述或仓库名中包含 LLM、Agent、RAG、模型、生成、训练、推理、Claude、GPT 等关键词。中文概述、核心功能与适用场景由人工解读。</div>
+    <div>页面采用纯静态 HTML/CSS，无任何外部依赖，可直接浏览器打开。</div>
+  </footer>
+</div>
+</body>
+</html>
