@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="khnxwcfouP1KsvAu9vHXmM">
+<head data-page-node-id="hkPfRU2CPJJxUvFS1m6SxA">
+<meta charset="UTF-8" data-page-node-id="tVelQmBNrJyInv6UelH5cQ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="YjoEovroxjuG2DZKJhNlwX">
+<title>本周 GitHub AI/ML 热门项目 — 2026-09-07</title>
+<style>
+  /* ===== Theme: Emerald Forest (2026-09-07) ===== */
+  :root {
+    --theme-1: #10B981;
+    --theme-2: #059669;
+    --theme-3: #064E3B;
+    --accent: #059669;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --bg-card: #FFFFFF;
+    --shadow: 0 10px 40px rgba(16, 185, 129, 0.14);
+    --shadow-hover: 0 20px 60px rgba(16, 185, 129, 0.25);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    color: var(--text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    min-height: 100vh;
+    background:
+      radial-gradient(ellipse at top left, rgba(16, 185, 129, 0.28) 0%, transparent 55%),
+      radial-gradient(ellipse at bottom right, rgba(6, 78, 59, 0.30) 0%, transparent 55%),
+      linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 50%, #A7F3D0 100%);
+    background-attachment: fixed;
+    padding: 60px 20px 80px;
+  }
+
+  .container { max-width: 1200px; margin: 0 auto; }
+
+  /* ===== Header ===== */
+  .header {
+    color: white;
+    margin-bottom: 50px;
+    padding: 50px 40px;
+    border-radius: 28px;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.95) 0%, rgba(5, 150, 105, 0.95) 50%, rgba(6, 78, 59, 0.95) 100%);
+    box-shadow: 0 20px 60px rgba(5, 150, 105, 0.32);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: "";
+    position: absolute;
+    top: -50%; right: -10%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(255,255,255,0.18) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .header::after {
+    content: "";
+    position: absolute;
+    bottom: -60%; left: -10%;
+    width: 350px; height: 350px;
+    background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .header-content { position: relative; z-index: 1; }
+  .header-eyebrow {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(10px);
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+  }
+  .header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .header p {
+    font-size: 16px;
+    opacity: 0.95;
+    margin-bottom: 24px;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .meta-item {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    padding: 8px 18px;
+    border-radius: 100px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+  }
+  .meta-item strong { font-weight: 600; }
+
+  /* ===== Section Title ===== */
+  .section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title::before {
+    content: "";
+    display: inline-block;
+    width: 5px; height: 22px;
+    background: linear-gradient(180deg, var(--theme-1) 0%, var(--theme-3) 100%);
+    border-radius: 3px;
+  }
+
+  /* ===== Summary Bar ===== */
+  .summary {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding: 24px 28px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+  }
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+  }
+  .summary-cell { text-align: center; padding: 12px; }
+  .summary-cell .num {
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--theme-1) 0%, var(--theme-3) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 4px;
+  }
+  .summary-cell .label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+  }
+
+  /* ===== Cards ===== */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--theme-1) 0%, var(--theme-2) 50%, var(--theme-3) 100%);
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+  }
+  .card-rank {
+    position: absolute;
+    top: 18px; right: 18px;
+    background: linear-gradient(135deg, var(--theme-1) 0%, var(--theme-3) 100%);
+    color: white;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 700;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+  }
+  .card-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .card-title a {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .card-title a:hover { color: var(--accent); }
+  .lang-tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(6, 78, 59, 0.12) 100%);
+    color: var(--accent);
+    border: 1px solid rgba(16, 185, 129, 0.22);
+  }
+
+  .card-stats {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  .card-stats .stat { display: inline-flex; align-items: center; gap: 4px; }
+  .card-stats .stat-num { font-weight: 700; color: var(--text-primary); }
+  .card-stats .stat-weekly { color: var(--accent); font-weight: 700; }
+
+  .card-summary {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    line-height: 1.6;
+    padding-left: 12px;
+    border-left: 3px solid var(--theme-1);
+  }
+
+  .card-section { margin-bottom: 12px; }
+  .card-section-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 6px;
+  }
+  .card-section ul { list-style: none; padding-left: 0; }
+  .card-section li {
+    font-size: 13px;
+    color: var(--text-primary);
+    padding: 4px 0 4px 18px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .card-section li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--theme-1);
+    font-size: 12px;
+  }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .tag {
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 11px;
+    background: rgba(16, 185, 129, 0.08);
+    color: var(--accent);
+    border: 1px solid rgba(16, 185, 129, 0.20);
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    margin-top: 60px;
+    padding: 28px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .header { padding: 36px 24px; }
+    .header h1 { font-size: 26px; }
+    .card { padding: 22px; }
+    .cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body data-page-node-id="LOeQ5bCeKfcJpJlmPfTrr8">
+<div class="container" data-page-node-id="vSlE0knHmGLAGvzMPEOQzJ">
+
+  <!-- Header -->
+  <div class="header" data-page-node-id="2LBzby7UBdiaSjCNDeBjrc">
+    <div class="header-content" data-page-node-id="ny4T9pmq0U2lXs9Phd9eEm">
+      <span class="header-eyebrow" data-page-node-id="095HIDogFve45JUTceovhS">GITHUB TRENDING · WEEKLY</span>
+      <h1 data-page-node-id="Qj5EUylNdhBc3aiXnPLXUw">本周 GitHub AI/ML 热门项目</h1>
+      <p data-page-node-id="5DD0QJSfwIAzZMMZWwAuj1">Agent 技能生态全面爆发、垂直 Skills 库百花齐放、本地推理与多 Agent 课堂并进——本周开发者最关注什么？</p>
+      <div class="meta" data-page-node-id="dDa9GS4pGDNFboztxJhKdd">
+        <div class="meta-item" data-page-node-id="25oXtXuWUnq3iCMSoa0PkV">📅 数据抓取：<strong data-page-node-id="V1zc12Zf0M80FAQpxyut87">2026-09-07 09:30 GMT+8</strong></div>
+        <div class="meta-item" data-page-node-id="HJmUL1AgD1aycp6zWzLgI8">📊 收录项目：<strong data-page-node-id="y9g0uj2tj9Xk3FWeGtVUhD">18 个</strong></div>
+        <div class="meta-item" data-page-node-id="1N757omQajudPAMrFFZMXr">🎨 主题：<strong data-page-node-id="5dyfXmTvj7dEGXYbAimEvX">Emerald Forest</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary" data-page-node-id="upLv21EPW6lOj5RdGKDNKv">
+    <div class="summary-grid" data-page-node-id="H76C5wrUVNskg17H7cQrVo">
+      <div class="summary-cell" data-page-node-id="8CobXVRGfw8izcKe3Uqg4n">
+        <div class="num" data-page-node-id="KC2c2PcsjzXVUKxM1AjPDZ">18</div>
+        <div class="label" data-page-node-id="R8EfePcc7RNdXlOiO2beLP">本周 AI/ML 项目</div>
+      </div>
+      <div class="summary-cell" data-page-node-id="u2m2QsD4dJCRGGNW0qw0hd">
+        <div class="num" data-page-node-id="5cMJex8VRVSBdhEIlJFMbw">75,500+</div>
+        <div class="label" data-page-node-id="fe4GYB8F2VCjG8eyquyRv1">本周新增 Star</div>
+      </div>
+      <div class="summary-cell" data-page-node-id="r6dJ4wnX0pLHbtAVTliAVn">
+        <div class="num" data-page-node-id="ibd0N8ULAf3QTLRtmHxZD9">17,190</div>
+        <div class="label" data-page-node-id="cipzoJJ6yCqq0HfQlnM8NE">单项目最高周增</div>
+      </div>
+      <div class="summary-cell" data-page-node-id="kCz3nmjSznopHgmxDe1tG4">
+        <div class="num" data-page-node-id="GPTZ0ryKKVcwQdIC33Gr5I">5</div>
+        <div class="label" data-page-node-id="DQPRAIj1iKDJQGRQqYMUsE">涉及编程语言</div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title" data-page-node-id="eI7vyuHm0uJ5ei9V1Ca7r7">热门项目（按本周新增 Star 降序）</h2>
+
+  <div class="cards" data-page-node-id="cyMOsFQwABnRgncsDxjWVB">
+
+    <!-- 1. tt-a1i/archify -->
+    <div class="card" data-page-node-id="5ddeNgvT5AkJjF2jQFBAWP">
+      <div class="card-rank" data-page-node-id="M8sR5T0b8lXmnkCLk4ZCvx">1</div>
+      <div class="card-title" data-page-node-id="be5sDfcV4R4crX4H3mJLe2">
+        <a href="https://github.com/tt-a1i/archify" target="_blank" data-page-node-id="C3VbVbWSRlFLmRj6aEHmQL">tt-a1i/archify</a>
+        <span class="lang-tag" data-page-node-id="QdgqOmTu4AwaONBW76vEKn">JavaScript</span>
+      </div>
+      <div class="card-stats" data-page-node-id="VqBDlcUnl3YyxO4Iv7GQVW">
+        <span class="stat" data-page-node-id="SgVmjmWhVDMF9LwYjFR6A7">⭐ <span class="stat-num" data-page-node-id="91Wy9Hwd11iRgc3UzrgWwa">50,797</span></span>
+        <span class="stat" data-page-node-id="kSQmR3Y2FmF72ieOGdnnKS">📈 本周 <span class="stat-weekly" data-page-node-id="iA9z1eJ5vqrZVHoYlggM2k">+17,190</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="htF1dtH6jCHQBvIqGpc1b2">Agent 必备技能——把架构图、工作流图、时序图、数据流图、生命周期图变成自带动画的精美自包含 HTML，导出即用。</div>
+      <div class="card-section" data-page-node-id="dAzCeK0RC6DIK9PkAKPKud">
+        <div class="card-section-title" data-page-node-id="TQVAdzBXI6qbtXYAqHmnIp">核心功能</div>
+        <ul data-page-node-id="3QBfY6f7ddZoCmDpA3HqER">
+          <li data-page-node-id="FLy4EsYlrgH4mhCPWRWjlB">五类图通吃：架构、工作流、时序、数据流、生命周期</li>
+          <li data-page-node-id="SeFtoCFJaUjEtC5FX4wshR">自包含 HTML 输出，自带动效，画质清晰可直接导出</li>
+          <li data-page-node-id="k7JfRqx8WqDf6g9SBGk7N3">可作为 Agent skill 嵌入到 Claude Code / Cursor 等 AI 工作流</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="62K8m2HOar8irDxQeQuJEX">
+        <div class="card-section-title" data-page-node-id="LQTfcRtYh25ZQMWGQIOWCt">适用场景</div>
+        <div class="tags" data-page-node-id="Tk2i7AAhwrAkxZg6dzC0WE">
+          <span class="tag" data-page-node-id="Al4SlTAjwdxm5z1ldW9w1X">架构设计</span>
+          <span class="tag" data-page-node-id="ww7v0VVZMGzambZfgdP8Vq">AI Agent</span>
+          <span class="tag" data-page-node-id="AthdSrdtXjcTZmVMmeHIVf">图表输出</span>
+          <span class="tag" data-page-node-id="GYV5mjQJOPXenMGn9FE3je">技术文档</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. DietrichGebert/ponytail -->
+    <div class="card" data-page-node-id="O1A7H0lyGeFKKtyEW01T8v">
+      <div class="card-rank" data-page-node-id="r8TD9LtRpgBAfskxXT8Vx5">2</div>
+      <div class="card-title" data-page-node-id="Ofvq1WM2nfSNnOliicdgXi">
+        <a href="https://github.com/DietrichGebert/ponytail" target="_blank" data-page-node-id="f7Gnk7cLMhP7iEvhP6LqGR">DietrichGebert/ponytail</a>
+        <span class="lang-tag" data-page-node-id="lC3DCRZ2ssey0F2onx0wNA">JavaScript</span>
+      </div>
+      <div class="card-stats" data-page-node-id="z1Z6JUjwKElAwgQqDyLqbe">
+        <span class="stat" data-page-node-id="QkPDtvxX57evq2Ry7XqNbj">⭐ <span class="stat-num" data-page-node-id="SfsfQO8fdeRHKWWw9aDB96">129,356</span></span>
+        <span class="stat" data-page-node-id="a6El9kon61OSNzU4tSbRHx">📈 本周 <span class="stat-weekly" data-page-node-id="jn4Y5wMp5R0kp06cFI12dt">+12,186</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="3BuRQRdXLCCCJdFqsQwtEi">让 AI Agent 学会"偷懒"——能少写就少写，最少的代码实现最多的功能，把"那个最懒的高级工程师"塞进 Agent 的大脑。</div>
+      <div class="card-section" data-page-node-id="SR4wBuVVIwjJn4QsfslimL">
+        <div class="card-section-title" data-page-node-id="Gabu7Oo3KSFzkZaKtTKVTa">核心功能</div>
+        <ul data-page-node-id="D94FvQyidprERxHHYmBxdn">
+          <li data-page-node-id="N5cXzRWrnhml7YUmRpVUiK">智能压缩代码量：减少不必要实现，强调"代码即负债"</li>
+          <li data-page-node-id="VlMAey4TgldTIxpmQiKOIF">作为 Agent skill 嵌入，复用既有依赖、避免重复造轮子</li>
+          <li data-page-node-id="b3QxrBilAaGjpn1Xj7tCnX">风格化的人格 prompt：模仿资深工程师的取舍判断</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="VNkxOh0KPKxGTqnUGudPkU">
+        <div class="card-section-title" data-page-node-id="upOpFKsHfYZUlGOeKcwvMH">适用场景</div>
+        <div class="tags" data-page-node-id="Lq54joFKPat223LcAOIDIz">
+          <span class="tag" data-page-node-id="oFrV1KBlqNmje8yMDYKWGA">Agent 调优</span>
+          <span class="tag" data-page-node-id="S8xHUp1PFg1AGuefUSojQe">代码瘦身</span>
+          <span class="tag" data-page-node-id="nDo40f5EieZAZWtcYCAuh4">工程实践</span>
+          <span class="tag" data-page-node-id="IBnQtHRwfP5Ek1Ita7cxDc">Senior 风格</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. THU-MAIC/OpenMAIC -->
+    <div class="card" data-page-node-id="z1gCFIWGLSxxlwFDgOTmjv">
+      <div class="card-rank" data-page-node-id="mVopivdJ7DOnxpbaTov1tn">3</div>
+      <div class="card-title" data-page-node-id="vhpnQuMYY5i6ths2bMSw6j">
+        <a href="https://github.com/THU-MAIC/OpenMAIC" target="_blank" data-page-node-id="uliHegnfKwCRuSwSL76LFx">THU-MAIC/OpenMAIC</a>
+        <span class="lang-tag" data-page-node-id="JbplHUtxjbhMCT0uX0a2U0">TypeScript</span>
+      </div>
+      <div class="card-stats" data-page-node-id="m8igG089TCnvSkqtEN2vfg">
+        <span class="stat" data-page-node-id="M6KZD0Y6hRvI7oKmhJauPg">⭐ <span class="stat-num" data-page-node-id="9bIbeaq335urDZ39S59BMS">32,412</span></span>
+        <span class="stat" data-page-node-id="UX8olrviV1AOD95R09oEIK">📈 本周 <span class="stat-weekly" data-page-node-id="IHRtRf0SLdspJ5FgXsGMbn">+9,193</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="Jq7512ahpKWF1RfBCG81CW">清华 MAIC 出品的 Open Multi-Agent Interactive Classroom——一键开启沉浸式多智能体学习体验。</div>
+      <div class="card-section" data-page-node-id="ByCiixPyHJuhHucEWJyZ9W">
+        <div class="card-section-title" data-page-node-id="vpliN7obwBU3w147azpjCN">核心功能</div>
+        <ul data-page-node-id="rkeCXiRhDnn6fBqjEmydeE">
+          <li data-page-node-id="aMzgq3uAFQ5BDV20SU6kDF">多 Agent 协作课堂：老师/学生/助教角色分工</li>
+          <li data-page-node-id="DXtzUwM24Bd6JuRd4pCRZi">沉浸式学习体验，覆盖多学科场景</li>
+          <li data-page-node-id="EctlF1a3tFdU4ckthIl9S1">一键部署、开箱即用，对个人教师友好</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="l011jfwg3bz31RlvXMFDL7">
+        <div class="card-section-title" data-page-node-id="feM2ay9uzRxpyVePpdjgTY">适用场景</div>
+        <div class="tags" data-page-node-id="8AqSyHIaGGnoSy410W8Zz5">
+          <span class="tag" data-page-node-id="RGrp0sBx6RRfsWrhD4qdj7">在线教育</span>
+          <span class="tag" data-page-node-id="lXC5FAvGIhq1dKalQFxT08">多 Agent</span>
+          <span class="tag" data-page-node-id="cZoXYLOViyNdAEjqunf23e">清华 MAIC</span>
+          <span class="tag" data-page-node-id="9EUBhxQBwn8VwncOcIUfxl">交互课堂</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. debpalash/VoiceStudio -->
+    <div class="card" data-page-node-id="578NhDC5TwVqdGxasfBsc0">
+      <div class="card-rank" data-page-node-id="vKHlQkaFCZRtcqZOcPoHDC">4</div>
+      <div class="card-title" data-page-node-id="7XMl2LdGlAhp5tRlKDEhRj">
+        <a href="https://github.com/debpalash/VoiceStudio" target="_blank" data-page-node-id="9pI9CN8Tb6HlHk44aGD7Mn">debpalash/VoiceStudio</a>
+        <span class="lang-tag" data-page-node-id="RKHUil9yYsYo6k8Cr4vsn1">Python</span>
+      </div>
+      <div class="card-stats" data-page-node-id="Glgs5CJhvust7P7uGLtZVy">
+        <span class="stat" data-page-node-id="fZF5roVN8zAvnl9yAPv8Tu">⭐ <span class="stat-num" data-page-node-id="L8TufTFVlI0h77HN2jqhtB">19,844</span></span>
+        <span class="stat" data-page-node-id="HWWjnm9pLuaBh8DCz8CDBn">📈 本周 <span class="stat-weekly" data-page-node-id="ybI5O2jjYvqHcmmRLFxdAs">+7,513</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="GQSEWcIVbzfHj34SOV9PgN">开源、全本地、646 种语言——ElevenLabs 的真正替代品：语音克隆、声音设计、视频配音、听写、转录、有声书生成。</div>
+      <div class="card-section" data-page-node-id="HMC7FgK19xpM5aNSfHeyE9">
+        <div class="card-section-title" data-page-node-id="pKZML6hMDizW1DJhY4UuGW">核心功能</div>
+        <ul data-page-node-id="cBgia8vEEbtRjvOESrX1Ab">
+          <li data-page-node-id="sHk3FbBBFgAcN4GG4cMJr1">全本地运行，无云端依赖，隐私无忧</li>
+          <li data-page-node-id="GHRqFTaDnr3aAc1maWDmgE">646 种语言覆盖，远超 ElevenLabs</li>
+          <li data-page-node-id="BzmbWe81K1dwzNYmdgPU53">一条流水线打通：克隆→设计→配音→转录→有声书</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="wbcmSH8s1qlIMMaelrSVpN">
+        <div class="card-section-title" data-page-node-id="uffxlfG4xJxQata0k3BCVG">适用场景</div>
+        <div class="tags" data-page-node-id="Df3CCRVbD8Nj6KSFAdRRkr">
+          <span class="tag" data-page-node-id="9LL6QTgLDMIHsmouh11aWJ">语音克隆</span>
+          <span class="tag" data-page-node-id="O6XvVGhrWj6WSuNhGbU6nA">视频配音</span>
+          <span class="tag" data-page-node-id="n9njQpl6RqQ5MWSaUSS9T9">本地部署</span>
+          <span class="tag" data-page-node-id="ZbKOY8y3jh6pYCa9sbfCRr">多语言</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. affaan-m/ECC -->
+    <div class="card" data-page-node-id="k8Yv2Pu8NAl5AYMWMxo4rB">
+      <div class="card-rank" data-page-node-id="ATFyk9LuwpJfn85QdXjnyO">5</div>
+      <div class="card-title" data-page-node-id="rrmoxB3svCesdrDsn5ZCWF">
+        <a href="https://github.com/affaan-m/ECC" target="_blank" data-page-node-id="cYTjQURaJm25rPjXEPpQvt">affaan-m/ECC</a>
+        <span class="lang-tag" data-page-node-id="5SBcNUxJHxNclC5eZDoroj">JavaScript</span>
+      </div>
+      <div class="card-stats" data-page-node-id="7D72k9wE24tzlqIEhKBkDB">
+        <span class="stat" data-page-node-id="96jtjBAB4meC4Q5FeA4d0A">⭐ <span class="stat-num" data-page-node-id="3ZRp9QXLxjjQ9WCdq5g5Vm">251,322</span></span>
+        <span class="stat" data-page-node-id="NDLzH6hZn60OTkfZCVuQva">📈 本周 <span class="stat-weekly" data-page-node-id="EUCo1LgfCcv1wGYnb17Tzu">+6,394</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="ixfzDF9b2nkPChPmm5KPKE">Agent Harness 性能优化系统——为 Claude Code、Codex、OpenCode、Cursor 等提供技能、本能、记忆、安全与研究优先开发支持。</div>
+      <div class="card-section" data-page-node-id="PFnE5EL9WOHaH1XzCjACx6">
+        <div class="card-section-title" data-page-node-id="p1dIl0FmeCIGVQkHEyCtp0">核心功能</div>
+        <ul data-page-node-id="cmnYLjCLjjxhC8tCUprTXH">
+          <li data-page-node-id="dk6QIFfmQonTagbKcjLc4T">统一 Harness 优化层，让多种 AI 编码 Agent 性能飞跃</li>
+          <li data-page-node-id="vSN8a2dmTfM6dArtRo0ybm">集成技能库 + 本能决策 + 长期记忆 + 安全扫描</li>
+          <li data-page-node-id="0SfF81zshbigiMAsGl0xGJ">强调"研究优先"开发流程，避免凭感觉迭代</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="CvSGBIv40r2Phqu4nqYrdX">
+        <div class="card-section-title" data-page-node-id="vxcr0lLNgrbmq8zMkaUsmc">适用场景</div>
+        <div class="tags" data-page-node-id="8BmIBeWiETrJH1VLGGiadJ">
+          <span class="tag" data-page-node-id="LIH7I5hDI3s07MFslR59Bi">Agent Harness</span>
+          <span class="tag" data-page-node-id="U5vIH4eRNGnEVBhACKEh6E">Claude Code</span>
+          <span class="tag" data-page-node-id="XaDG5wYEvAL6ppZBEwx5on">编码效率</span>
+          <span class="tag" data-page-node-id="dYEgUb9dyWPK2a8qAuYP0R">安全增强</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. K-Dense-AI/scientific-agent-skills -->
+    <div class="card" data-page-node-id="PHSzrdAhqIiFqjMcJEIIkb">
+      <div class="card-rank" data-page-node-id="kRk2J3NSheBpi0P0vmPa04">6</div>
+      <div class="card-title" data-page-node-id="IU1K5DXJwsZuRxI9kTSMLh">
+        <a href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank" data-page-node-id="0KvnLExndTejYvYMy3rpUS">K-Dense-AI/scientific-agent-skills</a>
+        <span class="lang-tag" data-page-node-id="HSYdCnZ6jX8uHbFu4H0BsD">Python</span>
+      </div>
+      <div class="card-stats" data-page-node-id="rRLAyQko9LxwIGzOOGqHzX">
+        <span class="stat" data-page-node-id="ns1XGLBsRbTGF8Bkn48q7u">⭐ <span class="stat-num" data-page-node-id="td0rnWyx9deXWXZSbGEYMB">43,288</span></span>
+        <span class="stat" data-page-node-id="9kHiLdlKPW4Vf1CsqrS9XV">📈 本周 <span class="stat-weekly" data-page-node-id="Hfs7coDJkcWG5iy4KXvb3q">+4,718</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="WHmPCq18ZcZlYR3SLwdoU6">把任何 AI Agent 武装成 AI 科学家——165 个验证技能 + 100+ 科学数据库，覆盖生物/化学/医学/药物发现。</div>
+      <div class="card-section" data-page-node-id="koVGm03MIDeULsmpjYEO4Z">
+        <div class="card-section-title" data-page-node-id="9hm6TA4wcK8Nm8XNMH4ZPe">核心功能</div>
+        <ul data-page-node-id="axgQ2MYaP7XO3nZxDy2Pj5">
+          <li data-page-node-id="LI744YJ8pc99JYvgCJgC0b">165 个开箱即用、经过验证的科学技能模块</li>
+          <li data-page-node-id="EECQAwHDK3xQFzLS1LOLVK">100+ 科学数据库直连，覆盖生/化/医/药</li>
+          <li data-page-node-id="Wj3SN2F8rp8yf6K20FB8yg">兼容 Cursor、Claude Code、Codex、Pi、Antigravity 等主流 Agent</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="fPARMfBQOry7OCcS5H2TIO">
+        <div class="card-section-title" data-page-node-id="hvUXrgPD4GlyQZEC0dT4Ce">适用场景</div>
+        <div class="tags" data-page-node-id="8bN7TAF3FeWHHoYApBZ3JA">
+          <span class="tag" data-page-node-id="wA3NjrjLdZaMM6NDyRjhDC">科研人员</span>
+          <span class="tag" data-page-node-id="RDXAAGJCAPge4lxCQaJcCd">AI for Science</span>
+          <span class="tag" data-page-node-id="kk7Al4guvDyfCxIcIXXxVZ">药物发现</span>
+          <span class="tag" data-page-node-id="IiyFGgstS4Hyq1Vn8uoLGC">生物信息</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. jingyaogong/minimind -->
+    <div class="card" data-page-node-id="FDeUg58aHGAVUarYlEt0Y8">
+      <div class="card-rank" data-page-node-id="Mx8pJZIDLGjB2gReqw5zxu">7</div>
+      <div class="card-title" data-page-node-id="0EIa2wR8n9baMckW5AGT24">
+        <a href="https://github.com/jingyaogong/minimind" target="_blank" data-page-node-id="fSlZkmNxl3vdE4f9E22iDc">jingyaogong/minimind</a>
+        <span class="lang-tag" data-page-node-id="8QA0fDlFxoa3KriEVfeepH">Python</span>
+      </div>
+      <div class="card-stats" data-page-node-id="Me6HDTfADt5BXkWna8dgRH">
+        <span class="stat" data-page-node-id="9ippDALFZdgEyoTJPHxvaS">⭐ <span class="stat-num" data-page-node-id="2a8pTiH4uZfM84enbWMCZu">59,149</span></span>
+        <span class="stat" data-page-node-id="kFX6axYwWwyhDwHfXNDKuo">📈 本周 <span class="stat-weekly" data-page-node-id="zfRYUAjW0P0sW99tcwZ4Ty">+3,816</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="Wbs7FpisptKFBSFeN98qip">2 小时训练一个 64M 参数的 LLM——从零到能对话的微型大模型教学项目，把大模型"拆给你看"。</div>
+      <div class="card-section" data-page-node-id="reXThCjr1ASAYDtSHFqYFg">
+        <div class="card-section-title" data-page-node-id="Vb5WZBIcHqjVaog2PIGsXo">核心功能</div>
+        <ul data-page-node-id="61l5ZxbQsXJ41wdayOGWVx">
+          <li data-page-node-id="wDkVFEjautCsSwmZUKqHuE">极致轻量：64M 参数，2 小时单卡可训</li>
+          <li data-page-node-id="xIeAH0ZQYCrj0CVJcQlNTx">完整训练流水线：数据→预训练→微调→RLHF</li>
+          <li data-page-node-id="ptsGutgzts4EbULD5HdS7d">教学导向：每个组件都拆开讲透，适合入门</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="ic0McxQCjBo9e9xkCnzG4N">
+        <div class="card-section-title" data-page-node-id="lTKyFZ4iARBfxwECYH2spL">适用场景</div>
+        <div class="tags" data-page-node-id="dfP1DejaKldhkPkXA62pXX">
+          <span class="tag" data-page-node-id="vFYuqxIdLLo1w9rzzqLBoG">LLM 入门</span>
+          <span class="tag" data-page-node-id="MS0EpCTtsMuwMiNlEN8prr">教学项目</span>
+          <span class="tag" data-page-node-id="HKEqSyRO7FsC73AH3iEhTC">小模型训练</span>
+          <span class="tag" data-page-node-id="nTE3QWKvbWTLMK6xezvtAx">资源受限环境</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. google-research/timesfm -->
+    <div class="card" data-page-node-id="ak7bGf3T75LyfjolFwgYhI">
+      <div class="card-rank" data-page-node-id="7PNLwj4L8mUVskecWTN6G6">8</div>
+      <div class="card-title" data-page-node-id="L8fHeejdQO17iG79lZUJuE">
+        <a href="https://github.com/google-research/timesfm" target="_blank" data-page-node-id="IXKbsjFoNyK97BTDmEtMCW">google-research/timesfm</a>
+        <span class="lang-tag" data-page-node-id="AkHiqr4EcTo042wYSQcbt8">Python</span>
+      </div>
+      <div class="card-stats" data-page-node-id="om00KBuj9lLVl5HSYo8uDg">
+        <span class="stat" data-page-node-id="imCtNPsnjUEADOh36hbbCG">⭐ <span class="stat-num" data-page-node-id="WxKFe4fPQldsisCl21LATK">31,647</span></span>
+        <span class="stat" data-page-node-id="5eRS3GRvVmFZuudAJnsnUF">📈 本周 <span class="stat-weekly" data-page-node-id="OZyUF0UAJk8X0alpJzdsiB">+3,203</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="u4XTQLe6mZj2kgQcuW3WI5">Google Research 开源的时序基础模型——零样本时序预测，比传统统计模型更强、比专用深度学习更通用。</div>
+      <div class="card-section" data-page-node-id="sM2HKYKx8Ha5r4us9Kn4Fp">
+        <div class="card-section-title" data-page-node-id="gv6x4KLBFWESO5ayTToEbW">核心功能</div>
+        <ul data-page-node-id="7IJYJHLSTnaTUpCcQYHtkx">
+          <li data-page-node-id="GmudhMFQdvd22OQZ4OC8TN">预训练时序基础模型，支持零样本预测</li>
+          <li data-page-node-id="opFdVsISJewgVgFAWt0kup">跨领域适用：金融、销量、流量、IoT 传感器等</li>
+          <li data-page-node-id="FzWfFgkwvHVuDKnyoYojdh">Google Research 官方出品，质量与论文背书</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="lLfY2WixOYOHXyNHZQLVvB">
+        <div class="card-section-title" data-page-node-id="M3bk27dxMAbzWZaOC1O61g">适用场景</div>
+        <div class="tags" data-page-node-id="70QIrG2VtSNBkwdoLtNFTc">
+          <span class="tag" data-page-node-id="HGygE4vYHeM9VE6UBcr38E">时序预测</span>
+          <span class="tag" data-page-node-id="2ejOaHWVkPHnNveaMiYUNP">金融分析</span>
+          <span class="tag" data-page-node-id="D9zqZ4dwIRlywymFNwZ4ya">业务监控</span>
+          <span class="tag" data-page-node-id="1TDAmoBjsMrrCdDIc4Dz72">零样本学习</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. browser-use/video-use -->
+    <div class="card" data-page-node-id="CotuHg2M0z74b1V62KHC8V">
+      <div class="card-rank" data-page-node-id="OOSH6OiEcs7zhsSLLFkMTc">9</div>
+      <div class="card-title" data-page-node-id="3A1gxGTQPpePL81hC0jGnf">
+        <a href="https://github.com/browser-use/video-use" target="_blank" data-page-node-id="YgHYGpHWHA7yyCPmJu7Aor">browser-use/video-use</a>
+        <span class="lang-tag" data-page-node-id="XgfRO9KiFmsWMyr0rPxU3z">Python</span>
+      </div>
+      <div class="card-stats" data-page-node-id="paAi2K2p8Vp1Zw7yiHOPIq">
+        <span class="stat" data-page-node-id="JktvIzdcD6FHigOzRrWSw8">⭐ <span class="stat-num" data-page-node-id="V7oIc2aG507dhP8VHUt0z2">24,259</span></span>
+        <span class="stat" data-page-node-id="MvkXCD0ECMn5HjhNVO9XkK">📈 本周 <span class="stat-weekly" data-page-node-id="drHayN7wzHCbWZ8X3Nt8eI">+2,642</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="HdJhi4Ar2bMSUxAxiQjynW">让 coding agent 直接编辑视频——自然语言驱动剪辑/拼接/特效，AI 视频创作进入"对话式"阶段。</div>
+      <div class="card-section" data-page-node-id="rl6Ml3y39xD8MWxd0z2LO0">
+        <div class="card-section-title" data-page-node-id="co7PvH6pbzeplZYZytkgkF">核心功能</div>
+        <ul data-page-node-id="G5f2Z1llBSb3xpjDM4g0iw">
+          <li data-page-node-id="NheHe008ZNcDb8c1kpVBIR">Coding agent 与视频编辑的桥梁，自然语言驱动剪辑</li>
+          <li data-page-node-id="ZaB0Cq2XWfZrXqDymznpGA">browser-use 团队出品，浏览器自动化基因</li>
+          <li data-page-node-id="29uOb57UxJYbJWy3T1RvDY">适合 Agent 工作流嵌入的轻量视频操作</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="5wHRZL5Gl9N4LG7eO5DvlE">
+        <div class="card-section-title" data-page-node-id="PLoRHvHIfNHsmsDDMLD1OF">适用场景</div>
+        <div class="tags" data-page-node-id="TXM1usKhwcpPTVDS4bvGY4">
+          <span class="tag" data-page-node-id="n7FLNSDh26WXf9CMDb9vvQ">AI 视频编辑</span>
+          <span class="tag" data-page-node-id="EDGW3cIMHcioDExzKPCPJy">Coding Agent</span>
+          <span class="tag" data-page-node-id="kLmjjMByK6fgbxQzSGrB5k">内容生产</span>
+          <span class="tag" data-page-node-id="wM0XCSKY0ttUGu6Jn5ls7e">browser-use 生态</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. humanlayer/skills -->
+    <div class="card" data-page-node-id="k6sqJnE6IRPkkNyhuOfYI4">
+      <div class="card-rank" data-page-node-id="FRGRBtXwoUiieOGTuLFp7T">10</div>
+      <div class="card-title" data-page-node-id="0PK2Cq8g5YDfDIkCjLCl1O">
+        <a href="https://github.com/humanlayer/skills" target="_blank" data-page-node-id="P5WFGHlNDFuBQUp52OtC94">humanlayer/skills</a>
+        <span class="lang-tag" data-page-node-id="bWShfkbvpF7ch1X3ofJk7Q">TypeScript</span>
+      </div>
+      <div class="card-stats" data-page-node-id="VMCcUZbIWwfQnIVFFEpHnS">
+        <span class="stat" data-page-node-id="vJrk2HTGifBf5DoRGQj08m">⭐ <span class="stat-num" data-page-node-id="nPHze50CvFiW2ntZhbIrV0">3,145</span></span>
+        <span class="stat" data-page-node-id="zYPRiMgRS6UddQand0M6qA">📈 本周 <span class="stat-weekly" data-page-node-id="6CKV3o7I4aaIVDiWZHhGdk">+2,432</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="fJd1FWpxHdcZPDwFyx49nl">HumanLayer 出品的 Agent Skills 集合——人机协同框架下的高质量 Agent 技能库，覆盖编码、协作与决策场景。</div>
+      <div class="card-section" data-page-node-id="lwDP7CCX2rajMCaQYDyq8m">
+        <div class="card-section-title" data-page-node-id="vFqH77ODPnaO3zxD1vM5Do">核心功能</div>
+        <ul data-page-node-id="V4ysJ3yzQWLhWG32GAWeSY">
+          <li data-page-node-id="EiQxiXvoS4LBQWulwE2zAh">聚焦"人 + Agent"协同场景，非纯自动化</li>
+          <li data-page-node-id="WrtFtlhkpD97tX7d2tfUqS">技能库经过实战打磨，质量有保障</li>
+          <li data-page-node-id="lUXBq1Fm9KwQzuodwlY45S">与 Claude Code 等主流 Agent 深度集成</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="1nFjapSh2UkhpoXHeVHgLQ">
+        <div class="card-section-title" data-page-node-id="ELGvWw0n6E4WBMiO4myDMj">适用场景</div>
+        <div class="tags" data-page-node-id="wyW4w3OsWgWfnt4mYKmf5g">
+          <span class="tag" data-page-node-id="Nm4eZjR3nGaWwoGj4Neb1s">人机协同</span>
+          <span class="tag" data-page-node-id="8l5iO2GGgWJr8kxatYT8dd">Agent Skills</span>
+          <span class="tag" data-page-node-id="fIjl6q5xGr6vOyOFwOcjg1">企业工作流</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. Imbad0202/academic-research-skills -->
+    <div class="card" data-page-node-id="tWCCfnnJyxtS0vgziU614M">
+      <div class="card-rank" data-page-node-id="cI3cFUwespFaD0vzd8Si9n">11</div>
+      <div class="card-title" data-page-node-id="UcioxFgVAHJS4NBwILFu6Q">
+        <a href="https://github.com/Imbad0202/academic-research-skills" target="_blank" data-page-node-id="YRa4Y2ISOU786yqogBjDt2">Imbad0202/academic-research-skills</a>
+        <span class="lang-tag" data-page-node-id="LzLlJLedjctdJ5wjtyCa6I">Python</span>
+      </div>
+      <div class="card-stats" data-page-node-id="Wq4C3WUIBzVR5FuZmjDGs2">
+        <span class="stat" data-page-node-id="rGEWlvvIOeprP57EuNQ99R">⭐ <span class="stat-num" data-page-node-id="nSlud1YWBlC91j3K9l915X">46,571</span></span>
+        <span class="stat" data-page-node-id="am5OT71c5QKYDHaTlfCGCu">📈 本周 <span class="stat-weekly" data-page-node-id="GYEmGXwMYHRHYm55A6sO0a">+2,334</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="IGyXJvA17UuEC3BSAEamMT">Claude Code 学术研究技能集——research → write → review → revise → finalize，端到端覆盖论文产出全流程。</div>
+      <div class="card-section" data-page-node-id="q8JkwFlFC6iWuhLGwn6MsA">
+        <div class="card-section-title" data-page-node-id="PqMaaOm4sP4lbgpM1tyOKp">核心功能</div>
+        <ul data-page-node-id="szFE3C7fKivQyFQtSLOSKM">
+          <li data-page-node-id="CZMxsUMRGBV6JvyQt2bp7u">全流程覆盖：调研→写作→评审→修改→定稿</li>
+          <li data-page-node-id="WzTomR2SmDQBMooSIUlnsf">面向 Claude Code 优化，开箱即用</li>
+          <li data-page-node-id="9ZgYzBk1CEidKICPGPne3M">学术规范内建，引用/格式/术语自动处理</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="4h5txPA9LR0xtXroWf6Cee">
+        <div class="card-section-title" data-page-node-id="Iz5eKGeeJuJFsAtVBA8Ugd">适用场景</div>
+        <div class="tags" data-page-node-id="ZYaC0jZDGJnFgjjg7jVSZL">
+          <span class="tag" data-page-node-id="RT1HBYuwXSR6TWXDuHmEWA">学术写作</span>
+          <span class="tag" data-page-node-id="BlSjaZsZpyrVbGHHqLuICx">Claude Code</span>
+          <span class="tag" data-page-node-id="RhxfvURnpPPeJ0kyzyy8FL">论文产出</span>
+          <span class="tag" data-page-node-id="bLbL5Ipzk0b7XAdbiUXSlx">科研助手</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. rtk-ai/rtk -->
+    <div class="card" data-page-node-id="jEyBPIf124nQOAvMNEN3VH">
+      <div class="card-rank" data-page-node-id="AJ3SCZNe3jNhofdxZfXuH9">12</div>
+      <div class="card-title" data-page-node-id="nn9PTBCEBjZaFjdZdKimZc">
+        <a href="https://github.com/rtk-ai/rtk" target="_blank" data-page-node-id="674PRH4SoIVtSdBq2SMTw9">rtk-ai/rtk</a>
+        <span class="lang-tag" data-page-node-id="AyG8gyZUBehylTeCb7XrFM">Rust</span>
+      </div>
+      <div class="card-stats" data-page-node-id="Pc1OJnCOTv89JulcNm4Yq8">
+        <span class="stat" data-page-node-id="glCowM0V8jcCb3HZXf15Ht">⭐ <span class="stat-num" data-page-node-id="5jfegyZumOVEeFZaYgABBn">79,118</span></span>
+        <span class="stat" data-page-node-id="ME9SB9YS1is8VgFY6udrD1">📈 本周 <span class="stat-weekly" data-page-node-id="X11AxoZicSykDEwqs7VNcY">+1,318</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="dvKEjNNGLSi9CziI6Kj6qb">CLI 代理神器——通过代理常见开发命令，把 LLM token 消耗砍掉 60-90%，单 Rust 二进制、零依赖。</div>
+      <div class="card-section" data-page-node-id="uiuP4dzlLqPq68D2RFQH5A">
+        <div class="card-section-title" data-page-node-id="wWJWhNGF6PaQEAq56hf5Jn">核心功能</div>
+        <ul data-page-node-id="uTwORUG9KtibhtBQGb4lT0">
+          <li data-page-node-id="GkmWGAvOfulYtmFgMwgVzl">拦截常见 dev 命令（git/grep/cat 等）并压缩输出</li>
+          <li data-page-node-id="yrS8Wfj66OUrdkW6ASOvZx">实测 token 消耗降低 60-90%，降本明显</li>
+          <li data-page-node-id="Lt5qE8FhdQ3rzmp3uR8oKF">单文件 Rust 静态二进制，无运行时依赖</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="GCLM7XomRG2d48nCVZmO6i">
+        <div class="card-section-title" data-page-node-id="kUqUik1kmpKootre4fHUXT">适用场景</div>
+        <div class="tags" data-page-node-id="L4axo2I5ujAfSFD6xcvgIR">
+          <span class="tag" data-page-node-id="wG1C9yYODpqukkOfYJHYyz">LLM 成本优化</span>
+          <span class="tag" data-page-node-id="TAWIKyk5qube5LufsjiMyi">CLI 工具</span>
+          <span class="tag" data-page-node-id="kiv15BCqlVCEM0lhumHNVa">Rust 性能</span>
+          <span class="tag" data-page-node-id="mnwNcWY5DhfNbtiYdCoMPA">开发降本</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13. magnitudedev/magnitude -->
+    <div class="card" data-page-node-id="Y3TJpFTy5awSUQsaTsLvqf">
+      <div class="card-rank" data-page-node-id="tg49D3MwpMWhy6sBZf345H">13</div>
+      <div class="card-title" data-page-node-id="Kpe0M4ejVqUrAv7WDYkRl5">
+        <a href="https://github.com/magnitudedev/magnitude" target="_blank" data-page-node-id="tYCnZCX2r8eO8C0KCG5CnD">magnitudedev/magnitude</a>
+        <span class="lang-tag" data-page-node-id="o588n5Cwj8UDabviP1qwFM">TypeScript</span>
+      </div>
+      <div class="card-stats" data-page-node-id="b4djMqQORAoHTaZBZUiOtL">
+        <span class="stat" data-page-node-id="RScQgGhI5Th8zUAmOsvJIR">⭐ <span class="stat-num" data-page-node-id="xyaQ4ZdmOhG5D8nLyHPNiF">3,667</span></span>
+        <span class="stat" data-page-node-id="Zm1q6mpR1r4LRLC8AT3Spl">📈 本周 <span class="stat-weekly" data-page-node-id="1QreRDHLSxlqG9s5pz6OET">+1,961</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="Ljk8PIeYIgOkxyhEHoNLd3">本地 LLM 推理服务器——按你的硬件挑最佳模型，直接对接你已有的 Agent：Pi、OpenCode、Hermes、OpenClaw、Codex、Claude Code、Oh My Pi、Cline。</div>
+      <div class="card-section" data-page-node-id="FHJtL3jA85pWvEzAXLsiFe">
+        <div class="card-section-title" data-page-node-id="FslCrsOBFfTGc1ZH3wmmG5">核心功能</div>
+        <ul data-page-node-id="OFhVX4rZ4JKRvk60cxvun9">
+          <li data-page-node-id="ufa33y56dcSDvC6KpG0lXB">开源推理服务器，按硬件自动选模型</li>
+          <li data-page-node-id="D1juIIUi19df7dgzVOhUlk">原生兼容 8 款主流 Agent，开箱即用</li>
+          <li data-page-node-id="xwLW5LYDRXrGGTYUa6L0NM">本地运行，数据不出本机</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="tfV4LBUV4wGcgVqj9II9I8">
+        <div class="card-section-title" data-page-node-id="w73zmvqu8cotsYTo0rfoPW">适用场景</div>
+        <div class="tags" data-page-node-id="B7ZQDj9AIge7yAWNNFV05M">
+          <span class="tag" data-page-node-id="j0zgDFbkwQbnSFqbgY4mXW">本地推理</span>
+          <span class="tag" data-page-node-id="Bno0ekrhc2OB6EaFRuna2b">Agent 集成</span>
+          <span class="tag" data-page-node-id="W8mGkJe5BTQ3xM89CoVeTl">隐私优先</span>
+          <span class="tag" data-page-node-id="MCqiQf6honWLle5uSQmCoT">多 Agent 兼容</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 14. Gitlawb/openclaude -->
+    <div class="card" data-page-node-id="jDQ12cGtXsHAgnqfmPEd1v">
+      <div class="card-rank" data-page-node-id="520aF89BdiZCKpLoS0T1qi">14</div>
+      <div class="card-title" data-page-node-id="whGwVmHZXk9oWAP30RdAAf">
+        <a href="https://github.com/Gitlawb/openclaude" target="_blank" data-page-node-id="GHKgyUAxcutyK3ZdRx5Rx4">Gitlawb/openclaude</a>
+        <span class="lang-tag" data-page-node-id="0OZH2KCFtlGk8C7O6FrM7k">TypeScript</span>
+      </div>
+      <div class="card-stats" data-page-node-id="027MG8lZC9AVedFnbCD5np">
+        <span class="stat" data-page-node-id="a7Tpknu82WRmX1cvoQ1Wv8">⭐ <span class="stat-num" data-page-node-id="M0MtZPZOh4BgJJqvU690zE">32,839</span></span>
+        <span class="stat" data-page-node-id="BzEYs69Mx6urnJhyvXWyCi">📈 本周 <span class="stat-weekly" data-page-node-id="GvfADyDDnAtnuXbdLnjqru">+1,944</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="rdXvV2DsTmPfn0vO9jZavR">Runs anywhere. Uses anything.——开源 Claude 兼容层，本地/任意模型/任意场景都能跑 Claude 工作流。</div>
+      <div class="card-section" data-page-node-id="QhuJcqU6VPFmjoz2Ouhs9T">
+        <div class="card-section-title" data-page-node-id="nIKcfIPTdK2ns8OQsEOLg2">核心功能</div>
+        <ul data-page-node-id="Ws8JPi399s0WqcVTr0UWb6">
+          <li data-page-node-id="8itzvY6S0E0H1pGed84JTo">Claude 协议/工具调用兼容层，迁移零成本</li>
+          <li data-page-node-id="iJGlOXWll48ikfFoR75lWi">支持任意后端模型，灵活替换</li>
+          <li data-page-node-id="nYgAdTwMcgyxb65QOwz0hj">面向多环境部署：服务器、桌面、容器</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="wlQF5ufqQr136tG94QGQAf">
+        <div class="card-section-title" data-page-node-id="Mm4yLXmb7GDKnMMGDU759G">适用场景</div>
+        <div class="tags" data-page-node-id="axdVUVg6pfJLOhFfV3xElU">
+          <span class="tag" data-page-node-id="gro4uQnSbGANqaZ7gPU7HZ">Claude 兼容</span>
+          <span class="tag" data-page-node-id="9ecNFoFABXgFkmrthjXFYc">模型替换</span>
+          <span class="tag" data-page-node-id="2eeqEa0ZPtvCB9iwAyTsRr">本地部署</span>
+          <span class="tag" data-page-node-id="GFPXz6JnApU0P6q6ssiPKt">工作流迁移</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 15. tashfeenahmed/freellmapi -->
+    <div class="card" data-page-node-id="7i6b98rVXmYwBQk5fZdVlC">
+      <div class="card-rank" data-page-node-id="SYFEE8yvOCgQIDnuo2mxMR">15</div>
+      <div class="card-title" data-page-node-id="ck4f5L7sKeNzkp9cZjywpQ">
+        <a href="https://github.com/tashfeenahmed/freellmapi" target="_blank" data-page-node-id="IYyQ1fKexlz5g5udA1LvAA">tashfeenahmed/freellmapi</a>
+        <span class="lang-tag" data-page-node-id="h00BN9lmXqFI2vepcwcavL">TypeScript</span>
+      </div>
+      <div class="card-stats" data-page-node-id="FIWklydDYX9pWg7KDLXGq7">
+        <span class="stat" data-page-node-id="qcv8DVAcjEOS8G0awtDBml">⭐ <span class="stat-num" data-page-node-id="EpKoaDnnDNEsB7KT0Dk1EP">24,615</span></span>
+        <span class="stat" data-page-node-id="UneBvemlal60aGEpGIEfQZ">📈 本周 <span class="stat-weekly" data-page-node-id="EB0lurgCN1LhP3cp3EoM3d">+2,038</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="gpLtZxpuU6ZBV20mfZnrGg">一个 /v1 端点聚合 34 家免费 LLM 提供商、635 个模型端点——7.4B tokens/月免费额度，智能路由、自动 failover。</div>
+      <div class="card-section" data-page-node-id="jA0OSxpRxEOwaO05J2hBWU">
+        <div class="card-section-title" data-page-node-id="OF7FvsZJa4OU479FQ9jkBQ">核心功能</div>
+        <ul data-page-node-id="jTy0Nae7LAFhdRcUceWT61">
+          <li data-page-node-id="We1r5myuaXYtWASuMTOU80">OpenAI 兼容单端点，聚合 34 家免费提供商、635 个模型</li>
+          <li data-page-node-id="rUnVCgtXhn0ahWakn6CjzA">智能路由 + 自动 failover，单一 API 完成负载均衡</li>
+          <li data-page-node-id="zk63BqX2GeCPJQMCUVcKcF">支持任意 OpenAI 兼容自定义端点，密钥加密</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="bb29ir5PNo09ukvzNP5N2a">
+        <div class="card-section-title" data-page-node-id="teCKPdjW4qyGRdGSEpwk3j">适用场景</div>
+        <div class="tags" data-page-node-id="OyJsgrCgHF2cOil7xIYTSy">
+          <span class="tag" data-page-node-id="HItaAmfUOfOAiUxEKAy5hf">LLM 路由</span>
+          <span class="tag" data-page-node-id="ZRcRSBvXLKQvxVg0ZJB5R8">免费 API</span>
+          <span class="tag" data-page-node-id="kQGPMBwAfPRn8bbzuXvQej">OpenAI 兼容</span>
+          <span class="tag" data-page-node-id="vtSubVnB8GqU5MjG1anEki">个人实验</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 16. handsomestWei/patent-disclosure-skill -->
+    <div class="card" data-page-node-id="Gn7m7zVdoaUWVl7nJGgRKj">
+      <div class="card-rank" data-page-node-id="rphQwCQbDoClNzZmSiZ6FT">16</div>
+      <div class="card-title" data-page-node-id="fOni00jaBRKuBq4qyhL1Tx">
+        <a href="https://github.com/handsomestWei/patent-disclosure-skill" target="_blank" data-page-node-id="tETPCGmLlnZFFtZqz1Gd3j">handsomestWei/patent-disclosure-skill</a>
+        <span class="lang-tag" data-page-node-id="6N4E5fXZszaEJdBTuV4Ss0">Python</span>
+      </div>
+      <div class="card-stats" data-page-node-id="JAnHNTxRYJgws9f9obQv80">
+        <span class="stat" data-page-node-id="XimqnTWD7T9R1rjyetHdy3">⭐ <span class="stat-num" data-page-node-id="CqHd4Mx4e3JrDsoWUgfLlx">7,786</span></span>
+        <span class="stat" data-page-node-id="Pcqd1FikNvrTP7SZ80go1z">📈 本周 <span class="stat-weekly" data-page-node-id="g2Rl2iX7pbJgV5sCi1rswe">+2,093</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="HAxvv5BhPEvzKG9C6b4Jnl">中国专利 .skill——专利点挖掘 + 交底书编写（发明/实用/外观），通俗解读 + 政策动向嗅探 + 审查答复辅助。</div>
+      <div class="card-section" data-page-node-id="cstlzjiArdxc8gshPIp3qz">
+        <div class="card-section-title" data-page-node-id="fy5KnGe3OFw4ibl5lJ3HAU">核心功能</div>
+        <ul data-page-node-id="KxBTQA8n56wbCfArg0vchn">
+          <li data-page-node-id="hPePPPS8hm2BV5Q0U73uxI">专利点挖掘：从技术方案自动识别可专利点</li>
+          <li data-page-node-id="tQ48YiP6hYshcQrQFRfEwB">三类交底书自动生成：发明、实用新型、外观</li>
+          <li data-page-node-id="T3EYA5gknTDfNSUNw1QYFK">政策动向嗅探 + 审查答复辅助，本土化贴合中国实务</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="qr7nf3qNIrM9XnaFqsDaje">
+        <div class="card-section-title" data-page-node-id="HRSviOpe65BkNyy9tmly7i">适用场景</div>
+        <div class="tags" data-page-node-id="rZh63hd1BZethxpj4DvRob">
+          <span class="tag" data-page-node-id="1JnukiUmrSAEXfENQj1nPu">专利代理</span>
+          <span class="tag" data-page-node-id="HjxCAlTBR8sRwMHhb8JPdm">企业 IP</span>
+          <span class="tag" data-page-node-id="40Ct7uO575VE6Abv4jow1u">中国本土化</span>
+          <span class="tag" data-page-node-id="T7Y1fsiBYDgGT2P0ctoRBJ">审查答复</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 17. NVIDIA/SkillSpector -->
+    <div class="card" data-page-node-id="ZSWDSMWun0zGw1KVTfyiGX">
+      <div class="card-rank" data-page-node-id="KEZv2o8DwVDUlrAX1MD9xj">17</div>
+      <div class="card-title" data-page-node-id="NhBDaan5FAwsxSQRe7APqx">
+        <a href="https://github.com/NVIDIA/SkillSpector" target="_blank" data-page-node-id="XwkzeEAeJjW0qH9vC0gNHm">NVIDIA/SkillSpector</a>
+        <span class="lang-tag" data-page-node-id="O28LFzj0Q5MI0vIayMHmeL">Python</span>
+      </div>
+      <div class="card-stats" data-page-node-id="Y3vGaYP08AKH1mnupkskII">
+        <span class="stat" data-page-node-id="dDtLDEZFFBtOcqzJRjP9AF">⭐ <span class="stat-num" data-page-node-id="zOgUsTBXTdkgjJJE4o3X74">16,412</span></span>
+        <span class="stat" data-page-node-id="aJbLEFvmR49l1GrGH2DEnt">📈 本周 <span class="stat-weekly" data-page-node-id="KwhpabKTIpzWV4LIjS8xpb">+1,104</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="KYCuYYidyV8eZ35Rjq4dtn">Agent Skills 安全扫描器——在安装前检测 Claude Code / Codex / MCP 技能里的漏洞、恶意模式、prompt 注入、数据外泄、供应链风险。</div>
+      <div class="card-section" data-page-node-id="FwHEUGhlLykdVvjIbrRUD9">
+        <div class="card-section-title" data-page-node-id="rf7Yb4ALqcMbJQvYBTfF6c">核心功能</div>
+        <ul data-page-node-id="JyYAKTcjlx6phPLi3OeObH">
+          <li data-page-node-id="ZENtFDPhRmrb5MnupQEh6v">检测 prompt 注入、数据外泄、恶意模式</li>
+          <li data-page-node-id="sVc5LK785d7xk2djG9Sq0l">覆盖 Claude Code / Codex / MCP 三类技能</li>
+          <li data-page-node-id="cmkcklJmmq2ye4glu5fMhk">NVIDIA 出品，企业级安全背书</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="qIXrZe3Kjda4lArlgeN0yQ">
+        <div class="card-section-title" data-page-node-id="NSxfhEqRFOPj1Jt7OMtLFc">适用场景</div>
+        <div class="tags" data-page-node-id="pnFybg1QW4FGXXzF7GHNlv">
+          <span class="tag" data-page-node-id="HZLDq6OaGdGIY4QJLV0QEB">Agent 安全</span>
+          <span class="tag" data-page-node-id="WbPMYOoWGGF4NdW5etjJLm">技能审计</span>
+          <span class="tag" data-page-node-id="Wt62OnWHocBEAGSxMysCk0">企业合规</span>
+          <span class="tag" data-page-node-id="kALwf7cAzsj4OYuUmHR4g2">供应链</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 18. pollen-robotics/microduck_rl -->
+    <div class="card" data-page-node-id="UkXgz6EmwCtUFSCe7QJYzs">
+      <div class="card-rank" data-page-node-id="KhGdhq0ReBOPukIZzbwGjb">18</div>
+      <div class="card-title" data-page-node-id="UHrIcjuXqhHOpthRjQ6vVB">
+        <a href="https://github.com/pollen-robotics/microduck_rl" target="_blank" data-page-node-id="YofWHVQmaDAvV3X3MGE3oh">pollen-robotics/microduck_rl</a>
+        <span class="lang-tag" data-page-node-id="GsDwP9DrGX8DW1fSpVAoGS">Python</span>
+      </div>
+      <div class="card-stats" data-page-node-id="42QJTUfkYDx6Nb6fTOD2Oo">
+        <span class="stat" data-page-node-id="xowBCKDCL4wsk8Zmj0iNva">⭐ <span class="stat-num" data-page-node-id="dxIzOdy2GJFrsdv8xCTxzc">1,822</span></span>
+        <span class="stat" data-page-node-id="SF9MMxEWXpT6YBQxCuMTQl">📈 本周 <span class="stat-weekly" data-page-node-id="8OLWAq7uF2G7EI8E2BIzbx">+1,122</span></span>
+      </div>
+      <div class="card-summary" data-page-node-id="CJhCkVEVAXZ6V3eOQB0IR5">Microduck 的强化学习训练环境（mjlab）——把 MuJoCo 仿真机器人研究推到真实硬件的桥梁。</div>
+      <div class="card-section" data-page-node-id="p2dAh4FsEhNdc3GcgLqv3I">
+        <div class="card-section-title" data-page-node-id="bZIx4ajQHonYUOHtzPlXdi">核心功能</div>
+        <ul data-page-node-id="oDVdqSX2MzgiMNesAq3TbQ">
+          <li data-page-node-id="KlUBmP19YYuhzZma5UZGAP">基于 mjlab 的机器人 RL 训练环境</li>
+          <li data-page-node-id="hzuQ8V3Zq295cxz5IMBbBY">聚焦 Microduck 平台，仿真→真实无缝迁移</li>
+          <li data-page-node-id="oyE5yO1qyfQwN18tomlFDW">Pollen Robotics 出品，社区活跃</li>
+        </ul>
+      </div>
+      <div class="card-section" data-page-node-id="zjq6672HVzXSuj8OE2bFLt">
+        <div class="card-section-title" data-page-node-id="elXkgXAhIFniSdFzflOLoC">适用场景</div>
+        <div class="tags" data-page-node-id="aNOtDC3PqG9I18WjIsq3eo">
+          <span class="tag" data-page-node-id="NkTqlnCIfZCu0dJoJcTdAq">机器人</span>
+          <span class="tag" data-page-node-id="c3o0iGLw5LrFjB3bbCAn1J">强化学习</span>
+          <span class="tag" data-page-node-id="pqcPdtJE0RLG7cgc9YUXkP">Sim2Real</span>
+          <span class="tag" data-page-node-id="sCul7SMzHhKpImY27mQRCq">具身智能</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer" data-page-node-id="seFJwAr9AVCQlcWjIR3Oed">
+    <p data-page-node-id="y0tBeFKdRoeRTW2l9Cvd8k">📊 数据来源：<a href="https://github.com/trending" target="_blank" data-page-node-id="952mMqvMEqKqe3kdgs5D1p">GitHub Trending (Weekly)</a> · 抓取于 2026-09-07 09:30 GMT+8</p>
+    <p data-page-node-id="FYWuQOeg9F8SKunNf3dOxv">🤖 由 <strong data-page-node-id="4qPCUaTT4OGZpGgrM5GTIU">AI HOT</strong> Skill 自动抓取并整理 · 主题：Emerald Forest</p>
+  </div>
+
+</div>
+</body>
+</html>
