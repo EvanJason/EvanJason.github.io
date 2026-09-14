@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Trending AI/ML 本周热点项目</title>
+  <style>
+    :root {
+      --bg-start: #0f2027;
+      --bg-mid: #203a43;
+      --bg-end: #2c5364;
+      --card-bg: rgba(255, 255, 255, 0.93);
+      --card-bg-dark: rgba(30, 30, 35, 0.85);
+      --text: #1f2937;
+      --text-light: #6b7280;
+      --accent: #2563eb;
+      --tag-bg: #e5e7eb;
+      --tag-text: #374151;
+      --radius: 16px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --card-bg: var(--card-bg-dark);
+        --text: #f3f4f6;
+        --text-light: #9ca3af;
+        --tag-bg: #374151;
+        --tag-text: #e5e7eb;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-mid) 50%, var(--bg-end) 100%);
+      min-height: 100vh;
+      color: var(--text);
+      padding: 40px 20px;
+      background-attachment: fixed;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+    header .subtitle {
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+    header .time {
+      font-size: 0.85rem;
+      opacity: 0.7;
+      margin-top: 8px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      backdrop-filter: blur(10px);
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .repo-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .repo-name:hover {
+      text-decoration: underline;
+    }
+    .meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .lang {
+      font-size: 0.8rem;
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    .stars {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .weekly {
+      color: #dc2626;
+      font-weight: 700;
+      margin-left: 4px;
+    }
+    .summary {
+      color: var(--text);
+      line-height: 1.6;
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+    }
+    .features {
+      list-style: none;
+      margin-bottom: 14px;
+    }
+    .features li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 6px;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .features li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .scenarios {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tag {
+      font-size: 0.75rem;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.8rem;
+      margin-top: 30px;
+    }
+    @media (max-width: 640px) {
+      body { padding: 20px 14px; }
+      header h1 { font-size: 1.5rem; }
+      .card { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>GitHub Trending · AI/ML 本周热点项目</h1>
+      <p class="subtitle">精选 GitHub 本周 Trending 中人工智能、大模型与 Agent 相关的热门仓库</p>
+      <p class="time">数据抓取时间：2026-09-14 09:35 (GMT+8)</p>
+    </header>
+    <main>
+      
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/ayghri/i-have-adhd" target="_blank">ayghri/i-have-adhd</a>
+        <div class="meta">
+          <span class="lang">Python</span>
+          <span class="stars">⭐ 4.4w <span class="weekly">+1.7w 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">一个让 AI 编程助手输出更清爽、更适合 ADHD 思维模式的技能包，避免模型把答案埋没在长篇大论中。</p>
+      <ul class="features"><li>针对 ADHD 用户优化信息层级，快速定位关键结论</li><li>阻止模型过度发散，强制先说答案</li><li>可接入 Claude Code / Codex 等主流 AI 编码工作流</li></ul>
+      <div class="scenarios"><span class='tag'>AI 编程辅助</span><span class='tag'>信息降噪</span><span class='tag'>个人效率提升</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/bilawalsidhu/gods-eye-view" target="_blank">bilawalsidhu/gods-eye-view</a>
+        <div class="meta">
+          <span class="lang">JavaScript</span>
+          <span class="stars">⭐ 3.2w <span class="weekly">+1.3w 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">浏览器里的开源间谍卫星模拟器，可在逼真 3D 地球上查看实时开源空间情报数据。</p>
+      <ul class="features"><li>基于真实数据的光照/云层 3D 地球渲染</li><li>实时卫星轨道与遥感数据叠加</li><li>开源空间态势感知（SSA）可视化</li></ul>
+      <div class="scenarios"><span class='tag'>地理信息可视化</span><span class='tag'>空间态势教学</span><span class='tag'>遥感数据展示</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/tt-a1i/archify" target="_blank">tt-a1i/archify</a>
+        <div class="meta">
+          <span class="lang">JavaScript</span>
+          <span class="stars">⭐ 6.1w <span class="weekly">+1w 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">面向 AI Agent 的架构图生成技能，能输出可交互、带动效且可导出高清图的自包含 HTML 图表。</p>
+      <ul class="features"><li>自动生成架构/流程/时序/数据流/生命周期图</li><li>输出为单个 HTML 文件，无需额外依赖</li><li>支持动画与清晰导出</li></ul>
+      <div class="scenarios"><span class='tag'>系统设计文档</span><span class='tag'>技术评审</span><span class='tag'>AI 辅助架构师</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/DietrichGebert/ponytail" target="_blank">DietrichGebert/ponytail</a>
+        <div class="meta">
+          <span class="lang">JavaScript</span>
+          <span class="stars">⭐ 13.7w <span class="weekly">+8,444 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">让 AI Agent 像最懒的资深开发者一样思考，奉行"不写代码就是最好的代码"的极简哲学。</p>
+      <ul class="features"><li>内置少即是多的代码生成策略</li><li>优先复用现有方案、避免过度工程</li><li>支持 Claude Code / Codex / Cursor</li></ul>
+      <div class="scenarios"><span class='tag'>AI 代码生成</span><span class='tag'>代码精简</span><span class='tag'>降低技术债</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/affaan-m/ECC" target="_blank">affaan-m/ECC</a>
+        <div class="meta">
+          <span class="lang">JavaScript</span>
+          <span class="stars">⭐ 25.8w <span class="weekly">+7,264 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">为 Claude Code、Codex、Opencode、Cursor 等 AI 编码工具打造的性能优化与技能增强框架。</p>
+      <ul class="features"><li>技能（Skills）与直觉（Instincts）双轨扩展</li><li>会话记忆持久化与安全沙箱</li><li>研究优先的开发流程支持</li></ul>
+      <div class="scenarios"><span class='tag'>企业级 AI 编码</span><span class='tag'>Agent 能力增强</span><span class='tag'>安全合规开发</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/cathrynlavery/diagram-design" target="_blank">cathrynlavery/diagram-design</a>
+        <div class="meta">
+          <span class="lang">HTML</span>
+          <span class="stars">⭐ 3.9w <span class="weekly">+7,129 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">为 Claude Code、Codex 和 Pi 提供的 38 种编辑级图表模板库，输出自包含 HTML+SVG。</p>
+      <ul class="features"><li>覆盖 38 种专业编辑图表类型</li><li>纯 SVG 绘制，无 Mermaid 粗糙渲染</li><li>单个 HTML 文件即可嵌入展示</li></ul>
+      <div class="scenarios"><span class='tag'>技术文档配图</span><span class='tag'>演示文稿</span><span class='tag'>AI 生成图表</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/heygen-com/hyperframes" target="_blank">heygen-com/hyperframes</a>
+        <div class="meta">
+          <span class="lang">TypeScript</span>
+          <span class="stars">⭐ 5w <span class="weekly">+5,146 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">HeyGen 推出的"写 HTML 即可生成视频"的 Agent 优先视频渲染框架。</p>
+      <ul class="features"><li>用 HTML/CSS 编写视频内容并渲染成片</li><li>面向 Agent 自动化生成视频</li><li>与 HeyGen 数字人/视频能力可结合</li></ul>
+      <div class="scenarios"><span class='tag'>AI 生成视频</span><span class='tag'>营销素材自动化</span><span class='tag'>程序化视频</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/THU-MAIC/OpenMAIC" target="_blank">THU-MAIC/OpenMAIC</a>
+        <div class="meta">
+          <span class="lang">TypeScript</span>
+          <span class="stars">⭐ 3.6w <span class="weekly">+4,202 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">清华大学多智能体交互课堂，一键启动沉浸式多 Agent 学习体验。</p>
+      <ul class="features"><li>多 Agent 角色扮演与教学互动</li><li>一键部署的沉浸式课堂环境</li><li>面向 AI 教育与研究场景</li></ul>
+      <div class="scenarios"><span class='tag'>AI 教育</span><span class='tag'>多 Agent 教学</span><span class='tag'>智能课堂</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/obra/superpowers" target="_blank">obra/superpowers</a>
+        <div class="meta">
+          <span class="lang">Shell</span>
+          <span class="stars">⭐ 28.6w <span class="weekly">+4,068 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">一个经过验证的 Agentic 技能框架与软件开发方法论，强调在真实工程环境中落地。</p>
+      <ul class="features"><li>可复用的 Agentic 技能组织方式</li><li>与软件工程方法论结合</li><li>提供可直接执行的工作流模板</li></ul>
+      <div class="scenarios"><span class='tag'>Agent 工程化</span><span class='tag'>软件开发流程</span><span class='tag'>团队协作</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/blader/humanizer" target="_blank">blader/humanizer</a>
+        <div class="meta">
+          <span class="lang">Python</span>
+          <span class="stars">⭐ 4.8w <span class="weekly">+3,673 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">Agent 技能，用于识别并消除文本中的 AI 生成痕迹，让内容更像人写。</p>
+      <ul class="features"><li>自动检测 AI 写作特征</li><li>改写为更自然的人类表达</li><li>可集成到内容工作流</li></ul>
+      <div class="scenarios"><span class='tag'>内容去 AI 化</span><span class='tag'>营销文案</span><span class='tag'>学术/商业写作</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/coreyhaines31/marketingskills" target="_blank">coreyhaines31/marketingskills</a>
+        <div class="meta">
+          <span class="lang">JavaScript</span>
+          <span class="stars">⭐ 5w <span class="weekly">+2,678 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">为 Claude Code 和 AI Agent 设计的营销技能库，覆盖 CRO、文案、SEO、数据分析与增长工程。</p>
+      <ul class="features"><li>转化率优化（CRO）技能</li><li>SEO / 文案 / 数据分析增长工程</li><li>直接用于 AI 营销工作流</li></ul>
+      <div class="scenarios"><span class='tag'>AI 营销</span><span class='tag'>增长黑客</span><span class='tag'>自动化运营</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/mksglu/context-mode" target="_blank">mksglu/context-mode</a>
+        <div class="meta">
+          <span class="lang">TypeScript</span>
+          <span class="stars">⭐ 2.3w <span class="weekly">+2,102 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">面向 AI 编程 Agent 的上下文窗口优化方案，通过沙箱与路由降低 98% 工具输出噪音。</p>
+      <ul class="features"><li>工具输出沙箱化与 98% 降噪</li><li>跨 17 个平台的会话记忆持久化</li><li>MCP + Hooks 统一路由</li></ul>
+      <div class="scenarios"><span class='tag'>长上下文 AI 编程</span><span class='tag'>多平台 Agent 协同</span><span class='tag'>上下文管理</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/petergyang/no-ai-slop" target="_blank">petergyang/no-ai-slop</a>
+        <div class="meta">
+          <span class="lang">Python</span>
+          <span class="stars">⭐ 9,205 <span class="weekly">+1,668 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">一个识别并清除 20 多种 AI 写作套路的文本清理工具，提升内容原创感。</p>
+      <ul class="features"><li>内置 20+ AI 文本套路模式识别</li><li>可批量处理任意文本</li><li>规则明确、可扩展</li></ul>
+      <div class="scenarios"><span class='tag'>内容质量审核</span><span class='tag'>文案润色</span><span class='tag'>反 AI 套路</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/openai/skills" target="_blank">openai/skills</a>
+        <div class="meta">
+          <span class="lang">Python</span>
+          <span class="stars">⭐ 2.7w <span class="weekly">+1,622 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">OpenAI 官方为 Codex 提供的 Skills 目录，规范 Agent 可调用技能的标准写法。</p>
+      <ul class="features"><li>官方 Skills 定义模板与示例</li><li>与 Codex CLI / API 无缝集成</li><li>覆盖常见开发/分析任务</li></ul>
+      <div class="scenarios"><span class='tag'>Codex 技能开发</span><span class='tag'>Agent 工具编排</span><span class='tag'>OpenAI 生态</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/Tencent/WeKnora" target="_blank">Tencent/WeKnora</a>
+        <div class="meta">
+          <span class="lang">Go</span>
+          <span class="stars">⭐ 2.3w <span class="weekly">+1,302 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">腾讯开源的 LLM 知识平台，把原始文档一键转化为可查询 RAG、自主推理 Agent 和自维护 Wiki。</p>
+      <ul class="features"><li>文档到 RAG 的一键转换</li><li>内置自主推理 Agent</li><li>自动生成与维护 Wiki</li></ul>
+      <div class="scenarios"><span class='tag'>企业知识库</span><span class='tag'>RAG 系统</span><span class='tag'>腾讯开源生态</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/openai/plugins" target="_blank">openai/plugins</a>
+        <div class="meta">
+          <span class="lang">JavaScript</span>
+          <span class="stars">⭐ 6,623 <span class="weekly">+1,181 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">OpenAI 插件示例与规范仓库，展示如何为 ChatGPT / OpenAI 模型构建外部工具插件。</p>
+      <ul class="features"><li>插件清单（manifest）与认证示例</li><li>语义化的函数调用接口</li><li>面向 ChatGPT 生态扩展</li></ul>
+      <div class="scenarios"><span class='tag'>OpenAI 插件开发</span><span class='tag'>ChatGPT 扩展</span><span class='tag'>工具集成</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/earthtojake/text-to-cad" target="_blank">earthtojake/text-to-cad</a>
+        <div class="meta">
+          <span class="lang">Python</span>
+          <span class="stars">⭐ 1.6w <span class="weekly">+1,054 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">面向 CAD、CAE、CAM 领域的 Agent 技能库，支持通过自然语言驱动工程设计工具。</p>
+      <ul class="features"><li>自然语言到 CAD 建模链路</li><li>覆盖 CAE/CAM 工程工作流</li><li>可扩展的 Agent 技能集合</li></ul>
+      <div class="scenarios"><span class='tag'>AI 辅助设计</span><span class='tag'>工业制造</span><span class='tag'>CAD 自动化</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/humanlayer/skills" target="_blank">humanlayer/skills</a>
+        <div class="meta">
+          <span class="lang">TypeScript</span>
+          <span class="stars">⭐ 4,001 <span class="weekly">+1,004 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">HumanLayer 官方 Skills 仓库，用于在 AI Agent 工作流中加入人工审核与确认节点。</p>
+      <ul class="features"><li>人工在环（Human-in-the-loop）技能</li><li>审批、确认、纠错节点编排</li><li>与 HumanLayer 平台原生集成</li></ul>
+      <div class="scenarios"><span class='tag'>关键任务自动化</span><span class='tag'>人机协同</span><span class='tag'>合规审批</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/kunchenguid/firstmate" target="_blank">kunchenguid/firstmate</a>
+        <div class="meta">
+          <span class="lang">Shell</span>
+          <span class="stars">⭐ 5,752 <span class="weekly">+778 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">一个"一人指挥、全员出活"的 Agent 协作框架，让你像船长一样调动多个 AI 船员。</p>
+      <ul class="features"><li>多 Agent 协同执行复杂任务</li><li>自然语言任务分配</li><li>轻量级 Shell 工作流</li></ul>
+      <div class="scenarios"><span class='tag'>多 Agent 协作</span><span class='tag'>任务自动化</span><span class='tag'>个人效率</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank">ChromeDevTools/chrome-devtools-mcp</a>
+        <div class="meta">
+          <span class="lang">TypeScript</span>
+          <span class="stars">⭐ 5.2w <span class="weekly">+736 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">Chrome DevTools 官方 MCP 服务器，让 AI 编码 Agent 直接控制浏览器调试能力。</p>
+      <ul class="features"><li>Agent 可调用 Chrome DevTools 协议</li><li>支持元素检查、网络、性能分析</li><li>提升前端调试自动化水平</li></ul>
+      <div class="scenarios"><span class='tag'>前端自动化调试</span><span class='tag'>AI 辅助测试</span><span class='tag'>浏览器 DevTools 集成</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="repo-name" href="https://github.com/max-sixty/worktrunk" target="_blank">max-sixty/worktrunk</a>
+        <div class="meta">
+          <span class="lang">Rust</span>
+          <span class="stars">⭐ 7,528 <span class="weekly">+588 本周</span></span>
+        </div>
+      </div>
+      <p class="summary">为并行 AI Agent 工作流设计的 Git worktree 管理 CLI，支持多分支同时开发不冲突。</p>
+      <ul class="features"><li>Git worktree 一键管理</li><li>支持多个 Agent 并行操作不同分支</li><li>Rust 实现，高性能</li></ul>
+      <div class="scenarios"><span class='tag'>并行开发</span><span class='tag'>AI Agent 工作流</span><span class='tag'>Git 高级用法</span></div>
+    </div>
+    
+    </main>
+    <footer>
+      数据来源：GitHub Trending（https://github.com/trending?since=weekly） · 按本周新增 Star 降序排列
+    </footer>
+  </div>
+</body>
+</html>
