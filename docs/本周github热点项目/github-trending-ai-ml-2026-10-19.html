@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 本周 Trending · AI/ML 热门项目（2026-10-19）</title>
+<style>
+  :root {
+    --bg1:#1a0712; --bg2:#37111f; --bg3:#551a35;
+    --accent:#ff6fa5; --accent2:#ffb3d1;
+    --card:rgba(255,255,255,0.05); --border:rgba(255,255,255,0.12);
+    --text:#f6eaf1; --muted:#c9a8bd;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    color: var(--text);
+    background: linear-gradient(135deg, var(--bg1) 0%, var(--bg2) 50%, var(--bg3) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.65;
+  }
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background: radial-gradient(circle at 15% 20%, rgba(255,111,165,0.18), transparent 45%),
+                radial-gradient(circle at 85% 80%, rgba(255,179,209,0.14), transparent 45%);
+  }
+  .wrap { position: relative; z-index: 1; max-width: 1180px; margin: 0 auto; padding: 48px 24px 64px; }
+  header.hero { text-align: center; margin-bottom: 14px; }
+  .hero h1 { font-size: 34px; font-weight: 800; letter-spacing: 1px;
+    background: linear-gradient(90deg, #fff, var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero .sub { color: var(--muted); margin-top: 10px; font-size: 15px; }
+  .hero .stamp { display: inline-block; margin-top: 16px; padding: 6px 16px; border: 1px solid var(--border);
+    border-radius: 999px; font-size: 13px; color: var(--accent2); background: var(--card); }
+  .count { text-align: center; color: var(--muted); font-size: 14px; margin: 8px 0 36px; }
+  .count b { color: var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 22px 22px 20px;
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); transition: transform .2s ease, border-color .2s ease; }
+  .card:hover { transform: translateY(-4px); border-color: var(--accent); }
+  .card-head { display: flex; align-items: flex-start; gap: 12px; }
+  .rank { font-size: 13px; font-weight: 700; color: var(--bg1); background: var(--accent);
+    border-radius: 8px; padding: 3px 9px; flex: none; margin-top: 2px; }
+  .title-wrap { flex: 1; min-width: 0; }
+  .repo { font-size: 18px; font-weight: 700; color: #fff; text-decoration: none; word-break: break-all; }
+  .repo:hover { color: var(--accent2); }
+  .repo-name { color: var(--accent); }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; font-size: 12.5px; color: var(--muted); align-items: center; }
+  .lang { display: inline-flex; align-items: center; gap: 5px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); display: inline-block; }
+  .stars { color: #ffd479; }
+  .week { color: var(--accent2); }
+  .desc { margin: 16px 0 14px; font-size: 14.5px; color: #f0e2ec; }
+  .section { margin-top: 14px; }
+  .section h4 { font-size: 13px; color: var(--accent); letter-spacing: .5px; margin-bottom: 8px; text-transform: none; }
+  .feats { list-style: none; }
+  .feats li { position: relative; padding-left: 18px; font-size: 13.5px; color: #e7d6e1; margin-bottom: 6px; }
+  .feats li::before { content: ""; position: absolute; left: 0; top: 9px; width: 7px; height: 7px; border-radius: 2px;
+    background: var(--accent); transform: rotate(45deg); }
+  .scenes { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { font-size: 12px; padding: 4px 11px; border-radius: 999px; border: 1px solid var(--border);
+    color: var(--accent2); background: rgba(255,255,255,0.04); }
+  footer { text-align: center; margin-top: 48px; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--accent2); text-decoration: none; }
+  @media (max-width: 520px) { .hero h1 { font-size: 26px; } .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1>GitHub 本周 Trending · AI / ML 热门项目</h1>
+      <div class="sub">筛选自 GitHub Trending（Weekly）中人工智能 / 机器学习相关仓库，按本周新增 Star 降序排列</div>
+      <div class="stamp">数据抓取时间：2026-10-19 09:33 (GMT+8)</div>
+    </header>
+    <div class="count">本周共收录 <b>28</b> 个 AI/ML 热门项目</div>
+    <div class="grid">
+      
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#1</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/morluto/rea" target="_blank" rel="noopener">morluto/<span class="repo-name">rea</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>TypeScript</span>
+                <span class="stars">★ 322,858</span>
+                <span class="week">+229,268 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">用 AI 智能体反向工程一切，从应用行为一路钻取到原生二进制。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>多智能体协作逆向：自动拆解 App 行为逻辑与系统调用链路</li><li>原生二进制分析：对机器码/二进制做语义级还原</li><li>行为溯源：从上层功能钻取到最底层实现细节</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">安全研究</span><span class="tag">逆向工程</span><span class="tag">二进制分析</span><span class="tag">智能体</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#2</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/debpalash/VoiceStudio" target="_blank" rel="noopener">debpalash/<span class="repo-name">VoiceStudio</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Python</span>
+                <span class="stars">★ 75,472</span>
+                <span class="week">+16,569 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">全本地开源的 ElevenLabs 替代品，语音克隆、配音、听写一站式。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>语音克隆与语音设计：本地训练并生成个性化音色</li><li>视频配音与有声书：覆盖 646 种语言的多语种合成</li><li>听写与转录：完全离线运行，数据不出本机</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">内容创作</span><span class="tag">配音/有声书</span><span class="tag">隐私本地化</span><span class="tag">TTS</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#3</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/Alishahryar1/free-claude-code" target="_blank" rel="noopener">Alishahryar1/<span class="repo-name">free-claude-code</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Python</span>
+                <span class="stars">★ 61,562</span>
+                <span class="week">+9,662 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">在终端/IDE/手机/浏览器免费调用 Claude Code、Codex 等多智能体。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>多 harness 聚合：统一接入 Claude Code、Codex、VSCode、Pi 等 6+ 框架</li><li>多模型支持：一次配置跨模型、跨端使用</li><li>浏览器原生会话：语音支持且对 ToS 友好</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">AI 编程</span><span class="tag">多模型</span><span class="tag">开发者工具</span><span class="tag">免费额度</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#4</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/cathrynlavery/diagram-design" target="_blank" rel="noopener">cathrynlavery/<span class="repo-name">diagram-design</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>HTML</span>
+                <span class="stars">★ 57,698</span>
+                <span class="week">+7,901 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">为 Claude Code、Codex、Copilot、Cursor 等打造的社论级图表设计。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>44 种图表类型：自包含 HTML+SVG，零外部依赖</li><li>拒绝模板腔：讲究排版与视觉层级，非 Mermaid slop</li><li>多智能体兼容：主流编码助手直接产出可发布图</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">技术文档</span><span class="tag">架构图</span><span class="tag">AI 辅助设计</span><span class="tag">可视化</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#5</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/78/xiaozhi-esp32" target="_blank" rel="noopener">78/<span class="repo-name">xiaozhi-esp32</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>C++</span>
+                <span class="stars">★ 31,438</span>
+                <span class="week">+7,352 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">基于 MCP 的嵌入式聊天机器人，让 ESP32 变身对话设备。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>MCP 接入：以标准协议连接大模型与工具</li><li>端侧运行：低成本硬件实现语音对话</li><li>开源可改：适合 DIY 智能音箱与陪伴机器人</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">硬件 AI</span><span class="tag">智能音箱</span><span class="tag">嵌入式</span><span class="tag">对话机器人</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#6</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/ifixai-ai/iFixAi" target="_blank" rel="noopener">ifixai-ai/<span class="repo-name">iFixAi</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Python</span>
+                <span class="stars">★ 29,582</span>
+                <span class="week">+6,854 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">独立审计 AI 智能体，120 秒内回答“它到底有没有按预期做事”。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>智能体行为审计：由人或智能体自评任务合规性</li><li>风险速判：直击“智能体经济”的核心信任问题</li><li>轻量集成：可嵌入现有 Agent 工作流</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">AI 安全</span><span class="tag">智能体审计</span><span class="tag">可信 AI</span><span class="tag">合规</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#7</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener">heygen-com/<span class="repo-name">hyperframes</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>TypeScript</span>
+                <span class="stars">★ 66,745</span>
+                <span class="week">+5,883 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">写 HTML 即可渲染视频，为智能体而生的视频生成框架。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>HTML→视频：用熟悉的 Web 技术描述画面与动效</li><li>面向智能体：可被 Agent 程序化驱动批量生成</li><li>模板化生产：适合营销/口播内容流水线</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">视频生成</span><span class="tag">营销内容</span><span class="tag">Agent 工作流</span><span class="tag">AIGC</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#8</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/vxcontrol/pentagi" target="_blank" rel="noopener">vxcontrol/<span class="repo-name">pentagi</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Go</span>
+                <span class="stars">★ 31,136</span>
+                <span class="week">+5,765 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">全自主 AI 智能体系统，可独立完成复杂渗透测试。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>自主渗透测试：规划、侦察、利用、报告全流程自动化</li><li>多智能体编排：分工协作处理真实攻防任务</li><li>可观测：任务链可视化与审计追踪</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">安全测试</span><span class="tag">渗透测试</span><span class="tag">自治智能体</span><span class="tag">红队</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#9</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/MadsLorentzen/ai-job-search" target="_blank" rel="noopener">MadsLorentzen/<span class="repo-name">ai-job-search</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Python</span>
+                <span class="stars">★ 53,345</span>
+                <span class="week">+5,742 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">在本机运行的 AI 求职框架，基于 Claude Code 自动投简历。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>职位评估：自动筛选匹配度高的岗位</li><li>CV 定制与求职信：按 JD 重写简历与 Cover Letter</li><li>面试准备：生成针对性备考材料，Fork 即拥有</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">求职提效</span><span class="tag">简历优化</span><span class="tag">个人 AI 助理</span><span class="tag">自动化</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#10</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/github/github-mcp-server" target="_blank" rel="noopener">github/<span class="repo-name">github-mcp-server</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Go</span>
+                <span class="stars">★ 33,736</span>
+                <span class="week">+5,331 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">GitHub 官方 MCP Server，把仓库操作开放给智能体。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>官方协议实现：标准化对接各类 MCP 客户端</li><li>仓库读写：Issue/PR/代码检索等能力可编程化</li><li>安全可控：细粒度权限与作用域管理</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">开发自动化</span><span class="tag">DevOps</span><span class="tag">MCP</span><span class="tag">智能体工具</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#11</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/xerj-org/xerj" target="_blank" rel="noopener">xerj-org/<span class="repo-name">xerj</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Rust</span>
+                <span class="stars">★ 8,462</span>
+                <span class="week">+4,925 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">让 AI 用更少 token 搜索数据的新方式，RAG 与安全审计一把抓。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>自动建索引：一条命令索引代码/文档/日志/PDF</li><li>极致省 token：比 grep 少 40 倍 token 消耗</li><li>可替代 ES：持久化记忆，节省约 10 倍基础设施成本</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">RAG</span><span class="tag">数据检索</span><span class="tag">智能体记忆</span><span class="tag">降本</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#12</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noopener">anthropics/<span class="repo-name">claude-plugins-official</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Python</span>
+                <span class="stars">★ 42,724</span>
+                <span class="week">+4,774 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">Anthropic 官方维护的高质量 Claude Code 插件目录。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>官方精选：经过审核的插件集合</li><li>即装即用：扩展 Claude Code 的能力边界</li><li>生态规范：定义插件标准与最佳实践</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">AI 编程</span><span class="tag">Claude Code</span><span class="tag">插件生态</span><span class="tag">开发者</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#13</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank" rel="noopener">K-Dense-AI/<span class="repo-name">scientific-agent-skills</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Python</span>
+                <span class="stars">★ 52,667</span>
+                <span class="week">+4,310 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">把任意 AI 智能体变成“AI 科学家”的科研技能库。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>177 个即用技能：覆盖生物/化学/医学/药物发现</li><li>100+ 科学数据库：已验证可接入</li><li>广泛兼容：Cursor、Claude Code、Codex、Pi 等</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">科研</span><span class="tag">药物发现</span><span class="tag">Agent Skills</span><span class="tag">生物/化学</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#14</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/mksglu/context-mode" target="_blank" rel="noopener">mksglu/<span class="repo-name">context-mode</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>TypeScript</span>
+                <span class="stars">★ 30,770</span>
+                <span class="week">+4,138 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">为 AI 编程智能体做上下文窗口优化。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>工具输出沙箱：压缩 98% 的冗余上下文</li><li>会话记忆持久化：跨轮次保留关键信息</li><li>17 平台路由：通过 MCP+hooks 跨端调度</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">AI 编程</span><span class="tag">上下文管理</span><span class="tag">降本增效</span><span class="tag">MCP</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#15</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/microsoft/BitNet" target="_blank" rel="noopener">microsoft/<span class="repo-name">BitNet</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>C++</span>
+                <span class="stars">★ 41,195</span>
+                <span class="week">+3,836 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">微软官方的 1-bit 大语言模型推理框架。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>1-bit 推理：在 CPU 上高效跑超低比特 LLM</li><li>官方实现：与 BitNet 论文对齐的推理路径</li><li>极致轻量：把大模型门槛拉到消费级硬件</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">LLM 推理</span><span class="tag">端侧部署</span><span class="tag">低比特</span><span class="tag">边缘计算</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#16</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/tashfeenahmed/freellmapi" target="_blank" rel="noopener">tashfeenahmed/<span class="repo-name">freellmapi</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>TypeScript</span>
+                <span class="stars">★ 37,103</span>
+                <span class="week">+3,815 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">免费的大模型 API 网关，聚合多家 LLM 调用。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>统一 API：一处接入多家大模型</li><li>免费额度：降低个人开发者试错成本</li><li>易部署：快速起一个自己的 LLM 中台</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">LLM API</span><span class="tag">开发者</span><span class="tag">降本</span><span class="tag">API 网关</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#17</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/HKUDS/CLI-Anything" target="_blank" rel="noopener">HKUDS/<span class="repo-name">CLI-Anything</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Python</span>
+                <span class="stars">★ 54,612</span>
+                <span class="week">+2,563 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">让一切软件都变成“智能体原生”的 CLI 中枢。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>软件 Agent 化：把任意 CLI 工具暴露给智能体</li><li>统一入口：集中编排多工具调用</li><li>研究导向：来自港大 HKUDS 团队</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">智能体</span><span class="tag">工具编排</span><span class="tag">自动化</span><span class="tag">科研</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#18</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">thedotmack/<span class="repo-name">claude-mem</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>TypeScript</span>
+                <span class="stars">★ 101,634</span>
+                <span class="week">+2,131 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">给 Claude 用的长期记忆层，让对话跨会话连续。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>记忆持久化：保存偏好与上下文供后续调用</li><li>即插即用：接入 Claude Code 工作流</li><li>检索增强：按需召回相关记忆</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">AI 记忆</span><span class="tag">Claude Code</span><span class="tag">个人助理</span><span class="tag">上下文</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#19</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/ruvnet/ruflo" target="_blank" rel="noopener">ruvnet/<span class="repo-name">ruflo</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>TypeScript</span>
+                <span class="stars">★ 76,546</span>
+                <span class="week">+2,117 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">递归统一流（RUFLO）智能体编排框架。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>流程编排：以统一抽象描述 Agent 工作流</li><li>递归执行：支持自我分解与迭代</li><li>可观测：工作流状态可视化</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">智能体编排</span><span class="tag">工作流</span><span class="tag">自动化</span><span class="tag">框架</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#20</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/earthtojake/text-to-cad" target="_blank" rel="noopener">earthtojake/<span class="repo-name">text-to-cad</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Python</span>
+                <span class="stars">★ 21,464</span>
+                <span class="week">+2,123 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">给智能体 CAD 超能力，用自然语言生成/修改模型。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>文本生成 CAD：语言指令驱动建模</li><li>Agent 集成：作为工具给智能体调用</li><li>开源可扩：适合工程与设计自动化</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">CAD</span><span class="tag">设计自动化</span><span class="tag">智能体工具</span><span class="tag">制造</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#21</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/vercel-labs/skills" target="_blank" rel="noopener">vercel-labs/<span class="repo-name">skills</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>TypeScript</span>
+                <span class="stars">★ 35,502</span>
+                <span class="week">+1,734 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">Vercel 实验室出品的 Agent Skills 技能集合。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>标准化技能：面向 Agent Skills 规范的实现</li><li>场景覆盖：开发、部署、调试等常用能力</li><li>即取即用：与主流智能体客户端兼容</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">Agent Skills</span><span class="tag">开发提效</span><span class="tag">Vercel</span><span class="tag">智能体</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#22</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/TencentCloud/TencentDB-Agent-Memory" target="_blank" rel="noopener">TencentCloud/<span class="repo-name">TencentDB-Agent-Memory</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>TypeScript</span>
+                <span class="stars">★ 29,571</span>
+                <span class="week">+1,673 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">腾讯云出品的智能体记忆中间件，基于数据库持久化。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>记忆存储：把 Agent 记忆落库，跨会话可用</li><li>云原生：与腾讯云数据库体系打通</li><li>标准接口：便于接入现有智能体</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">智能体记忆</span><span class="tag">云原生</span><span class="tag">腾讯云</span><span class="tag">数据库</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#23</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/lharries/whatsapp-mcp" target="_blank" rel="noopener">lharries/<span class="repo-name">whatsapp-mcp</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Go</span>
+                <span class="stars">★ 6,655</span>
+                <span class="week">+1,419 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">WhatsApp 的 MCP Server，让智能体接管消息。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>消息读写：通过 MCP 收发 WhatsApp 消息</li><li>智能体入口：把社交通信变成可编排工具</li><li>轻量部署：个人自动化友好</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">MCP</span><span class="tag">社媒自动化</span><span class="tag">个人助理</span><span class="tag">消息</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#24</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/ollama/ollama" target="_blank" rel="noopener">ollama/<span class="repo-name">ollama</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>Go</span>
+                <span class="stars">★ 183,749</span>
+                <span class="week">+1,092 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">一条命令在本地跑起 Kimi/GLM/Qwen/DeepSeek 等模型。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>本地推理：消费级设备跑开源大模型</li><li>多模型支持：Kimi、GLM、MiniMax、DeepSeek、Qwen 等</li><li>极简体验：pull 即用，无需复杂配置</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">LLM 运行</span><span class="tag">本地部署</span><span class="tag">开源模型</span><span class="tag">隐私</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#25</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/krillinai/OpenCreator" target="_blank" rel="noopener">krillinai/<span class="repo-name">OpenCreator</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>TypeScript</span>
+                <span class="stars">★ 13,691</span>
+                <span class="week">+994 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">开源 AI 创作者工具集，字幕/翻译/媒体一把抓。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>视频处理：字幕生成与多语翻译</li><li>媒体工作流：面向创作者的 AI 流水线</li><li>开源可改：本地化部署保护素材</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">视频创作</span><span class="tag">字幕/翻译</span><span class="tag">AIGC</span><span class="tag">创作者</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#26</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/ranxianglei/billion-context" target="_blank" rel="noopener">ranxianglei/<span class="repo-name">billion-context</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>TypeScript</span>
+                <span class="stars">★ 1,884</span>
+                <span class="week">+1,001 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">把大模型上下文窗口推向十亿级别的研究项目。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>超长上下文：探索百万/十亿 token 窗口</li><li>研究导向：面向长文档与长程任务</li><li>开源实验：提供可复现方案</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">长上下文</span><span class="tag">LLM 研究</span><span class="tag">大模型</span><span class="tag">框架</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#27</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/corrinehu/dsh-workbuddy-connect" target="_blank" rel="noopener">corrinehu/<span class="repo-name">dsh-workbuddy-connect</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>TypeScript</span>
+                <span class="stars">★ 1,332</span>
+                <span class="week">+904 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">把 WorkBuddy 接入 DSH 生态的连接器。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>智能体接入：让 WorkBuddy 能力进 DSH 工作台</li><li>零 token 开销：对宿主平台友好的集成方式</li><li>开源扩展：社区可二次开发</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">智能体集成</span><span class="tag">WorkBuddy</span><span class="tag">工作台</span><span class="tag">连接器</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <span class="rank">#28</span>
+            <div class="title-wrap">
+              <a class="repo" href="https://github.com/CopilotKit/OpenIntelligentUI" target="_blank" rel="noopener">CopilotKit/<span class="repo-name">OpenIntelligentUI</span></a>
+              <div class="meta">
+                <span class="lang"><span class="dot"></span>TypeScript</span>
+                <span class="stars">★ 3,436</span>
+                <span class="week">+857 本周</span>
+              </div>
+            </div>
+          </div>
+          <p class="desc">CopilotKit 出品的开源智能 UI 方案。</p>
+          <div class="section">
+            <h4>核心功能</h4>
+            <ul class="feats"><li>智能组件：把 AI 能力嵌入前端界面</li><li>设计系统：提供可组合的 AI 交互组件</li><li>框架无关：多前端栈可用</li></ul>
+          </div>
+          <div class="section">
+            <h4>适用场景</h4>
+            <div class="scenes"><span class="tag">AI 前端</span><span class="tag">CopilotKit</span><span class="tag">UI 组件</span><span class="tag">智能应用</span></div>
+          </div>
+        </article>
+    </div>
+    <footer>
+      数据来源：<a href="https://github.com/trending?since=weekly" target="_blank" rel="noopener">GitHub Trending（Weekly）</a>
+      · 页面生成于 2026-10-19 09:33 (GMT+8) · 主题色：胭脂玫红
+    </footer>
+  </div>
+</body>
+</html>
