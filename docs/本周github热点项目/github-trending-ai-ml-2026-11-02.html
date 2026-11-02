@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Trending · AI/ML 周榜 Top 10（2026-11-02）</title>
+<style>
+  :root{
+    --bg1:#0b0b10;
+    --bg2:#15151f;
+    --bg3:#1f1f2e;
+    --card:rgba(255,255,255,0.045);
+    --border:rgba(255,255,255,0.09);
+    --border-strong:rgba(216,180,106,0.35);
+    --txt:#e9e9ec;
+    --txt-2:#9a9aa6;
+    --txt-3:#6f6f7c;
+    --gold:#d8b46a;
+    --gold-soft:rgba(216,180,106,0.14);
+    --green:#6fdc9c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--txt);
+    background:linear-gradient(135deg,var(--bg1) 0%,var(--bg2) 52%,var(--bg3) 100%);
+    background-attachment:fixed;
+    min-height:100vh;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    padding:48px 18px 64px;
+  }
+  .wrap{max-width:980px;margin:0 auto;}
+  header.top{text-align:center;margin-bottom:38px;}
+  .eyebrow{
+    display:inline-block;font-size:12px;letter-spacing:3px;text-transform:uppercase;
+    color:var(--gold);border:1px solid var(--border-strong);border-radius:999px;
+    padding:5px 16px;margin-bottom:18px;background:var(--gold-soft);
+  }
+  h1{font-size:30px;font-weight:700;letter-spacing:.5px;}
+  h1 .accent{color:var(--gold);}
+  .sub{color:var(--txt-2);font-size:14px;margin-top:10px;}
+  .meta{
+    display:flex;gap:18px;justify-content:center;flex-wrap:wrap;
+    margin-top:16px;font-size:13px;color:var(--txt-3);
+  }
+  .meta b{color:var(--txt-2);font-weight:600;}
+  .theme-note{
+    max-width:680px;margin:18px auto 0;font-size:12.5px;color:var(--txt-3);
+    border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+    padding:10px 0;
+  }
+  .grid{display:flex;flex-direction:column;gap:18px;margin-top:34px;}
+  .card{
+    position:relative;background:var(--card);border:1px solid var(--border);
+    border-radius:16px;padding:22px 24px 20px;overflow:hidden;
+    transition:transform .18s ease,border-color .18s ease,background .18s ease;
+  }
+  .card:hover{transform:translateY(-3px);border-color:var(--border-strong);background:rgba(255,255,255,0.06);}
+  .card::before{
+    content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+    background:linear-gradient(180deg,var(--gold),rgba(216,180,106,0.1));
+  }
+  .card-head{display:flex;align-items:flex-start;gap:14px;}
+  .rank{
+    flex:0 0 38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:16px;color:#0b0b10;
+    background:linear-gradient(135deg,#e8c880,#c79a4e);
+  }
+  .rank.low{background:linear-gradient(135deg,#4a4a58,#2c2c38);color:var(--txt-2);}
+  .head-main{flex:1;min-width:0;}
+  .repo-name{font-size:18px;font-weight:700;letter-spacing:.2px;}
+  .repo-name a{color:var(--txt);text-decoration:none;}
+  .repo-name a:hover{color:var(--gold);}
+  .repo-name .owner{color:var(--txt-3);font-weight:500;}
+  .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center;}
+  .lang{
+    font-size:11.5px;color:var(--txt-2);background:rgba(255,255,255,0.06);
+    border:1px solid var(--border);border-radius:6px;padding:2px 9px;
+  }
+  .stars{margin-left:auto;text-align:right;flex:0 0 auto;}
+  .stars .total{font-size:15px;font-weight:700;color:var(--txt);}
+  .stars .wk{font-size:12px;color:var(--green);margin-top:2px;}
+  .stars .wk b{font-weight:700;}
+  .desc{margin-top:14px;color:var(--txt);font-size:14.5px;}
+  .sec-title{
+    margin-top:16px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;
+    color:var(--gold);font-weight:600;
+  }
+  ul.feats{margin:8px 0 0 2px;padding-left:18px;}
+  ul.feats li{margin:4px 0;font-size:13.5px;color:var(--txt-2);}
+  ul.feats li::marker{color:var(--gold);}
+  .scenes{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;}
+  .scene{
+    font-size:12px;color:var(--gold);background:var(--gold-soft);
+    border:1px solid var(--border-strong);border-radius:999px;padding:3px 12px;
+  }
+  footer{
+    margin-top:46px;padding-top:20px;border-top:1px solid var(--border);
+    text-align:center;font-size:12.5px;color:var(--txt-3);line-height:1.9;
+  }
+  footer a{color:var(--txt-2);text-decoration:none;}
+  footer a:hover{color:var(--gold);}
+  @media (max-width:560px){
+    .card-head{flex-wrap:wrap;}
+    .stars{margin-left:0;text-align:left;width:100%;margin-top:6px;}
+    h1{font-size:23px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="eyebrow">GitHub Trending · Weekly</span>
+    <h1>AI / ML 领域 <span class="accent">周榜 Top 10</span></h1>
+    <div class="sub">本周 GitHub 热门项目精选 · 聚焦人工智能与机器学习生态</div>
+    <div class="meta">
+      <span>📅 数据抓取时间：<b>2026-11-02 09:49 (GMT+8)</b></span>
+      <span>📊 维度：<b>Weekly（近一周）</b></span>
+      <span>🔢 收录：<b>10 个 AI/ML 项目</b></span>
+    </div>
+    <div class="theme-note">
+      本期主题：<b style="color:var(--txt-2)">Agent 技能化 / 编程智能体 / 多智能体协同</b> —— 榜单被「Agent Skills（智能体技能）」生态与 AI 编程助手工具包强势占据。
+      页面主题色：<b style="color:var(--gold)">曜石黑金（Obsidian Black-Gold）</b>。
+    </div>
+  </header>
+
+  <div class="grid">
+
+    <!-- 1 -->
+    <article class="card">
+      <div class="card-head">
+        <div class="rank">1</div>
+        <div class="head-main">
+          <div class="repo-name"><span class="owner">pbakaus / </span><a href="https://github.com/pbakaus/impeccable" target="_blank" rel="noopener">impeccable</a></div>
+          <div class="tags">
+            <span class="lang">Rust</span>
+          </div>
+        </div>
+        <div class="stars"><div class="total">⭐ 99,364</div><div class="wk">本周 <b>+12,017</b></div></div>
+      </div>
+      <p class="desc">面向编程智能体（Coding Agent）的「设计语言 / 规范」，让 AI 写出的代码有品味、可审计，在交付前拦住"AI 味"代码。</p>
+      <div class="sec-title">核心功能</div>
+      <ul class="feats">
+        <li>为 Agent 提供统一的设计词汇表（design vocabulary），规范 UI/UX 取向</li>
+        <li>提供 polish（润色）、bolder（更大胆）、critique（批判审查）、audit（审计）等可控指令</li>
+        <li>在代码合入前自动识别并拦截低质"AI slop"生成代码</li>
+      </ul>
+      <div class="sec-title">适用场景</div>
+      <div class="scenes"><span class="scene">编程智能体</span><span class="scene">代码质量门禁</span><span class="scene">设计系统</span></div>
+    </article>
+
+    <!-- 2 -->
+    <article class="card">
+      <div class="card-head">
+        <div class="rank">2</div>
+        <div class="head-main">
+          <div class="repo-name"><span class="owner">Nutlope / </span><a href="https://github.com/Nutlope/hallmark" target="_blank" rel="noopener">hallmark</a></div>
+          <div class="tags">
+            <span class="lang">CSS</span>
+          </div>
+        </div>
+        <div class="stars"><div class="total">⭐ 44,905</div><div class="wk">本周 <b>+11,566</b></div></div>
+      </div>
+      <p class="desc">给 Claude Code、Cursor、Codex 用的「反 AI 味」设计技能包，让 AI 生成的设计稿具备真实的人类审美。</p>
+      <div class="sec-title">核心功能</div>
+      <ul class="feats">
+        <li>内置 anti-AI-slop 设计准则，规避千篇一律的 AI 模板风</li>
+        <li>可直接作为 Skill 接入主流编程智能体工作流</li>
+        <li>覆盖布局、配色、排版等设计细节约束</li>
+      </ul>
+      <div class="sec-title">适用场景</div>
+      <div class="scenes"><span class="scene">设计技能</span><span class="scene">反 AI 味</span><span class="scene">前端原型</span></div>
+    </article>
+
+    <!-- 3 -->
+    <article class="card">
+      <div class="card-head">
+        <div class="rank">3</div>
+        <div class="head-main">
+          <div class="repo-name"><span class="owner">HKUDS / </span><a href="https://github.com/HKUDS/DeepTutor" target="_blank" rel="noopener">DeepTutor</a></div>
+          <div class="tags">
+            <span class="lang">Python</span>
+          </div>
+        </div>
+        <div class="stars"><div class="total">⭐ 53,696</div><div class="wk">本周 <b>+10,982</b></div></div>
+      </div>
+      <p class="desc">基于大模型的「终身学习个性化导师」，提供一对一、可长期记忆的 AI 辅导。</p>
+      <div class="sec-title">核心功能</div>
+      <ul class="feats">
+        <li>终身个性化 tutoring，依据学习者画像持续调整教学策略</li>
+        <li>多轮对话式教学，覆盖知识讲解与练习闭环</li>
+        <li>长期记忆与学习进度跟踪</li>
+      </ul>
+      <div class="sec-title">适用场景</div>
+      <div class="scenes"><span class="scene">教育 AI</span><span class="scene">个性化导师</span><span class="scene">LLM 应用</span></div>
+    </article>
+
+    <!-- 4 -->
+    <article class="card">
+      <div class="card-head">
+        <div class="rank">4</div>
+        <div class="head-main">
+          <div class="repo-name"><span class="owner">cloudflare / </span><a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener">security-audit-skill</a></div>
+          <div class="tags">
+            <span class="lang">JavaScript</span>
+          </div>
+        </div>
+        <div class="stars"><div class="total">⭐ 56,407</div><div class="wk">本周 <b>+10,069</b></div></div>
+      </div>
+      <p class="desc">Cloudflare 出品的编程智能体安全审计技能，多阶段扫描并以机器可读格式产出可独立验证的审计结论。</p>
+      <div class="sec-title">核心功能</div>
+      <ul class="feats">
+        <li>多阶段（multi-phase）安全审计工作流</li>
+        <li>产出独立验证、机器可读（machine-readable）的审计发现</li>
+        <li>直接作为 Skill 嵌入智能体开发流程</li>
+      </ul>
+      <div class="sec-title">适用场景</div>
+      <div class="scenes"><span class="scene">安全审计</span><span class="scene">Agent 技能</span><span class="scene">DevSecOps</span></div>
+    </article>
+
+    <!-- 5 -->
+    <article class="card">
+      <div class="card-head">
+        <div class="rank">5</div>
+        <div class="head-main">
+          <div class="repo-name"><span class="owner">pingdotgg / </span><a href="https://github.com/pingdotgg/t3code" target="_blank" rel="noopener">t3code</a></div>
+          <div class="tags">
+            <span class="lang">TypeScript</span>
+          </div>
+        </div>
+        <div class="stars"><div class="total">⭐ 38,076</div><div class="wk">本周 <b>+6,926</b></div></div>
+      </div>
+      <p class="desc">t3 团队（Theo）推出的 AI 编程工具，面向现代 Web 全栈开发流，由 Claude / Codex 等智能体驱动。</p>
+      <div class="sec-title">核心功能</div>
+      <ul class="feats">
+        <li>面向 Agent 的 Web 全栈脚手架与代码生成</li>
+        <li>与 t3 技术栈（Next.js 等）深度集成</li>
+        <li>由主流编程智能体驱动开发流程</li>
+      </ul>
+      <div class="sec-title">适用场景</div>
+      <div class="scenes"><span class="scene">AI 编程</span><span class="scene">全栈脚手架</span><span class="scene">Web 开发</span></div>
+    </article>
+
+    <!-- 6 -->
+    <article class="card">
+      <div class="card-head">
+        <div class="rank">6</div>
+        <div class="head-main">
+          <div class="repo-name"><span class="owner">YuJunZhiXue / </span><a href="https://github.com/YuJunZhiXue/dsh-purge" target="_blank" rel="noopener">dsh-purge</a></div>
+          <div class="tags">
+            <span class="lang">JavaScript</span>
+          </div>
+        </div>
+        <div class="stars"><div class="total">⭐ 15,372</div><div class="wk">本周 <b>+6,644</b></div></div>
+      </div>
+      <p class="desc">「DeepSeek Harness 破甲」工具，通过可替换提示词让不同模型突破内容限制，需合规使用。</p>
+      <div class="sec-title">核心功能</div>
+      <ul class="feats">
+        <li>按模型替换不同的越狱 / 破甲提示词</li>
+        <li>支持多种主流大模型</li>
+        <li>开源可二开（需保留署名）</li>
+      </ul>
+      <div class="sec-title">适用场景</div>
+      <div class="scenes"><span class="scene">安全红队</span><span class="scene">提示词研究</span><span class="scene">能力边界探索</span></div>
+      <p class="desc" style="margin-top:10px;font-size:12.5px;color:var(--txt-3);">⚠️ 越狱类工具存在合规与平台风险，仅建议用于授权的安全研究。</p>
+    </article>
+
+    <!-- 7 -->
+    <article class="card">
+      <div class="card-head">
+        <div class="rank">7</div>
+        <div class="head-main">
+          <div class="repo-name"><span class="owner">affaan-m / </span><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener">ECC</a></div>
+          <div class="tags">
+            <span class="lang">JavaScript</span>
+          </div>
+        </div>
+        <div class="stars"><div class="total">⭐ 294,823</div><div class="wk">本周 <b>+6,299</b></div></div>
+      </div>
+      <p class="desc">Agent Harness 性能优化系统，为 Claude Code、Codex、Opencode、Cursor 等提供技能、本能、记忆、安全与「研究优先」的开发范式。</p>
+      <div class="sec-title">核心功能</div>
+      <ul class="feats">
+        <li>统一管理多智能体的 Skills / Instincts / Memory</li>
+        <li>内置安全与权限管控</li>
+        <li>「research-first」开发方法论</li>
+      </ul>
+      <div class="sec-title">适用场景</div>
+      <div class="scenes"><span class="scene">Agent Harness</span><span class="scene">多智能体</span><span class="scene">研发治理</span></div>
+    </article>
+
+    <!-- 8 -->
+    <article class="card">
+      <div class="card-head">
+        <div class="rank">8</div>
+        <div class="head-main">
+          <div class="repo-name"><span class="owner">obra / </span><a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">superpowers</a></div>
+          <div class="tags">
+            <span class="lang">Shell</span>
+          </div>
+        </div>
+        <div class="stars"><div class="total">⭐ 310,645</div><div class="wk">本周 <b>+5,896</b></div></div>
+      </div>
+      <p class="desc">一套「智能体技能框架 + 软件开发方法论」，让编程智能体具备可复用的「超能力」。</p>
+      <div class="sec-title">核心功能</div>
+      <ul class="feats">
+        <li>模块化 Agent Skills 框架，可组合复用</li>
+        <li>配套软件开发方法论（workflow）</li>
+        <li>可叠加到现有智能体工作流</li>
+      </ul>
+      <div class="sec-title">适用场景</div>
+      <div class="scenes"><span class="scene">技能框架</span><span class="scene">开发方法论</span><span class="scene">Agent 化</span></div>
+    </article>
+
+    <!-- 9 -->
+    <article class="card">
+      <div class="card-head">
+        <div class="rank">9</div>
+        <div class="head-main">
+          <div class="repo-name"><span class="owner">thedotmack / </span><a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">claude-mem</a></div>
+          <div class="tags">
+            <span class="lang">TypeScript</span>
+          </div>
+        </div>
+        <div class="stars"><div class="total">⭐ 109,333</div><div class="wk">本周 <b>+5,852</b></div></div>
+      </div>
+      <p class="desc">跨会话的持久化上下文记忆系统，捕获智能体每个会话的行为，AI 压缩后把相关上下文注入未来会话。</p>
+      <div class="sec-title">核心功能</div>
+      <ul class="feats">
+        <li>跨会话持久化上下文（Persistent Context Across Sessions）</li>
+        <li>AI 压缩会话内容、按需注入相关记忆</li>
+        <li>兼容 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等</li>
+      </ul>
+      <div class="sec-title">适用场景</div>
+      <div class="scenes"><span class="scene">记忆系统</span><span class="scene">跨会话</span><span class="scene">多 Agent 兼容</span></div>
+    </article>
+
+    <!-- 10 -->
+    <article class="card">
+      <div class="card-head">
+        <div class="rank low">10</div>
+        <div class="head-main">
+          <div class="repo-name"><span class="owner">JetBrains / </span><a href="https://github.com/JetBrains/thinkrail" target="_blank" rel="noopener">thinkrail</a></div>
+          <div class="tags">
+            <span class="lang">TypeScript</span>
+          </div>
+        </div>
+        <div class="stars"><div class="total">⭐ 6,976</div><div class="wk">本周 <b>+5,760</b></div></div>
+      </div>
+      <p class="desc">JetBrains 出品的轻量级「氛围编程」IDE，以 π 为核心，按你的工作方式自我定制。</p>
+      <div class="sec-title">核心功能</div>
+      <ul class="feats">
+        <li>轻量真实 IDE，内嵌 AI 编程（vibe code with π）</li>
+        <li>围绕用户习惯自我定制（customises itself around the way you work）</li>
+        <li>JetBrains 出品，工程能力背书</li>
+      </ul>
+      <div class="sec-title">适用场景</div>
+      <div class="scenes"><span class="scene">AI IDE</span><span class="scene">氛围编程</span><span class="scene">JetBrains 生态</span></div>
+    </article>
+
+  </div>
+
+  <footer>
+    数据来源：<a href="https://github.com/trending?since=weekly" target="_blank" rel="noopener">GitHub Trending（Weekly）</a> · 抓取时间 2026-11-02 09:49 (GMT+8)<br>
+    筛选维度：AI / LLM / machine-learning / deep-learning / agent 等关键词 · 按本周新增 Star 降序排列<br>
+    本页为自动化生成的静态快照，项目数据以 GitHub 原始页面为准。
+  </footer>
+</div>
+</body>
+</html>
