@@ -142,6 +142,10 @@ const config = {
                 label: "LBTI",
                 to: "https://evanjason.github.io/lbti/",
               },
+              {
+                label: "中国历史人物长卷",
+                to: "https://evanjason.github.io/history-chronicle/",
+              },
             ],
           },
           // {
