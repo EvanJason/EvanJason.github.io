@@ -55,6 +55,28 @@ const config = {
     //   },
     // ],
   ],
+  // 搜索弹窗增强：聚焦先弹居中 modal，输入后再展示结果
+  clientModules: [require.resolve('./src/client/searchModal.js')],
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        // 索引文件名带 hash，便于长期缓存
+        hashed: true,
+        // 中文用 @node-rs/jieba 分词，英文用 lunr 默认分词
+        language: ['en', 'zh'],
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: false,
+        // 固定在导航栏右侧
+        searchBarPosition: 'right',
+        searchBarShortcut: true,
+        searchBarShortcutHint: true,
+        searchBarShortcutKeymap: 'mod+k',
+      }),
+    ],
+  ],
   presets: [
     [
       'classic',
@@ -169,7 +191,7 @@ const config = {
             position: 'right',
           },
           {
-            type: 'search', //需要配置algolia
+            type: 'search', // 渲染 @theme/SearchBar，由本地搜索主题提供
             position: 'right',
           },
         ],
@@ -184,15 +206,9 @@ const config = {
       // colorMode: {
       //   respectPrefersColorScheme: true
       // },
-      algolia: { //关于全局搜索需要配置的东西
-        // The Application ID provided by Algolia
-        appId: '2ZZWGAZ9F1',
-
-        // (Search-Only API Key)
-        apiKey: 'fd0d0d8ab8affd2faf0d8550b5dbd8ea',
-        // 索引名字
-        indexName: 'evanjson_oscean',
-      },
+      // 全文搜索已改用 @easyops-cn/docusaurus-search-local（构建期生成索引）。
+      // 不要再配置 themeConfig.algolia：preset-classic 会据此加载 theme-search-algolia，
+      // 与本地搜索同时注册 /search 路由，导致重复路由和两个搜索框组件竞争。
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

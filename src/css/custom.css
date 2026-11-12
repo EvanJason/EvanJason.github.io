@@ -28,3 +28,347 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* ===== 本地全文搜索：沿用站点绿色主色，加宽弹窗 ===== */
+:root {
+  --search-local-modal-width: 720px;
+  --search-local-modal-width-sm: 92vw;
+  --search-local-spacing: 14px;
+  --search-local-hit-height: 64px;
+  --search-local-highlight-color: #1b7a4b;
+  --search-local-input-active-border-color: #2e8555;
+  --search-local-icon-stroke-width: 1.6;
+}
+
+[data-theme='dark'] {
+  --search-local-highlight-color: #4fd1a5;
+  --search-local-input-active-border-color: #25c2a0;
+}
+
+/* ===== DocSearch 式搜索弹窗：聚焦先弹窗，输入后再展示结果 ===== */
+:root {
+  --search-modal-bg: #fff;
+  --search-modal-input-bg: #fff;
+  --search-modal-text: #1c1e21;
+  --search-modal-muted: #969faf;
+  --search-modal-border: #2e8555;
+}
+
+[data-theme='dark'] {
+  --search-modal-bg: #26272b;
+  --search-modal-input-bg: #1e1f22;
+  --search-modal-text: #e6e6e6;
+  --search-modal-muted: #8a93a5;
+  --search-modal-border: #25c2a0;
+}
+
+/* 全屏遮罩 */
+body.search-modal-open::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  background: rgba(28, 38, 56, 0.55);
+}
+
+/* navbar 提到遮罩之上，避免弹窗卡片被盖住；再用一层覆盖色把导航条压暗 */
+body.search-modal-open .navbar {
+  z-index: 1101 !important;
+}
+
+body.search-modal-open .navbar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1101;
+  background: rgba(28, 38, 56, 0.55);
+  pointer-events: none;
+}
+
+/* 搜索容器本身就变成居中卡片：不移动 DOM，插件原有结果样式全部保留 */
+body.search-modal-open .navbar__search:not(.search-navbar-ghost) {
+  position: fixed;
+  top: 12vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  width: min(720px, 92vw);
+  min-height: 240px;
+  max-height: 76vh;
+  margin: 0;
+  padding: 14px;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 1102;
+  background: var(--search-modal-bg);
+  color: var(--search-modal-text);
+  border: 1px solid rgba(128, 128, 128, 0.15);
+  border-radius: 10px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+}
+
+/* 弹窗打开时，navbar 原位插入一个「占位搜索框」。
+   占位框是原生 .navbar__search 节点的完整克隆（含 searchBarContainer_*、
+   searchInput_*、ctrl K 徽章），所以宽高、药丸圆角、灰底、放大镜、
+   placeholder、响应式宽度都与未点击时完全一致，只是不可交互。
+   下方所有弹窗卡片样式都用 :not(.search-navbar-ghost) 排除它。 */
+/* 不要再给 searchBox 设 min-width：占位框本身就是原生尺寸，
+   额外的 min-width 会把窄屏容器撑宽，导致占位框相对关闭状态左移 */
+
+body:not(.search-modal-open) .search-navbar-ghost {
+  display: none !important;
+}
+
+body.search-modal-open .search-navbar-ghost {
+  pointer-events: none;
+}
+
+.search-navbar-ghost input {
+  opacity: 1 !important;
+  cursor: default;
+}
+
+/* autocomplete.js 生成的 wrapper：撑满卡片并把键位条顶到底部 */
+body.search-modal-open .navbar__search:not(.search-navbar-ghost) > span[class*='searchBar'] {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+}
+
+/* 大号输入框 + 放大镜图标 + 绿色描边 */
+body.search-modal-open .navbar__search:not(.search-navbar-ghost) .navbar__search-input {
+  width: 100% !important;
+  height: 56px;
+  padding: 0 16px 0 48px;
+  font-size: 1.25rem;
+  color: var(--search-modal-text);
+  background-color: var(--search-modal-input-bg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232e8555' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-size: 22px 22px;
+  border: 2px solid var(--search-modal-border);
+  border-radius: 8px;
+  outline: none !important;
+  box-shadow: none;
+}
+
+/* 结果下拉并入卡片，去掉插件原本的浮层外观 */
+body.search-modal-open [class*='dropdownMenu']:not([class*='ontainer']) {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  max-width: none !important;
+  /* 结果区自己滚动，保证底部键位条始终留在卡片内 */
+  max-height: calc(76vh - 150px) !important;
+  overflow-y: auto !important;
+  margin: 12px 0 8px !important;
+  padding: 0 0 4px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* ===== 关键词高亮 =====
+   插件默认只把 <mark> 染成绿色细字（background: none），和灰色正文对比太弱。
+   这里改成「浅绿底 + 深绿加粗 + 下边线」，让命中词一眼可见；
+   独立搜索页 /search 也一并使用同一套高亮，避免浏览器默认的黄色 mark。 */
+body.search-modal-open .navbar__search:not(.search-navbar-ghost) mark,
+[class*='searchResultItem'] mark {
+  padding: 1px 3px;
+  margin: 0 -1px;
+  border-radius: 3px;
+  background: rgba(46, 133, 85, 0.32);
+  color: #0b5c34;
+  font-weight: 700;
+  box-shadow: inset 0 -1px 0 rgba(11, 92, 52, 0.55);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+[data-theme='dark'] body.search-modal-open .navbar__search:not(.search-navbar-ghost) mark,
+[data-theme='dark'] [class*='searchResultItem'] mark {
+  background: rgba(79, 209, 165, 0.28);
+  color: #8ff0cd;
+  box-shadow: inset 0 -1px 0 rgba(143, 240, 205, 0.55);
+}
+
+/* 选中行是深绿底，高亮词用「白底 + 深绿字」反白块突出；
+   插件对 cursor mark 的白色文字用了 !important，需同级覆盖 */
+body.search-modal-open [class*='suggestion'][class*='cursor'] mark {
+  background: #fff !important;
+  color: #0b5c34 !important;
+  font-weight: 700;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+/* 无历史且无关键词时的空状态提示 */
+body.search-modal-open:not(.search-has-query):not(.search-has-recent)
+  .navbar__search:not(.search-navbar-ghost)::before {
+  content: '输入关键词开始搜索';
+  position: absolute;
+  top: 46%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--search-modal-muted);
+  font-size: 0.95rem;
+  pointer-events: none;
+}
+
+/* 有最近搜索时给列表留出空间 */
+body.search-modal-open.search-has-recent:not(.search-has-query) .navbar__search:not(.search-navbar-ghost) {
+  min-height: 340px;
+}
+
+/* ===== 最近搜索面板 ===== */
+.search-recent-panel {
+  display: none;
+}
+
+body.search-modal-open .search-recent-panel {
+  position: absolute;
+  top: 82px;
+  bottom: 46px;
+  left: 14px;
+  right: 14px;
+  flex-direction: column;
+  overflow-y: auto;
+  box-sizing: border-box;
+  color: var(--search-modal-text);
+}
+
+body.search-modal-open.search-has-recent:not(.search-has-query)
+  .search-recent-panel {
+  display: flex;
+}
+
+.search-recent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  padding: 4px 4px 8px;
+}
+
+.search-recent-title {
+  color: var(--search-modal-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.search-recent-clear {
+  padding: 2px 6px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--search-modal-muted);
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.search-recent-clear:hover {
+  color: var(--search-modal-border);
+  background: rgba(128, 128, 128, 0.12);
+}
+
+.search-recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.search-recent-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 40px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--search-modal-text);
+  font-size: 0.95rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.search-recent-item:hover,
+.search-recent-item:focus-visible {
+  background: rgba(46, 133, 85, 0.1);
+  outline: none;
+}
+
+.search-recent-icon {
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--search-modal-muted);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M12 7v5l3 2'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+.search-recent-label {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-recent-remove {
+  flex: 0 0 auto;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--search-modal-muted);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.search-recent-remove:hover {
+  background: rgba(128, 128, 128, 0.18);
+  color: var(--search-modal-text);
+}
+
+/* 卡片底部键位条 */
+body.search-modal-open .navbar__search:not(.search-navbar-ghost)::after {
+  content: 'Enter 选中      ↑ ↓ 导航      ESC 关闭';
+  display: block;
+  margin: auto -14px -14px;
+  padding: 12px 16px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  color: var(--search-modal-muted);
+  font-size: 0.8rem;
+  white-space: pre;
+  background: var(--search-modal-bg);
+}
+
+/* 暗色下选中态改用深绿底 + 白字，亮绿底配白字对比不足 */
+[data-theme='dark'] body.search-modal-open [class*='suggestion'][class*='cursor'] {
+  background-color: #1b7a4b !important;
+}
+
+/* 弹窗卡片内不再需要 ctrl+K 提示（navbar 的占位框仍保留徽章） */
+body.search-modal-open .navbar__search:not(.search-navbar-ghost) [class*='searchHintContainer'] {
+  display: none !important;
+}
+
+@media (max-width: 576px) {
+  body.search-modal-open .navbar__search:not(.search-navbar-ghost) {
+    top: 8vh;
+    width: 92vw;
+  }
+
+  body.search-modal-open .navbar__search:not(.search-navbar-ghost)::after {
+    content: 'Enter 选中    ↑ ↓ 导航    ESC 关闭';
+    white-space: pre-wrap;
+  }
+}
