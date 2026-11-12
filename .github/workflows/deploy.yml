@@ -11,9 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          # cheerio 1.2.0（本地搜索插件的传递依赖）要求 Node >= 20.18.1，
+          # 与本地构建环境保持一致可避免 yarn 的 engine 检查失败。
+          node-version: 22
           cache: yarn
 
       - name: 安装依赖
